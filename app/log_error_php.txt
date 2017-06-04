@@ -1,0 +1,21 @@
+[31-May-2017 22:22:30 Europe/Berlin] PHP Parse error:  syntax error, unexpected '/' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 50
+[31-May-2017 22:41:24 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /var/www/html/Projet.PR2M/app/function.php on line 71
+[31-May-2017 23:07:50 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /var/www/html/Projet.PR2M/app/function.php on line 71
+[02-Jun-2017 11:40:02 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /var/www/html/Projet.PR2M/app/function.php on line 76
+[02-Jun-2017 11:58:47 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /var/www/html/Projet.PR2M/app/function.php on line 81
+[02-Jun-2017 16:51:30 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /var/www/html/Projet.PR2M/app/function.php on line 221
+[03-Jun-2017 15:05:37 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /var/www/html/Projet.PR2M/app/function.php on line 88
+[03-Jun-2017 15:05:47 Europe/Berlin] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /var/www/html/Projet.PR2M/app/function.php on line 88
+[03-Jun-2017 16:27:58 Europe/Berlin] PHP Parse error:  syntax error, unexpected 'try' (T_TRY) in /var/www/html/Projet.PR2M/app/function.php on line 216
+[03-Jun-2017 18:10:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function listWaitingPatient() in /var/www/html/Projet.PR2M/app/template/content_dashboard.php:167
+Stack trace:
+#0 /var/www/html/Projet.PR2M/app/function.php(96): include()
+#1 /var/www/html/Projet.PR2M/app/index.php(27): root('content_dashboa...', 'Liste des patie...')
+#2 {main}
+  thrown in /var/www/html/Projet.PR2M/app/template/content_dashboard.php on line 167
+[03-Jun-2017 18:10:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function listCurrentPatient() in /var/www/html/Projet.PR2M/app/template/content_dashboard.php:167
+Stack trace:
+#0 /var/www/html/Projet.PR2M/app/function.php(96): include()
+#1 /var/www/html/Projet.PR2M/app/index.php(27): root('content_dashboa...', 'Liste des patie...')
+#2 {main}
+  thrown in /var/www/html/Projet.PR2M/app/template/content_dashboard.php on line 167

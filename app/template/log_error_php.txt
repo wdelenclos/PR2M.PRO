@@ -1,0 +1,32 @@
+[02-Jun-2017 16:18:55 Europe/Berlin] PHP Warning:  require(../config.php): failed to open stream: No such file or directory in /var/www/html/Projet.PR2M/app/template/content_details.php on line 11
+[02-Jun-2017 16:18:55 Europe/Berlin] PHP Fatal error:  require(): Failed opening required '../config.php' (include_path='.:/usr/share/php') in /var/www/html/Projet.PR2M/app/template/content_details.php on line 11
+[02-Jun-2017 16:19:27 Europe/Berlin] PHP Fatal error:  Cannot redeclare updatePatient() (previously declared in /var/www/html/Projet.PR2M/app/function.php:219) in /var/www/html/Projet.PR2M/app/function.php on line 219
+[02-Jun-2017 16:53:50 Europe/Berlin] PHP Fatal error:  Cannot redeclare updatePatient() (previously declared in /var/www/html/Projet.PR2M/app/function.php:233) in /var/www/html/Projet.PR2M/app/function.php on line 233
+[02-Jun-2017 16:53:59 Europe/Berlin] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /var/www/html/Projet.PR2M/app/template/content_list.php on line 15
+[02-Jun-2017 16:54:13 Europe/Berlin] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /var/www/html/Projet.PR2M/app/function.php on line 14
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[02-Jun-2017 16:56:30 Europe/Berlin] PHP Warning:  Illegal string offset 'nom' in /var/www/html/Projet.PR2M/app/template/content_list.php on line 16
+[03-Jun-2017 16:45:34 Europe/Berlin] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /var/www/html/Projet.PR2M/app/function.php on line 224
+[03-Jun-2017 16:52:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /var/www/html/Projet.PR2M/app/function.php:233
+Stack trace:
+#0 /var/www/html/Projet.PR2M/app/template/content_list.php(84): searchAllPatient(Object(PDO))
+#1 /var/www/html/Projet.PR2M/app/function.php(96): include('/var/www/html/P...')
+#2 /var/www/html/Projet.PR2M/app/index.php(26): root('content_list', 'Nouveau patient')
+#3 {main}
+  thrown in /var/www/html/Projet.PR2M/app/function.php on line 233
+[03-Jun-2017 16:52:55 Europe/Berlin] PHP Warning:  Illegal string offset 'i' in /var/www/html/Projet.PR2M/app/function.php on line 233
+[03-Jun-2017 16:52:55 Europe/Berlin] PHP Warning:  Illegal string offset 'i' in /var/www/html/Projet.PR2M/app/function.php on line 233

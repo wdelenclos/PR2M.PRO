@@ -1,0 +1,8 @@
+[02-Jun-2017 14:29:35 Europe/Berlin] PHP Warning:  log() expects parameter 1 to be float, object given in /var/www/html/Projet.PR2M/app/function.php on line 172
+[02-Jun-2017 14:29:53 Europe/Berlin] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /var/www/html/Projet.PR2M/app/function.php on line 172
+[02-Jun-2017 14:30:27 Europe/Berlin] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /var/www/html/Projet.PR2M/app/function.php on line 172
+[02-Jun-2017 14:30:29 Europe/Berlin] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /var/www/html/Projet.PR2M/app/function.php on line 172
+[02-Jun-2017 14:57:12 Europe/Berlin] PHP Fatal error:  Cannot use [] for reading in /var/www/html/Projet.PR2M/app/function.php on line 173
+[02-Jun-2017 15:07:43 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /var/www/html/Projet.PR2M/app/function.php on line 171
+[02-Jun-2017 15:08:32 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /var/www/html/Projet.PR2M/app/function.php on line 171
+[02-Jun-2017 15:08:46 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /var/www/html/Projet.PR2M/app/function.php on line 171
