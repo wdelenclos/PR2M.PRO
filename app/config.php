@@ -10,4 +10,4 @@ $contactMail = "wdelenclos@gmail.com";
  $dsn = 'mysql:host=localhost;';
  $dbname = 'dbname=pr2m';
  $username = 'root';
- $passwd = 'root';
+ $passwd = '125-ayN-92';
