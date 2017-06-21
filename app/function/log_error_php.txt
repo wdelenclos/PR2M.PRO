@@ -6,3 +6,45 @@
 [02-Jun-2017 15:07:43 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /var/www/html/Projet.PR2M/app/function.php on line 171
 [02-Jun-2017 15:08:32 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /var/www/html/Projet.PR2M/app/function.php on line 171
 [02-Jun-2017 15:08:46 Europe/Berlin] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /var/www/html/Projet.PR2M/app/function.php on line 171
+[21-Jun-2017 11:46:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php:147
+Stack trace:
+#0 /Applications/MAMP/htdocs/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php on line 147
+[21-Jun-2017 11:48:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php:147
+Stack trace:
+#0 /Applications/MAMP/htdocs/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php on line 147
+[21-Jun-2017 13:27:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php:147
+Stack trace:
+#0 /Applications/MAMP/htdocs/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php on line 147
+[21-Jun-2017 16:12:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php:147
+Stack trace:
+#0 /Applications/MAMP/htdocs/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php on line 147
+[21-Jun-2017 16:12:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php:147
+Stack trace:
+#0 /Applications/MAMP/htdocs/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php on line 147
+[21-Jun-2017 16:13:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php:124
+Stack trace:
+#0 /Applications/MAMP/htdocs/PR2M.PRO/app/function/signer.php(16): addPraticien(NULL)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php on line 124
+[21-Jun-2017 16:13:56 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/PR2M.PRO/app/function.php:16) in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php on line 137
+[21-Jun-2017 16:14:27 Europe/Berlin] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/PR2M.PRO/app/function.php:16) in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php on line 137
+[21-Jun-2017 16:16:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php:147
+Stack trace:
+#0 /Applications/MAMP/htdocs/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php on line 147
+[21-Jun-2017 16:18:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php:147
+Stack trace:
+#0 /Applications/MAMP/htdocs/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php on line 147
