@@ -26,9 +26,9 @@
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                     <div class="menu_section">
                         <ul class="nav side-menu">
+                            <li><a href="?p=dashboard&identifiant=<?= $_SESSION['identifiant']?>"><i class="fa fa-tachometer"></i> Tableau de bord </a></li>
                             <li><a><i class="fa fa-users"></i> Patients <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="?p=dashboard&identifiant=<?= $_SESSION['identifiant']?>">Tableau de bord</a></li>
                                     <li><a href="?p=liste&identifiant=<?= $_SESSION['identifiant']?>">Liste des patients</a></li>
                                     <li><a href="?p=nouveau&identifiant=<?= $_SESSION['identifiant']?>">Nouveau patient</a></li>
                                 </ul>
