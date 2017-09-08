@@ -35,13 +35,8 @@
                             </li>
                             <li><a><i class="fa fa-check"></i> Tests <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="?p=tests&identifiant=<?= $_SESSION['identifiant']?>">Consignes</a></li>
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-bar-chart-o"></i> Synthèses <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-
-                                    <li><a href="">A venir </a> </li>
+                                    <li><a href="?p=consignes&identifiant=<?= $_SESSION['identifiant']?>">Consignes</a></li>
+                                    <li><a href="?p=tests&identifiant=<?= $_SESSION['identifiant']?>">Protocole</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -50,7 +45,6 @@
                         <ul class="nav side-menu">
                             <li><a><i class="fa fa-database"></i> Données partagées<span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="e_commerce.html">Api</a></li>
                                     <li><a href="projects.html">Liste des patients</a></li>
                                     <li><a href="project_detail.html">Statistiques</a></li>
                                 </ul>
