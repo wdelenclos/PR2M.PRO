@@ -101,7 +101,7 @@
                                             <h5><span style="text-decoration: underline;"><strong>R&eacute;cup&eacute;ration des donn&eacute;es&nbsp;: </strong></span></h5>
                                             <ul>
                                                 <li>Renseigner manuellement dans la plateforme les r&eacute;sultats BASE, PLAFOND, et SCORE BRUT</li>
-                                                <li>Scanner et enregistrer dans la plateforme le document &laquo;&nbsp;protocole_d&eacute;signation_EVIPb&nbsp;&raquo;</li>
+                                                <li>Scanner et enregistrer dans la plateforme le document &laquo;&nbsp;protocole_EVIPb.pdf&nbsp;&raquo;</li>
                                             </ul>
 
 
