@@ -58,7 +58,7 @@
                                             <h5>Dunn, Th&eacute;riault-Whalen, Dunn, 1993&nbsp;</h5>
                                             <hr>
                                             <a class="btn btn-primary" href="data/tests_uploads/evip/EVIP_B.pptx" download="EVIP_B.pptx" target="_blank"><i class="fa fa-download"></i> EVIP Version B</a>
-                                            <a class="btn btn-primary" href="data/tests_uploads/evip/protocole_designation_EVIPb.pdf" download="protocole_designation_EVIPb.pdf" target="_blank"><i class="fa fa-paperclip"></i>Protocole EVIP</a>
+                                            <a class="btn btn-primary" href="data/tests_uploads/evip/protocole_designation_EVIPb.pdf" download="protocole_EVIPb.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole EVIP</a>
                                             <p>&nbsp;</p>
                                             <h5><span style="text-decoration: underline;">T&acirc;che:</span></h5>
                                             <p>Choisir l'image qui correspond au mot propos&eacute; oralement (ex. balai) parmi 4 images.&nbsp;</p>
@@ -67,7 +67,7 @@
                                             <ul>
                                                 <li>Ouvrir le fichier &laquo;&nbsp;EVIP_B.pptx&nbsp;&raquo;</li>
                                                 <li>Lancer le diaporama</li>
-                                                <li>Suivre la liste des items dans l&rsquo;ordre propos&eacute; (cf document &laquo;&nbsp;protocole_designation_EVIPb.pdf&raquo;)
+                                                <li>Suivre la liste des items dans l&rsquo;ordre propos&eacute; (cf document &laquo; protocole_EVIPb.pdf &raquo;)
                                                     <ul>
                                                         <li><strong>Pour les enfants de 6&nbsp;ans : </strong>le point de d&eacute;part est <strong>l&rsquo;item 1</strong> (ruche)</li>
                                                         <li><strong>Pour les enfants de 7 ans :</strong> le point de d&eacute;part est <strong>l&rsquo;item 10</strong> (poignet)</li>
@@ -89,7 +89,7 @@
                                                         <li>&ndash; si non r&eacute;ponse ou erreur &nbsp;(le cas &eacute;chant, noter la case choisie&nbsp;; &laquo;&nbsp;1&nbsp;&raquo;, &laquo;&nbsp;2&nbsp;&raquo;, &laquo;&nbsp;3&nbsp;&raquo;, &nbsp;ou &laquo;&nbsp;4&nbsp;&raquo;)</li>
                                                     </ul>
                                                 </li>
-                                                <li>Cette cotation doit se faire &agrave; la main (cf document &laquo;&nbsp;protocole_d&eacute;signation_EVIPb&nbsp;&raquo;)
+                                                <li>Cette cotation doit se faire &agrave; la main (cf document &laquo;&nbsp;protocole_EVIPb.pdf&nbsp;&raquo;)
                                                     <ul>
                                                         <li>BASE&nbsp;: plus haute s&eacute;rie de 8 bonnes r&eacute;ponses cons&eacute;cutives</li>
                                                         <li>PLAFOND&nbsp;: plus basse s&eacute;rie de 8 r&eacute;ponses cons&eacute;cutives contenant 6 &eacute;checs</li>
