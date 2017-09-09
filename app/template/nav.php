@@ -117,7 +117,7 @@
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                 <img src="images/user.png" alt=""><?= $_SESSION['prenom'].' '. $_SESSION['nom']?> <?php if($_SESSION['identifiant'] ==  crc32(ADMINMAIL)){?>
-                                    <span> Administrateur</span>
+                                    <span> (Administrateur)</span>
 	                            <?php } ?>
                                 <span class=" fa fa-angle-down"></span>
                             </a>
