@@ -89,8 +89,8 @@
                     }</script>
                 <!-- /menu footer buttons -->
                 <div class="sidebar-footer hidden-small">
-                    <a data-toggle="tooltip" data-placement="top" title="Settings">
-                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    <a data-toggle="tooltip" data-placement="top" title="Auteurs">
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                     </a>
                     <a onclick="requestFullScreen();" data-toggle="tooltip" data-placement="top" title="FullScreen">
                         <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>

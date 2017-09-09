@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/content_shared3.php" afterPath="$PROJECT_DIR$/app/template/content_shared3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/nav.php" afterPath="$PROJECT_DIR$/app/template/nav.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,11 +34,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5219012">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="nav.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/template/nav.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="248">
-                  <caret line="57" column="113" lean-forward="false" selection-start-line="57" selection-start-column="104" selection-end-line="57" selection-end-column="113" />
+                <state relative-caret-position="365">
+                  <caret line="91" column="80" lean-forward="false" selection-start-line="91" selection-start-column="80" selection-end-line="91" selection-end-column="80" />
                   <folding>
                     <element signature="n#li#1;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
                   </folding>
@@ -261,10 +261,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="content_shared3.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="content_shared3.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/template/content_shared3.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="463">
+                <state relative-caret-position="445">
                   <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
                   <folding>
                     <element signature="e#723#730#0#HTML" expanded="true" />
@@ -439,11 +439,11 @@
         <option value="$PROJECT_DIR$/app/template/content_dashboard.php" />
         <option value="$PROJECT_DIR$/app/template/content_tests.php" />
         <option value="$PROJECT_DIR$/app/template/content_details.php" />
-        <option value="$PROJECT_DIR$/app/template/nav.php" />
         <option value="$PROJECT_DIR$/app/template/content_shared1.php" />
         <option value="$PROJECT_DIR$/app/template/content_shared2.php" />
         <option value="$PROJECT_DIR$/app/function.php" />
         <option value="$PROJECT_DIR$/app/template/content_shared3.php" />
+        <option value="$PROJECT_DIR$/app/template/nav.php" />
       </list>
     </option>
   </component>
@@ -665,12 +665,12 @@
       <workItem from="1498038025395" duration="931000" />
       <workItem from="1498045482728" duration="1993000" />
       <workItem from="1504367509995" duration="1016000" />
-      <workItem from="1504908583601" duration="11999000" />
+      <workItem from="1504908583601" duration="12639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24394000" />
+    <option name="totallyTimeSpent" value="25034000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2677,16 +2677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="57" column="113" lean-forward="false" selection-start-line="57" selection-start-column="104" selection-end-line="57" selection-end-column="113" />
-          <folding>
-            <element signature="n#li#1;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/template/content_shared1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2939,7 +2929,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/template/content_shared3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
+        <state relative-caret-position="445">
           <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding>
             <element signature="e#723#730#0#HTML" expanded="true" />
@@ -2972,6 +2962,16 @@
             <element signature="e#1520#1528#0#HTML" expanded="true" />
             <element signature="e#1542#1548#0#HTML" expanded="true" />
             <element signature="e#1580#1586#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="91" column="80" lean-forward="false" selection-start-line="91" selection-start-column="80" selection-end-line="91" selection-end-column="80" />
+          <folding>
+            <element signature="n#li#1;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
