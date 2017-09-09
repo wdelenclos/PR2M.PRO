@@ -40,7 +40,7 @@
                 <div class="x_title">
                     <h2><i class="fa fa-info"></i> Bienvenue sur PR2M !</h2>
                     <ul class="nav navbar-right panel_toolbox">
-                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -51,14 +51,12 @@
                         <p>Toute l’équipe vous remercie de participer à cette étude.</p>
                         <p>Suivez notre Guide d’utilisation et n’hésitez pas à nous contacter pour toute question.</p>
                         <p>Bonnes passations et à bientôt</p>
-                        <small>L’équipe PR2M</small>
+                        <small>- L’équipe PR2M</small>
                         </div>
                     </div>
 
                 </div>
             </div>
-        </div>
-
         <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
