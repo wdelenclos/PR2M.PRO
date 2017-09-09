@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/content_tests.php" afterPath="$PROJECT_DIR$/app/template/content_tests.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config.php" afterPath="$PROJECT_DIR$/app/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/nav.php" afterPath="$PROJECT_DIR$/app/template/nav.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,8 +38,8 @@
           <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/template/nav.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="674">
-                  <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+                <state relative-caret-position="507">
+                  <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -65,17 +65,17 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/config.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="207">
-                  <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+                <state relative-caret-position="161">
+                  <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="content_tests.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="content_tests.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/template/content_tests.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="425">
@@ -763,12 +763,11 @@
           <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/function.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="234" column="22" lean-forward="false" selection-start-line="234" selection-start-column="22" selection-end-line="234" selection-end-column="22" />
+                <state relative-caret-position="496">
+                  <caret line="238" column="49" lean-forward="false" selection-start-line="238" selection-start-column="42" selection-end-line="238" selection-end-column="49" />
                   <folding>
                     <element signature="n#routage#0;n#!!top" expanded="false" />
                     <element signature="n#root#0;n#!!top" expanded="false" />
-                    <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
                     <element signature="n#addPatient#0;n#!!top" expanded="false" />
                     <element signature="n#searchOnePatient#0;n#!!top" expanded="false" />
                     <element signature="n#updatePatient#0;n#!!top" expanded="false" />
@@ -834,12 +833,12 @@
         <option value="$PROJECT_DIR$/app/template/content_details.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/template/content_dashboard.php" />
-        <option value="$PROJECT_DIR$/app/template/nav.php" />
         <option value="$PROJECT_DIR$/app/index.php" />
-        <option value="$PROJECT_DIR$/app/config.php" />
         <option value="$PROJECT_DIR$/app/connect.php" />
         <option value="$PROJECT_DIR$/app/function.php" />
         <option value="$PROJECT_DIR$/app/template/content_tests.php" />
+        <option value="$PROJECT_DIR$/app/template/nav.php" />
+        <option value="$PROJECT_DIR$/app/config.php" />
       </list>
     </option>
   </component>
@@ -1130,12 +1129,12 @@
       <workItem from="1498038025395" duration="931000" />
       <workItem from="1498045482728" duration="1993000" />
       <workItem from="1504367509995" duration="1016000" />
-      <workItem from="1504908583601" duration="8412000" />
+      <workItem from="1504908583601" duration="8751000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20807000" />
+    <option name="totallyTimeSpent" value="21146000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1205,7 +1204,6 @@
           <folding>
             <element signature="n#routage#0;n#!!top" expanded="false" />
             <element signature="n#root#0;n#!!top" expanded="false" />
-            <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
             <element signature="n#addPatient#0;n#!!top" expanded="false" />
             <element signature="n#searchOnePatient#0;n#!!top" expanded="false" />
             <element signature="n#updatePatient#0;n#!!top" expanded="false" />
@@ -2516,14 +2514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -2537,52 +2527,6 @@
         <state relative-caret-position="-1184">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="234" column="22" lean-forward="false" selection-start-line="234" selection-start-column="22" selection-end-line="234" selection-end-column="22" />
-          <folding>
-            <element signature="n#routage#0;n#!!top" expanded="false" />
-            <element signature="n#root#0;n#!!top" expanded="false" />
-            <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
-            <element signature="n#addPatient#0;n#!!top" expanded="false" />
-            <element signature="n#searchOnePatient#0;n#!!top" expanded="false" />
-            <element signature="n#updatePatient#0;n#!!top" expanded="false" />
-            <marker date="1504958565000" expanded="true" signature="2983:3142" ph="INSERT INTO `praticien`... " />
-            <marker date="1504958565000" expanded="true" signature="3769:3886" ph="SELECT id,id... praticien" />
-            <marker date="1504958565000" expanded="true" signature="4364:4735" ph="INSERT INTO `patients`... " />
-            <marker date="1504958565000" expanded="true" signature="5243:5301" ph="SELECT id FR... patients" />
-            <marker date="1504958565000" expanded="true" signature="5744:5799" ph="SELECT * FRO... patients" />
-            <marker date="1504958565000" expanded="true" signature="6075:6193" ph="INSERT INTO `user`... " />
-            <marker date="1504958565000" expanded="true" signature="7659:7730" ph="SELECT * FRO... patients" />
-            <marker date="1504958565000" expanded="true" signature="9255:11021" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="9350:9593" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="9630:9879" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="9941:10318" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="10012:10201" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="10355:10481" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="10518:10987" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="11233:11304" ph="SELECT * FRO... patients" />
-            <marker date="1504958565000" expanded="true" signature="12935:14791" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="13038:13297" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="13338:13603" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="13669:14066" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="13744:13941" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="14107:14245" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="14286:14753" ph="..." />
-            <marker date="1504958565000" expanded="true" signature="15020:15091" ph="SELECT * FRO... patients" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3242,6 +3186,59 @@
             <element signature="e#45889#45895#0#HTML" expanded="true" />
             <element signature="e#45895#45902#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="238" column="49" lean-forward="false" selection-start-line="238" selection-start-column="42" selection-end-line="238" selection-end-column="49" />
+          <folding>
+            <element signature="n#routage#0;n#!!top" expanded="false" />
+            <element signature="n#root#0;n#!!top" expanded="false" />
+            <element signature="n#addPatient#0;n#!!top" expanded="false" />
+            <element signature="n#searchOnePatient#0;n#!!top" expanded="false" />
+            <element signature="n#updatePatient#0;n#!!top" expanded="false" />
+            <marker date="1504958565000" expanded="true" signature="2983:3142" ph="INSERT INTO `praticien`... " />
+            <marker date="1504958565000" expanded="true" signature="3769:3886" ph="SELECT id,id... praticien" />
+            <marker date="1504958565000" expanded="true" signature="4364:4735" ph="INSERT INTO `patients`... " />
+            <marker date="1504958565000" expanded="true" signature="5243:5301" ph="SELECT id FR... patients" />
+            <marker date="1504958565000" expanded="true" signature="5744:5799" ph="SELECT * FRO... patients" />
+            <marker date="1504958565000" expanded="true" signature="6075:6193" ph="INSERT INTO `user`... " />
+            <marker date="1504958565000" expanded="true" signature="7659:7730" ph="SELECT * FRO... patients" />
+            <marker date="1504958565000" expanded="true" signature="9255:11021" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="9350:9593" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="9630:9879" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="9941:10318" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="10012:10201" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="10355:10481" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="10518:10987" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="11233:11304" ph="SELECT * FRO... patients" />
+            <marker date="1504958565000" expanded="true" signature="12935:14791" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="13038:13297" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="13338:13603" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="13669:14066" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="13744:13941" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="14107:14245" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="14286:14753" ph="..." />
+            <marker date="1504958565000" expanded="true" signature="15020:15091" ph="SELECT * FRO... patients" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

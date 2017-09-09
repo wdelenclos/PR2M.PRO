@@ -33,6 +33,16 @@
                                     <li><a href="?p=nouveau&identifiant=<?= $_SESSION['identifiant']?>">Nouveau patient</a></li>
                                 </ul>
                             </li>
+                            <?php if($_SESSION['identifiant'] ==  crc32(ADMINMAIL)){?>
+
+
+                            <li><a><i class="fa fa-user-md"></i>Praticiens<span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="#level1_1">Liste des praticiens</a></li>
+                                    </li>
+                                </ul>
+                            </li>
+                            <?php } ?>
                             <li><a><i class="fa fa-check"></i> Tests <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="?p=ordrer&identifiant=<?= $_SESSION['identifiant']?>">Ordre de passation</a></li>
@@ -47,12 +57,6 @@
                                 <ul class="nav child_menu">
                                     <li><a href="projects.html">Liste des patients</a></li>
                                     <li><a href="project_detail.html">Statistiques</a></li>
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-user-md"></i>Participants<span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="#level1_1">Liste des chercheurs</a></li>
-                                    </li>
                                 </ul>
                             </li>
                         </ul>
