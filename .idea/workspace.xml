@@ -37,8 +37,8 @@
           <file leaf-file-name="nav.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/template/nav.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="365">
-                  <caret line="91" column="80" lean-forward="false" selection-start-line="91" selection-start-column="80" selection-end-line="91" selection-end-column="80" />
+                <state relative-caret-position="595">
+                  <caret line="101" column="88" lean-forward="true" selection-start-line="101" selection-start-column="88" selection-end-line="101" selection-end-column="88" />
                   <folding>
                     <element signature="n#li#1;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
                   </folding>
@@ -665,12 +665,12 @@
       <workItem from="1498038025395" duration="931000" />
       <workItem from="1498045482728" duration="1993000" />
       <workItem from="1504367509995" duration="1016000" />
-      <workItem from="1504908583601" duration="12639000" />
+      <workItem from="1504908583601" duration="12867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25034000" />
+    <option name="totallyTimeSpent" value="25262000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2968,8 +2968,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/template/nav.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="91" column="80" lean-forward="false" selection-start-line="91" selection-start-column="80" selection-end-line="91" selection-end-column="80" />
+        <state relative-caret-position="595">
+          <caret line="101" column="88" lean-forward="true" selection-start-line="101" selection-start-column="88" selection-end-line="101" selection-end-column="88" />
           <folding>
             <element signature="n#li#1;n#ul#0;n#nav#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
           </folding>
