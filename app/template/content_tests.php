@@ -110,6 +110,7 @@
 
                                             <p class="lead">Evalec Enfant - Epreuve de d&eacute;nomination Rapide&nbsp;</p>
                                             <h5>Sprenger-Charolles, Col&eacute;, Piquard-Kipffer et Leloup, 2010&nbsp;</h5>
+                                            <hr>
                                             <a class="btn btn-primary" href="data/tests_uploads/dra/Epreuve_denomination_rapide.pdf" download="Epreuve_denomination_rapide.pdf" target="_blank"><i class="fa fa-download"></i> Epreuve denomination</a>
                                             <a class="btn btn-primary" href="data/tests_uploads/dra/Protocole_DRA.pdf" download="Protocole_DRA.pdf" target="_blank"><i class="fa fa-paperclip"></i> Télécharger le protocole </a>
 
@@ -135,7 +136,7 @@
                                         <div class="tab-pane" id="lexical">
                                             <p class="lead">Lexical Access&nbsp;</p>
                                             <h5>Leloup, Chevallier et Gorsse, 2016&nbsp;</h5>
-                                            <p>&nbsp;</p>
+                                            <hr>
                                             <a class="btn btn-primary" href="data/tests_uploads/lexical/Epreuve_désignation_LexicalAccess.pptx" download="Epreuve_désignation_LexicalAccess.pptx" target="_blank"><i class="fa fa-paperclip"></i> Epreuve de désignation LexicalAccess</a>
                                             <a class="btn btn-primary" href="data/tests_uploads/lexical/Protocole_dénomination_LexicalAccess.pdf" download="Protocole_dénomination_LexicalAccess.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole dénomination </a>
                                             <a class="btn btn-primary" href="data/tests_uploads/lexical/Protocole_désignation_LexicalAccess.pdf" download="Protocole_désignation_LexicalAccess.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole désignation</a>
