@@ -62,12 +62,14 @@
                         <div id="myTabContent2" class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="tab_content11" aria-labelledby="home-tab">
                                 <h3>PR2M, c&rsquo;est quoi&nbsp;?</h3>
+                                <hr>
                                 <p>PR2M, c&rsquo;est avant tout un travail de m&eacute;moire cherchant &agrave; valider un Protocole de Rem&eacute;diation du Manque du Mot. Soutenue par Gilles Leloup (Dr. en Sciences du langage, orthophoniste) et Anne Bragard (Dr. en Sciences psychologiques et de l&rsquo;&eacute;ducation, logop&egrave;de) cette &eacute;tude a pour objectif de valider scientifiquement un protocole facilement op&eacute;rationnel en clinique.</p>
                                 <p>PR2M, c&rsquo;est aussi une plateforme cr&eacute;&eacute;e dans le cadre du projet. Elle permet ainsi de diffuser le protocole et de r&eacute;colter rapidement les donn&eacute;es. Interface entre les praticiens et les organisateurs de l&rsquo;&eacute;tude, elle est un moyen de gestion &agrave; distance privil&eacute;gi&eacute; pour r&eacute;unir le maximum de collaborateurs francophones.</p>
                                 <p><em>Pour en savoir plus sur l&rsquo;&eacute;tude, allez dans l&rsquo;onglet &laquo;&nbsp;Donn&eacute;es partag&eacute;es&nbsp;&raquo;. </em></p>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab_content22" aria-labelledby="profile-tab">
                                <h3>Comment je l'utilise ?</h3>
+                                <hr>
                                 <p>La plateforme se veut fonctionnelle et agr&eacute;able d&rsquo;utilisation.</p>
                                 <p>Le <strong>tableau de bord</strong> vous permet de voir directement&nbsp; la liste des patients et l&rsquo;&eacute;tat&nbsp; d&rsquo;avancement&nbsp; des passations.</p>
                                 <p>L&rsquo;onglet <strong>Patients</strong> vous permet&nbsp;:</p>
@@ -91,6 +93,7 @@
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab_content33" aria-labelledby="profile-tab">
                                <h3>Calendrier</h3>
+                                <hr>
                                 <p>Nous vous proposons ici un d&eacute;roulement pratique du protocole. En dehors de la p&eacute;riode d&rsquo;entra&icirc;nement, ce calendrier est bien s&ucirc;r &agrave; titre indicatif et correspond &agrave; nos propres observations lors des passations.</p>
                                 <table class="table table-bordered">
                                     <tbody>
@@ -140,10 +143,9 @@
                                 <p>* La passation des tests d&eacute;passant les 30 minutes imparties pour une s&eacute;ance, n&rsquo;oubliez pas de programmer une s&eacute;ance bilan plus longue&nbsp;!</p>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab_content44" aria-labelledby="profile-tab">
-                              <h3>Contact</h3>
-                                <p><a href="mailto:equipe.pr2m@gmail.com">equipe.pr2m@gmail.com</a> &nbsp;&nbsp;&nbsp;&nbsp;</p>
-                                <p>+ 33 (6) 45 40 36 39 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nothelier Julie</p>
-                                <p>+ 33 (7) 77 38 10 61 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Giavelly Marion</p>
+                                <p>Email : <a href="mailto:equipe.pr2m@gmail.com">equipe.pr2m@gmail.com</a> &nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p>Nothelier Julie : + 33 (6) 45 40 36 39 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p>Giavelly Marion : + 33 (7) 77 38 10 61 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                                 <p>N&rsquo;h&eacute;sitez pas &agrave; nous contacter pour toute question ou toute difficult&eacute;.</p>
                                 <p>Nous vous r&eacute;pondrons dans les plus brefs d&eacute;lais.</p>
 
