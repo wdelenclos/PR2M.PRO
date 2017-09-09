@@ -18,6 +18,9 @@
                     <div class="profile_info">
                         <span><?= $_SESSION['identifiant']?></span>
                         <h2><?= $_SESSION['prenom'].' '. $_SESSION['nom']?></h2>
+	                    <?php if($_SESSION['identifiant'] ==  crc32(ADMINMAIL)){?>
+                        <span>Administrateur</span>
+                        <?php } ?>
                     </div>
                 </div>
                 <!-- /menu profile quick info -->
