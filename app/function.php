@@ -131,29 +131,11 @@ function addPraticien($bdd){
         $stmt->execute();
 
 
-}
+	}
     catch (PDOException $e) {
 
         $e->getMessage();
     }
-	//Envoi du mail de confirmation
-	$to      = $_POST['sign_Email'];
-	$subject = 'Création de votre compte PR2M: vos identifiants';
-	$message = '<p>Toute l’équipe vous remercie de participer à cette étude.</p><p>Voici votre identifiant, il est nominatif et vous permet d\'acceder à la plateforme.</p>
-                        <br/>
-                        <p>Identifiant: '. crc32($_POST['sign_Email']).'</p>
-                        <br/>
-                        <p>Conservez le precieusement !</p>
-                        <p>Une fois connecté, suivez notre Guide d’utilisation et n’hésitez pas à nous contacter pour toute question.</p>
-                        <p>Bonnes passations et à bientôt</p>
-                        <small>- L’équipe PR2M</small>
-                    ';
-	$headers = 'From:'. CONTACTMAIL . "\r\n" .
-	           'Reply-To:'. CONTACTMAIL . "\r\n" .
-	           'X-Mailer: PHP/' . phpversion();
-
-	mail($to, $subject, $message, $headers);
-    header('Location: ../index.php?n=100&p=dashboard&identifiant='.crc32($_POST['sign_Email']) );
 }
 
 function searchPraticien($bdd)
@@ -248,7 +230,27 @@ function updatePatient($bdd)
     header('Location:login.html');
 }
 
+function sendMail($email){
+	//Envoi du mail de confirmation
+	$to      = $email;
+	$subject = 'Création de votre compte PR2M: vos identifiants';
+	$message = '<p>Toute l’équipe vous remercie de participer à cette étude.</p><p>Voici votre identifiant, il est nominatif et vous permet d\'acceder à la plateforme.</p>
+                        <br/>
+                        <p>Identifiant: '. crc32($_POST['sign_Email']).'</p>
+                        <br/>
+                        <p>Conservez le precieusement !</p>
+                        <p>Une fois connecté, suivez notre Guide d’utilisation et n’hésitez pas à nous contacter pour toute question.</p>
+                        <p>Bonnes passations et à bientôt</p>
+                        <small>- L’équipe PR2M</small>
+                    ';
+	$headers = 'From:'. CONTACTMAIL . "\r\n" .
+	           'Reply-To:'. CONTACTMAIL . "\r\n" .
+	           'X-Mailer: PHP/' . phpversion();
 
+	mail($to, $subject, $message, $headers);
+	header('Location: ../index.php?n=100&p=dashboard&identifiant='.crc32($_POST['sign_Email']) );
+
+}
 
 // Listing des patients
 

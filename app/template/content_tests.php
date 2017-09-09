@@ -56,16 +56,18 @@
                                         <div class="tab-pane active" id="evip">
                                             <p class="lead">Echelle de vocabulaire en images Peabody (EVIP) - forme B&nbsp;</p>
                                             <h5>Dunn, Th&eacute;riault-Whalen, Dunn, 1993&nbsp;</h5>
-                                            <p>&nbsp;</p>
+                                            <hr>
+                                            <a class="btn btn-primary" href="data/tests_uploads/evip/EVIP_B.pptx" download="EVIP_B.pptx" target="_blank"><i class="fa fa-download"></i> EVIP Version B</a>
+                                            <a class="btn btn-primary" href="data/tests_uploads/evip/protocole_designation_EVIPb.pdf" download="protocole_designation_EVIPb.pdf" target="_blank"><i class="fa fa-paperclip"></i>Protocole EVIP</a>
                                             <p>&nbsp;</p>
                                             <h5><span style="text-decoration: underline;">T&acirc;che:</span></h5>
                                             <p>Choisir l'image qui correspond au mot propos&eacute; oralement (ex. balai) parmi 4 images.&nbsp;</p>
                                             <p>&nbsp;</p>
                                             <h5><span style="text-decoration: underline;">Consignes pour l'exp&eacute;rimentateur:</span></h5>
                                             <ul>
-                                                <li>Ouvrir le fichier &laquo;&nbsp;Epreuve_d&eacute;signation_EVIPb&nbsp;&raquo;</li>
+                                                <li>Ouvrir le fichier &laquo;&nbsp;EVIP_B.pptx&nbsp;&raquo;</li>
                                                 <li>Lancer le diaporama</li>
-                                                <li>Suivre la liste des items dans l&rsquo;ordre propos&eacute; (cf document &laquo;&nbsp;protocole_d&eacute;signation_EVIPb&nbsp;&raquo;)
+                                                <li>Suivre la liste des items dans l&rsquo;ordre propos&eacute; (cf document &laquo;&nbsp;protocole_designation_EVIPb.pdf&raquo;)
                                                     <ul>
                                                         <li><strong>Pour les enfants de 6&nbsp;ans : </strong>le point de d&eacute;part est <strong>l&rsquo;item 1</strong> (ruche)</li>
                                                         <li><strong>Pour les enfants de 7 ans :</strong> le point de d&eacute;part est <strong>l&rsquo;item 10</strong> (poignet)</li>
