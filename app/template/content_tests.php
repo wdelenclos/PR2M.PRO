@@ -187,13 +187,13 @@
                                                     </ul>
                                                 </li>
                                             </ul>
-                                            <p><em>REM&nbsp;: dans cette &eacute;preuve, vous passez &agrave; l&rsquo;item suivant automatiquement apr&egrave;s avoir appuy&eacute; sur&nbsp;</em>&<i class="fa fa-long-arrow-left" aria-hidden="true"></i> ou <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <em>&larr;. Un point vert appara&icirc;t pendant 2 secondes pour s&eacute;parer chaque item.</em></p>
+                                            <p><em>REM&nbsp;: dans cette &eacute;preuve, vous passez &agrave; l&rsquo;item suivant automatiquement apr&egrave;s avoir appuy&eacute; sur&nbsp;</em><i class="fa fa-long-arrow-left" aria-hidden="true"></i> ou <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <em>. Un point vert appara&icirc;t pendant 2 secondes pour s&eacute;parer chaque item.</em></p>
                                             <p>Un interlude de 15 secondes appara&icirc;t au milieu de la s&eacute;rie.</p>
                                             <p><em>Sachez aussi que vous pouvez interrompre la t&acirc;che en cours de passation en appuyer sur &laquo;&nbsp;Echap&nbsp;&raquo;</em></p>
                                             <p>&nbsp;</p>
                                             <h5><span style="text-decoration: underline;"><strong>Cotation&nbsp;:</strong></span></h5>
                                             <ul>
-                                                <li><strong>0 (</strong>&larr;)&<i class="fa fa-long-arrow-left" aria-hidden="true"></i><strong>ou 1 (</strong><i class="fa fa-long-arrow-right" aria-hidden="true"></i><strong>)</strong>
+                                                <li><strong>0 (</strong><i class="fa fa-long-arrow-left" aria-hidden="true"></i><strong>) ou 1 (</strong><i class="fa fa-long-arrow-right" aria-hidden="true"></i><strong>)</strong>
                                                     <ol>
                                                         <li><strong>1&nbsp;</strong>point si l&rsquo;item est bien d&eacute;nomm&eacute; du 1<sup>er</sup>&nbsp;coup</li>
                                                         <li><strong>0</strong>&nbsp;si erreur ou non r&eacute;ponse ou besoin d&rsquo;indi&ccedil;age</li>
