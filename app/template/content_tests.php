@@ -110,8 +110,8 @@
 
                                             <p class="lead">Evalec Enfant - Epreuve de d&eacute;nomination Rapide&nbsp;</p>
                                             <h5>Sprenger-Charolles, Col&eacute;, Piquard-Kipffer et Leloup, 2010&nbsp;</h5>
-                                            <a class="btn btn-primary" href="data/tests_uploads/dra/Epreuve_dénomination_rapide.pdf" download="Epreuve_dénomination_rapide.pdf" target="_blank"><i class="fa fa-paperclip"></i> Fiche dénomination</a>
-                                            <a class="btn btn-primary" href="data/tests_uploads/dra/Protocole_DRA.pdf "download="Protocole_DRA.pdf" target="_blank"><i class="fa fa-paperclip"></i> Télécharger le protocole </a>
+                                            <a class="btn btn-primary" href="data/tests_uploads/dra/Epreuve_denomination_rapide.pdf" download="Epreuve_denomination_rapide.pdf" target="_blank"><i class="fa fa-download"></i> Epreuve denomination</a>
+                                            <a class="btn btn-primary" href="data/tests_uploads/dra/Protocole_DRA.pdf" download="Protocole_DRA.pdf" target="_blank"><i class="fa fa-paperclip"></i> Télécharger le protocole </a>
 
                                             <h5><span style="text-decoration: underline;"><strong>T&acirc;che&nbsp;:</strong></span></h5>
                                             <p>D&eacute;nommer le plus rapidement la liste de couleurs pr&eacute;sent&eacute;e</p>
