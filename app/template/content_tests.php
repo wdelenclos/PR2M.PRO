@@ -273,7 +273,7 @@
                                             </ul>
                                         </div>
                                         <div class="tab-pane" id="emme">
-                                            <p class="lead">EMME</p>
+                                            <p class="lead">Evaluation du manque du mot chez l'enfant</p>
                                             <small>Bragar et Schelstraete, 2009</small>
                                             <hr>
                                             <a class="btn btn-primary" href="http://www.ipsp.ucl.ac.be/recherche/projets/Epreuves/InstallationEpreuves.exe" target="_blank"><i class="fa fa-download"></i> Télécharger le logiciel</a>
