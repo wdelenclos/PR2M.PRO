@@ -61,6 +61,7 @@
                         </ul>
                         <div id="myTabContent2" class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="tab_content11" aria-labelledby="home-tab">
+                                <hr>
                                 <h3>PR2M, c&rsquo;est quoi&nbsp;?</h3>
                                 <hr>
                                 <p>PR2M, c&rsquo;est avant tout un travail de m&eacute;moire cherchant &agrave; valider un Protocole de Rem&eacute;diation du Manque du Mot. Soutenue par Gilles Leloup (Dr. en Sciences du langage, orthophoniste) et Anne Bragard (Dr. en Sciences psychologiques et de l&rsquo;&eacute;ducation, logop&egrave;de) cette &eacute;tude a pour objectif de valider scientifiquement un protocole facilement op&eacute;rationnel en clinique.</p>
@@ -68,7 +69,8 @@
                                 <p><em>Pour en savoir plus sur l&rsquo;&eacute;tude, allez dans l&rsquo;onglet &laquo;&nbsp;Donn&eacute;es partag&eacute;es&nbsp;&raquo;. </em></p>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab_content22" aria-labelledby="profile-tab">
-                               <h3>Comment je l'utilise ?</h3>
+                                <hr>
+                                <h3>Comment je l'utilise ?</h3>
                                 <hr>
                                 <p>La plateforme se veut fonctionnelle et agr&eacute;able d&rsquo;utilisation.</p>
                                 <p>Le <strong>tableau de bord</strong> vous permet de voir directement&nbsp; la liste des patients et l&rsquo;&eacute;tat&nbsp; d&rsquo;avancement&nbsp; des passations.</p>
@@ -92,7 +94,8 @@
                                 <p>&nbsp;</p>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab_content33" aria-labelledby="profile-tab">
-                               <h3>Calendrier</h3>
+                                <hr>
+                                <h3>Calendrier</h3>
                                 <hr>
                                 <p>Nous vous proposons ici un d&eacute;roulement pratique du protocole. En dehors de la p&eacute;riode d&rsquo;entra&icirc;nement, ce calendrier est bien s&ucirc;r &agrave; titre indicatif et correspond &agrave; nos propres observations lors des passations.</p>
                                 <table class="table table-bordered">
