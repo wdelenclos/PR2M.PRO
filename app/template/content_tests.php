@@ -295,6 +295,7 @@
                                             <p><em>REM&nbsp;: dans cette &eacute;preuve, ainsi que dans toutes les autres, il vous suffit d&rsquo;appuyer sur la barre d&rsquo;espacement pour passer &agrave; l&rsquo;item suivant. Une page de couleur s&eacute;pare les items afin de permettre &agrave; l&rsquo;enfant ou &agrave; l&rsquo;exp&eacute;rimentateur de faire un commentaire sans entraver la prise de donn&eacute;es.</em></p>
                                             <p><em>Sachez &eacute;galement que si vous souhaitez interrompre la t&acirc;che en cours de passation, il vous suffit d&rsquo;appuyer sur &laquo;&nbsp;ESC&nbsp;&raquo;.</em></p>
                                             <p>&nbsp;</p>
+                                            <img src="/images/bragard déno.png" alt="Bragard Déno">
                                             <h5><span style="text-decoration: underline;"><strong>Cotation&nbsp;:</strong></span></h5>
                                             <ul>
                                                 <li><strong>0 ou 1</strong></li>
