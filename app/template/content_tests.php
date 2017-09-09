@@ -278,12 +278,11 @@
                                             <a class="btn btn-primary" href="http://www.ipsp.ucl.ac.be/recherche/projets/Epreuves/InstallationEpreuves.exe" target="_blank">Télécharger le logiciel <i class="fa fa-windows"></i></a>
                                             <a class="btn btn-primary" href="data/tests_uploads/emme/Protocole_dénomination_EMME.pdf" download="Protocole_dénomination_EMME.pdf" target="_blank"> <i class="fa fa-paperclip"></i> Protocole dénomination</a>
                                             <hr>
-                                            <p><strong>Evaluation du Manque du Mot chez l'Enfant&nbsp;</strong></p>
-                                            <p><strong>Anne Bragard, 2009</strong></p>
+                                            <h5><strong>1)&nbsp;&nbsp; T&acirc;che de d&eacute;nomination</strong></h5>
+                                            <p><span style="text-decoration: underline;"><strong>T&acirc;che&nbsp;:&nbsp;</strong></span></p>
+                                            <p>D&eacute;nommer le plus rapidement possible des photographies d&rsquo;objets et d&rsquo;animaux pr&eacute;sent&eacute;es une par une sur ordinateur au centre de l&rsquo;&eacute;cran.</p>
                                             <p>&nbsp;</p>
-                                            <p><strong>1)&nbsp;&nbsp; T&acirc;che de d&eacute;nomination</strong></p>
-                                            <p><strong>T&acirc;che&nbsp;:&nbsp;</strong>d&eacute;nommer le plus rapidement possible des photographies d&rsquo;objets et d&rsquo;animaux pr&eacute;sent&eacute;es une par une sur ordinateur au centre de l&rsquo;&eacute;cran.</p>
-                                            <p><strong>Consignes pour l&rsquo;exp&eacute;rimentateur&nbsp;:</strong></p>
+                                            <h5><span style="text-decoration: underline;"><strong>Consignes pour l&rsquo;exp&eacute;rimentateur&nbsp;:</strong></span></h5>
                                             <ul>
                                                 <li>S&eacute;lectionner l&rsquo;&eacute;preuve &laquo;&nbsp;d&eacute;nomination de substantifs&nbsp;&raquo;</li>
                                                 <li>Pr&eacute;voir un enregistrement audio de toute la passation</li>
@@ -294,7 +293,8 @@
                                             </ul>
                                             <p><em>REM&nbsp;: dans cette &eacute;preuve, ainsi que dans toutes les autres, il vous suffit d&rsquo;appuyer sur la barre d&rsquo;espacement pour passer &agrave; l&rsquo;item suivant. Une page de couleur s&eacute;pare les items afin de permettre &agrave; l&rsquo;enfant ou &agrave; l&rsquo;exp&eacute;rimentateur de faire un commentaire sans entraver la prise de donn&eacute;es.</em></p>
                                             <p><em>Sachez &eacute;galement que si vous souhaitez interrompre la t&acirc;che en cours de passation, il vous suffit d&rsquo;appuyer sur &laquo;&nbsp;ESC&nbsp;&raquo;.</em></p>
-                                            <p><strong>Cotation&nbsp;:</strong></p>
+                                            <p>&nbsp;</p>
+                                            <h5><span style="text-decoration: underline;"><strong>Cotation&nbsp;:</strong></span></h5>
                                             <ul>
                                                 <li><strong>0 ou 1</strong></li>
                                                 <ul>
@@ -378,8 +378,9 @@
                                             </table>
                                             <p><strong>&nbsp;</strong></p>
                                             <p><strong>2) &nbsp; T&acirc;che de d&eacute;signation</strong></p>
-                                            <p><strong>T&acirc;che&nbsp;:&nbsp;</strong>choisir l&rsquo;image qui correspond au mot propos&eacute; oralement (ex. couteau) parmi 4 images distractrices &agrave; savoir un distracteur s&eacute;mantique (ex. fourchette), un distracteur phonologique portant sur la premi&egrave;re syllabe (ex. couronne), un distracteur phonologique portant sur la rime (ex. bateau) et un distracteur neutre (ex. lunettes).</p>
-                                            <p><strong>Consignes pour l&rsquo;exp&eacute;rimentateur&nbsp;:</strong></p>
+                                            <p><span style="text-decoration: underline;"><strong>T&acirc;che&nbsp;:&nbsp;</strong></span></p>
+                                            <p>Choisir l&rsquo;image qui correspond au mot propos&eacute; oralement (ex. couteau) parmi 4 images distractrices &agrave; savoir un distracteur s&eacute;mantique (ex. fourchette), un distracteur phonologique portant sur la premi&egrave;re syllabe (ex. couronne), un distracteur phonologique portant sur la rime (ex. bateau) et un distracteur neutre (ex. lunettes).</p>
+                                            <p><span style="text-decoration: underline;"><strong>Consignes pour l&rsquo;exp&eacute;rimentateur&nbsp;:</strong></span></p>
                                             <ul>
                                                 <li>Avant d&rsquo;administrer cette &eacute;preuve, coller des gommettes de couleur sur le clavier (voir figure 2)</li>
                                                 <ul>
@@ -399,14 +400,14 @@
                                                 <li>Attention&nbsp;: ne pas laisser l&rsquo;enfant r&eacute;pondre trop rapidement sans regarder l&rsquo;ensemble des images. Il faut donc lui demander de remettre les mains pr&egrave;s de lui avant de choisir l&rsquo;image, lui dire qu&rsquo;il ne faut pas aller trop vite et qu&rsquo;il faut bien regarder la couleur en dessous de l&rsquo;image qu&rsquo;il a choisie</li>
                                             </ul>
                                             <p>&nbsp;</p>
-                                            <p><strong>Cotation&nbsp;:</strong></p>
+                                            <p><span style="text-decoration: underline;"><strong>Cotation&nbsp;:</strong></span></p>
                                             <ul>
                                                 <li><strong>0 ou 1&nbsp;</strong>: l&rsquo;ordinateur d&eacute;termine directement dans le fichier des r&eacute;sultats si l&rsquo;enfant a r&eacute;ussi ou &eacute;chou&eacute; chaque item. Il encode &eacute;galement la r&eacute;ponse choisie par l&rsquo;enfant dans la colonne</li>
                                                 <li>Il faut cependant ensuite classer ses erreurs selon le lien avec la cible&nbsp;; l&rsquo;erreur &eacute;tant d&eacute;termin&eacute;e par le distracteur choisi par l&rsquo;enfant en cas d&rsquo;&eacute;chec (voir tableau II). Par exemple, une erreur s&eacute;mantique est attribu&eacute;e si l&rsquo;enfant choisit le distracteur s&eacute;mantique.</li>
                                             </ul>
                                             <p>&nbsp;</p>
                                             <p>Tableau II&nbsp;: exemples de la classification des erreurs dans la t&acirc;che de d&eacute;signation</p>
-                                            <table width="592">
+                                            <table width="592" class="table-bordered">
                                                 <tbody>
                                                 <tr>
                                                     <td>
@@ -450,7 +451,7 @@
                                                 </tr>
                                                 </tbody>
                                             </table>
-                                            <p>&nbsp;</p>
+
 
                                         </div>
                                     </div>
