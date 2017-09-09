@@ -5,7 +5,7 @@
 define('CONTACTMAIL','equipe.pr2m@gmail.com' );
 
 // Email administrateur
-define('ADMINMAIL','wdelenclos@gmail.com' );
+define('ADMINMAIL','julie.nothelier@gmail.com' );
 
 // BDD INFO
 define("DNS", 'mysql:host=localhost;');
