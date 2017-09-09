@@ -274,8 +274,9 @@
                                         </div>
                                         <div class="tab-pane" id="emme">
                                             <p class="lead">EMME</p>
+                                            <small>Bragar et Schelstraete, 2009</small>
                                             <hr>
-                                            <a class="btn btn-primary" href="http://www.ipsp.ucl.ac.be/recherche/projets/Epreuves/InstallationEpreuves.exe" target="_blank">Télécharger le logiciel <i class="fa fa-windows"></i></a>
+                                            <a class="btn btn-primary" href="http://www.ipsp.ucl.ac.be/recherche/projets/Epreuves/InstallationEpreuves.exe" target="_blank"><i class="fa fa-download"></i> Télécharger le logiciel</a>
                                             <a class="btn btn-primary" href="data/tests_uploads/emme/Protocole_dénomination_EMME.pdf" download="Protocole_dénomination_EMME.pdf" target="_blank"> <i class="fa fa-paperclip"></i> Protocole dénomination</a>
                                             <hr>
                                             <h5><strong>1)&nbsp;&nbsp; T&acirc;che de d&eacute;nomination</strong></h5>
