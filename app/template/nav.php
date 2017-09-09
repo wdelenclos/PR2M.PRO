@@ -116,7 +116,9 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="images/user.png" alt=""><?= $_SESSION['prenom'].' '. $_SESSION['nom']?>
+                                <img src="images/user.png" alt=""><?= $_SESSION['prenom'].' '. $_SESSION['nom']?> <?php if($_SESSION['identifiant'] ==  crc32(ADMINMAIL)){?>
+                                    <span> Administrateur</span>
+	                            <?php } ?>
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -150,10 +152,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><?php if($_SESSION['identifiant'] ==  crc32(ADMINMAIL)){?>
-                                <span><i class="fa fa-user"></i>Administrateur</span>
-	                        <?php } ?>
-                        </li>
+
 
                     </ul>
                 </nav>
