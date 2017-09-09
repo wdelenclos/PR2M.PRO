@@ -146,6 +146,8 @@
                                 <p>* La passation des tests d&eacute;passant les 30 minutes imparties pour une s&eacute;ance, n&rsquo;oubliez pas de programmer une s&eacute;ance bilan plus longue&nbsp;!</p>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab_content44" aria-labelledby="profile-tab">
+                                <p class="lead">Contact</p>
+                                <hr>
                                 <p><strong>Email :</strong> <a href="mailto:equipe.pr2m@gmail.com">equipe.pr2m@gmail.com</a> &nbsp;&nbsp;&nbsp;&nbsp;</p>
                                 <p><strong>Nothelier Julie :</strong> + 33 (6) 45 40 36 39 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                                 <p><strong>Giavelly Marion :</strong> + 33 (7) 77 38 10 61 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
