@@ -53,8 +53,9 @@
                         <ul class="nav side-menu">
                             <li><a><i class="fa fa-database"></i> Données partagées<span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="projects.html">Liste des patients</a></li>
-                                    <li><a href="project_detail.html">Statistiques</a></li>
+                                    <li><a href="?p=shared1&identifiant=<?= $_SESSION['identifiant']?>">Justification théorique</a></li>
+                                    <li><a href="?p=shared2&identifiant=<?= $_SESSION['identifiant']?>">Question Clinique</a></li>
+                                    <li><a href="?p=shared3&identifiant=<?= $_SESSION['identifiant']?>">Objectifs</a></li>
                                 </ul>
                             </li>
                         </ul>

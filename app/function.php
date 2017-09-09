@@ -57,6 +57,21 @@ function routage(){ // Moteur de rooting
             $title = "Nouveau patient";
             break;
 
+	    case "shared1":
+		    $label ="content_shared1";
+		    $title = "Justification théorique";
+		    break;
+
+	    case "shared2":
+		    $label ="content_shared1";
+		    $title = "Question Clinique";
+		    break;
+
+	    case "shared3":
+		    $label ="content_shared1";
+		    $title = "Objectifs";
+		    break;
+
         case "tests":
             $label ="content_tests";
             $title = "Consignes";
@@ -196,7 +211,6 @@ function addPatient($bdd)
             var_dump($Exception->getMessage());
     }
 }
-
 function searchOnePatient($bdd)
 {
 
@@ -230,31 +244,7 @@ function updatePatient($bdd)
     header('Location:login.html');
 }
 
-function sendMail($email){
-	//Envoi du mail de confirmation
-	$to      = $email;
-	$subject = 'Création de votre compte PR2M: vos identifiants';
-	$message = '<p>Toute l’équipe vous remercie de participer à cette étude.</p><p>Voici votre identifiant, il est nominatif et vous permet d\'acceder à la plateforme.</p>
-                        <br/>
-                        <p>Identifiant: '. crc32($_POST['sign_Email']).'</p>
-                        <br/>
-                        <p>Conservez le precieusement !</p>
-                        <p>Une fois connecté, suivez notre Guide d’utilisation et n’hésitez pas à nous contacter pour toute question.</p>
-                        <p>Bonnes passations et à bientôt</p>
-                        <small>- L’équipe PR2M</small>
-                    ';
-	$headers = 'From:'. CONTACTMAIL . "\r\n" .
-	           'Reply-To:'. CONTACTMAIL . "\r\n" .
-	           'X-Mailer: PHP/' . phpversion();
-
-	mail($to, $subject, $message, $headers);
-	header('Location: ../index.php?n=100&p=dashboard&identifiant='.crc32($_POST['sign_Email']) );
-
-}
-
 // Listing des patients
-
-
 function listAllPatient($bdd)
 {
     try {
@@ -349,8 +339,6 @@ function listAllPatient($bdd)
         echo $e->getMessage();
     }
 }
-
-
 function listWaitingPatient($bdd)
 {
     try {
@@ -447,9 +435,6 @@ function listWaitingPatient($bdd)
         echo $e->getMessage();
     }
 }
-
-
-
 function countPatient($bdd)
 {
     try {
@@ -519,4 +504,26 @@ function countPatient($bdd)
         echo $e->getMessage();
     }
     return $patientsInfo;
+}
+
+function sendMail($email){
+	//Envoi du mail de confirmation
+	$to      = $email;
+	$subject = 'Création de votre compte PR2M: vos identifiants';
+	$message = '<p>Toute l’équipe vous remercie de participer à cette étude.</p><p>Voici votre identifiant, il est nominatif et vous permet d\'acceder à la plateforme.</p>
+                        <br/>
+                        <p>Identifiant: '. crc32($_POST['sign_Email']).'</p>
+                        <br/>
+                        <p>Conservez le precieusement !</p>
+                        <p>Une fois connecté, suivez notre Guide d’utilisation et n’hésitez pas à nous contacter pour toute question.</p>
+                        <p>Bonnes passations et à bientôt</p>
+                        <small>- L’équipe PR2M</small>
+                    ';
+	$headers = 'From:'. CONTACTMAIL . "\r\n" .
+	           'Reply-To:'. CONTACTMAIL . "\r\n" .
+	           'X-Mailer: PHP/' . phpversion();
+
+	mail($to, $subject, $message, $headers);
+	header('Location: ../index.php?n=100&p=dashboard&identifiant='.crc32($_POST['sign_Email']) );
+
 }
