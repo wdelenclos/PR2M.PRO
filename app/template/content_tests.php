@@ -215,7 +215,7 @@
                                             <p class="lead">Test de Vitesse de Traitement Non Verbal (VTNV)&nbsp;</p>
                                             <small>Nothelier et Delenclos, 2017&nbsp;</small>
                                             <hr>
-                                            <a class="btn btn-primary" href="data/tests_uploads/vtnv/Projet.pr2m-VTNV.zip" download="Projet.pr2m-VTNV.zip" target="_blank"><i class="fa fa-download"></i> Test VTNV</a>
+                                            <a class="btn btn-primary" href="data/tests_uploads/vtnv/Test_VTNV.zip" download="Test_VTNV.zip" target="_blank"><i class="fa fa-download"></i> Test VTNV</a>
                                             <hr>
                                             <p>Le fichier se t&eacute;l&eacute;charge automatiquement. Il vous suffira ensuite d&rsquo;ouvrir le dossier zip et d&rsquo;en extraire tous les fichiers. Vous acc&eacute;derez au test en s&eacute;lectionnant le fichier &laquo;&nbsp;test&nbsp;&raquo; (type Chrome HTML Document, ic&ocirc;ne Google).</p>
                                             <p>&nbsp;</p>
