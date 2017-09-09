@@ -60,10 +60,10 @@
                                             <a class="btn btn-primary" href="data/tests_uploads/evip/EVIP_B.pptx" download="EVIP_B.pptx" target="_blank"><i class="fa fa-download"></i> EVIP Version B</a>
                                             <a class="btn btn-primary" href="data/tests_uploads/evip/protocole_designation_EVIPb.pdf" download="protocole_EVIPb.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole EVIP</a>
                                             <hr>
-                                            <h5><span style="text-decoration: underline;">T&acirc;che:</span></h5>
+                                            <h5><span style="text-decoration: underline;"><strong>T&acirc;che:</strong></span></h5>
                                             <p>Choisir l'image qui correspond au mot propos&eacute; oralement (ex. balai) parmi 4 images.&nbsp;</p>
                                             <p>&nbsp;</p>
-                                            <h5><span style="text-decoration: underline;">Consignes pour l'exp&eacute;rimentateur:</span></h5>
+                                            <h5><span style="text-decoration: underline;"><strong>Consignes pour l'exp&eacute;rimentateur:</strong></span></h5>
                                             <ul>
                                                 <li>Ouvrir le fichier &laquo;&nbsp;EVIP_B.pptx&nbsp;&raquo;</li>
                                                 <li>Lancer le diaporama</li>
