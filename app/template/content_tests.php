@@ -171,8 +171,8 @@
                                                 <li>Noter en parall&egrave;le les &eacute;ventuelles erreurs de l&rsquo;enfant sur le protocole (cf document &laquo;&nbsp;protocole_d&eacute;nomination_LA&nbsp;&raquo;&nbsp;<em>&agrave; imprimer</em>)</li>
                                                 <li>Lorsque l&rsquo;enfant a d&eacute;nomm&eacute; le mot&nbsp;:
                                                     <ul>
-                                                        <li><strong>Bonne r&eacute;ponse&nbsp;:&nbsp;</strong>appuyer sur la touche &rarr; de l&rsquo;ordinateur (cf groupe de fl&egrave;ches sur votre clavier)</li>
-                                                        <li><strong>Erreur ou non r&eacute;ponse&nbsp;:&nbsp;</strong>appuyer sur la touche &larr; de l&rsquo;ordinateur
+                                                        <li><strong>Bonne r&eacute;ponse&nbsp;:&nbsp;</strong>appuyer sur la touche <i class="fa fa-long-arrow-right" aria-hidden="true"></i> de l&rsquo;ordinateur (cf groupe de fl&egrave;ches sur votre clavier)</li>
+                                                        <li><strong>Erreur ou non r&eacute;ponse&nbsp;:&nbsp;</strong>appuyer sur la touche <i class="fa fa-long-arrow-left" aria-hidden="true"></i> de l&rsquo;ordinateur
                                                             <ol>
                                                                 <li><strong>Il est conseill&eacute; de s&rsquo;entra&icirc;ner &agrave; cette manipulation</strong></li>
                                                             </ol>
@@ -187,13 +187,13 @@
                                                     </ul>
                                                 </li>
                                             </ul>
-                                            <p><em>REM&nbsp;: dans cette &eacute;preuve, vous passez &agrave; l&rsquo;item suivant automatiquement apr&egrave;s avoir appuy&eacute; sur&nbsp;</em>&rarr; ou&nbsp;<em>&larr;. Un point vert appara&icirc;t pendant 2 secondes pour s&eacute;parer chaque item.</em></p>
+                                            <p><em>REM&nbsp;: dans cette &eacute;preuve, vous passez &agrave; l&rsquo;item suivant automatiquement apr&egrave;s avoir appuy&eacute; sur&nbsp;</em>&<i class="fa fa-long-arrow-left" aria-hidden="true"></i> ou <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <em>&larr;. Un point vert appara&icirc;t pendant 2 secondes pour s&eacute;parer chaque item.</em></p>
                                             <p>Un interlude de 15 secondes appara&icirc;t au milieu de la s&eacute;rie.</p>
                                             <p><em>Sachez aussi que vous pouvez interrompre la t&acirc;che en cours de passation en appuyer sur &laquo;&nbsp;Echap&nbsp;&raquo;</em></p>
                                             <p>&nbsp;</p>
                                             <h5><span style="text-decoration: underline;"><strong>Cotation&nbsp;:</strong></span></h5>
                                             <ul>
-                                                <li><strong>0 (</strong>&larr;)&nbsp;<strong>ou 1 (</strong>&rarr;<strong>)</strong>
+                                                <li><strong>0 (</strong>&larr;)&<i class="fa fa-long-arrow-left" aria-hidden="true"></i><strong>ou 1 (</strong><i class="fa fa-long-arrow-right" aria-hidden="true"></i><strong>)</strong>
                                                     <ol>
                                                         <li><strong>1&nbsp;</strong>point si l&rsquo;item est bien d&eacute;nomm&eacute; du 1<sup>er</sup>&nbsp;coup</li>
                                                         <li><strong>0</strong>&nbsp;si erreur ou non r&eacute;ponse ou besoin d&rsquo;indi&ccedil;age</li>
@@ -211,11 +211,12 @@
                                             </ul>
 
                                         </div>
-                                        <div class="tab-pane" id="vtnv"><p class="lead">Test de Vitesse de Traitement Non Verbal (VTNV)&nbsp;</p>
+                                        <div class="tab-pane" id="vtnv">
+                                            <p class="lead">Test de Vitesse de Traitement Non Verbal (VTNV)&nbsp;</p>
                                             <small>Nothelier et Delenclos, 2017&nbsp;</small>
-
+                                            <hr>
                                             <a class="btn btn-primary" href="data/tests_uploads/vtnv/Projet.pr2m-VTNV.zip" download="Projet.pr2m-VTNV.zip" target="_blank"><i class="fa fa-download"></i> Test VTNV</a>
-                                            <p>&nbsp;</p>
+                                            <hr>
                                             <p>Le fichier se t&eacute;l&eacute;charge automatiquement. Il vous suffira ensuite d&rsquo;ouvrir le dossier zip et d&rsquo;en extraire tous les fichiers. Vous acc&eacute;derez au test en s&eacute;lectionnant le fichier &laquo;&nbsp;test&nbsp;&raquo; (type Chrome HTML Document, ic&ocirc;ne Google).</p>
                                             <p>&nbsp;</p>
                                             <p>Besoin d&rsquo;aide&nbsp;? Ce <a href="#" target="_blank"><strong>tutoriel</strong></a> est fait pour vous.&nbsp;</p>
