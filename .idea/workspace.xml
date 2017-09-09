@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/content_dashboard.php" afterPath="$PROJECT_DIR$/app/template/content_dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/nav.php" afterPath="$PROJECT_DIR$/app/template/nav.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,8 +47,8 @@
           <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/template/nav.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-280">
-                  <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+                <state relative-caret-position="267">
+                  <caret line="37" column="58" lean-forward="false" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
                   <folding />
                 </state>
               </provider>
@@ -64,21 +64,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/config.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="logger.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/function/logger.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="content_tests.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/template/content_tests.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="552">
+                  <caret line="24" column="72" lean-forward="false" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="72" />
                   <folding />
                 </state>
               </provider>
@@ -94,6 +94,16 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="content_details.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/template/content_details.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="769">
+                  <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/index.php">
               <provider selected="true" editor-type-id="text-editor">
@@ -104,7 +114,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="content_dashboard.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="content_dashboard.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/template/content_dashboard.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="321">
@@ -235,6 +245,18 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/template/head.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="507">
+                  <caret line="57" column="37" lean-forward="false" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+                  <folding>
+                    <marker date="1504367146000" expanded="true" signature="1976:2093" ph="SELECT id,id... praticien" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -304,8 +326,8 @@
         <option value="$PROJECT_DIR$/app/template/content_details.php" />
         <option value="$PROJECT_DIR$/app/config.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/app/template/nav.php" />
         <option value="$PROJECT_DIR$/app/template/content_dashboard.php" />
+        <option value="$PROJECT_DIR$/app/template/nav.php" />
       </list>
     </option>
   </component>
@@ -522,12 +544,12 @@
       <workItem from="1498038025395" duration="931000" />
       <workItem from="1498045482728" duration="1993000" />
       <workItem from="1504367509995" duration="1016000" />
-      <workItem from="1504908583601" duration="2649000" />
+      <workItem from="1504908583601" duration="3055000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15044000" />
+    <option name="totallyTimeSpent" value="15450000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -709,6 +731,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3705">
           <caret line="247" column="77" lean-forward="false" selection-start-line="247" selection-start-column="77" selection-end-line="247" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -783,6 +806,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3705">
           <caret line="247" column="77" lean-forward="false" selection-start-line="247" selection-start-column="77" selection-end-line="247" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -857,27 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="57" column="37" lean-forward="false" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/content_details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3151">
-          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/content_tests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5681">
-          <caret line="247" column="77" lean-forward="false" selection-start-line="247" selection-start-column="77" selection-end-line="247" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -979,19 +982,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="57" column="37" lean-forward="false" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+          <folding>
+            <marker date="1504367146000" expanded="true" signature="1976:2093" ph="SELECT id,id... praticien" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1121,6 +1126,30 @@
             <element signature="e#10945#10953#0#HTML" expanded="true" />
             <element signature="e#10983#10991#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/content_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="37" column="58" lean-forward="false" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/content_tests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="72" lean-forward="false" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="72" />
+          <folding />
         </state>
       </provider>
     </entry>
