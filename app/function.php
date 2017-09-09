@@ -63,12 +63,12 @@ function routage(){ // Moteur de rooting
 		    break;
 
 	    case "shared2":
-		    $label ="content_shared1";
+		    $label ="content_shared2";
 		    $title = "Question Clinique";
 		    break;
 
 	    case "shared3":
-		    $label ="content_shared1";
+		    $label ="content_shared3";
 		    $title = "Objectifs";
 		    break;
 
