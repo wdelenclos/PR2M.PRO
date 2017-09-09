@@ -49,7 +49,7 @@
                 <div class="x_content">
 
                     <div class="" role="tabpanel" data-example-id="togglable-tabs">
-                        <ul id="myTab1" class="nav nav-tabs bar_tabs right" role="tablist">
+                        <ul id="myTab1" class="nav nav-tabs bar_tabs left" role="tablist">
                             <li role="presentation" class="active"><a href="#tab_content11" id="home-tabb" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">A propos</a>
                             </li>
                             <li role="presentation" class=""><a href="#tab_content22" role="tab" id="profile-tabb" data-toggle="tab" aria-controls="profile" aria-expanded="false">Utilisation</a>
