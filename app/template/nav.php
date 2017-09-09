@@ -38,7 +38,7 @@
                                     <li><a href="?p=ordrer&identifiant=<?= $_SESSION['identifiant']?>">Ordre de passation</a></li>
                                     <li><a href="?p=tests&identifiant=<?= $_SESSION['identifiant']?>">Matériel</a></li>
                                 </ul>
-                            </li>x@
+                            </li>
                         </ul>
                     </div>
                     <div class="menu_section">

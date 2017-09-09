@@ -4,7 +4,7 @@
             <div class="">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3>Protocole</h3>
+                        <h3>Tests</h3>
                     </div>
 
                     <div class="title_right">
@@ -22,7 +22,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2><i class="fa fa-bars"></i> Consignes <small>à suivre attentivement</small></h2>
+                                <h2><i class="fa fa-bars"></i> Materiel <small>pour vos tests</small></h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
@@ -247,6 +247,10 @@
 
                                             <a class="btn btn-primary" href="data/tests_uploads/vtnv/Projet.pr2m-VTNV.zip" download="Projet.pr2m-VTNV.zip" target="_blank"><i class="fa fa-download"></i> Test VTNV</a>
                                             <p>&nbsp;</p>
+                                            <p>Le fichier se t&eacute;l&eacute;charge automatiquement. Il vous suffira ensuite d&rsquo;ouvrir le dossier zip et d&rsquo;en extraire tous les fichiers. Vous acc&eacute;derez au test en s&eacute;lectionnant le fichier &laquo;&nbsp;test&nbsp;&raquo; (type Chrome HTML Document, ic&ocirc;ne Google).</p>
+                                            <p>&nbsp;</p>
+                                            <p>Besoin d&rsquo;aide&nbsp;? Ce <a href="#" target="_blank"><strong>tutoriel</strong></a> est fait pour vous.&nbsp;</p>
+                                            <hr>
                                             <h5><span style="text-decoration: underline;"><strong>T&acirc;che&nbsp;:</strong></span></h5>
                                             <p>L&rsquo;enfant doit appuyer sur la barre d&rsquo;espacement d&egrave;s qu&rsquo;il voit appara&icirc;tre une image au centre de l&rsquo;&eacute;cran</p>
                                             <p><em>L&rsquo;objectif de ce test est de calculer le temps de r&eacute;action non verbal de l&rsquo;enfant dans deux modalit&eacute;s&nbsp;: 1) avec une forme, 2) avec un symbole non s&eacute;mantisable</em></p>
@@ -304,6 +308,181 @@
                                             <a class="btn btn-primary" href="data/tests_uploads/emme/Protocole_dénomination_EMME.pdf" download="Protocole_dénomination_EMME.pdf" target="_blank"> <i class="fa fa-paperclip"></i> Protocole dénomination</a>
                                             <a class="btn btn-primary" href="data/tests_uploads/emme/bragard déno.png" download="bragard déno.png" target="_blank"> <i class="fa fa-image"></i> Image Dénomination</a>
                                             <a class="btn btn-primary" href="data/tests_uploads/emme/bragard dési.png" download="bragard dési.png" target="_blank"> <i class="fa fa-image"></i> image Désignation</a>
+                                            <hr>
+                                            <p><strong>Evaluation du Manque du Mot chez l'Enfant&nbsp;</strong></p>
+                                            <p><strong>Anne Bragard, 2009</strong></p>
+                                            <p>&nbsp;</p>
+                                            <p><strong>1)&nbsp;&nbsp; T&acirc;che de d&eacute;nomination</strong></p>
+                                            <p><strong>T&acirc;che&nbsp;:&nbsp;</strong>d&eacute;nommer le plus rapidement possible des photographies d&rsquo;objets et d&rsquo;animaux pr&eacute;sent&eacute;es une par une sur ordinateur au centre de l&rsquo;&eacute;cran.</p>
+                                            <p><strong>Consignes pour l&rsquo;exp&eacute;rimentateur&nbsp;:</strong></p>
+                                            <ul>
+                                                <li>S&eacute;lectionner l&rsquo;&eacute;preuve &laquo;&nbsp;d&eacute;nomination de substantifs&nbsp;&raquo;</li>
+                                                <li>Pr&eacute;voir un enregistrement audio de toute la passation</li>
+                                                <li>Noter en parall&egrave;le les r&eacute;ponses de l&rsquo;enfant sur le protocole (cf document &laquo;&nbsp;protocole_d&eacute;nomination&nbsp;&raquo;)</li>
+                                                <li>Lorsque l&rsquo;enfant a d&eacute;nomm&eacute; le mot, il faut appuyer directement sur la barre d&rsquo;espacement afin d&rsquo;enregistrer le temps de r&eacute;ponse (temps &eacute;coul&eacute; entre l&rsquo;apparition de la photographie et la r&eacute;ponse orale de l&rsquo;enfant). Il est conseill&eacute; de s&rsquo;entra&icirc;ner &agrave; cette manipulation.</li>
+                                                <li>Si l&rsquo;enfant ne parvient pas &agrave; d&eacute;nommer l&rsquo;image apr&egrave;s environ 7 secondes, un indi&ccedil;age phon&eacute;mique lui est propos&eacute;. En cas d&rsquo;&eacute;chec, la premi&egrave;re syllabe est ensuite donn&eacute;e &agrave; l&rsquo;enfant pour l&rsquo;aider &agrave; r&eacute;cup&eacute;rer l&rsquo;&eacute;tiquette phonologique. La capacit&eacute; &agrave; r&eacute;cup&eacute;rer le mot gr&acirc;ce &agrave; un indi&ccedil;age est en effet un indice de manque du mot.</li>
+                                                <li>L&rsquo;ordinateur enregistre automatiquement les temps de d&eacute;nomination du sujet lorsque l&rsquo;&eacute;preuve est r&eacute;alis&eacute;e jusqu&rsquo;au bout (il faut cependant noter et/ou enregistrer les productions de l&rsquo;enfant&nbsp;!). Avant de d&eacute;buter l&rsquo;&eacute;preuve en tant que telle, il vous est demand&eacute; dans quel r&eacute;pertoire et sous quel nom vous souhaitez enregistrer les donn&eacute;es de l&rsquo;enfant.</li>
+                                            </ul>
+                                            <p><em>REM&nbsp;: dans cette &eacute;preuve, ainsi que dans toutes les autres, il vous suffit d&rsquo;appuyer sur la barre d&rsquo;espacement pour passer &agrave; l&rsquo;item suivant. Une page de couleur s&eacute;pare les items afin de permettre &agrave; l&rsquo;enfant ou &agrave; l&rsquo;exp&eacute;rimentateur de faire un commentaire sans entraver la prise de donn&eacute;es.</em></p>
+                                            <p><em>Sachez &eacute;galement que si vous souhaitez interrompre la t&acirc;che en cours de passation, il vous suffit d&rsquo;appuyer sur &laquo;&nbsp;ESC&nbsp;&raquo;.</em></p>
+                                            <p><strong>Cotation&nbsp;:</strong></p>
+                                            <ul>
+                                                <li><strong>0 ou 1</strong></li>
+                                                <ul>
+                                                    <li><strong>1</strong>&nbsp;point si l&rsquo;item est bien d&eacute;nomm&eacute; du 1<sup>er</sup>&nbsp;coup</li>
+                                                    <li><strong>0</strong>&nbsp;si erreur ou non r&eacute;ponse ou besoin d&rsquo;indi&ccedil;age</li>
+                                                </ul>
+                                                <li>Cette cotation doit se faire &agrave; la main suite &agrave; la prise de note ou en s&rsquo;aidant de l&rsquo;enregistrement sonore</li>
+                                                <li>Les erreurs sont class&eacute;es en diff&eacute;rentes cat&eacute;gories (voir tableau I)</li>
+                                                <li>Le temps moyen de r&eacute;ponse est calcul&eacute; pour les items bien d&eacute;nomm&eacute;s uniquement&nbsp;! L&rsquo;ordinateur enregistre les temps de r&eacute;ponse pour chaque idem dans un tableau xls. A vous de calculer le temps moyen de d&eacute;nomination pour les items correctement d&eacute;nomm&eacute;s UNIQUEMENT.</li>
+                                                <li>Pour cela, il vous est conseill&eacute; de remplacer, dans le tableau xls, les temps de d&eacute;nomination des items mal d&eacute;nomm&eacute;s par un point afin que ces temps ne soient pas pris en compte lors du calcul de la moyenne. Un exemple de fichier avec les r&eacute;sultats vous est pr&eacute;sent&eacute; sur le site.</li>
+                                            </ul>
+                                            <p>&nbsp;</p>
+                                            <p>Tableau I : exemples de la classification des erreurs dans la t&acirc;che de d&eacute;nomination</p>
+                                            <table width="596">
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>Type d&rsquo;erreurs en d&eacute;nomination</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Exemples</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>S&eacute;mantique&nbsp;</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>"pull" pour chemise&nbsp;</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Phonologique&nbsp;</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>"crevette" pour cravate&nbsp;</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Visuelle</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>"sac" pour cadenas</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Circonlocution</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>"un truc pour faire des ronds" pour compas&nbsp;</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Ne sait pas&nbsp;</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>"&ccedil;a j'ai jamais vu"</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Ne sait plus&nbsp;</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>"oh je sais plus"</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Sans lien&nbsp;</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>"aspirateur" pour loupe&nbsp;</p>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><strong>&nbsp;</strong></p>
+                                            <p><strong>2) &nbsp; T&acirc;che de d&eacute;signation</strong></p>
+                                            <p><strong>T&acirc;che&nbsp;:&nbsp;</strong>choisir l&rsquo;image qui correspond au mot propos&eacute; oralement (ex. couteau) parmi 4 images distractrices &agrave; savoir un distracteur s&eacute;mantique (ex. fourchette), un distracteur phonologique portant sur la premi&egrave;re syllabe (ex. couronne), un distracteur phonologique portant sur la rime (ex. bateau) et un distracteur neutre (ex. lunettes).</p>
+                                            <p><strong>Consignes pour l&rsquo;exp&eacute;rimentateur&nbsp;:</strong></p>
+                                            <ul>
+                                                <li>Avant d&rsquo;administrer cette &eacute;preuve, coller des gommettes de couleur sur le clavier (voir figure 2)</li>
+                                                <ul>
+                                                    <li>Q&nbsp;: jaune</li>
+                                                    <li>D&nbsp;: rouge</li>
+                                                    <li>G&nbsp;: vert</li>
+                                                    <li>J&nbsp;: blanc</li>
+                                                    <li>L&nbsp;: bleu</li>
+                                                </ul>
+                                            </ul>
+                                            <p>&nbsp;</p>
+                                            <p>&nbsp;</p>
+                                            <ul>
+                                                <li>S&eacute;lectionner ensuite l&rsquo;&eacute;preuve &laquo;&nbsp;d&eacute;signation de substantif&nbsp;&raquo;</li>
+                                                <li>Attention, il faut soit un bon son produit par l&rsquo;ordinateur, soit ajouter des baffles externes pour que l&rsquo;enfant entende bien les mots</li>
+                                                <li>Noter les &eacute;ventuelles erreurs de manipulation de l&rsquo;enfant, les autocorrections (ex. un enfant qui dit &laquo;&nbsp;oups je ne voulais pas choisir cette image-l&agrave; mais celle-l&agrave;)</li>
+                                                <li>Attention&nbsp;: ne pas laisser l&rsquo;enfant r&eacute;pondre trop rapidement sans regarder l&rsquo;ensemble des images. Il faut donc lui demander de remettre les mains pr&egrave;s de lui avant de choisir l&rsquo;image, lui dire qu&rsquo;il ne faut pas aller trop vite et qu&rsquo;il faut bien regarder la couleur en dessous de l&rsquo;image qu&rsquo;il a choisie</li>
+                                            </ul>
+                                            <p>&nbsp;</p>
+                                            <p><strong>Cotation&nbsp;:</strong></p>
+                                            <ul>
+                                                <li><strong>0 ou 1&nbsp;</strong>: l&rsquo;ordinateur d&eacute;termine directement dans le fichier des r&eacute;sultats si l&rsquo;enfant a r&eacute;ussi ou &eacute;chou&eacute; chaque item. Il encode &eacute;galement la r&eacute;ponse choisie par l&rsquo;enfant dans la colonne</li>
+                                                <li>Il faut cependant ensuite classer ses erreurs selon le lien avec la cible&nbsp;; l&rsquo;erreur &eacute;tant d&eacute;termin&eacute;e par le distracteur choisi par l&rsquo;enfant en cas d&rsquo;&eacute;chec (voir tableau II). Par exemple, une erreur s&eacute;mantique est attribu&eacute;e si l&rsquo;enfant choisit le distracteur s&eacute;mantique.</li>
+                                            </ul>
+                                            <p>&nbsp;</p>
+                                            <p>Tableau II&nbsp;: exemples de la classification des erreurs dans la t&acirc;che de d&eacute;signation</p>
+                                            <table width="592">
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>Type d&rsquo;erreurs en d&eacute;signation</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Exemples</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>S&eacute;mantique</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>&laquo;&nbsp;&acirc;ne&nbsp;&raquo; pour cheval</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Phonologique-rime</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>&laquo;&nbsp;sauterelle&nbsp;&raquo; pour truelle</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Phonologique-d&eacute;but</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>&laquo;&nbsp;ch&egrave;vre&nbsp;&raquo; pour chaise</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Sans lien</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>&laquo;&nbsp;artichaut&nbsp;&raquo; pour compas</p>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>&nbsp;</p>
+
                                         </div>
                                     </div>
                                 </div>
