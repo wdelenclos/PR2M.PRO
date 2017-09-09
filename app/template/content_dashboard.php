@@ -39,7 +39,7 @@
         <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2><i class="fa fa-compass "></i>Guide d'utilisation <small>Obtenez de l'aide facilement</small></h2>
+                    <h2><i class="fa fa-compass "></i> Guide d'utilisation <small>Obtenez de l'aide facilement</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>
@@ -94,7 +94,7 @@
                                 <p>&nbsp;</p>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="tab_content33" aria-labelledby="profile-tab">
-                                
+
                                 <h3>Calendrier</h3>
                                 <hr>
                                 <p>Nous vous proposons ici un d&eacute;roulement pratique du protocole. En dehors de la p&eacute;riode d&rsquo;entra&icirc;nement, ce calendrier est bien s&ucirc;r &agrave; titre indicatif et correspond &agrave; nos propres observations lors des passations.</p>
@@ -162,7 +162,7 @@
         <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2><i class="fa fa-info-circle"></i> Bienvenue sur PR2M !</h2>
+                    <h2><i class="fa fa-info-circle"></i>  Bienvenue sur PR2M !</h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>
