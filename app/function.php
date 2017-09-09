@@ -311,8 +311,8 @@ function listAllPatient($bdd)
                                 </td>
                                 <td>
                                     <a href="?p=details&identifiant='.$_SESSION['identifiant'].'&id='.$row->id.'" class="btn btn-primary btn-xs"><i class="fa fa-chevron-right"></i> Voir </a>
-                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> </a>
-                                    <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i></a>
+                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Modifier</a>
+                                    <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer</a>
                                 </td>
                             </tr>
                 

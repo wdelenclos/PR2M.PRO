@@ -306,8 +306,6 @@
                                             <p class="lead">EMME</p>
                                             <a class="btn btn-primary" href="http://www.ipsp.ucl.ac.be/recherche/projets/Epreuves/InstallationEpreuves.exe" target="_blank">Télécharger le logiciel <i class="fa fa-windows"></i></a>
                                             <a class="btn btn-primary" href="data/tests_uploads/emme/Protocole_dénomination_EMME.pdf" download="Protocole_dénomination_EMME.pdf" target="_blank"> <i class="fa fa-paperclip"></i> Protocole dénomination</a>
-                                            <a class="btn btn-primary" href="data/tests_uploads/emme/bragard déno.png" download="bragard déno.png" target="_blank"> <i class="fa fa-image"></i> Image Dénomination</a>
-                                            <a class="btn btn-primary" href="data/tests_uploads/emme/bragard dési.png" download="bragard dési.png" target="_blank"> <i class="fa fa-image"></i> image Désignation</a>
                                             <hr>
                                             <p><strong>Evaluation du Manque du Mot chez l'Enfant&nbsp;</strong></p>
                                             <p><strong>Anne Bragard, 2009</strong></p>

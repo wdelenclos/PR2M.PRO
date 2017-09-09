@@ -11,6 +11,7 @@ ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
 // Afficher les erreurs et les avertissements
 error_reporting(E_ALL & ~E_NOTICE);
 
+require_once 'config.php';
 require_once 'function.php';
 include_once 'connect.php';
 include_once 'function/notifs.php';
