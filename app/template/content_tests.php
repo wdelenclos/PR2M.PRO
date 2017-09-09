@@ -55,7 +55,7 @@
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="evip">
                                             <p class="lead">Echelle de vocabulaire en images Peabody (EVIP) - forme B&nbsp;</p>
-                                            <h5>Dunn, Th&eacute;riault-Whalen, Dunn, 1993&nbsp;</h5>
+                                            <small>Dunn, Th&eacute;riault-Whalen, Dunn, 1993&nbsp;</small>
                                             <hr>
                                             <a class="btn btn-primary" href="data/tests_uploads/evip/EVIP_B.pptx" download="EVIP_B.pptx" target="_blank"><i class="fa fa-download"></i> EVIP Version B</a>
                                             <a class="btn btn-primary" href="data/tests_uploads/evip/protocole_designation_EVIPb.pdf" download="protocole_EVIPb.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole EVIP</a>
@@ -109,7 +109,7 @@
                                         <div class="tab-pane" id="dra">
 
                                             <p class="lead">Evalec Enfant - Epreuve de d&eacute;nomination Rapide&nbsp;</p>
-                                            <h5>Sprenger-Charolles, Col&eacute;, Piquard-Kipffer et Leloup, 2010&nbsp;</h5>
+                                            <small>Sprenger-Charolles, Col&eacute;, Piquard-Kipffer et Leloup, 2010&nbsp;</small>
                                             <hr>
                                             <a class="btn btn-primary" href="data/tests_uploads/dra/Epreuve_denomination_rapide.pdf" download="Epreuve_denomination_rapide.pdf" target="_blank"><i class="fa fa-download"></i> Epreuve denomination</a>
                                             <a class="btn btn-primary" href="data/tests_uploads/dra/Protocole_DRA.pdf" download="Protocole_DRA.pdf" target="_blank"><i class="fa fa-paperclip"></i> Télécharger le protocole </a>
@@ -135,84 +135,84 @@
                                         </div>
                                         <div class="tab-pane" id="lexical">
                                             <p class="lead">Lexical Access&nbsp;</p>
-                                            <h5>Leloup, Chevallier et Gorsse, 2016&nbsp;</h5>
+                                            <small>Leloup, Chevallier et Gorsse, 2016&nbsp;</small>
                                             <hr>
                                             <a class="btn btn-primary" href="data/tests_uploads/lexical/Protocole_dénomination_LexicalAccess.pdf" download="Protocole_dénomination_LexicalAccess.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole dénomination </a>
                                             <hr>
-                                            <p><strong><u>T&acirc;che de d&eacute;nomination &ndash; Ligne de base&nbsp;: </u></strong></p>
-                                            <p><strong>T&acirc;che&nbsp;: </strong>d&eacute;nommer le plus rapidement possible des images pr&eacute;sent&eacute;es sur ordinateur</p>
-                                            <p><strong>Consignes pour l&rsquo;exp&eacute;rimentateur&nbsp;: </strong></p>
-                                            <ol>
-                                                <li><strong>Le logiciel &ndash; mode d&rsquo;emploi</strong></li>
+                                            <h5><strong><span style="text-decoration: underline;">T&acirc;che&nbsp;:</span>&nbsp;</strong></h5>
+                                            <p>D&eacute;nommer le plus rapidement possible des images pr&eacute;sent&eacute;es sur ordinateur</p>
+                                            <p><span style="text-decoration: underline;"><strong>Consignes pour l&rsquo;exp&eacute;rimentateur&nbsp;</strong></span></p>
+                                            <p><strong>I. Le logiciel &ndash; mode d&rsquo;emploi</strong></p>
+                                            <ul>
                                                 <li>T&eacute;l&eacute;charger le dossier &laquo;&nbsp;Lexical Access version patient&nbsp;&raquo; sur votre ordinateur</li>
                                                 <li>Ouvrir le dossier</li>
                                                 <li>Ouvrir l&rsquo;application &laquo;&nbsp;Lexical Access&nbsp;&raquo;</li>
                                                 <li>S&eacute;lectionner &laquo;&nbsp;Nouveau patient&nbsp;&raquo;
-                                                    <ol>
+                                                    <ul>
                                                         <li>Remplir les champs demand&eacute;s (pr&eacute;nom, nom etc.)</li>
-                                                        <li>ATTENTION pour le champ &laquo;&nbsp;retirer une image de la rotation apr&egrave;s&nbsp;&raquo; noter le nombre &laquo;&nbsp;<strong>1000</strong>&raquo; pour <em>succ&egrave;s cons&eacute;cutifs</em> ET pour <em>&eacute;checs cons&eacute;cutifs</em> SINON L&rsquo;APPLICATION NE FONCTIONNE PAS</li>
-                                                    </ol>
+                                                        <li>ATTENTION pour le champ &laquo;&nbsp;retirer une image de la rotation apr&egrave;s&nbsp;&raquo; noter le nombre &laquo;&nbsp;<strong>1000</strong>&raquo; pour&nbsp;<em>succ&egrave;s cons&eacute;cutifs</em>&nbsp;ET pour&nbsp;<em>&eacute;checs cons&eacute;cutifs</em>&nbsp;SINON L&rsquo;APPLICATION NE FONCTIONNE PAS</li>
+                                                    </ul>
                                                 </li>
                                                 <li>Cliquer sur &laquo;&nbsp;Enregistrer&nbsp;&raquo; (vous pourrez ainsi retrouver votre patient dans l&rsquo;onglet &laquo;&nbsp;liste des patients)</li>
-                                            </ol>
+                                            </ul>
                                             <p>&nbsp;</p>
-                                            <ol start="7">
-                                                <li><strong>L&rsquo;&eacute;preuve &ndash; mode d&rsquo;emploi</strong></li>
+                                            <p>II.&nbsp;<strong>L&rsquo;&eacute;preuve &ndash; mode d&rsquo;emploi</strong></p>
+                                            <ul>
                                                 <li>S&eacute;lectionner &laquo;&nbsp;nouvel entra&icirc;nement&nbsp;&raquo;
-                                                    <ol>
+                                                    <ul>
                                                         <li>Choisir le patient</li>
-                                                        <li>Dur&eacute;e par image&nbsp;<strong>MANUAL </strong>(le temps sera alors automatiquement enregistr&eacute; entre l&rsquo;apparition de l&rsquo;image et la r&eacute;ponse de l&rsquo;enfant)</li>
-                                                        <li>Nombre d&rsquo;images <strong>2x15 </strong></li>
-                                                        <li>Dossier d&rsquo;images&nbsp;: <strong>SERIE I </strong>et <strong>SERIE II</strong> (l&rsquo;&eacute;preuve se fait en deux temps)</li>
-                                                    </ol>
+                                                        <li>Dur&eacute;e par image&nbsp;<strong>MANUAL&nbsp;</strong>(le temps sera alors automatiquement enregistr&eacute; entre l&rsquo;apparition de l&rsquo;image et la r&eacute;ponse de l&rsquo;enfant)</li>
+                                                        <li>Nombre d&rsquo;images&nbsp;<strong>2x15</strong></li>
+                                                        <li>Dossier d&rsquo;images&nbsp;:&nbsp;<strong>SERIE I&nbsp;</strong>et&nbsp;<strong>SERIE II</strong>&nbsp;(l&rsquo;&eacute;preuve se fait en deux temps)</li>
+                                                    </ul>
                                                 </li>
-                                                <li>Cliquer sur &laquo;&nbsp;Continuer l&rsquo;entra&icirc;nement&nbsp;&raquo;&nbsp;: <em>l&rsquo;&eacute;preuve se lance alors directement&nbsp;! Pr&eacute;parez-vous &agrave; poser vos doigts sur les fl&egrave;ches&nbsp;de votre clavier ! </em></li>
+                                                <li>Cliquer sur &laquo;&nbsp;Continuer l&rsquo;entra&icirc;nement&nbsp;&raquo;&nbsp;:&nbsp;<em>l&rsquo;&eacute;preuve se lance alors directement&nbsp;! Pr&eacute;parez-vous &agrave; poser vos doigts sur les fl&egrave;ches&nbsp;de votre clavier !</em></li>
                                                 <li>Pr&eacute;voir un enregistrement audio de toute la passation (ex. smartphone / GSM)</li>
-                                                <li>Noter en parall&egrave;le les &eacute;ventuelles erreurs de l&rsquo;enfant sur le protocole (cf document &laquo;&nbsp;protocole_d&eacute;nomination_LA&nbsp;&raquo; <em>&agrave; imprimer</em>)</li>
+                                                <li>Noter en parall&egrave;le les &eacute;ventuelles erreurs de l&rsquo;enfant sur le protocole (cf document &laquo;&nbsp;protocole_d&eacute;nomination_LA&nbsp;&raquo;&nbsp;<em>&agrave; imprimer</em>)</li>
                                                 <li>Lorsque l&rsquo;enfant a d&eacute;nomm&eacute; le mot&nbsp;:
-                                                    <ol>
-                                                        <li><strong>Bonne r&eacute;ponse&nbsp;: </strong>appuyer sur la touche &rarr; de l&rsquo;ordinateur (cf groupe de fl&egrave;ches sur votre clavier)</li>
-                                                        <li><strong>Erreur ou non r&eacute;ponse&nbsp;: </strong>appuyer sur la touche &larr; de l&rsquo;ordinateur
+                                                    <ul>
+                                                        <li><strong>Bonne r&eacute;ponse&nbsp;:&nbsp;</strong>appuyer sur la touche &rarr; de l&rsquo;ordinateur (cf groupe de fl&egrave;ches sur votre clavier)</li>
+                                                        <li><strong>Erreur ou non r&eacute;ponse&nbsp;:&nbsp;</strong>appuyer sur la touche &larr; de l&rsquo;ordinateur
                                                             <ol>
                                                                 <li><strong>Il est conseill&eacute; de s&rsquo;entra&icirc;ner &agrave; cette manipulation</strong></li>
                                                             </ol>
                                                         </li>
                                                         <li>Si l&rsquo;enfant ne parvient pas &agrave; d&eacute;nommer l&rsquo;image apr&egrave;s environ 7 secondes, un indi&ccedil;age phon&eacute;mique lui est propos&eacute;. En cas d&rsquo;&eacute;chec, la premi&egrave;re syllabe est ensuite donn&eacute;e &agrave; l&rsquo;enfant pour l&rsquo;aider &agrave; r&eacute;cup&eacute;rer l&rsquo;&eacute;tiquette phonologique.</li>
                                                         <li>L&rsquo;ordinateur enregistre automatiquement les temps de d&eacute;nomination du sujet</li>
-                                                        <li>ATTENTION une fois l&rsquo;&eacute;preuve termin&eacute;e cliquer sur &laquo;&nbsp;Exporter les r&eacute;sultats&nbsp;&raquo; <em>sinon il faut tout refaire </em>
+                                                        <li>ATTENTION une fois l&rsquo;&eacute;preuve termin&eacute;e cliquer sur &laquo;&nbsp;Exporter les r&eacute;sultats&nbsp;&raquo;&nbsp;<em>sinon il faut tout refaire</em>
                                                             <ol>
                                                                 <li>Un fichier Excel est g&eacute;n&eacute;r&eacute;</li>
                                                             </ol>
                                                         </li>
-                                                    </ol>
+                                                    </ul>
                                                 </li>
-                                            </ol>
-                                            <p><em>REM&nbsp;: dans cette &eacute;preuve, vous passez &agrave; l&rsquo;item suivant automatiquement apr&egrave;s avoir appuy&eacute; sur </em>&rarr; ou <em>&larr;. Un point vert appara&icirc;t pendant 2 secondes pour s&eacute;parer chaque item.</em></p>
+                                            </ul>
+                                            <p><em>REM&nbsp;: dans cette &eacute;preuve, vous passez &agrave; l&rsquo;item suivant automatiquement apr&egrave;s avoir appuy&eacute; sur&nbsp;</em>&rarr; ou&nbsp;<em>&larr;. Un point vert appara&icirc;t pendant 2 secondes pour s&eacute;parer chaque item.</em></p>
                                             <p>Un interlude de 15 secondes appara&icirc;t au milieu de la s&eacute;rie.</p>
                                             <p><em>Sachez aussi que vous pouvez interrompre la t&acirc;che en cours de passation en appuyer sur &laquo;&nbsp;Echap&nbsp;&raquo;</em></p>
-                                            <p><strong>Cotation&nbsp;:</strong></p>
-                                            <ol start="16">
-                                                <li><strong>0 (</strong>&larr;) <strong>ou 1 (</strong>&rarr;<strong>)</strong>
+                                            <p>&nbsp;</p>
+                                            <h5><span style="text-decoration: underline;"><strong>Cotation&nbsp;:</strong></span></h5>
+                                            <ul>
+                                                <li><strong>0 (</strong>&larr;)&nbsp;<strong>ou 1 (</strong>&rarr;<strong>)</strong>
                                                     <ol>
-                                                        <li><strong>1 </strong>point si l&rsquo;item est bien d&eacute;nomm&eacute; du 1<sup>er</sup> coup</li>
-                                                        <li><strong>0</strong> si erreur ou non r&eacute;ponse ou besoin d&rsquo;indi&ccedil;age</li>
+                                                        <li><strong>1&nbsp;</strong>point si l&rsquo;item est bien d&eacute;nomm&eacute; du 1<sup>er</sup>&nbsp;coup</li>
+                                                        <li><strong>0</strong>&nbsp;si erreur ou non r&eacute;ponse ou besoin d&rsquo;indi&ccedil;age</li>
                                                     </ol>
                                                 </li>
                                                 <li>Cette cotation se fait automatiquement et figurera dans le fichier Excel g&eacute;n&eacute;r&eacute;.</li>
                                                 <li>Le report des erreurs doit se faire &agrave; la main suite &agrave; la prise de note ou en s&rsquo;aidant de l&rsquo;enregistrement sonore</li>
                                                 <li>Les erreurs sont class&eacute;es en diff&eacute;rentes cat&eacute;gories (cf tableau I de l&rsquo;EMME)</li>
-                                            </ol>
-                                            <p><strong>R&eacute;cup&eacute;ration des donn&eacute;es&nbsp;: </strong></p>
-                                            <ol>
+                                            </ul>
+                                            <p>&nbsp;</p>
+                                            <h5><span style="text-decoration: underline;"><strong>R&eacute;cup&eacute;ration des donn&eacute;es&nbsp;:</strong></span></h5>
+                                            <ul>
                                                 <li>T&eacute;l&eacute;charger les fichiers excel dans la plateforme</li>
                                                 <li>Scanner et t&eacute;l&eacute;charger la feuille de passation</li>
-                                            </ol>
-                                            <p>&nbsp;</p>
-                                            <p><strong>&nbsp;</strong></p>
+                                            </ul>
 
                                         </div>
                                         <div class="tab-pane" id="vtnv"><p class="lead">Test de Vitesse de Traitement Non Verbal (VTNV)&nbsp;</p>
-                                            <h5>Nothelier et Delenclos, 2017&nbsp;</h5>
+                                            <small>Nothelier et Delenclos, 2017&nbsp;</small>
 
                                             <a class="btn btn-primary" href="data/tests_uploads/vtnv/Projet.pr2m-VTNV.zip" download="Projet.pr2m-VTNV.zip" target="_blank"><i class="fa fa-download"></i> Test VTNV</a>
                                             <p>&nbsp;</p>
