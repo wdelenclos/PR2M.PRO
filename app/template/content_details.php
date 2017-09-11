@@ -18,6 +18,10 @@ $lateralite = $data->lateralite;
 $date = $data->date_naissance;
 $niveau = $data->niveau;
 ?>
+<!-- NProgress -->
+<link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+<!-- Dropzone.js -->
+<link href="../vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
 
 <!-- page content -->
 <div class="right_col" role="main">
