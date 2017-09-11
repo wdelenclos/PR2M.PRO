@@ -76,7 +76,7 @@
       <file leaf-file-name="form_upload.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/production/form_upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
+            <state relative-caret-position="6555">
               <caret line="345" column="0" lean-forward="false" selection-start-line="345" selection-start-column="0" selection-end-line="349" selection-end-column="72" />
               <folding />
             </state>
@@ -146,9 +146,14 @@
       <file leaf-file-name="content_details.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/template/content_details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="163" column="68" lean-forward="false" selection-start-line="163" selection-start-column="68" selection-end-line="163" selection-end-column="68" />
-              <folding />
+            <state relative-caret-position="239">
+              <caret line="160" column="62" lean-forward="false" selection-start-line="160" selection-start-column="62" selection-end-line="160" selection-end-column="62" />
+              <folding>
+                <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -416,12 +421,12 @@
       <workItem from="1504367509995" duration="1016000" />
       <workItem from="1504908583601" duration="13165000" />
       <workItem from="1505073113795" duration="776000" />
-      <workItem from="1505162079388" duration="1514000" />
+      <workItem from="1505162079388" duration="1969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27850000" />
+    <option name="totallyTimeSpent" value="28305000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -849,7 +854,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/production/form_upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
+        <state relative-caret-position="6555">
           <caret line="345" column="0" lean-forward="false" selection-start-line="345" selection-start-column="0" selection-end-line="349" selection-end-column="72" />
           <folding />
         </state>
@@ -857,9 +862,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/template/content_details.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="163" column="68" lean-forward="false" selection-start-line="163" selection-start-column="68" selection-end-line="163" selection-end-column="68" />
-          <folding />
+        <state relative-caret-position="239">
+          <caret line="160" column="62" lean-forward="false" selection-start-line="160" selection-start-column="62" selection-end-line="160" selection-end-column="62" />
+          <folding>
+            <element signature="n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

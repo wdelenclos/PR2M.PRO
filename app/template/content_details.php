@@ -93,62 +93,95 @@ $niveau = $data->niveau;
 
                         </div>
                         <div class="col-md-9 col-sm-9 col-xs-12">
+                            <div class="x_content">
 
-                            <div class="profile_title">
-                                <div class="col-md-6">
-                                    <h2>Synthèse</h2>
-                                </div>
+                                <!-- start accordion -->
+                                <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel">
+                                        <a class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <h4 class="panel-title">Résultats pré-test</h4>
+                                        </a>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true" style="">
+                                            <div class="panel-body">
 
-                            </div>
-                            <!-- start of user-activity-graph -->
-                            <!-- ICI LES RESULTATS
-                            <!-- end of user-activity-graph -->
+                                                <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                                                    <div class="x_content">
 
-                            <div class="" role="tabpanel" data-example-id="togglable-tabs">
-                                <div class="x_content">
+                                                        <div class="col-xs-3">
+                                                            <!-- required for floating -->
+                                                            <!-- Nav tabs -->
+                                                            <ul class="nav nav-tabs tabs-left">
+                                                                <li class="active"><a href="#EMME" data-toggle="tab">EMME</a>
+                                                                </li>
+                                                                <li><a href="#EVIP" data-toggle="tab">EVIP</a>
+                                                                </li>
+                                                                <li><a href="#DRA" data-toggle="tab">DRA</a>
+                                                                </li>
+                                                                <li><a href="#deno" data-toggle="tab">Denomination</a>
+                                                                </li>
+                                                                <li><a href="#desi" data-toggle="tab">Designation</a>
+                                                                </li>
+                                                                <li><a href="#BELO" data-toggle="tab">BELO</a>
+                                                                </li>
+                                                                <li><a href="#quest" data-toggle="tab">Questionnaire</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
 
-                                    <div class="col-xs-3">
-                                        <!-- required for floating -->
-                                        <!-- Nav tabs -->
-                                        <ul class="nav nav-tabs tabs-left">
-                                            <li class="active"><a href="#EMME" data-toggle="tab">EMME</a>
-                                            </li>
-                                            <li><a href="#EVIP" data-toggle="tab">EVIP</a>
-                                            </li>
-                                            <li><a href="#DRA" data-toggle="tab">DRA</a>
-                                            </li>
-                                            <li><a href="#deno" data-toggle="tab">Denomination</a>
-                                            </li>
-                                            <li><a href="#desi" data-toggle="tab">Designation</a>
-                                            </li>
-                                            <li><a href="#BELO" data-toggle="tab">BELO</a>
-                                            </li>
-                                            <li><a href="#quest" data-toggle="tab">Questionnaire</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                                        <div class="col-xs-9">
+                                                            <!-- Tab panes -->
+                                                            <div class="tab-content">
+                                                                <div class="tab-pane active" id="EMME">
+                                                                    <p class="lead">Récupération du fichier EMME</p>
 
-                                    <div class="col-xs-9">
-                                        <!-- Tab panes -->
-                                        <div class="tab-content">
-                                            <div class="tab-pane active" id="EMME">
-                                                <p class="lead">Récupération du fichier EMME</p>
+                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
+                                                                </div>
+                                                                <div class="tab-pane" id="EVIP">Profile Tab.</div>
+                                                                <div class="tab-pane" id="DRA">Messages Tab.</div>
+                                                                <div class="tab-pane" id="deno">Settings Tab.</div>
+                                                                <div class="tab-pane" id="desi">Settings Tab.</div>
+                                                                <div class="tab-pane" id="BELO">Settings Tab.</div>
+                                                                <div class="tab-pane" id="quest">Settings Tab.</div>
+                                                            </div>
+                                                        </div>
 
-                                                <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
+                                                        <div class="clearfix"></div>
+
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="tab-pane" id="EVIP">Profile Tab.</div>
-                                            <div class="tab-pane" id="DRA">Messages Tab.</div>
-                                            <div class="tab-pane" id="deno">Settings Tab.</div>
-                                            <div class="tab-pane" id="desi">Settings Tab.</div>
-                                            <div class="tab-pane" id="BELO">Settings Tab.</div>
-                                            <div class="tab-pane" id="quest">Settings Tab.</div>
                                         </div>
                                     </div>
-
-                                    <div class="clearfix"></div>
-
+                                    <div class="panel">
+                                        <a class="panel-heading collapsed" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <h4 class="panel-title">Entrainement</h4>
+                                        </a>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+                                            <div class="panel-body">
+                                                <p><strong>Bla</strong>
+                                                </p>
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <a class="panel-heading collapsed" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <h4 class="panel-title">Resultats post-test</h4>
+                                        </a>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+                                            <div class="panel-body">
+                                                <p><strong>Collapsible Item 3 data</strong>
+                                                </p>
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <!-- end of accordion -->
+
+
                             </div>
+
                         </div>
                     </div>
                 </div>
