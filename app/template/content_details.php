@@ -101,41 +101,48 @@ $niveau = $data->niveau;
                             <!-- end of user-activity-graph -->
 
                             <div class="" role="tabpanel" data-example-id="togglable-tabs">
-                                <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-                                    <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">EMME</a>
-                                    </li>
-                                    <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">EVIP</a>
-                                    </li>
-                                    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">DRA</a>
-                                    </li>
-                                    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Demoniation</a>
-                                    </li>
-                                    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Désignation</a>
-                                    </li>
-                                    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Den48</a>
-                                    </li>
-                                    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Belo</a>
-                                    </li>
-                                    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Questionnaire</a>
-                                    </li>
-                                    <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">VTNV</a>
-                                    </li>
-                                </ul>
-                                <div id="myTabContent" class="tab-content">
-                                    <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+                                <div class="x_content">
 
-
-
+                                    <div class="col-xs-3">
+                                        <!-- required for floating -->
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs tabs-left">
+                                            <li class="active"><a href="#EMME" data-toggle="tab">EMME</a>
+                                            </li>
+                                            <li><a href="#EVIP" data-toggle="tab">EVIP</a>
+                                            </li>
+                                            <li><a href="#DRA" data-toggle="tab">DRA</a>
+                                            </li>
+                                            <li><a href="#deno" data-toggle="tab">Denomination</a>
+                                            </li>
+                                            <li><a href="#desi" data-toggle="tab">Designation</a>
+                                            </li>
+                                            <li><a href="#BELO" data-toggle="tab">BELO</a>
+                                            </li>
+                                            <li><a href="#quest" data-toggle="tab">Questionnaire</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
 
+                                    <div class="col-xs-9">
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="EMME">
+                                                <p class="lead">Récupération du fichier EMME</p>
 
-
+                                                <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
+                                            </div>
+                                            <div class="tab-pane" id="EVIP">Profile Tab.</div>
+                                            <div class="tab-pane" id="DRA">Messages Tab.</div>
+                                            <div class="tab-pane" id="deno">Settings Tab.</div>
+                                            <div class="tab-pane" id="desi">Settings Tab.</div>
+                                            <div class="tab-pane" id="BELO">Settings Tab.</div>
+                                            <div class="tab-pane" id="quest">Settings Tab.</div>
+                                        </div>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
-                                        <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui
-                                            photo booth letterpress, commodo enim craft beer mlkshk </p>
-                                    </div>
+
+                                    <div class="clearfix"></div>
+
                                 </div>
                             </div>
                         </div>
