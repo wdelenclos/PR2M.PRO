@@ -208,14 +208,41 @@ $niveau = $data->niveau;
                                                                 <div class="tab-pane active" id="EMME">
                                                                     <p class="lead">Récupération du fichier EMME</p>
 
-                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
+                                                                    <form action="uploadEmme.php" class="dropzone dz-clickable">
+                                                                        <div class="dz-default dz-message">
+                                                                            <span>Glissez vos résultats ici ou cliquez pour les envoyer</span>
+                                                                        </div>
+                                                                    </form>
                                                                 </div>
-                                                                <div class="tab-pane" id="EVIP">Profile Tab.</div>
-                                                                <div class="tab-pane" id="DRA">Messages Tab.</div>
-                                                                <div class="tab-pane" id="deno">Settings Tab.</div>
-                                                                <div class="tab-pane" id="desi">Settings Tab.</div>
-                                                                <div class="tab-pane" id="BELO">Settings Tab.</div>
-                                                                <div class="tab-pane" id="quest">Settings Tab.</div>
+                                                                <div class="tab-pane" id="EVIP">
+                                                                    <form action="">
+                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                                    </form>
+                                                                </div>
+                                                                <div class="tab-pane" id="DRA">
+                                                                    <form action="">
+                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                                    </form>
+                                                                </div>
+                                                                <div class="tab-pane" id="deno">
+                                                                    <form action="">
+                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                                    </form>
+                                                                </div>
+                                                                <div class="tab-pane" id="desi">
+                                                                    <form action="">
+                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                                    </form>
+                                                                </div>
+                                                                <div class="tab-pane" id="BELO">
+                                                                    <form action="">
+                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                                    </form></div>
+                                                                <div class="tab-pane" id="quest">
+                                                                    <form action="">
+                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                                    </form>
+                                                                </div>
                                                             </div>
                                                         </div>
 
