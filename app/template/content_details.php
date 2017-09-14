@@ -99,7 +99,9 @@ $niveau = $data->niveau;
                                 <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
                                     <div class="panel">
                                         <a class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <h4 class="panel-title">Résultats pré-test</h4>
+                                            <h4 class="panel-title">Résultats pré-test</h4> <a class="btn btn-app">
+                                                <i class="fa fa-save"></i> Exporter les données
+                                            </a>
                                         </a>
                                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true" style="">
                                             <div class="panel-body">
@@ -174,7 +176,9 @@ $niveau = $data->niveau;
                                     </div>
                                     <div class="panel">
                                         <a class="panel-heading collapsed" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <h4 class="panel-title">Resultats post-test</h4>
+                                            <h4 class="panel-title">Resultats post-test</h4> <a class="btn btn-app">
+                                                <i class="fa fa-save"></i> Exporter les données
+                                            </a>
                                         </a>
                                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
                                             <div class="panel-body">
