@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="">
+    <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="Add exporte btn">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/content_details.php" afterPath="$PROJECT_DIR$/app/template/content_details.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -136,8 +137,8 @@
       <file leaf-file-name="content_details.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/template/content_details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1205">
-              <caret line="308" column="0" lean-forward="true" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+            <state relative-caret-position="312">
+              <caret line="139" column="94" lean-forward="false" selection-start-line="139" selection-start-column="94" selection-end-line="139" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -404,7 +405,7 @@
       <workItem from="1505287678391" duration="335000" />
       <workItem from="1505324795423" duration="252000" />
       <workItem from="1505374479202" duration="770000" />
-      <workItem from="1505410847343" duration="1547000" />
+      <workItem from="1505410847343" duration="1975000" />
     </task>
     <task id="LOCAL-00001" summary="Add exporte btn">
       <created>1505411014413</created>
@@ -420,11 +421,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505412500820</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add exporte btn">
+      <created>1505412554937</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1505412554937</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32161000" />
+    <option name="totallyTimeSpent" value="32589000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -859,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/template/content_details.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1205">
-          <caret line="308" column="0" lean-forward="true" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+        <state relative-caret-position="312">
+          <caret line="139" column="94" lean-forward="false" selection-start-line="139" selection-start-column="94" selection-end-line="139" selection-end-column="94" />
           <folding />
         </state>
       </provider>

@@ -99,9 +99,7 @@ $niveau = $data->niveau;
                                 <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
                                     <div class="panel">
                                         <a class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <h4 class="panel-title">Résultats pré-test</h4> <a class="btn btn-app">
-                                                <i class="fa fa-save"></i> Exporter les données
-                                            </a>
+                                            <h4 class="panel-title">Résultats pré-test</h4> <button type="button" class="btn btn-success">Exporter les données</button>
                                         </a>
                                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true" style="">
                                             <div class="panel-body">
@@ -113,19 +111,19 @@ $niveau = $data->niveau;
                                                             <!-- required for floating -->
                                                             <!-- Nav tabs -->
                                                             <ul class="nav nav-tabs tabs-left">
-                                                                <li class="active"><a href="#EMME" data-toggle="tab">EMME</a>
+                                                                <li class="active"><a href="#preEMME" data-toggle="tab">EMME</a>
                                                                 </li>
-                                                                <li><a href="#EVIP" data-toggle="tab">EVIP</a>
+                                                                <li><a href="#preEVIP" data-toggle="tab">EVIP</a>
                                                                 </li>
-                                                                <li><a href="#DRA" data-toggle="tab">DRA</a>
+                                                                <li><a href="#preDRA" data-toggle="tab">DRA</a>
                                                                 </li>
-                                                                <li><a href="#deno" data-toggle="tab">Denomination</a>
+                                                                <li><a href="#predeno" data-toggle="tab">Denomination</a>
                                                                 </li>
-                                                                <li><a href="#desi" data-toggle="tab">Designation</a>
+                                                                <li><a href="#predesi" data-toggle="tab">Designation</a>
                                                                 </li>
-                                                                <li><a href="#BELO" data-toggle="tab">BELO</a>
+                                                                <li><a href="#preBELO" data-toggle="tab">BELO</a>
                                                                 </li>
-                                                                <li><a href="#quest" data-toggle="tab">Questionnaire</a>
+                                                                <li><a href="#prequest" data-toggle="tab">Questionnaire</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -133,18 +131,20 @@ $niveau = $data->niveau;
                                                         <div class="col-xs-9">
                                                             <!-- Tab panes -->
                                                             <div class="tab-content">
-                                                                <div class="tab-pane active" id="EMME">
+                                                                <div class="tab-pane active" id="preEMME">
                                                                     <p class="lead">Récupération du fichier EMME</p>
 
                                                                     <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
                                                                 </div>
-                                                                <div class="tab-pane" id="EVIP">
+                                                                <div class="tab-pane" id="preEVIP">
+                                                                    <p class="lead">Score EVIP</p>
                                                                     <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                                                                         <input type="text" class="form-control" id="inputSuccess3" placeholder="Score">
                                                                         <span class="fa fa-circle-o-notch form-control-feedback right" aria-hidden="true"></span>
                                                                     </div>
                                                                 </div>
-                                                                <div class="tab-pane" id="DRA">
+                                                                <div class="tab-pane" id="preDRA">
+                                                                    <p class="lead">Score DRA</p>
                                                                     <div class="form-group">
                                                                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre d'erreurs </label>
                                                                         <div class="col-md-9 col-sm-9 col-xs-12">
@@ -159,19 +159,20 @@ $niveau = $data->niveau;
                                                                     </div>
 
                                                                 </div>
-                                                                <div class="tab-pane" id="deno">
+                                                                <div class="tab-pane" id="predeno">
                                                                     <p class="lead">Récupération du fichier</p>
 
                                                                     <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
 
                                                                 </div>
-                                                                <div class="tab-pane" id="desi">
+                                                                <div class="tab-pane" id="predesi">
                                                                     <p class="lead">Récupération du fichier </p>
 
                                                                     <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
 
                                                                 </div>
-                                                                <div class="tab-pane" id="BELO">
+                                                                <div class="tab-pane" id="preBELO">
+                                                                    <p class="lead">Score Belo</p>
                                                                     <div class="form-group">
                                                                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Resultat </label>
                                                                         <div class="col-md-9 col-sm-9 col-xs-12">
@@ -179,7 +180,7 @@ $niveau = $data->niveau;
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="tab-pane" id="quest">
+                                                                <div class="tab-pane" id="prequest">
                                                                     <p class="lead">Récupération du questionnaire</p>
 
                                                                     <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
@@ -217,9 +218,7 @@ $niveau = $data->niveau;
                                     </div>
                                     <div class="panel">
                                         <a class="panel-heading collapsed" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <h4 class="panel-title">Resultats post-test</h4> <a class="btn btn-app">
-                                                <i class="fa fa-save"></i> Exporter les données
-                                            </a>
+                                            <h4 class="panel-title">Resultats post-test</h4><button type="button" class="btn btn-success">Exporter les données</button>
                                         </a>
                                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
                                             <div class="panel-body">
@@ -230,19 +229,19 @@ $niveau = $data->niveau;
                                                             <!-- required for floating -->
                                                             <!-- Nav tabs -->
                                                             <ul class="nav nav-tabs tabs-left">
-                                                                <li class="active"><a href="#EMME" data-toggle="tab">EMME</a>
+                                                                <li class="active"><a href="#postEMME" data-toggle="tab">EMME</a>
                                                                 </li>
-                                                                <li><a href="#EVIP" data-toggle="tab">EVIP</a>
+                                                                <li><a href="#postEVIP" data-toggle="tab">EVIP</a>
                                                                 </li>
-                                                                <li><a href="#DRA" data-toggle="tab">DRA</a>
+                                                                <li><a href="#postDRA" data-toggle="tab">DRA</a>
                                                                 </li>
-                                                                <li><a href="#deno" data-toggle="tab">Denomination</a>
+                                                                <li><a href="#postdeno" data-toggle="tab">Denomination</a>
                                                                 </li>
-                                                                <li><a href="#desi" data-toggle="tab">Designation</a>
+                                                                <li><a href="#postdesi" data-toggle="tab">Designation</a>
                                                                 </li>
-                                                                <li><a href="#BELO" data-toggle="tab">BELO</a>
+                                                                <li><a href="#postBELO" data-toggle="tab">BELO</a>
                                                                 </li>
-                                                                <li><a href="#quest" data-toggle="tab">Questionnaire</a>
+                                                                <li><a href="#postquest" data-toggle="tab">Questionnaire</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -250,7 +249,7 @@ $niveau = $data->niveau;
                                                         <div class="col-xs-9">
                                                             <!-- Tab panes -->
                                                             <div class="tab-content">
-                                                                <div class="tab-pane active" id="EMME">
+                                                                <div class="tab-pane active" id="postEMME">
                                                                     <p class="lead">Récupération du fichier EMME</p>
 
                                                                     <form action="uploadEmme.php" class="dropzone dz-clickable">
@@ -259,7 +258,8 @@ $niveau = $data->niveau;
                                                                         </div>
                                                                     </form>
                                                                 </div>
-                                                                <div class="tab-pane" id="EVIP">
+                                                                <div class="tab-pane" id="postEVIP">
+                                                                    <p class="lead">Score EVIP</p>
                                                                     <form action="">
                                                                         <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                                                                             <input type="text" class="form-control" id="inputSuccess3" placeholder="Score">
@@ -267,7 +267,8 @@ $niveau = $data->niveau;
                                                                         </div>
                                                                     </form>
                                                                 </div>
-                                                                <div class="tab-pane" id="DRA">
+                                                                <div class="tab-pane" id="postDRA">
+                                                                    <p class="lead">Score DRA</p>
                                                                     <div class="form-group">
                                                                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre d'erreurs </label>
                                                                         <div class="col-md-9 col-sm-9 col-xs-12">
@@ -282,19 +283,20 @@ $niveau = $data->niveau;
                                                                     </div>
 
                                                                 </div>
-                                                                <div class="tab-pane" id="deno">
+                                                                <div class="tab-pane" id="postdeno">
                                                                     <p class="lead">Récupération du fichier</p>
 
                                                                     <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
 
                                                                 </div>
-                                                                <div class="tab-pane" id="desi">
+                                                                <div class="tab-pane" id="postdesi">
                                                                     <p class="lead">Récupération du fichier </p>
 
                                                                     <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
 
                                                                 </div>
-                                                                <div class="tab-pane" id="BELO">
+                                                                <div class="tab-pane" id="postBELO">
+                                                                    <p class="lead">Score BELO</p>
                                                                     <div class="form-group">
                                                                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Resultat </label>
                                                                         <div class="col-md-9 col-sm-9 col-xs-12">
@@ -302,7 +304,7 @@ $niveau = $data->niveau;
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="tab-pane" id="quest">
+                                                                <div class="tab-pane" id="postquest">
                                                                     <p class="lead">Récupération du questionnaire</p>
 
                                                                     <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
