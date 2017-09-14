@@ -138,12 +138,53 @@ $niveau = $data->niveau;
 
                                                                     <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
                                                                 </div>
-                                                                <div class="tab-pane" id="EVIP">Profile Tab.</div>
-                                                                <div class="tab-pane" id="DRA">Messages Tab.</div>
-                                                                <div class="tab-pane" id="deno">Settings Tab.</div>
-                                                                <div class="tab-pane" id="desi">Settings Tab.</div>
-                                                                <div class="tab-pane" id="BELO">Settings Tab.</div>
-                                                                <div class="tab-pane" id="quest">Settings Tab.</div>
+                                                                <div class="tab-pane" id="EVIP">
+                                                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                                                                        <input type="text" class="form-control" id="inputSuccess3" placeholder="Score">
+                                                                        <span class="fa fa-circle-o-notch form-control-feedback right" aria-hidden="true"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane" id="DRA">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre d'erreurs </label>
+                                                                        <div class="col-md-9 col-sm-9 col-xs-12">
+                                                                            <input type="text" class="form-control"  placeholder="Saisir le nb d'erreurs">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Temps (/s) </label>
+                                                                        <div class="col-md-9 col-sm-9 col-xs-12">
+                                                                            <input type="number" class="form-control" placeholder="Temps en secondes">
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="tab-pane" id="deno">
+                                                                    <p class="lead">Récupération du fichier</p>
+
+                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
+
+                                                                </div>
+                                                                <div class="tab-pane" id="desi">
+                                                                    <p class="lead">Récupération du fichier </p>
+
+                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
+
+                                                                </div>
+                                                                <div class="tab-pane" id="BELO">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Resultat </label>
+                                                                        <div class="col-md-9 col-sm-9 col-xs-12">
+                                                                            <input type="number" class="form-control" placeholder="Saisir le résultat">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane" id="quest">
+                                                                    <p class="lead">Récupération du questionnaire</p>
+
+                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
+
+                                                                </div>
                                                             </div>
                                                         </div>
 
@@ -220,32 +261,52 @@ $niveau = $data->niveau;
                                                                 </div>
                                                                 <div class="tab-pane" id="EVIP">
                                                                     <form action="">
-                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                                                                            <input type="text" class="form-control" id="inputSuccess3" placeholder="Score">
+                                                                            <span class="fa fa-circle-o-notch form-control-feedback right" aria-hidden="true"></span>
+                                                                        </div>
                                                                     </form>
                                                                 </div>
                                                                 <div class="tab-pane" id="DRA">
-                                                                    <form action="">
-                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
-                                                                    </form>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre d'erreurs </label>
+                                                                        <div class="col-md-9 col-sm-9 col-xs-12">
+                                                                            <input type="text" class="form-control"  placeholder="Saisir le nb d'erreurs">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Temps (/s) </label>
+                                                                        <div class="col-md-9 col-sm-9 col-xs-12">
+                                                                            <input type="number" class="form-control" placeholder="Temps en secondes">
+                                                                        </div>
+                                                                    </div>
+
                                                                 </div>
                                                                 <div class="tab-pane" id="deno">
-                                                                    <form action="">
-                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
-                                                                    </form>
+                                                                    <p class="lead">Récupération du fichier</p>
+
+                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
+
                                                                 </div>
                                                                 <div class="tab-pane" id="desi">
-                                                                    <form action="">
-                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
-                                                                    </form>
+                                                                    <p class="lead">Récupération du fichier </p>
+
+                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
+
                                                                 </div>
                                                                 <div class="tab-pane" id="BELO">
-                                                                    <form action="">
-                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
-                                                                    </form></div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Resultat </label>
+                                                                        <div class="col-md-9 col-sm-9 col-xs-12">
+                                                                            <input type="number" class="form-control" placeholder="Saisir le résultat">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                                 <div class="tab-pane" id="quest">
-                                                                    <form action="">
-                                                                        <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
-                                                                    </form>
+                                                                    <p class="lead">Récupération du questionnaire</p>
+
+                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
+
                                                                 </div>
                                                             </div>
                                                         </div>
