@@ -32,14 +32,7 @@ $niveau = $data->niveau;
             </div>
 
             <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
-                    </span>
-                    </div>
-                </div>
+
             </div>
         </div>
 
@@ -99,7 +92,10 @@ $niveau = $data->niveau;
                                 <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
                                     <div class="panel">
                                         <a class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <h4 class="panel-title">Résultats pré-test</h4> <button type="button" class="btn btn-success">Exporter les données</button>
+                                            <h4 class="panel-title">Résultats pré-test</h4>
+                                            <ul class="nav navbar-right panel_toolbox">
+                                                <button type="button" class="btn btn-default btn-xs">Exporter les données</button>
+                                            </ul>
                                         </a>
                                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true" style="">
                                             <div class="panel-body">
@@ -218,7 +214,10 @@ $niveau = $data->niveau;
                                     </div>
                                     <div class="panel">
                                         <a class="panel-heading collapsed" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <h4 class="panel-title">Resultats post-test</h4><button type="button" class="btn btn-success">Exporter les données</button>
+                                            <h4 class="panel-title">Resultats post-test</h4>
+                                            <ul class="nav navbar-right panel_toolbox">
+                                                <button type="button" class="btn btn-default btn-xs">Exporter les données</button>
+                                            </ul>
                                         </a>
                                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
                                             <div class="panel-body">
