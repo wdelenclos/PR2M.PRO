@@ -117,7 +117,7 @@ function root($label, $title){
         header('Location: index.php?p=login&logout=true' );
     }
 
-    if($label == "content_dashboard" || $label == "content_shared1" || $label == "content_shared2" || $label == "content_shared3" || $label == "content_profile"  || $label == "content_new" || $label == "content_list" || $label == "content_details"|| $label == "content_tests" ){
+    if($label == "content_dashboard" || $label == "content_shared1" || $label == "content_shared2" || $label == "content_shared3" || $label == "content_profile"  || $label == "content_new" || $label == "content_list" || $label == "content_listP" || $label == "content_details"|| $label == "content_tests" ){
         include_once 'template/head.php';
         include_once 'template/nav.php';
     }
@@ -256,7 +256,7 @@ function listAllPraticiens($bdd)
 {
 	try {
 		$sql = 'SELECT *
-        FROM `patients`';
+        FROM `praticien`';
 		$stmt = $bdd->prepare($sql);
 		$stmt->execute();
 
