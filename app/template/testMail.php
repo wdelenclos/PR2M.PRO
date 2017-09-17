@@ -11,5 +11,4 @@ require ('../config.php');
 require ('../connect.php');
 require ('../function.php');
 
-
-sendMail('wdelenclos@gmail.com');
+phpinfo();
