@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="">
+    <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="Add form btn">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/function/deleteP.php" afterPath="$PROJECT_DIR$/app/function/deleteP.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/function/notifs.php" afterPath="$PROJECT_DIR$/app/function/notifs.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notifs.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="notifs.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/function/notifs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="229" lean-forward="true" selection-start-line="12" selection-start-column="229" selection-end-line="12" selection-end-column="229" />
+            <state relative-caret-position="209">
+              <caret line="11" column="291" lean-forward="false" selection-start-line="11" selection-start-column="291" selection-end-line="11" selection-end-column="291" />
               <folding />
             </state>
           </provider>
@@ -76,12 +77,13 @@
       <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="270" column="25" lean-forward="true" selection-start-line="270" selection-start-column="25" selection-end-line="270" selection-end-column="25" />
+            <state relative-caret-position="462">
+              <caret line="277" column="111" lean-forward="true" selection-start-line="277" selection-start-column="8" selection-end-line="277" selection-end-column="111" />
               <folding>
                 <element signature="n#routage#0;n#!!top" expanded="false" />
                 <element signature="n#root#0;n#!!top" expanded="false" />
                 <element signature="n#sendMail#0;n#!!top" expanded="false" />
+                <element signature="n#addPraticien#0;n#!!top" expanded="false" />
                 <element signature="e#4731#5853#0#PHP" expanded="false" />
                 <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
                 <element signature="n#listAllPraticiens#0;n#!!top" expanded="false" />
@@ -133,11 +135,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deleteP.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="deleteP.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/function/deleteP.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+            <state relative-caret-position="380">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -218,10 +220,10 @@
         <option value="$PROJECT_DIR$/app/template/login.php" />
         <option value="$PROJECT_DIR$/app/template/nav.php" />
         <option value="$PROJECT_DIR$/app/template/content_listP.php" />
-        <option value="$PROJECT_DIR$/app/function/notifs.php" />
         <option value="$PROJECT_DIR$/app/template/content_newP.php" />
         <option value="$PROJECT_DIR$/app/function.php" />
         <option value="$PROJECT_DIR$/app/function/deleteP.php" />
+        <option value="$PROJECT_DIR$/app/function/notifs.php" />
       </list>
     </option>
   </component>
@@ -620,11 +622,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505680892657</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Add form btn">
+      <created>1505681631641</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1505681631641</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40711000" />
+    <option name="totallyTimeSpent" value="40795000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -708,7 +717,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1085,14 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/function/notifs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="229" lean-forward="true" selection-start-line="12" selection-start-column="229" selection-end-line="12" selection-end-column="229" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/template/content_listP.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-18">
@@ -1119,12 +1120,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="270" column="25" lean-forward="true" selection-start-line="270" selection-start-column="25" selection-end-line="270" selection-end-column="25" />
+        <state relative-caret-position="462">
+          <caret line="277" column="111" lean-forward="true" selection-start-line="277" selection-start-column="8" selection-end-line="277" selection-end-column="111" />
           <folding>
             <element signature="n#routage#0;n#!!top" expanded="false" />
             <element signature="n#root#0;n#!!top" expanded="false" />
             <element signature="n#sendMail#0;n#!!top" expanded="false" />
+            <element signature="n#addPraticien#0;n#!!top" expanded="false" />
             <element signature="e#4731#5853#0#PHP" expanded="false" />
             <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
             <element signature="n#listAllPraticiens#0;n#!!top" expanded="false" />
@@ -1177,8 +1179,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/function/deleteP.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        <state relative-caret-position="380">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/function/notifs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="291" lean-forward="false" selection-start-line="11" selection-start-column="291" selection-end-line="11" selection-end-column="291" />
           <folding />
         </state>
       </provider>

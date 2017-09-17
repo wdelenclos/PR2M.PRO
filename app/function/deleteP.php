@@ -14,5 +14,7 @@ require ('../function.php');
 if (isset($_GET['id'])) {
 	removePraticien($bdd);
 }
-
+else{
+	header('Location: ../index.php?n=500&p=listeP&identifiant=' .$_GET['identifiant']. '&erreur='.$error );
+}
 
