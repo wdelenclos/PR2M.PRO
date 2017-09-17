@@ -82,6 +82,14 @@ $niveau = $data->niveau;
                             <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i> Modifier</a>
                             <br />
 
+                            <hr>
+                            <br />
+                            <h4>Exportation:</h4>
+                            <br />
+                            <a class="btn btn-primary"><i class="fa fa-download m-right-xs"></i> Pré-test</a>
+                            <br/>
+                            <a class="btn btn-primary"><i class="fa fa-download m-right-xs"></i> Post-test</a>
+
 
 
                         </div>
@@ -187,8 +195,6 @@ $niveau = $data->niveau;
 
                                                     </div>
                                                 </div>
-
-                                                <a class="btn btn-success"><i class="fa fa-backward m-right-xs"></i> Exporter les données</a>
 
                                             </div>
                                         </div>
@@ -315,7 +321,6 @@ $niveau = $data->niveau;
                                                     </div>
                                                 </div>
                                                 </div>
-                                            <a class="btn btn-success"><i class="fa fa-backward m-right-xs"></i> Exporter les données</a>
                                         </div>
                                     </div>
                                 </div>
