@@ -163,12 +163,12 @@ function addPraticien($bdd){
         $stmt->execute();
         sendMail($_POST['sign_Email']);
 	    $id =  crc32($_POST['sign_Email']);
-	    header('Location: ../index.php?n=100&p=listeP&identifiant='.$_POST['identifiant'].'&id='.$id );
+	    header('Location: ../index.php?n=100&p=listeP&identifiant='.$_POST['sign_id'].'&id='.$id );
 	}
     catch (PDOException $e) {
 
         $error = $e->getMessage();
-	    header('Location: ../index.php?n=500&p=listeP&identifiant='.$_POST['identifiant'].'&erreur='.$error );
+	    header('Location: ../index.php?n=500&p=listeP&identifiant=' .$_POST['sign_id']. '&erreur='.$error );
     }
 }
 function searchPraticien($bdd)
