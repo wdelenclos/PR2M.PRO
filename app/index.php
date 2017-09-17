@@ -16,6 +16,10 @@ require_once 'function.php';
 include_once 'connect.php';
 include_once 'function/notifs.php';
 
+
+if($_GET['identifiant']==''){
+	header('Location: ../index.php?p=login' );
+}
 if(!isset($_GET['p'])){
     $_GET['p'] = '';
 }
