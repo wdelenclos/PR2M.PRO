@@ -33,7 +33,7 @@
                                     <li><a href="?p=nouveau&identifiant=<?= $_SESSION['identifiant']?>">Nouveau patient</a></li>
                                 </ul>
                             </li>
-                            <?php if($_SESSION['identifiant'] ==  crc32(ADMINMAIL)){?>
+                            <?php if(in_array($_SESSION['identifiant'], ADMINMAIL)){?>
                             <li><a><i class="fa fa-user-md"></i>Praticiens<span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="?p=listeP&identifiant=<?= $_SESSION['identifiant']?>">Liste des praticiens</a></li>
@@ -120,7 +120,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="images/user.png" alt=""><?= $_SESSION['prenom'].' '. $_SESSION['nom']?> <?php if($_SESSION['identifiant'] ==  crc32(ADMINMAIL)){?>
+                                <img src="images/user.png" alt=""><?= $_SESSION['prenom'].' '. $_SESSION['nom']?> <?php if(in_array($_SESSION['identifiant'], ADMINMAIL)){?>
                                     <span> (Administrateur)</span>
 	                            <?php } ?>
                                 <span class=" fa fa-angle-down"></span>

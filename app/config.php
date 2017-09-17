@@ -5,7 +5,7 @@
 define('CONTACTMAIL','equipe.pr2m@gmail.com' );
 
 // Administrateur
-define('ADMINMAIL','wdelenclos@gmail.com' );
+define('ADMINMAIL',[crc32('wdelenclos@gmail.com'),crc32('julie.nothelier@gmail.com')] );
 define('MDP','125-ayN-92' );
 
 // BDD INFO
