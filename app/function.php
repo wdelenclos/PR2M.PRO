@@ -265,7 +265,7 @@ function listAllPraticiens($bdd)
 }
 function removePraticien($bdd){
 	try {
-		$sql = "DELETE FROM `praticien` WHERE `identifiant` = :id" ;
+		$sql = "DELETE FROM `praticien` WHERE `identifiant`=:id" ;
 		$stmt = $bdd->prepare($sql);
 		$stmt->bindValue(':id',$_GET['id']);
 		$stmt->execute();
