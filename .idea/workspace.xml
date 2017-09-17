@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="Add form btn">
+    <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/function/deleteP.php" afterPath="$PROJECT_DIR$/app/function/deleteP.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/function/notifs.php" afterPath="$PROJECT_DIR$/app/function/notifs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/function.php" afterPath="$PROJECT_DIR$/app/function.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/content_details.php" afterPath="$PROJECT_DIR$/app/template/content_details.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notifs.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="notifs.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/function/notifs.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -77,59 +77,62 @@
       <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="277" column="111" lean-forward="true" selection-start-line="277" selection-start-column="8" selection-end-line="277" selection-end-column="111" />
+            <state relative-caret-position="285">
+              <caret line="137" column="1" lean-forward="false" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
               <folding>
+                <element signature="n#console_print#0;n#!!top" expanded="false" />
                 <element signature="n#routage#0;n#!!top" expanded="false" />
                 <element signature="n#root#0;n#!!top" expanded="false" />
                 <element signature="n#sendMail#0;n#!!top" expanded="false" />
                 <element signature="n#addPraticien#0;n#!!top" expanded="false" />
-                <element signature="e#4731#5853#0#PHP" expanded="false" />
                 <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
+                <element signature="e#5844#6381#0#PHP" expanded="false" />
                 <element signature="n#listAllPraticiens#0;n#!!top" expanded="false" />
+                <element signature="n#removePraticien#0;n#!!top" expanded="false" />
+                <element signature="n#searchOnePatient#0;n#!!top" expanded="false" />
                 <element signature="n#addPatient#0;n#!!top" expanded="false" />
                 <element signature="n#updatePatient#0;n#!!top" expanded="false" />
                 <element signature="n#listAllPatient#0;n#!!top" expanded="false" />
                 <element signature="n#listWaitingPatient#0;n#!!top" expanded="false" />
                 <element signature="n#countPatient#0;n#!!top" expanded="false" />
-                <marker date="1505680884000" expanded="true" signature="4753:4939" ph="INSERT INTO `praticien`... " />
-                <marker date="1505680884000" expanded="true" signature="5916:6033" ph="SELECT id,id... praticien" />
-                <marker date="1505680884000" expanded="true" signature="6507:6540" ph="SELECT * FRO... patients" />
-                <marker date="1505680884000" expanded="true" signature="6704:7979" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="6799:6968" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="6799:6969" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="6799:7084" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="7121:7323" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="7337:7352" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="7337:7418" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="7486:7720" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="7486:7811" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="7486:7829" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="7486:7945" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="8152:8196" ph="INSERT INTO `praticien`... " />
-                <marker date="1505680884000" expanded="true" signature="8152:8199" ph="DELETE FROM " />
-                <marker date="1505680884000" expanded="true" signature="8152:8201" ph="DELETE FROM " />
-                <marker date="1505680884000" expanded="true" signature="8655:8710" ph="SELECT * FRO... patients" />
-                <marker date="1505680884000" expanded="true" signature="8950:9321" ph="INSERT INTO `patients`... " />
-                <marker date="1505680884000" expanded="true" signature="9769:9827" ph="SELECT id FR... patients" />
-                <marker date="1505680884000" expanded="true" signature="10193:10311" ph="INSERT INTO `user`... " />
-                <marker date="1505680884000" expanded="true" signature="10666:10737" ph="SELECT * FRO... patients" />
-                <marker date="1505680884000" expanded="true" signature="12262:14028" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="12357:12600" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="12637:12886" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="12948:13325" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="13019:13208" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="13362:13488" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="13525:13994" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="14238:14309" ph="SELECT * FRO... patients" />
-                <marker date="1505680884000" expanded="true" signature="15940:17796" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="16043:16302" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="16343:16608" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="16674:17071" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="16749:16946" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="17112:17250" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="17291:17758" ph="..." />
-                <marker date="1505680884000" expanded="true" signature="18022:18093" ph="SELECT * FRO... patients" />
+                <marker date="1505684396000" expanded="true" signature="4751:4937" ph="INSERT INTO `praticien`... " />
+                <marker date="1505684396000" expanded="true" signature="5866:5983" ph="SELECT id,id... praticien" />
+                <marker date="1505684396000" expanded="true" signature="6457:6490" ph="SELECT * FRO... patients" />
+                <marker date="1505684396000" expanded="true" signature="6654:7929" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="6749:6918" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="6749:6919" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="6749:7034" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="7071:7273" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="7287:7302" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="7287:7368" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="7436:7670" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="7436:7761" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="7436:7779" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="7436:7895" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="8102:8146" ph="INSERT INTO `praticien`... " />
+                <marker date="1505684396000" expanded="true" signature="8102:8149" ph="DELETE FROM " />
+                <marker date="1505684396000" expanded="true" signature="8102:8151" ph="DELETE FROM " />
+                <marker date="1505684396000" expanded="true" signature="8605:8660" ph="SELECT * FRO... patients" />
+                <marker date="1505684396000" expanded="true" signature="8900:9271" ph="INSERT INTO `patients`... " />
+                <marker date="1505684396000" expanded="true" signature="9719:9777" ph="SELECT id FR... patients" />
+                <marker date="1505684396000" expanded="true" signature="10143:10261" ph="INSERT INTO `user`... " />
+                <marker date="1505684396000" expanded="true" signature="10616:10687" ph="SELECT * FRO... patients" />
+                <marker date="1505684396000" expanded="true" signature="12212:13978" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="12307:12550" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="12587:12836" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="12898:13275" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="12969:13158" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="13312:13438" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="13475:13944" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="14188:14259" ph="SELECT * FRO... patients" />
+                <marker date="1505684396000" expanded="true" signature="15890:17746" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="15993:16252" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="16293:16558" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="16624:17021" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="16699:16896" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="17062:17200" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="17241:17708" ph="..." />
+                <marker date="1505684396000" expanded="true" signature="17972:18043" ph="SELECT * FRO... patients" />
               </folding>
             </state>
           </provider>
@@ -141,6 +144,21 @@
             <state relative-caret-position="380">
               <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content_details.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/template/content_details.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="217" column="92" lean-forward="false" selection-start-line="217" selection-start-column="92" selection-end-line="217" selection-end-column="92" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,16 +178,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
               <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content_dashboard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/template/content_dashboard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="10" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="10" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -214,16 +222,16 @@
         <option value="$PROJECT_DIR$/app/template/content_shared2.php" />
         <option value="$PROJECT_DIR$/app/template/content_shared3.php" />
         <option value="$PROJECT_DIR$/app/function/signer.php" />
-        <option value="$PROJECT_DIR$/app/template/content_details.php" />
         <option value="$PROJECT_DIR$/app/config.php" />
         <option value="$PROJECT_DIR$/app/template/sign.php" />
         <option value="$PROJECT_DIR$/app/template/login.php" />
         <option value="$PROJECT_DIR$/app/template/nav.php" />
         <option value="$PROJECT_DIR$/app/template/content_listP.php" />
         <option value="$PROJECT_DIR$/app/template/content_newP.php" />
-        <option value="$PROJECT_DIR$/app/function.php" />
         <option value="$PROJECT_DIR$/app/function/deleteP.php" />
         <option value="$PROJECT_DIR$/app/function/notifs.php" />
+        <option value="$PROJECT_DIR$/app/function.php" />
+        <option value="$PROJECT_DIR$/app/template/content_details.php" />
       </list>
     </option>
   </component>
@@ -288,6 +296,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PR2M.PRO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PR2M.PRO" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -629,11 +655,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505681631641</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Add form btn">
+      <created>1505681717665</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1505681717665</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40795000" />
+    <option name="totallyTimeSpent" value="41865000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -966,60 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/content_details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2945">
-          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#desc#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#defs#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#text#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#tspan#0;n#text#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#path#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#text#1;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#tspan#0;n#text#1;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#path#1;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#text#2;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#tspan#0;n#text#2;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#path#2;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#text#3;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#tspan#0;n#text#3;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#path#3;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#text#4;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#tspan#0;n#text#4;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#path#4;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#text#5;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#tspan#0;n#text#5;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#text#6;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#tspan#0;n#text#6;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#text#7;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#tspan#0;n#text#7;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#text#8;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#tspan#0;n#text#8;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#text#9;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#tspan#0;n#text#9;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#text#10;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#tspan#0;n#text#10;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#rect#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#rect#1;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#rect#2;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#rect#3;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#rect#4;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#rect#5;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#rect#6;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#rect#7;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#rect#8;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#rect#9;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/template/nav.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1118,65 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="277" column="111" lean-forward="true" selection-start-line="277" selection-start-column="8" selection-end-line="277" selection-end-column="111" />
-          <folding>
-            <element signature="n#routage#0;n#!!top" expanded="false" />
-            <element signature="n#root#0;n#!!top" expanded="false" />
-            <element signature="n#sendMail#0;n#!!top" expanded="false" />
-            <element signature="n#addPraticien#0;n#!!top" expanded="false" />
-            <element signature="e#4731#5853#0#PHP" expanded="false" />
-            <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
-            <element signature="n#listAllPraticiens#0;n#!!top" expanded="false" />
-            <element signature="n#addPatient#0;n#!!top" expanded="false" />
-            <element signature="n#updatePatient#0;n#!!top" expanded="false" />
-            <element signature="n#listAllPatient#0;n#!!top" expanded="false" />
-            <element signature="n#listWaitingPatient#0;n#!!top" expanded="false" />
-            <element signature="n#countPatient#0;n#!!top" expanded="false" />
-            <marker date="1505680884000" expanded="true" signature="4753:4939" ph="INSERT INTO `praticien`... " />
-            <marker date="1505680884000" expanded="true" signature="5916:6033" ph="SELECT id,id... praticien" />
-            <marker date="1505680884000" expanded="true" signature="6507:6540" ph="SELECT * FRO... patients" />
-            <marker date="1505680884000" expanded="true" signature="6704:7979" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="6799:6968" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="6799:6969" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="6799:7084" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="7121:7323" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="7337:7352" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="7337:7418" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="7486:7720" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="7486:7811" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="7486:7829" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="7486:7945" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="8152:8196" ph="INSERT INTO `praticien`... " />
-            <marker date="1505680884000" expanded="true" signature="8152:8199" ph="DELETE FROM " />
-            <marker date="1505680884000" expanded="true" signature="8152:8201" ph="DELETE FROM " />
-            <marker date="1505680884000" expanded="true" signature="8655:8710" ph="SELECT * FRO... patients" />
-            <marker date="1505680884000" expanded="true" signature="8950:9321" ph="INSERT INTO `patients`... " />
-            <marker date="1505680884000" expanded="true" signature="9769:9827" ph="SELECT id FR... patients" />
-            <marker date="1505680884000" expanded="true" signature="10193:10311" ph="INSERT INTO `user`... " />
-            <marker date="1505680884000" expanded="true" signature="10666:10737" ph="SELECT * FRO... patients" />
-            <marker date="1505680884000" expanded="true" signature="12262:14028" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="12357:12600" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="12637:12886" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="12948:13325" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="13019:13208" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="13362:13488" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="13525:13994" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="14238:14309" ph="SELECT * FRO... patients" />
-            <marker date="1505680884000" expanded="true" signature="15940:17796" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="16043:16302" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="16343:16608" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="16674:17071" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="16749:16946" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="17112:17250" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="17291:17758" ph="..." />
-            <marker date="1505680884000" expanded="true" signature="18022:18093" ph="SELECT * FRO... patients" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/function/deleteP.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1190,6 +1110,81 @@
         <state relative-caret-position="209">
           <caret line="11" column="291" lean-forward="false" selection-start-line="11" selection-start-column="291" selection-end-line="11" selection-end-column="291" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="137" column="1" lean-forward="false" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
+          <folding>
+            <element signature="n#console_print#0;n#!!top" expanded="false" />
+            <element signature="n#routage#0;n#!!top" expanded="false" />
+            <element signature="n#root#0;n#!!top" expanded="false" />
+            <element signature="n#sendMail#0;n#!!top" expanded="false" />
+            <element signature="n#addPraticien#0;n#!!top" expanded="false" />
+            <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
+            <element signature="e#5844#6381#0#PHP" expanded="false" />
+            <element signature="n#listAllPraticiens#0;n#!!top" expanded="false" />
+            <element signature="n#removePraticien#0;n#!!top" expanded="false" />
+            <element signature="n#searchOnePatient#0;n#!!top" expanded="false" />
+            <element signature="n#addPatient#0;n#!!top" expanded="false" />
+            <element signature="n#updatePatient#0;n#!!top" expanded="false" />
+            <element signature="n#listAllPatient#0;n#!!top" expanded="false" />
+            <element signature="n#listWaitingPatient#0;n#!!top" expanded="false" />
+            <element signature="n#countPatient#0;n#!!top" expanded="false" />
+            <marker date="1505684396000" expanded="true" signature="4751:4937" ph="INSERT INTO `praticien`... " />
+            <marker date="1505684396000" expanded="true" signature="5866:5983" ph="SELECT id,id... praticien" />
+            <marker date="1505684396000" expanded="true" signature="6457:6490" ph="SELECT * FRO... patients" />
+            <marker date="1505684396000" expanded="true" signature="6654:7929" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="6749:6918" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="6749:6919" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="6749:7034" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="7071:7273" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="7287:7302" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="7287:7368" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="7436:7670" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="7436:7761" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="7436:7779" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="7436:7895" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="8102:8146" ph="INSERT INTO `praticien`... " />
+            <marker date="1505684396000" expanded="true" signature="8102:8149" ph="DELETE FROM " />
+            <marker date="1505684396000" expanded="true" signature="8102:8151" ph="DELETE FROM " />
+            <marker date="1505684396000" expanded="true" signature="8605:8660" ph="SELECT * FRO... patients" />
+            <marker date="1505684396000" expanded="true" signature="8900:9271" ph="INSERT INTO `patients`... " />
+            <marker date="1505684396000" expanded="true" signature="9719:9777" ph="SELECT id FR... patients" />
+            <marker date="1505684396000" expanded="true" signature="10143:10261" ph="INSERT INTO `user`... " />
+            <marker date="1505684396000" expanded="true" signature="10616:10687" ph="SELECT * FRO... patients" />
+            <marker date="1505684396000" expanded="true" signature="12212:13978" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="12307:12550" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="12587:12836" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="12898:13275" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="12969:13158" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="13312:13438" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="13475:13944" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="14188:14259" ph="SELECT * FRO... patients" />
+            <marker date="1505684396000" expanded="true" signature="15890:17746" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="15993:16252" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="16293:16558" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="16624:17021" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="16699:16896" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="17062:17200" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="17241:17708" ph="..." />
+            <marker date="1505684396000" expanded="true" signature="17972:18043" ph="SELECT * FRO... patients" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/content_details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="217" column="92" lean-forward="false" selection-start-line="217" selection-start-column="92" selection-end-line="217" selection-end-column="92" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -136,8 +136,6 @@ function root($label, $title){
         }
     }
 }
-
-
 function sendMail($email){
 	//Envoi du mail de confirmation
 	$to      = $email;
@@ -177,7 +175,7 @@ function addPraticien($bdd){
         $stmt->bindValue(':prenom', $_POST['sign_FirstName']);
         $stmt->bindValue(':email', $_POST['sign_Email']);
 	    $stmt->bindValue(':create_date', $_POST['sign_date']);
-        $arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
+        $arr = array();
         $stmt->bindValue(':patients', json_encode($arr));
         $stmt->execute();
         sendMail($_POST['sign_Email']);
