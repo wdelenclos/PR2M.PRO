@@ -138,8 +138,7 @@ function root($label, $title){
 }
 function sendMail($email){
 	//Envoi du mail de confirmation
-	$to      = $email;
-	$subject = 'Création de votre compte PR2M: vos identifiants';
+	$mail = $email; // Déclaration de l'adresse de destination.
 	if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
 	{
 		$passage_ligne = "\r\n";
@@ -148,37 +147,47 @@ function sendMail($email){
 	{
 		$passage_ligne = "\n";
 	}
+	//=====Déclaration des messages au format texte et au format HTML.
+	$message_txt = "Voici votre identifiant PR2M : ";
+	$message_html = "<html><head></head><body><b>Voici votre identifiant PR2M : </b>.</body></html>";
+	//==========
+
 	//=====Création de la boundary
 	$boundary = "-----=".md5(rand());
-//==========
-	$message_html = '<p>Toute l’équipe vous remercie de participer à cette étude.</p><p>Voici votre identifiant, il est nominatif et vous permet d\'acceder à la plateforme.</p>
-                        <br/>
-                        <p>Identifiant: '. crc32($_POST['sign_Email']).'</p>
-                        <br/>
-                        <p>Conservez le precieusement !</p>
-                        <p>Une fois connecté, suivez notre Guide d’utilisation et n’hésitez pas à nous contacter pour toute question.</p>
-                        <p>Bonnes passations et à bientôt</p>
-                        <small>- L’équipe PR2M</small>
-                    ';
+	//==========
 
-//=====Création du message.
+	//=====Définition du sujet.
+	$sujet = "Votre compte PR2M";
+	//=========
+
+	//=====Création du header de l'e-mail.
+	$header = "From: \"WeaponsB\"<equipe.pr2m@gmail.com>".$passage_ligne;
+	$header.= "Reply-to: \"WeaponsB\" <equipe.pr2m@gmail.com>".$passage_ligne;
+	$header.= "MIME-Version: 1.0".$passage_ligne;
+	$header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
+	//==========
+
+	//=====Création du message.
 	$message = $passage_ligne."--".$boundary.$passage_ligne;
-
-//=====Ajout du message au format HTML
+	//=====Ajout du message au format texte.
+	$message.= "Content-Type: text/plain; charset=\"ISO-8859-1\"".$passage_ligne;
+	$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
+	$message.= $passage_ligne.$message_txt.$passage_ligne;
+	//==========
+	$message.= $passage_ligne."--".$boundary.$passage_ligne;
+	//=====Ajout du message au format HTML
 	$message.= "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
 	$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
 	$message.= $passage_ligne.$message_html.$passage_ligne;
-//==========
+	//==========
 	$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
 	$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
-//==========
+	//==========
 
+	//=====Envoi de l'e-mail.
+	mail($mail,$sujet,$message,$header);
+	//==========
 
-	$headers = 'From:'. CONTACTMAIL . "\r\n" .
-	           'Reply-To:'. CONTACTMAIL . "\r\n" .
-	           'X-Mailer: PHP/' . phpversion();
-
-	mail($to, $subject, $message, $headers);
 	header('Location: ../index.php?n=100&p=dashboard&identifiant='.crc32($_POST['sign_Email']) );
 
 }
