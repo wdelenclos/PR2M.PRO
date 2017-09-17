@@ -274,6 +274,7 @@ function listAllPraticiens($bdd)
                                 </td>
                                 <td>
                                  <a>' . $row->email . '</a>
+                                 <small>' . $row->identifiant . '</small>
 							  </td>
 							  <td>
 							   <a>' . count(json_decode($row->patients, true)) . '</a>
