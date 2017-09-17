@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config.php" afterPath="$PROJECT_DIR$/app/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/function.php" afterPath="$PROJECT_DIR$/app/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/login.php" afterPath="$PROJECT_DIR$/app/template/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/sign.php" afterPath="$PROJECT_DIR$/app/template/sign.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -470,11 +466,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505412554937</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add form btn">
+      <created>1505672195326</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1505672195326</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33241000" />
+    <option name="totallyTimeSpent" value="33344000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -531,7 +534,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add exporte btn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add exporte btn" />
+    <MESSAGE value="Add form btn" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add form btn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
