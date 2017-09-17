@@ -52,6 +52,11 @@ function routage(){ // Moteur de rooting
             $title = "Nouveau patient";
             break;
 
+	    case "nouveauP":
+		    $label ="content_newP";
+		    $title = "Nouveau praticien";
+		    break;
+
         case "details":
             $label ="content_details";
             $title = "Details du patient";
@@ -117,7 +122,7 @@ function root($label, $title){
         header('Location: index.php?p=login&logout=true' );
     }
 
-    if($label == "content_dashboard" || $label == "content_shared1" || $label == "content_shared2" || $label == "content_shared3" || $label == "content_profile"  || $label == "content_new" || $label == "content_list" || $label == "content_listP" || $label == "content_details"|| $label == "content_tests" ){
+    if($label == "content_dashboard" || $label == "content_shared1" || $label == "content_shared2" || $label == "content_shared3" || $label == "content_profile"  || $label == "content_new" || $label == "content_newP" || $label == "content_list" || $label == "content_listP" || $label == "content_details"|| $label == "content_tests" ){
         include_once 'template/head.php';
         include_once 'template/nav.php';
     }
@@ -142,9 +147,9 @@ function addPraticien($bdd){
 
     try {
         $sql = "INSERT INTO `praticien`
-        (id, identifiant, nom , prenom, email, patients)
+        (id, identifiant, nom , prenom, email, create_date, patients)
         VALUES
-        ( null, :identifiant, :nom ,:prenom, :email, :patients)
+        ( null, :identifiant, :nom ,:prenom, :create_date, :email, :patients)
         ";
         console_print($_POST['sign_Name']);
         $stmt = $bdd->prepare($sql);
@@ -152,6 +157,7 @@ function addPraticien($bdd){
         $stmt->bindValue(':nom', $_POST['sign_Name']);
         $stmt->bindValue(':prenom', $_POST['sign_FirstName']);
         $stmt->bindValue(':email', $_POST['sign_Email']);
+	    $stmt->bindValue(':create_date', $_POST['sign_date']);
         $arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
         $stmt->bindValue(':patients', json_encode($arr));
         $stmt->execute();
@@ -274,7 +280,8 @@ function listAllPraticiens($bdd)
                                 </td>
                                 <td>
                                  <a>' . $row->email . '</a>
-                                 <small>' . $row->identifiant . '</small>
+                                 <br />
+                                 <small>Identifiant: ' . $row->identifiant . '</small>
 							  </td>
 							  <td>
 							   <a>' . count(json_decode($row->patients, true)) . '</a>
