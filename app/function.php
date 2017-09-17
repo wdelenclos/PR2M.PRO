@@ -147,7 +147,7 @@ function addPraticien($bdd){
 
     try {
         $sql = "INSERT INTO `praticien`
-        (id, identifiant, nom , prenom, email, create_date, patients)
+        (id, identifiant, nom , prenom, create_date, email, patients)
         VALUES
         ( null, :identifiant, :nom ,:prenom, :create_date, :email, :patients)
         ";
@@ -276,6 +276,7 @@ function listAllPraticiens($bdd)
                                 <td>
                                     <a>' . $row->nom . ' ' . $row->prenom . '</a>
                                     <br />
+                                    <small>'. date('m/d/Y', $row->create_date) .'</small>
                                
                                 </td>
                                 <td>

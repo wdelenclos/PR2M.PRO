@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/template/content_newP.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/function.php" afterPath="$PROJECT_DIR$/app/function.php" />
     </list>
@@ -57,7 +56,7 @@
       <file leaf-file-name="content_listP.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/template/content_listP.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
+            <state relative-caret-position="179">
               <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
               <folding />
             </state>
@@ -143,48 +142,49 @@
       <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="149" column="58" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="58" />
+            <state relative-caret-position="396">
+              <caret line="279" column="31" lean-forward="true" selection-start-line="279" selection-start-column="31" selection-end-line="279" selection-end-column="31" />
               <folding>
                 <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
                 <element signature="n#addPatient#0;n#!!top" expanded="false" />
                 <element signature="n#searchOnePatient#0;n#!!top" expanded="false" />
                 <element signature="n#updatePatient#0;n#!!top" expanded="false" />
-                <element signature="n#listAllPraticiens#0;n#!!top" expanded="false" />
                 <element signature="n#listAllPatient#0;n#!!top" expanded="false" />
                 <element signature="n#listWaitingPatient#0;n#!!top" expanded="false" />
                 <element signature="n#countPatient#0;n#!!top" expanded="false" />
                 <element signature="n#sendMail#0;n#!!top" expanded="false" />
-                <marker date="1505674490000" expanded="true" signature="3758:3944" ph="INSERT INTO `praticien`... " />
-                <marker date="1505674490000" expanded="true" signature="4630:4747" ph="SELECT id,id... praticien" />
-                <marker date="1505674490000" expanded="true" signature="5224:5595" ph="INSERT INTO `patients`... " />
-                <marker date="1505674490000" expanded="true" signature="6103:6161" ph="SELECT id FR... patients" />
-                <marker date="1505674490000" expanded="true" signature="6603:6658" ph="SELECT * FRO... patients" />
-                <marker date="1505674490000" expanded="true" signature="6934:7052" ph="INSERT INTO `user`... " />
-                <marker date="1505674490000" expanded="true" signature="7419:7452" ph="SELECT * FRO... patients" />
-                <marker date="1505674490000" expanded="true" signature="7616:8812" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="7711:7906" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="7943:8145" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="8159:8174" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="8159:8240" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="8308:8778" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="9007:9078" ph="SELECT * FRO... patients" />
-                <marker date="1505674490000" expanded="true" signature="10603:12369" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="10698:10941" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="10978:11227" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="11289:11666" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="11360:11549" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="11703:11829" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="11866:12335" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="12579:12650" ph="SELECT * FRO... patients" />
-                <marker date="1505674490000" expanded="true" signature="14281:16137" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="14384:14643" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="14684:14949" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="15015:15412" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="15090:15287" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="15453:15591" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="15632:16099" ph="..." />
-                <marker date="1505674490000" expanded="true" signature="16363:16434" ph="SELECT * FRO... patients" />
+                <marker date="1505675098000" expanded="true" signature="3758:3944" ph="INSERT INTO `praticien`... " />
+                <marker date="1505675098000" expanded="true" signature="4630:4747" ph="SELECT id,id... praticien" />
+                <marker date="1505675098000" expanded="true" signature="5224:5595" ph="INSERT INTO `patients`... " />
+                <marker date="1505675098000" expanded="true" signature="6103:6161" ph="SELECT id FR... patients" />
+                <marker date="1505675098000" expanded="true" signature="6603:6658" ph="SELECT * FRO... patients" />
+                <marker date="1505675098000" expanded="true" signature="6934:7052" ph="INSERT INTO `user`... " />
+                <marker date="1505675098000" expanded="true" signature="7419:7452" ph="SELECT * FRO... patients" />
+                <marker date="1505675098000" expanded="true" signature="7616:8902" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="7711:7880" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="7711:7881" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="7711:7996" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="8033:8235" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="8249:8264" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="8249:8330" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="8398:8868" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="9097:9168" ph="SELECT * FRO... patients" />
+                <marker date="1505675098000" expanded="true" signature="10693:12459" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="10788:11031" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="11068:11317" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="11379:11756" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="11450:11639" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="11793:11919" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="11956:12425" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="12669:12740" ph="SELECT * FRO... patients" />
+                <marker date="1505675098000" expanded="true" signature="14371:16227" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="14474:14733" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="14774:15039" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="15105:15502" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="15180:15377" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="15543:15681" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="15722:16189" ph="..." />
+                <marker date="1505675098000" expanded="true" signature="16453:16524" ph="SELECT * FRO... patients" />
               </folding>
             </state>
           </provider>
@@ -255,8 +255,8 @@
         <option value="$PROJECT_DIR$/app/template/login.php" />
         <option value="$PROJECT_DIR$/app/template/nav.php" />
         <option value="$PROJECT_DIR$/app/template/content_listP.php" />
-        <option value="$PROJECT_DIR$/app/function.php" />
         <option value="$PROJECT_DIR$/app/template/content_newP.php" />
+        <option value="$PROJECT_DIR$/app/function.php" />
       </list>
     </option>
   </component>
@@ -568,11 +568,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505673777394</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add form btn">
+      <created>1505674841817</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1505674841817</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35545000" />
+    <option name="totallyTimeSpent" value="35745000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,38 +594,38 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22916667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25486112" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25486112" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1015,14 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/content_listP.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/template/sign.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1047,50 +1046,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/content_listP.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="149" column="58" lean-forward="false" selection-start-line="149" selection-start-column="47" selection-end-line="149" selection-end-column="58" />
+        <state relative-caret-position="396">
+          <caret line="279" column="31" lean-forward="true" selection-start-line="279" selection-start-column="31" selection-end-line="279" selection-end-column="31" />
           <folding>
             <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
             <element signature="n#addPatient#0;n#!!top" expanded="false" />
             <element signature="n#searchOnePatient#0;n#!!top" expanded="false" />
             <element signature="n#updatePatient#0;n#!!top" expanded="false" />
-            <element signature="n#listAllPraticiens#0;n#!!top" expanded="false" />
             <element signature="n#listAllPatient#0;n#!!top" expanded="false" />
             <element signature="n#listWaitingPatient#0;n#!!top" expanded="false" />
             <element signature="n#countPatient#0;n#!!top" expanded="false" />
             <element signature="n#sendMail#0;n#!!top" expanded="false" />
-            <marker date="1505674490000" expanded="true" signature="3758:3944" ph="INSERT INTO `praticien`... " />
-            <marker date="1505674490000" expanded="true" signature="4630:4747" ph="SELECT id,id... praticien" />
-            <marker date="1505674490000" expanded="true" signature="5224:5595" ph="INSERT INTO `patients`... " />
-            <marker date="1505674490000" expanded="true" signature="6103:6161" ph="SELECT id FR... patients" />
-            <marker date="1505674490000" expanded="true" signature="6603:6658" ph="SELECT * FRO... patients" />
-            <marker date="1505674490000" expanded="true" signature="6934:7052" ph="INSERT INTO `user`... " />
-            <marker date="1505674490000" expanded="true" signature="7419:7452" ph="SELECT * FRO... patients" />
-            <marker date="1505674490000" expanded="true" signature="7616:8812" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="7711:7906" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="7943:8145" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="8159:8174" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="8159:8240" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="8308:8778" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="9007:9078" ph="SELECT * FRO... patients" />
-            <marker date="1505674490000" expanded="true" signature="10603:12369" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="10698:10941" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="10978:11227" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="11289:11666" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="11360:11549" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="11703:11829" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="11866:12335" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="12579:12650" ph="SELECT * FRO... patients" />
-            <marker date="1505674490000" expanded="true" signature="14281:16137" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="14384:14643" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="14684:14949" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="15015:15412" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="15090:15287" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="15453:15591" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="15632:16099" ph="..." />
-            <marker date="1505674490000" expanded="true" signature="16363:16434" ph="SELECT * FRO... patients" />
+            <marker date="1505675098000" expanded="true" signature="3758:3944" ph="INSERT INTO `praticien`... " />
+            <marker date="1505675098000" expanded="true" signature="4630:4747" ph="SELECT id,id... praticien" />
+            <marker date="1505675098000" expanded="true" signature="5224:5595" ph="INSERT INTO `patients`... " />
+            <marker date="1505675098000" expanded="true" signature="6103:6161" ph="SELECT id FR... patients" />
+            <marker date="1505675098000" expanded="true" signature="6603:6658" ph="SELECT * FRO... patients" />
+            <marker date="1505675098000" expanded="true" signature="6934:7052" ph="INSERT INTO `user`... " />
+            <marker date="1505675098000" expanded="true" signature="7419:7452" ph="SELECT * FRO... patients" />
+            <marker date="1505675098000" expanded="true" signature="7616:8902" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="7711:7880" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="7711:7881" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="7711:7996" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="8033:8235" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="8249:8264" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="8249:8330" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="8398:8868" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="9097:9168" ph="SELECT * FRO... patients" />
+            <marker date="1505675098000" expanded="true" signature="10693:12459" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="10788:11031" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="11068:11317" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="11379:11756" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="11450:11639" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="11793:11919" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="11956:12425" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="12669:12740" ph="SELECT * FRO... patients" />
+            <marker date="1505675098000" expanded="true" signature="14371:16227" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="14474:14733" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="14774:15039" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="15105:15502" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="15180:15377" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="15543:15681" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="15722:16189" ph="..." />
+            <marker date="1505675098000" expanded="true" signature="16453:16524" ph="SELECT * FRO... patients" />
           </folding>
         </state>
       </provider>
