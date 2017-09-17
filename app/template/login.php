@@ -69,7 +69,7 @@
 
         <div id="register" class="animate form registration_form">
             <section class="login_content">
-                <form action="function/signer.php" method="post">
+                <form action="function/askId.php" method="post">
                     <h1>Demande de compte</h1>
                     <div>
                         <input type="text" name="sign_Name" class="form-control" placeholder="Nom" required="" />
