@@ -138,8 +138,27 @@ function root($label, $title){
 }
 
 
-// ------------------------   Fonction de crud praticien et patients
+function sendMail($email){
+	//Envoi du mail de confirmation
+	$to      = $email;
+	$subject = 'Création de votre compte PR2M: vos identifiants';
+	$message = '<p>Toute l’équipe vous remercie de participer à cette étude.</p><p>Voici votre identifiant, il est nominatif et vous permet d\'acceder à la plateforme.</p>
+                        <br/>
+                        <p>Identifiant: '. crc32($_POST['sign_Email']).'</p>
+                        <br/>
+                        <p>Conservez le precieusement !</p>
+                        <p>Une fois connecté, suivez notre Guide d’utilisation et n’hésitez pas à nous contacter pour toute question.</p>
+                        <p>Bonnes passations et à bientôt</p>
+                        <small>- L’équipe PR2M</small>
+                    ';
+	$headers = 'From:'. CONTACTMAIL . "\r\n" .
+	           'Reply-To:'. CONTACTMAIL . "\r\n" .
+	           'X-Mailer: PHP/' . phpversion();
 
+	mail($to, $subject, $message, $headers);
+	header('Location: ../index.php?n=100&p=dashboard&identifiant='.crc32($_POST['sign_Email']) );
+
+}
 
 
 // Praticiens
@@ -196,70 +215,6 @@ function searchPraticien($bdd)
     }
     return $boolean;
 }
-function addPatient($bdd)
-{
-
-    try {
-        $sql = "INSERT INTO `patients` (`nom`, `prenom`, `date_naissance`, `lateralite`, `niveau`, `commentaire`, `test_emme`, `test_evip`, `test_dra`, `test_la_denomination`, `test_vtnv`, `test_la_designation`, `questionnaire`,  `praticien`)
-            VALUES
-            (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire, '', '', '', '','{}', '',  '',  :identifiant)
-            ";
-        $stmt = $bdd->prepare($sql);
-        $stmt->bindValue(':nom', $_POST['nom']);
-        $stmt->bindValue(':prenom', $_POST['prenom']);
-        $stmt->bindValue(':date_naissance', $_POST['date']);
-        $stmt->bindValue(':niveau', $_POST['level']);
-        $stmt->bindValue(':lateralite', $_POST['lateralite']);
-        $stmt->bindValue(':commentaire', $_POST['commentaire']);
-        $stmt->bindValue(':identifiant', $_POST['identifiant']);
-        $stmt->execute();
-
-        $sql = 'SELECT id
-        FROM `patients`
-        WHERE nom = :nom';
-        $stmt = $bdd->prepare($sql);
-        $stmt->bindValue(':nom',$_POST['nom']);
-        $stmt->execute();
-        $row = $stmt->fetchObject();
-        $id = $row->id;
-        header('Location: ../index.php?n=200&p=details&identifiant='.$_POST['identifiant'].'&id='.$id );
-    }
-    catch( PDOException $Exception ) {
-            var_dump($Exception->getMessage());
-    }
-}
-function searchOnePatient($bdd)
-{
-
-    try {
-        $sql = 'SELECT *
-        FROM `patients`
-        WHERE id = :id';
-        $stmt = $bdd->prepare($sql);
-        $stmt->bindValue(':id',$_GET['id']);
-        $stmt->execute();
-        $row = $stmt->fetchObject();
-
-    } catch (PDOException $e) {
-
-        $e->getMessage();
-    }
-    return $row;
-}
-function updatePatient($bdd)
-{
-    $sql = "INSERT INTO `user`
-        (id, pseudo, pw , adresse_mail)
-        VALUES
-        ( null, :pseudo, :pw ,:adresse_mail)
-        ";
-    $stmt = $bdd->prepare( $sql );
-    $stmt->bindValue( ':pseudo' , htmlspecialchars($_POST['pseudo']) );
-    $stmt->bindValue( ':pw' ,  sha1($_POST['pw'] ));
-    $stmt->bindValue( ':adresse_mail' , htmlspecialchars($_POST['adresse_mail']) );
-    $stmt->execute();
-    header('Location:login.html');
-}
 function listAllPraticiens($bdd)
 {
 	try {
@@ -291,9 +246,8 @@ function listAllPraticiens($bdd)
 							  </td>
                               
                                 <td>
-                                    <a href="?p=detailsP&identifiant='.$_SESSION['identifiant'].'&id='.$row->id.'" class="btn btn-primary btn-xs"><i class="fa fa-chevron-right"></i> Voir </a>
-                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Modifier</a>
-                                    <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer</a>
+                                    <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-chevron-right"></i> Voir </a>
+                                    <a href="function/deleteP.php?id= ' . $row->identifiant . '&identifiant = '.$_SESSION['identifiant'].'" onclick="return confirm(\'Êtes vous sûr de vouloir supprimer ' . $row->nom . ' ?\')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer</a>
                                 </td>
                             </tr>
                 
@@ -309,8 +263,87 @@ function listAllPraticiens($bdd)
 		echo $e->getMessage();
 	}
 }
+function removePraticien($bdd){
+	try {
+		$sql = "DELETE FROM `praticien` WHERE `identifiant` = " . $_GET['id'];
+		console_print($_POST['sign_Name']);
+		$stmt = $bdd->prepare($sql);
+		$stmt->execute();
+		$id =  crc32($_GET['id']);
+		header('Location: ../index.php?n=400&p=listeP&identifiant='.$_GET['identifiant'].'&id='.$id );
+	}
+	catch (PDOException $e) {
+
+		$error = $e->getMessage();
+		header('Location: ../index.php?n=500&p=listeP&identifiant=' .$_GET['identifiant']. '&erreur='.$error );
+	}
+}
 
 // Patients
+function searchOnePatient($bdd)
+{
+
+	try {
+		$sql = 'SELECT *
+        FROM `patients`
+        WHERE id = :id';
+		$stmt = $bdd->prepare($sql);
+		$stmt->bindValue(':id',$_GET['id']);
+		$stmt->execute();
+		$row = $stmt->fetchObject();
+
+	} catch (PDOException $e) {
+
+		$e->getMessage();
+	}
+	return $row;
+}
+function addPatient($bdd)
+{
+
+	try {
+		$sql = "INSERT INTO `patients` (`nom`, `prenom`, `date_naissance`, `lateralite`, `niveau`, `commentaire`, `test_emme`, `test_evip`, `test_dra`, `test_la_denomination`, `test_vtnv`, `test_la_designation`, `questionnaire`,  `praticien`)
+            VALUES
+            (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire, '', '', '', '','{}', '',  '',  :identifiant)
+            ";
+		$stmt = $bdd->prepare($sql);
+		$stmt->bindValue(':nom', $_POST['nom']);
+		$stmt->bindValue(':prenom', $_POST['prenom']);
+		$stmt->bindValue(':date_naissance', $_POST['date']);
+		$stmt->bindValue(':niveau', $_POST['level']);
+		$stmt->bindValue(':lateralite', $_POST['lateralite']);
+		$stmt->bindValue(':commentaire', $_POST['commentaire']);
+		$stmt->bindValue(':identifiant', $_POST['identifiant']);
+		$stmt->execute();
+
+		$sql = 'SELECT id
+        FROM `patients`
+        WHERE nom = :nom';
+		$stmt = $bdd->prepare($sql);
+		$stmt->bindValue(':nom',$_POST['nom']);
+		$stmt->execute();
+		$row = $stmt->fetchObject();
+		$id = $row->id;
+		header('Location: ../index.php?n=200&p=details&identifiant='.$_POST['identifiant'].'&id='.$id );
+	}
+	catch( PDOException $Exception ) {
+		var_dump($Exception->getMessage());
+	}
+}
+function updatePatient($bdd)
+{
+	$sql = "INSERT INTO `user`
+        (id, pseudo, pw , adresse_mail)
+        VALUES
+        ( null, :pseudo, :pw ,:adresse_mail)
+        ";
+	$stmt = $bdd->prepare( $sql );
+	$stmt->bindValue( ':pseudo' , htmlspecialchars($_POST['pseudo']) );
+	$stmt->bindValue( ':pw' ,  sha1($_POST['pw'] ));
+	$stmt->bindValue( ':adresse_mail' , htmlspecialchars($_POST['adresse_mail']) );
+	$stmt->execute();
+	header('Location:login.html');
+}
 function listAllPatient($bdd)
 {
     try {
@@ -572,24 +605,3 @@ function countPatient($bdd)
     return $patientsInfo;
 }
 
-function sendMail($email){
-	//Envoi du mail de confirmation
-	$to      = $email;
-	$subject = 'Création de votre compte PR2M: vos identifiants';
-	$message = '<p>Toute l’équipe vous remercie de participer à cette étude.</p><p>Voici votre identifiant, il est nominatif et vous permet d\'acceder à la plateforme.</p>
-                        <br/>
-                        <p>Identifiant: '. crc32($_POST['sign_Email']).'</p>
-                        <br/>
-                        <p>Conservez le precieusement !</p>
-                        <p>Une fois connecté, suivez notre Guide d’utilisation et n’hésitez pas à nous contacter pour toute question.</p>
-                        <p>Bonnes passations et à bientôt</p>
-                        <small>- L’équipe PR2M</small>
-                    ';
-	$headers = 'From:'. CONTACTMAIL . "\r\n" .
-	           'Reply-To:'. CONTACTMAIL . "\r\n" .
-	           'X-Mailer: PHP/' . phpversion();
-
-	mail($to, $subject, $message, $headers);
-	header('Location: ../index.php?n=100&p=dashboard&identifiant='.crc32($_POST['sign_Email']) );
-
-}
