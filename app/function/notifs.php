@@ -6,8 +6,13 @@
 function notification(){
     switch ($_GET['n']) {
         case 100:
-            echo "<div class=\"alert alert-success alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span> </button>Bienvenue " . $_SESSION['prenom'] . " ! Votre compte a bien été enregistré, notez bien votre identifiant: <strong>" . $_SESSION['identifiant'] . "</strong></div>";
+            echo "<div class=\"alert alert-success alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span> </button>Bravo " . $_SESSION['prenom'] . " ! Le compte a bien été enregistré, notez bien l'identifiant: <strong>" . $_GET['id'] . "</strong></div>";
             break;
+
+	    case 500:
+		    echo "<div class=\"alert alert-success alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span> </button>Erreur " . $_SESSION['prenom'] . " ! Voici l'erreur: <strong>" . $_GET['erreur'] . "</strong></div>";
+		    break;
+
         case 200:
             echo "<div class=\"alert alert-success alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span> </button>Utilisateur créée avec succès !</div>";
             break;

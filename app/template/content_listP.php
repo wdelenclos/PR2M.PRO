@@ -20,7 +20,11 @@ require ('connect.php');
     <!-- top tiles -->
     <div class="clearfix"></div>
     <!-- /top tiles -->
-
+    <div class="row">
+		<?php
+		notification();
+		?>
+    </div>
     <div class="clearfix"></div>
     <div class="row">
         <div class="col-md-12">

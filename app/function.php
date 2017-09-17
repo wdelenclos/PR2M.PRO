@@ -161,12 +161,14 @@ function addPraticien($bdd){
         $arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
         $stmt->bindValue(':patients', json_encode($arr));
         $stmt->execute();
-	    $id = $_SESSION['identifiant'];
-	    header('Location: ../index.php?n=200&p=listeP&identifiant='.$_POST['identifiant'].'&id='.$id );
+        sendMail($_POST['sign_Email']);
+	    $id =  crc32($_POST['sign_Email']);
+	    header('Location: ../index.php?n=100&p=listeP&identifiant='.$_POST['identifiant'].'&id='.$id );
 	}
     catch (PDOException $e) {
 
-        $e->getMessage();
+        $error = $e->getMessage();
+	    header('Location: ../index.php?n=500&p=listeP&identifiant='.$_POST['identifiant'].'&erreur='.$error );
     }
 }
 function searchPraticien($bdd)
