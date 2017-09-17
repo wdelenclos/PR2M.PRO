@@ -188,7 +188,7 @@ $niveau = $data->niveau;
                                                     </div>
                                                 </div>
 
-                                                <button type="button" class="btn btn-default btn-xs">Exporter les données</button>
+                                                <a class="btn btn-success"><i class="fa fa-backward m-right-xs"></i> Exporter les données</a>
 
                                             </div>
                                         </div>
@@ -315,7 +315,7 @@ $niveau = $data->niveau;
                                                     </div>
                                                 </div>
                                                 </div>
-                                             <button type="button" class="btn btn-default btn-xs">Exporter les données</button>
+                                            <a class="btn btn-success"><i class="fa fa-backward m-right-xs"></i> Exporter les données</a>
                                         </div>
                                     </div>
                                 </div>
