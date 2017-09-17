@@ -265,9 +265,9 @@ function listAllPraticiens($bdd)
 }
 function removePraticien($bdd){
 	try {
-		$sql = "DELETE FROM `praticien` WHERE `identifiant` = " . $_GET['id'];
-		console_print($_POST['sign_Name']);
+		$sql = "DELETE FROM `praticien` WHERE `identifiant` = :id" ;
 		$stmt = $bdd->prepare($sql);
+		$stmt->bindValue(':id',$_GET['id']);
 		$stmt->execute();
 		$id =  crc32($_GET['id']);
 		header('Location: ../index.php?n=400&p=listeP&identifiant='.$_GET['identifiant'].'&id='.$id );
