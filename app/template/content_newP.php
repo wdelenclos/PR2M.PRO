@@ -49,6 +49,7 @@
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12 form-group has-feedback">
                                 <input type="hidden" name="sign_date" value="<?= time()?>">
+                                <input type="hidden" name="sign_id" value="<?= $_SESSION['identifiant']?>">
 
 
                                 <button type="reset" class="btn btn-primary">Réinitialiser</button>
