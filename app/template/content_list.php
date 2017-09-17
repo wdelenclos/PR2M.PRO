@@ -19,7 +19,11 @@ require ('connect.php');
 <div class="right_col" role="main">
     <!-- top tiles -->
     <div class="clearfix"></div>
-
+    <div class="row">
+		<?php
+		notification();
+		?>
+    </div>
     <div class="row tile_count">
         <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
             <span class="count_top"><i class="fa fa-users"></i> Nombre de patients</span>

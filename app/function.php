@@ -420,7 +420,7 @@ function listAllPatient($bdd)
                                 <td>
                                     <a href="?p=details&identifiant='.$_SESSION['identifiant'].'&id='.$row->id.'" class="btn btn-primary btn-xs"><i class="fa fa-chevron-right"></i> Voir </a>
                                     <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Modifier</a>
-                                    <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer</a>
+                                    <a href="function/delete.php?id=' . $row->id . '&identifiant='.$_SESSION['identifiant'].'" onclick="return confirm(\'Êtes vous sûr de vouloir supprimer ' . $row->nom . ' ?\')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer</a>
                                 </td>
                             </tr>
                 
@@ -601,5 +601,20 @@ function countPatient($bdd)
         echo $e->getMessage();
     }
     return $patientsInfo;
+}
+function removePatient($bdd){
+	try {
+		$sql = "DELETE FROM `patients` WHERE `id`=:id" ;
+		$stmt = $bdd->prepare($sql);
+		$stmt->bindValue(':id',$_GET['id']);
+		$stmt->execute();
+		$id =  crc32($_GET['id']);
+		header('Location: ../index.php?n=400&p=liste&identifiant='.$_GET['identifiant'].'&id='.$id );
+	}
+	catch (PDOException $e) {
+
+		$error = $e->getMessage();
+		header('Location: ../index.php?n=500&p=liste&identifiant=' .$_GET['identifiant']. '&erreur='.$error );
+	}
 }
 

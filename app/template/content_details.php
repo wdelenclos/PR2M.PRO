@@ -84,7 +84,7 @@ $niveau = $data->niveau;
 
                             <hr>
                             <br />
-                            <h4>Exportation:</h4>
+                            <h4>Exporter les resultats:</h4>
                             <br />
                             <a class="btn btn-primary"><i class="fa fa-download m-right-xs"></i> Pré-test</a>
                             <br/>
