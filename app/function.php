@@ -59,9 +59,12 @@ function routage(){ // Moteur de rooting
 
         case "liste":
             $label ="content_list";
-            $title = "Nouveau patient";
+            $title = "Liste des patients";
             break;
-
+	    case "listeP":
+		    $label ="content_listP";
+		    $title = "Liste des praticiens";
+		    break;
 	    case "shared1":
 		    $label ="content_shared1";
 		    $title = "Justification théorique";
@@ -132,6 +135,9 @@ function root($label, $title){
 
 // ------------------------   Fonction de crud praticien et patients
 
+
+
+// Praticiens
 function addPraticien($bdd){
 
     try {
@@ -157,7 +163,6 @@ function addPraticien($bdd){
         $e->getMessage();
     }
 }
-
 function searchPraticien($bdd)
 {
 
@@ -183,7 +188,6 @@ function searchPraticien($bdd)
     }
     return $boolean;
 }
-
 function addPatient($bdd)
 {
 
@@ -248,8 +252,48 @@ function updatePatient($bdd)
     $stmt->execute();
     header('Location:login.html');
 }
+function listAllPraticiens($bdd)
+{
+	try {
+		$sql = 'SELECT *
+        FROM `patients`';
+		$stmt = $bdd->prepare($sql);
+		$stmt->execute();
 
-// Listing des patients
+		while ($row = $stmt->fetchObject()) {
+
+			echo('
+                    
+                
+                 <tr>
+                                <td>' . $row->id . '</td>
+                                <td>
+                                    <a>' . $row->nom . ' ' . $row->prenom . '</a>
+                                    <br />
+                                    <small>' . $row->email . '</small>
+                                </td>
+                              
+                                <td>
+                                    <a href="?p=detailsP&identifiant='.$_SESSION['identifiant'].'&id='.$row->id.'" class="btn btn-primary btn-xs"><i class="fa fa-chevron-right"></i> Voir </a>
+                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Modifier</a>
+                                    <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer</a>
+                                </td>
+                            </tr>
+                
+                ');
+
+
+		};
+		$stmt = null;
+
+
+	} catch (PDOException $e) {
+
+		echo $e->getMessage();
+	}
+}
+
+// Patients
 function listAllPatient($bdd)
 {
     try {
