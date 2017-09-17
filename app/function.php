@@ -140,7 +140,18 @@ function sendMail($email){
 	//Envoi du mail de confirmation
 	$to      = $email;
 	$subject = 'Création de votre compte PR2M: vos identifiants';
-	$message = '<p>Toute l’équipe vous remercie de participer à cette étude.</p><p>Voici votre identifiant, il est nominatif et vous permet d\'acceder à la plateforme.</p>
+	if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) // On filtre les serveurs qui rencontrent des bogues.
+	{
+		$passage_ligne = "\r\n";
+	}
+	else
+	{
+		$passage_ligne = "\n";
+	}
+	//=====Création de la boundary
+	$boundary = "-----=".md5(rand());
+//==========
+	$message_html = '<p>Toute l’équipe vous remercie de participer à cette étude.</p><p>Voici votre identifiant, il est nominatif et vous permet d\'acceder à la plateforme.</p>
                         <br/>
                         <p>Identifiant: '. crc32($_POST['sign_Email']).'</p>
                         <br/>
@@ -149,6 +160,20 @@ function sendMail($email){
                         <p>Bonnes passations et à bientôt</p>
                         <small>- L’équipe PR2M</small>
                     ';
+
+//=====Création du message.
+	$message = $passage_ligne."--".$boundary.$passage_ligne;
+
+//=====Ajout du message au format HTML
+	$message.= "Content-Type: text/html; charset=\"ISO-8859-1\"".$passage_ligne;
+	$message.= "Content-Transfer-Encoding: 8bit".$passage_ligne;
+	$message.= $passage_ligne.$message_html.$passage_ligne;
+//==========
+	$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
+	$message.= $passage_ligne."--".$boundary."--".$passage_ligne;
+//==========
+
+
 	$headers = 'From:'. CONTACTMAIL . "\r\n" .
 	           'Reply-To:'. CONTACTMAIL . "\r\n" .
 	           'X-Mailer: PHP/' . phpversion();
@@ -302,7 +327,7 @@ function addPatient($bdd)
 	try {
 		$sql = "INSERT INTO `patients` (`nom`, `prenom`, `date_naissance`, `lateralite`, `niveau`, `commentaire`, `test_emme`, `test_evip`, `test_dra`, `test_la_denomination`, `test_vtnv`, `test_la_designation`, `questionnaire`,  `praticien`)
             VALUES
-            (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire, '', '', '', '','{}', '',  '',  :identifiant)
+            (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire, '{}', '{}', '{}', '{}','{}', '{}',  '{}',  :identifiant)
             ";
 		$stmt = $bdd->prepare($sql);
 		$stmt->bindValue(':nom', $_POST['nom']);
@@ -419,7 +444,7 @@ function listAllPatient($bdd)
                                 </td>
                                 <td>
                                     <a href="?p=details&identifiant='.$_SESSION['identifiant'].'&id='.$row->id.'" class="btn btn-primary btn-xs"><i class="fa fa-chevron-right"></i> Voir </a>
-                                    <a href="#" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Modifier</a>
+                                 
                                     <a href="function/delete.php?id=' . $row->id . '&identifiant='.$_SESSION['identifiant'].'" onclick="return confirm(\'Êtes vous sûr de vouloir supprimer ' . $row->nom . ' ?\')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer</a>
                                 </td>
                             </tr>
@@ -609,7 +634,7 @@ function removePatient($bdd){
 		$stmt->bindValue(':id',$_GET['id']);
 		$stmt->execute();
 		$id =  crc32($_GET['id']);
-		header('Location: ../index.php?n=400&p=liste&identifiant='.$_GET['identifiant'].'&id='.$id );
+		header('Location: ../index.php?n=420&p=liste&identifiant='.$_GET['identifiant'].'&id='.$id );
 	}
 	catch (PDOException $e) {
 
