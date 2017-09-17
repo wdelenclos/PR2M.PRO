@@ -148,8 +148,8 @@ function sendMail($email){
 		$passage_ligne = "\n";
 	}
 	//=====Déclaration des messages au format texte et au format HTML.
-	$message_txt = "Voici votre identifiant PR2M : ";
-	$message_html = "<html><head></head><body><b>Voici votre identifiant PR2M : </b>.</body></html>";
+	$message_txt = "Voici votre identifiant PR2M : ".  crc32($_POST['sign_Email'].;
+	$message_html = "<html><head></head><body><i>Voici votre identifiant PR2M : </i> <b>".  crc32($_POST['sign_Email']."</b>.</body></html>";
 	//==========
 
 	//=====Création de la boundary
@@ -161,8 +161,8 @@ function sendMail($email){
 	//=========
 
 	//=====Création du header de l'e-mail.
-	$header = "From: \"WeaponsB\"<equipe.pr2m@gmail.com>".$passage_ligne;
-	$header.= "Reply-to: \"WeaponsB\" <equipe.pr2m@gmail.com>".$passage_ligne;
+	$header = "From: \"Equipe PR2M \"<equipe.pr2m@gmail.com>".$passage_ligne;
+	$header.= "Reply-to: \"Equipe PR2M \" <equipe.pr2m@gmail.com>".$passage_ligne;
 	$header.= "MIME-Version: 1.0".$passage_ligne;
 	$header.= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
 	//==========
