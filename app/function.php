@@ -161,8 +161,8 @@ function addPraticien($bdd){
         $arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
         $stmt->bindValue(':patients', json_encode($arr));
         $stmt->execute();
-
-
+	    $id = $_SESSION['identifiant'];
+	    header('Location: ../index.php?n=200&p=listeP&identifiant='.$_POST['identifiant'].'&id='.$id );
 	}
     catch (PDOException $e) {
 
