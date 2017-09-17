@@ -26,7 +26,7 @@ require ('connect.php');
         <div class="col-md-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Tous les patients</h2>
+                    <h2>Tous les praticiens</h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>
@@ -44,10 +44,9 @@ require ('connect.php');
                         <thead>
                         <tr>
                             <th style="width: 1%">#</th>
-                            <th style="width: 20%">Patient</th>
+                            <th style="width: 20%">Praticien</th>
                             <th>Informations</th>
-                            <th>Avancée</th>
-                            <th>Etat</th>
+                            <th>Patients</th>
                             <th style="width: 20%">Action</th>
                         </tr>
                         </thead>

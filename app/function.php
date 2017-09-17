@@ -270,8 +270,14 @@ function listAllPraticiens($bdd)
                                 <td>
                                     <a>' . $row->nom . ' ' . $row->prenom . '</a>
                                     <br />
-                                    <small>' . $row->email . '</small>
+                               
                                 </td>
+                                <td>
+                                 <a>' . $row->email . '</a>
+							  </td>
+							  <td>
+							   <a>' . count(json_decode($row->patients, true)) . '</a>
+							  </td>
                               
                                 <td>
                                     <a href="?p=detailsP&identifiant='.$_SESSION['identifiant'].'&id='.$row->id.'" class="btn btn-primary btn-xs"><i class="fa fa-chevron-right"></i> Voir </a>
