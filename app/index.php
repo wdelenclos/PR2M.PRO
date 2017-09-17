@@ -17,7 +17,7 @@ include_once 'connect.php';
 include_once 'function/notifs.php';
 
 
-if(!isset($_GET['p']) || !isset($_GET['identifiant'])){
+if(!isset($_GET['p']) || !isset($_GET['identifiant']) || $_GET['identifiant'] == ''){
     $_GET['p'] = '';
 }
 
