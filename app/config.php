@@ -4,8 +4,9 @@
 // Adresse mail contact
 define('CONTACTMAIL','equipe.pr2m@gmail.com' );
 
-// Email administrateur
+// Administrateur
 define('ADMINMAIL','wdelenclos@gmail.com' );
+define('MDP','125-ayN-92' );
 
 // BDD INFO
 define("DNS", 'mysql:host=localhost;');

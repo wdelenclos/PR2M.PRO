@@ -52,7 +52,7 @@
 
                     <div class="separator">
                         <p class="change_link">Pas de compte ?
-                            <a href="#signup" class="to_register"> Créer un identifiant </a>
+                            <a href="#contact" class="to_register"> Contactez-nous </a>
                         </p>
 
                         <div class="clearfix"></div>
@@ -67,10 +67,10 @@
             </section>
         </div>
 
-        <div id="register" class="animate form registration_form">
+        <div id="contact" class="animate form registration_form">
             <section class="login_content">
-                <form action="function/signer.php" method="post">
-                    <h1>Inscrivez-vous</h1>
+                <form action="function/askid.php" method="post">
+                    <h1>Contact</h1>
                     <div>
                         <input type="text" name="sign_Name" class="form-control" placeholder="Nom" required="" />
                     </div>
@@ -81,7 +81,7 @@
                         <input type="email" name="sign_Email" class="form-control" placeholder="Email" required="" />
                     </div>
                     <div class="">
-                        <input style="float: none; margin: 0" type="submit" value="Créer un identifiant" class="btn btn-default submit" >
+                        <input style="float: none; margin: 0" type="submit" value="Demande de mot de passe" class="btn btn-default submit" >
                     </div>
 
                     <div class="clearfix"></div>

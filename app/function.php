@@ -27,6 +27,11 @@ function routage(){ // Moteur de rooting
             $title = "Connectez-vous";
             break;
 
+	    case "new":
+		    $label ="login";
+		    $title = "Création dun compte";
+		    break;
+
         case "login":
             $label ="login";
             $title = "Connectez-vous";
