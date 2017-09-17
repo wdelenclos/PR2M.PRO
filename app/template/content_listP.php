@@ -36,7 +36,7 @@ require ('connect.php');
                 <div class="x_content">
 
 
-                    <a href="?p=nouveau&identifiant=<?=$_SESSION['identifiant']?>"> <button type="submit" class="btn btn-success"><i class="fa fa-plus"></i> Nouveau patient</button>
+                    <a href="?p=nouveauP&identifiant=<?=$_SESSION['identifiant']?>"> <button type="submit" class="btn btn-success"><i class="fa fa-plus"></i> Nouveau praticien</button>
                     </a>
                         <hr>
                     <!-- start project list -->
