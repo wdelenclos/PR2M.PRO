@@ -149,7 +149,7 @@ function sendMail($email){
 	}
 	//=====Déclaration des messages au format texte et au format HTML.
 	$message_txt = "Voici votre identifiant PR2M : ".crc32($_POST['sign_Email']);
-	$message_html = "<html><head></head><body><i>Voici votre identifiant PR2M : </i> <b>".  crc32($_POST['sign_Email']."</b>.</body></html>";
+	$message_html = "<html><head></head><body><i>Voici votre identifiant PR2M : </i> <b>".  crc32($_POST['sign_Email'])."</b>.</body></html>";
 	//==========
 
 	//=====Création de la boundary
