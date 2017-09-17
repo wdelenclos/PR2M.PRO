@@ -247,7 +247,7 @@ function listAllPraticiens($bdd)
                               
                                 <td>
                                     <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-chevron-right"></i> Voir </a>
-                                    <a href="function/deleteP.php?id=' . $row->identifiant . '&identifiant ='.$_SESSION['identifiant'].'" onclick="return confirm(\'Êtes vous sûr de vouloir supprimer ' . $row->nom . ' ?\')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer</a>
+                                    <a href="function/deleteP.php?id=' . $row->identifiant . '&identifiant='.$_SESSION['identifiant'].'" onclick="return confirm(\'Êtes vous sûr de vouloir supprimer ' . $row->nom . ' ?')" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Supprimer</a>
                                 </td>
                             </tr>
                 
