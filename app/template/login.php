@@ -42,9 +42,9 @@
 
         <div class="animate form login_form">
             <section class="login_content">
-	            <?php notification() ?>
                 <form action="function/logger.php" method="post">
                     <h1>Connectez-vous</h1>
+	                <?php notification() ?>
                     <div>
                         <input type="text" class="form-control" name="identifiant" placeholder="identifiant" required/>
                     </div>
