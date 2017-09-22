@@ -37,8 +37,9 @@
 <div>
     <a class="hiddenanchor" id="signup"></a>
     <a class="hiddenanchor" id="signin"></a>
-    <?php notification() ?>
+
     <div class="login_wrapper">
+	    <?php notification() ?>
         <div class="animate form login_form">
             <section class="login_content">
                 <form action="function/logger.php" method="post">

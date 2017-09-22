@@ -18,7 +18,7 @@ function notification(){
 		    echo "<div class=\"alert alert-success alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span> </button>Erreur " . $_SESSION['prenom'] . " ! Voici l'erreur: <strong>" . $_GET['erreur'] . "</strong></div>";
 		    break;
 	    case 560:
-		    echo "<div class=\"alert alert-success alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span> </button>Identifiant introuvable</strong></div>";
+		    echo "<div class=\"alert alert-error alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span> </button>Identifiant introuvable</strong></div>";
 		    break;
 
         case 200:
