@@ -1,11 +1,5 @@
-<?php
 
-// Verification d'une connexion active
 
-if(isset($_COOKIE['userID'])){
-	header('Location: ../index.php?p=dashboard&identifiant='.$_COOKIE['userID'] );
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
