@@ -17,17 +17,17 @@ include_once 'connect.php';
 include_once 'function/notifs.php';
 
 if(isset($_COOKIE['userID'])){
-	header('Location: ../index.php?p=dashboard&identifiant='.$_COOKIE['userID'] );
-// Verification d'une connexion active
 
+	$_GET['identifiant'] = $_COOKIE['userID'];
+	$_GET['p'] = 'dashboard';
+// Verification d'une connexion active
 }
 
 if(!isset($_GET['p']) || !isset($_GET['identifiant']) || $_GET['identifiant'] == ''){
-    $_GET['p'] = '';
+	$_GET['p'] = '';
 }
 
 $route = $_GET['p'];
-
 $routeInfo = routage();
 $label =  $routeInfo[0];
 $title =  $routeInfo[1];
