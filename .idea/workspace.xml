@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.php" afterPath="$PROJECT_DIR$/app/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/function/logger.php" afterPath="$PROJECT_DIR$/app/function/logger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/function/notifs.php" afterPath="$PROJECT_DIR$/app/function/notifs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/template/login.php" afterPath="$PROJECT_DIR$/app/template/login.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/template/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="301">
+              <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -66,8 +68,18 @@
       <file leaf-file-name="logger.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/function/logger.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="76" />
+            <state relative-caret-position="418">
+              <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notifs.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/function/notifs.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -86,11 +98,13 @@
       <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="1653">
+              <caret line="378" column="0" lean-forward="false" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
               <folding>
                 <element signature="n#console_print#0;n#!!top" expanded="false" />
+                <element signature="n#routage#0;n#!!top" expanded="false" />
                 <element signature="e#690#2598#0#PHP" expanded="false" />
+                <element signature="n#root#0;n#!!top" expanded="false" />
                 <element signature="n#sendMail#0;n#!!top" expanded="false" />
                 <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
                 <element signature="e#6889#7426#0#PHP" expanded="false" />
@@ -98,8 +112,10 @@
                 <element signature="n#removePraticien#0;n#!!top" expanded="false" />
                 <element signature="n#searchOnePatient#0;n#!!top" expanded="false" />
                 <element signature="n#updatePatient#0;n#!!top" expanded="false" />
+                <element signature="n#listAllPatient#0;n#!!top" expanded="false" />
                 <element signature="n#listWaitingPatient#0;n#!!top" expanded="false" />
                 <element signature="n#countPatient#0;n#!!top" expanded="false" />
+                <element signature="n#removePatient#0;n#!!top" expanded="false" />
                 <marker date="1505687834000" expanded="true" signature="5796:5982" ph="INSERT INTO `praticien`... " />
                 <marker date="1505687834000" expanded="true" signature="6911:7028" ph="SELECT id,id... praticien" />
                 <marker date="1505687834000" expanded="true" signature="7502:7535" ph="SELECT * FRO... patients" />
@@ -144,21 +160,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
               <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_upload.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/production/form_upload.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="345" column="65" lean-forward="true" selection-start-line="345" selection-start-column="65" selection-end-line="345" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -223,16 +229,16 @@
         <option value="$PROJECT_DIR$/app/function/deleteP.php" />
         <option value="$PROJECT_DIR$/app/function/delete.php" />
         <option value="$PROJECT_DIR$/app/template/content_list.php" />
-        <option value="$PROJECT_DIR$/app/function/notifs.php" />
         <option value="$PROJECT_DIR$/app/template/testMail.php" />
         <option value="$PROJECT_DIR$/app/function.php" />
         <option value="$PROJECT_DIR$/app/template/nav.php" />
         <option value="$PROJECT_DIR$/app/template/content_details.php" />
         <option value="$PROJECT_DIR$/app/function/sendData.php" />
-        <option value="$PROJECT_DIR$/app/function/logger.php" />
         <option value="$PROJECT_DIR$/app/config.php" />
-        <option value="$PROJECT_DIR$/app/template/login.php" />
         <option value="$PROJECT_DIR$/app/index.php" />
+        <option value="$PROJECT_DIR$/app/function/logger.php" />
+        <option value="$PROJECT_DIR$/app/function/notifs.php" />
+        <option value="$PROJECT_DIR$/app/template/login.php" />
       </list>
     </option>
   </component>
@@ -550,7 +556,7 @@
       <workItem from="1505374479202" duration="770000" />
       <workItem from="1505410847343" duration="2241000" />
       <workItem from="1505896926330" duration="1000" />
-      <workItem from="1506096963896" duration="2999000" />
+      <workItem from="1506096963896" duration="3199000" />
     </task>
     <task id="LOCAL-00001" summary="Add exporte btn">
       <created>1505411014413</created>
@@ -881,11 +887,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506099852202</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Add form btn">
+      <created>1506100158265</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1506100158265</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48760000" />
+    <option name="totallyTimeSpent" value="48960000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -957,7 +970,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1174,13 +1187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/function/notifs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="290" lean-forward="false" selection-start-line="14" selection-start-column="290" selection-end-line="14" selection-end-column="290" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/template/content_listP.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -1297,29 +1303,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/function/logger.php">
+    <entry file="file://$PROJECT_DIR$/app/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/template/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="456">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="1653">
+          <caret line="378" column="0" lean-forward="false" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
           <folding>
             <element signature="n#console_print#0;n#!!top" expanded="false" />
+            <element signature="n#routage#0;n#!!top" expanded="false" />
             <element signature="e#690#2598#0#PHP" expanded="false" />
+            <element signature="n#root#0;n#!!top" expanded="false" />
             <element signature="n#sendMail#0;n#!!top" expanded="false" />
             <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
             <element signature="e#6889#7426#0#PHP" expanded="false" />
@@ -1327,8 +1327,10 @@
             <element signature="n#removePraticien#0;n#!!top" expanded="false" />
             <element signature="n#searchOnePatient#0;n#!!top" expanded="false" />
             <element signature="n#updatePatient#0;n#!!top" expanded="false" />
+            <element signature="n#listAllPatient#0;n#!!top" expanded="false" />
             <element signature="n#listWaitingPatient#0;n#!!top" expanded="false" />
             <element signature="n#countPatient#0;n#!!top" expanded="false" />
+            <element signature="n#removePatient#0;n#!!top" expanded="false" />
             <marker date="1505687834000" expanded="true" signature="5796:5982" ph="INSERT INTO `praticien`... " />
             <marker date="1505687834000" expanded="true" signature="6911:7028" ph="SELECT id,id... praticien" />
             <marker date="1505687834000" expanded="true" signature="7502:7535" ph="SELECT * FRO... patients" />
@@ -1372,10 +1374,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.php">
+    <entry file="file://$PROJECT_DIR$/app/function/notifs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="95">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/function/logger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/template/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="39" column="4" lean-forward="false" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
           <folding />
         </state>
       </provider>

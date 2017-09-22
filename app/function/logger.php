@@ -20,6 +20,6 @@ if($result == true){
     header('Location: ../index.php?p=dashboard&identifiant='.$identifiant );
 }
 else {
-    header('Location: ../index.php?p=introuvable' );
+    header('Location: ../index.php?p=&n=560' );
 }
 
