@@ -1,5 +1,4 @@
 <?php
-$URL = 'http://localhost/Projet.pr2m/dist/';
 //--------------------------------------------------------------
 require('config.php');// Recupération de la configuration
 //--------------------------------------------------------------

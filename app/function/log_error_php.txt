@@ -48,3 +48,33 @@ Stack trace:
 #0 /Applications/MAMP/htdocs/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
 #1 {main}
   thrown in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php on line 147
+[22-Sep-2017 23:04:58 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231
+[22-Sep-2017 23:10:10 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231
+[22-Sep-2017 23:26:06 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231
+[22-Sep-2017 23:53:21 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231
+[23-Sep-2017 00:01:43 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231
+[23-Sep-2017 00:03:48 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231

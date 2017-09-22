@@ -13,9 +13,12 @@ require ('../function.php');
 
 
 
-if($_GET['p']=='0'){
+if($_POST['p']=='0'){
 
 	if($_GET['t']=='EMME'){
+
+	}
+	else if($_GET['t']=='EVIP'){
 		var_dump($_POST);
 	}
 	else if($_GET['t']==''){
@@ -30,11 +33,8 @@ if($_GET['p']=='0'){
 	else if($_GET['t']==''){
 
 	}
-	else if($_GET['t']==''){
-
-	}
 	else{
-		header('Location: ../index.php?n=520&p=dashboard&identifiant='.$_POST['identifiant'] );
+
 	}
 
 }
@@ -73,5 +73,5 @@ else if($_GET['p']=='2'){
 
 }
 else {
-	header('Location: ../index.php?n=520&p=dashboard&identifiant='.$_POST['identifiant'] );
+	var_dump($_POST);
 }

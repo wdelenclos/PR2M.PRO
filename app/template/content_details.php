@@ -135,15 +135,20 @@ $niveau = $data->niveau;
                                                             <div class="tab-content">
                                                                 <div class="tab-pane active" id="preEMME">
                                                                     <p class="lead">Récupération du fichier EMME</p>
+                                                                    <form action="function/sendFile.php?u=<?=  $prenom. '-'.$nom?>&id=<?=$id?>" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div>
 
-                                                                    <form action="function/sendData.php?t='EMME'&p=0" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
+                                                                    </form>
                                                                 </div>
                                                                 <div class="tab-pane" id="preEVIP">
                                                                     <p class="lead">Score EVIP</p>
-                                                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                                                                        <input type="text" class="form-control" id="inputSuccess3" placeholder="Score">
-                                                                        <span class="fa fa-circle-o-notch form-control-feedback right" aria-hidden="true"></span>
-                                                                    </div>
+                                                                    <form action="function/sendData.php?t='EVIP'&p=0" method="post">
+                                                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                                                                            <input type="text" class="form-control" id="evip_score" name="evip_score" placeholder="Score">
+                                                                            <span class="fa fa-circle-o-notch form-control-feedback right" aria-hidden="true"></span>
+                                                                        </div>
+                                                                        <button type="submit" class="btn btn-success">Envoyer</button>
+                                                                    </form>
+
                                                                 </div>
                                                                 <div class="tab-pane" id="preDRA">
                                                                     <p class="lead">Score DRA</p>
