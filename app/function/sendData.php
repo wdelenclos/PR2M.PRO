@@ -13,3 +13,65 @@ require ('../function.php');
 
 
 
+if($_GET['p']=='0'){
+
+	if($_GET['t']==''){
+
+	}
+	else if($_GET['t']==''){
+
+	}
+	else if($_GET['t']==''){
+
+	}
+	else if($_GET['t']==''){
+
+	}
+	else if($_GET['t']==''){
+
+	}
+	else if($_GET['t']==''){
+
+	}
+	else{
+		header('Location: ../index.php?n=520&p=dashboard&identifiant='.$_POST['identifiant'] );
+	}
+
+}
+else if($_GET['p']=='1'){
+
+	if($_GET['t']==''){
+
+	}
+	else{
+		header('Location: ../index.php?n=530&p=dashboard&identifiant='.$_POST['identifiant'] );
+	}
+}
+else if($_GET['p']=='2'){
+	if($_GET['t']==''){
+
+	}
+	else if($_GET['t']==''){
+
+	}
+	else if($_GET['t']==''){
+
+	}
+	else if($_GET['t']==''){
+
+	}
+	else if($_GET['t']==''){
+
+	}
+	else if($_GET['t']==''){
+
+	}
+	else{
+		header('Location: ../index.php?n=520&p=dashboard&identifiant='.$_POST['identifiant'] );
+	}
+
+
+}
+else {
+	header('Location: ../index.php?n=520&p=dashboard&identifiant='.$_POST['identifiant'] );
+}
