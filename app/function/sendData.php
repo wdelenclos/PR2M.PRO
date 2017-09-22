@@ -15,8 +15,8 @@ require ('../function.php');
 
 if($_GET['p']=='0'){
 
-	if($_GET['t']==''){
-
+	if($_GET['t']=='EMME'){
+		var_dump($_POST);
 	}
 	else if($_GET['t']==''){
 

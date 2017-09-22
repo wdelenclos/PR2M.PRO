@@ -14,3 +14,5 @@ define("DBNAME",'dbname=pr2m'  );
 define('USERNAME','root');
 define('PASSWD', '125-ayN-92');
 
+// Durée de vie des connexions
+define('SESSIONEXPRIRE', 24*3600);

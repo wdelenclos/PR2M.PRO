@@ -16,6 +16,7 @@ $result = searchPraticien($bdd);
 
 if($result == true){
     session_start();
+	setcookie('userID', $identifiant, time() + SESSIONEXPRIRE);
     header('Location: ../index.php?p=dashboard&identifiant='.$identifiant );
 }
 else {
