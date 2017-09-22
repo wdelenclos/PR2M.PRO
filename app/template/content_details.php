@@ -136,7 +136,7 @@ $niveau = $data->niveau;
                                                                 <div class="tab-pane active" id="preEMME">
                                                                     <p class="lead">Récupération du fichier EMME</p>
 
-                                                                    <form action="/function/sendData.php?t='EMME'&p=0" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
+                                                                    <form action="../function/sendData.php?t='EMME'&p=0" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
                                                                 </div>
                                                                 <div class="tab-pane" id="preEVIP">
                                                                     <p class="lead">Score EVIP</p>
