@@ -39,9 +39,10 @@
     <a class="hiddenanchor" id="signin"></a>
 
     <div class="login_wrapper">
-	    <?php notification() ?>
+
         <div class="animate form login_form">
             <section class="login_content">
+	            <?php notification() ?>
                 <form action="function/logger.php" method="post">
                     <h1>Connectez-vous</h1>
                     <div>
