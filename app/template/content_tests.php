@@ -55,9 +55,9 @@
                                             <p class="lead">Echelle de vocabulaire en images Peabody (EVIP) - forme B&nbsp;</p>
                                             <small>Dunn, Th&eacute;riault-Whalen, Dunn, 1993&nbsp;</small>
                                             <hr>
-                                            <a class="btn btn-primary" href="data/tests_uploads/evip/EVIP_B.pptx" download="EVIP_B.pptx" target="_blank"><i class="fa fa-download"></i> EVIP Version B</a>
                                             <a class="btn btn-primary" href="data/tests_uploads/evip/protocole_designation_EVIPb.pdf" download="protocole_EVIPb.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole EVIP</a>
                                             <hr>
+                                            <iframe src="https://drive.google.com/file/d/0B_2eCetE-BmOVlZ4LTJkTngxSF93dXVoQU0wZ3QyZDI2T1RV/preview" width="100%" height="480"></iframe>
                                             <h5><span style="text-decoration: underline;"><strong>T&acirc;che:</strong></span></h5>
                                             <p>Choisir l'image qui correspond au mot propos&eacute; oralement (ex. balai) parmi 4 images.&nbsp;</p>
                                             <p>&nbsp;</p>

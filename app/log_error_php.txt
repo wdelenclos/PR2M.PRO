@@ -19,3 +19,4 @@ Stack trace:
 #1 /var/www/html/Projet.PR2M/app/index.php(27): root('content_dashboa...', 'Liste des patie...')
 #2 {main}
   thrown in /var/www/html/Projet.PR2M/app/template/content_dashboard.php on line 167
+[08-Oct-2017 22:00:52 Europe/Paris] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /Users/wdelenclos/Projets/PR2M.PRO/app/template/content_details.php on line 90

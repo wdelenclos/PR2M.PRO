@@ -17,7 +17,6 @@ include_once 'connect.php';
 include_once 'function/notifs.php';
 
 if(isset($_COOKIE['userID'])){
-
 	$_GET['identifiant'] = $_COOKIE['userID'];
 	$_GET['p'] = 'dashboard';
 // Verification d'une connexion active

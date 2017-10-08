@@ -30,3 +30,5 @@ Stack trace:
   thrown in /var/www/html/Projet.PR2M/app/function.php on line 233
 [03-Jun-2017 16:52:55 Europe/Berlin] PHP Warning:  Illegal string offset 'i' in /var/www/html/Projet.PR2M/app/function.php on line 233
 [03-Jun-2017 16:52:55 Europe/Berlin] PHP Warning:  Illegal string offset 'i' in /var/www/html/Projet.PR2M/app/function.php on line 233
+[08-Oct-2017 17:23:37 Europe/Paris] PHP Warning:  include(../function/sendModule.php): failed to open stream: No such file or directory in /Users/wdelenclos/Projets/PR2M.PRO/app/template/content_details.php on line 332
+[08-Oct-2017 17:23:37 Europe/Paris] PHP Warning:  include(): Failed opening '../function/sendModule.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.1.8/lib/php') in /Users/wdelenclos/Projets/PR2M.PRO/app/template/content_details.php on line 332

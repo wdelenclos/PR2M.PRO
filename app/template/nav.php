@@ -5,7 +5,7 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="?p=dashboard" class="site_title"><span>PR2M</span></a>
+                    <a href="?p=dashboard&identifiant=<?= $_SESSION['identifiant']?>" class="site_title"><span>PR2M</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -27,41 +27,55 @@
                     <div class="menu_section">
                         <ul class="nav side-menu">
                             <li><a href="?p=dashboard&identifiant=<?= $_SESSION['identifiant']?>"><i class="fa fa-tachometer"></i> Tableau de bord </a></li>
+                             <li><a><i class="fa fa-compass"></i> Premiers pas <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="?p=guide&identifiant=<?= $_SESSION['identifiant']?>">Guide d'utilisation</a></li>
+                                    <li><a href="?p=shared1&identifiant=<?= $_SESSION['identifiant']?>">Justification théorique</a></li>
+                                    <li><a href="?p=shared2&identifiant=<?= $_SESSION['identifiant']?>">Question Clinique</a></li>
+                                    <li><a href="?p=shared3&identifiant=<?= $_SESSION['identifiant']?>">Objectifs</a></li>
+                                </ul>
+                            </li>
                             <li><a><i class="fa fa-users"></i> Patients <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="?p=liste&identifiant=<?= $_SESSION['identifiant']?>">Liste des patients</a></li>
                                     <li><a href="?p=nouveau&identifiant=<?= $_SESSION['identifiant']?>">Nouveau patient</a></li>
                                 </ul>
                             </li>
-                            <?php if(in_array($_SESSION['identifiant'], ADMINMAIL)){?>
-                            <li><a><i class="fa fa-user-md"></i>Praticiens<span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="?p=listeP&identifiant=<?= $_SESSION['identifiant']?>">Liste des praticiens</a></li>
-                                    </li>
-                                    <li><a href="?p=nouveauP&identifiant=<?= $_SESSION['identifiant']?>">Ajouter un praticiens</a></li>
-                                    </li>
-                                </ul>
-                            </li>
-                            <?php } ?>
                             <li><a><i class="fa fa-check"></i> Tests <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="?p=ordrer&identifiant=<?= $_SESSION['identifiant']?>">Ordre de passation</a></li>
                                     <li><a href="?p=tests&identifiant=<?= $_SESSION['identifiant']?>">Matériel</a></li>
                                 </ul>
                             </li>
+                            <li><a><i class="fa fa-rotate-left"></i> Entrainements <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="?p=training&identifiant=<?= $_SESSION['identifiant']?>">Nouvel entrainement</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div class="menu_section">
                         <ul class="nav side-menu">
-                            <li><a><i class="fa fa-database"></i> Données partagées<span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="?p=shared1&identifiant=<?= $_SESSION['identifiant']?>">Justification théorique</a></li>
-                                    <li><a href="?p=shared2&identifiant=<?= $_SESSION['identifiant']?>">Question Clinique</a></li>
-                                    <li><a href="?p=shared3&identifiant=<?= $_SESSION['identifiant']?>">Objectifs</a></li>
-                                </ul>
-                            </li>
+	                        <?php if(in_array($_SESSION['identifiant'], ADMINMAIL)){?>
+                                <li><a><i class="fa fa-user-md"></i>Praticiens<span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="?p=listeP&identifiant=<?= $_SESSION['identifiant']?>">Liste des praticiens</a></li>
+                                        </li>
+                                        <li><a href="?p=nouveauP&identifiant=<?= $_SESSION['identifiant']?>">Ajouter un praticiens</a></li>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-database"></i> Données récoltées<span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="">GoogleSheet</a></li>
+                                        <li><a href="">API</a></li>
+                                    </ul>
+                                </li>
+
+	                        <?php } ?>
 
                         </ul>
+
                     </div>
 
                 </div>

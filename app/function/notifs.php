@@ -8,6 +8,9 @@ function notification(){
         case 100:
             echo "<div class=\"alert alert-success alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span> </button>Bravo " . $_SESSION['prenom'] . " ! Le compte a bien été enregistré, notez bien l'identifiant: <strong>" . $_GET['id'] . "</strong></div>";
             break;
+	    case 101:
+		    echo "<div class=\"alert alert-success alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span> </button>Résultat mis à jour </strong></div>";
+		    break;
 	    case 400:
 		    echo "<div class=\"alert alert-success alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span> </button>Bravo " . $_SESSION['prenom'] . " ! Le praticien a bien été supprimé: <strong>" . $_GET['id'] . "</strong></div>";
 		    break;
@@ -24,6 +27,9 @@ function notification(){
         case 200:
             echo "<div class=\"alert alert-success alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span> </button>Utilisateur créée avec succès !</div>";
             break;
+	    case 201:
+		    echo "<div class=\"alert alert-success alert-dismissible fade in\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">×</span> </button>Patient créée avec succès !</div>";
+		    break;
     }
 }
 

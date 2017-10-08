@@ -12,7 +12,7 @@ define('MDP','125-ayN-92' );
 define("DNS", 'mysql:host=localhost;');
 define("DBNAME",'dbname=pr2m'  );
 define('USERNAME','root');
-define('PASSWD', '125-ayN-92');
+define('PASSWD', 'root');
 
 // Durée de vie des connexions en secondes
 define('SESSIONEXPRIRE', 24*3600);

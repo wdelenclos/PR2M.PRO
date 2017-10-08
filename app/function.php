@@ -28,7 +28,7 @@ function routage(){ // Moteur de rooting
 
 	    case "new":
 		    $label ="login";
-		    $title = "Création dun compte";
+		    $title = "Création d'un compte";
 		    break;
 
         case "login":
@@ -73,7 +73,10 @@ function routage(){ // Moteur de rooting
 		    $label ="content_shared1";
 		    $title = "Justification théorique";
 		    break;
-
+	    case "guide":
+		    $label ="content_guide";
+		    $title = "Guide d'utilisation";
+		    break;
 	    case "shared2":
 		    $label ="content_shared2";
 		    $title = "Question Clinique";
@@ -121,7 +124,7 @@ function root($label, $title){
         header('Location: index.php?p=login&logout=true' );
     }
 
-    if($label == "content_dashboard" || $label == "content_shared1" || $label == "content_shared2" || $label == "content_shared3" || $label == "content_profile"  || $label == "content_new" || $label == "content_newP" || $label == "content_list" || $label == "content_listP" || $label == "content_details"|| $label == "content_tests" ){
+    if($label == "content_dashboard" || $label == "content_shared1"  || $label == "content_guide"|| $label == "content_shared2" || $label == "content_shared3" || $label == "content_profile"  || $label == "content_new" || $label == "content_newP" || $label == "content_list" || $label == "content_listP" || $label == "content_details"|| $label == "content_tests" ){
         include_once 'template/head.php';
         include_once 'template/nav.php';
     }
@@ -333,9 +336,9 @@ function addPatient($bdd)
 {
 
 	try {
-		$sql = "INSERT INTO `patients` (`nom`, `prenom`, `date_naissance`, `lateralite`, `niveau`, `commentaire`, `test_emme`, `test_evip`, `test_dra`, `test_la_denomination`, `test_vtnv`, `test_la_designation`, `questionnaire`,  `praticien`)
+		$sql = "INSERT INTO `patients` (`nom`, `prenom`, `date_naissance`, `lateralite`, `niveau`, `commentaire`,  `praticien`)
             VALUES
-            (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire, '{}', '{}', '{}', '{}','{}', '{}',  '{}',  :identifiant)
+            (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire,  :identifiant)
             ";
 		$stmt = $bdd->prepare($sql);
 		$stmt->bindValue(':nom', $_POST['nom']);
@@ -346,16 +349,16 @@ function addPatient($bdd)
 		$stmt->bindValue(':commentaire', $_POST['commentaire']);
 		$stmt->bindValue(':identifiant', $_POST['identifiant']);
 		$stmt->execute();
-
 		$sql = 'SELECT id
         FROM `patients`
-        WHERE nom = :nom';
+        WHERE nom = :nom AND prenom = :prenom';
 		$stmt = $bdd->prepare($sql);
 		$stmt->bindValue(':nom',$_POST['nom']);
+		$stmt->bindValue(':prenom',$_POST['prenom']);
 		$stmt->execute();
 		$row = $stmt->fetchObject();
 		$id = $row->id;
-		header('Location: ../index.php?n=200&p=details&identifiant='.$_POST['identifiant'].'&id='.$id );
+		header('Location: ../index.php?n=201&p=details&identifiant='.$_POST['identifiant'].'&id='.$id );
 	}
 	catch( PDOException $Exception ) {
 		var_dump($Exception->getMessage());
@@ -389,22 +392,22 @@ function listAllPatient($bdd)
 
             // Tesst du nombre de tests effectués
             $done = 0;
-            if($row->test_emme !== "" ){
+            if($row->test_t0_emme !== null ){
                 $done++;
             }
-            if($row->test_evip  !== "" ){
+            if($row->test_t0_evip  !== null ){
                 $done++;
             }
-            if($row->test_dra  !== "" ){
+            if($row->test_t0_dra  !== null ){
                 $done++;
             }
-            if($row->test_la_denomination  !== "" ){
+            if($row->test_t0_la_denomination  !== null ){
                 $done++;
             }
-            if($row->test_vtnv !== "{}" ){
+            if($row->test_vtnv !== null ){
                 $done++;
             }
-            if($row->test_la_designation  !== ""  ){
+            if($row->test_t0_la_designation  !== null  ){
                 $done++;
             }
 
@@ -473,32 +476,34 @@ function listWaitingPatient($bdd)
 {
     try {
         $sql = 'SELECT *
-        FROM `patients`
-        WHERE praticien = :identifiant';
+        FROM `tests`
+        WHERE praticien = :identifiant
+        AND  patients = :patient' ;
         $stmt = $bdd->prepare($sql);
         $stmt->bindValue(':identifiant',$_GET['identifiant']);
+	    $stmt->bindValue(':patient',$_GET['patient']);
         $stmt->execute();
 
         while ($row = $stmt->fetchObject()) {
 
             // Tesst du nombre de tests effectués
             $done = 0;
-            if($row->test_emme !== "" ){
+            if($row->emme_pre !== null ){
                 $done++;
             }
-            if($row->test_evip  !== "" ){
+            if($row->dra_pre_tmps !== null ){
                 $done++;
             }
-            if($row->test_dra  !== "" ){
+            if($row->dra_pre_precision !== null ){
                 $done++;
             }
-            if($row->test_la_denomination  !== "" ){
+            if($row->evip_pre_base !== null ){
                 $done++;
             }
-            if($row->test_vtnv !== "{}" ){
+            if($row->evip_pre_plafond !== null ){
                 $done++;
             }
-            if($row->test_la_designation  !== ""  ){
+            if($row->evip_pre_temps !== null  ){
                 $done++;
             }
 
@@ -586,22 +591,22 @@ function countPatient($bdd)
 
             // Tesst du nombre de tests effectués
             $done = 0;
-            if($row->test_emme !== "" ){
+            if($row->test_t0_emme !== null ){
                 $done++;
             }
-            if($row->test_evip  !== "" ){
+            if($row->test_t0_evip  !== null ){
                 $done++;
             }
-            if($row->test_dra  !== "" ){
+            if($row->test_t0_dra  !== null ){
                 $done++;
             }
-            if($row->test_la_denomination  !== "" ){
+            if($row->test_t0_la_denomination  !== null ){
                 $done++;
             }
-            if($row->test_vtnv !== "{}" ){
+            if($row->test_vtnv !== null ){
                 $done++;
             }
-            if($row->test_la_designation  !== ""  ){
+            if($row->test_t0_la_designation  !== null  ){
                 $done++;
             }
 
@@ -649,5 +654,21 @@ function removePatient($bdd){
 		$error = $e->getMessage();
 		header('Location: ../index.php?n=500&p=liste&identifiant=' .$_GET['identifiant']. '&erreur='.$error );
 	}
+}
+function getTestData($id, $bdd){
+	try {
+		$sql = 'SELECT *
+        FROM `tests`
+        WHERE patient = :id';
+		$stmt = $bdd->prepare($sql);
+		$stmt->bindValue(':id',$id);
+		$stmt->execute();
+		$row = $stmt->fetchObject();
+
+	} catch (PDOException $e) {
+
+		$e->getMessage();
+	}
+	return $row;
 }
 

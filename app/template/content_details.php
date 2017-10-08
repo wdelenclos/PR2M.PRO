@@ -17,6 +17,7 @@ $prenom = $data->prenom;
 $lateralite = $data->lateralite;
 $date = $data->date_naissance;
 $niveau = $data->niveau;
+$testData = getTestData($data->id, $bdd);
 ?>
 <!-- NProgress -->
 <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
@@ -53,6 +54,7 @@ $niveau = $data->niveau;
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
+                        <form class="formTest">
                         <div class="col-md-3 col-sm-3 col-xs-12 profile_left">
                             <div class="profile_img">
                                 <div id="crop-avatar">
@@ -75,20 +77,23 @@ $niveau = $data->niveau;
                                 </li>
 
                                 <li>
-                                    <i class="fa fa-key user-profile-icon"></i> ID:  <?= $id?>
+                                    <i class="fa fa-key user-profile-icon"></i> ID:  <span id="usrId"><?= $id?></span>
                                 </li>
                             </ul>
-
+<!--
                             <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i> Modifier</a>
+                            <a class="btn btn-warning" href="function/delete.php?id=<?= $id ?>&identifiant=<?=$_GET['identifiant']?>" onclick="return confirm('Êtes vous sûr de vouloir supprimer <?= $nom ?> ?')" ><i class="fa fa-trash-o m-right-xs"></i> Supprmier</a>
                             <br />
-
+-->
                             <hr>
+
+                            <p>Date des données actuelles: <br/><? echo date('d/m/Y  H:i:s', $testData->lastupdate); ?></p>
                             <br />
-                            <h4>Exporter les resultats:</h4>
-                            <br />
-                            <a class="btn btn-primary"><i class="fa fa-download m-right-xs"></i> Pré-test</a>
-                            <br/>
-                            <a class="btn btn-primary"><i class="fa fa-download m-right-xs"></i> Post-test</a>
+                            <div >
+                                <input type="submit" class="btn btn-success warn" disabled value="Sauvegarder"> </input>
+                                <br/>
+                            </div>
+
 
 
 
@@ -105,108 +110,96 @@ $niveau = $data->niveau;
                                         </a>
                                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true" style="">
                                             <div class="panel-body">
+                                                    <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                                                        <div class="x_content">
+                                                            <div class="col-xs-3">
+                                                                <!-- required for floating -->
+                                                                <!-- Nav tabs -->
+                                                                <ul class="nav nav-tabs tabs-left">
+                                                                    <li class="active"><a href="#preEMME" data-toggle="tab">EMME</a>
+                                                                    </li>
+                                                                    <li><a href="#predeno" data-toggle="tab">Denomination</a>
+                                                                    </li>
+                                                                    <li><a href="#predesi" data-toggle="tab">Designation</a>
+                                                                    </li>
+                                                                    <li><a href="#preEVIP" data-toggle="tab">EVIP</a>
+                                                                    </li>
+                                                                    <li><a href="#preDRA" data-toggle="tab">DRA</a>
+                                                                    </li>
+                                                                    <li><a href="#preBELO" data-toggle="tab">BELO</a>
+                                                                    </li>
+                                                                    <li><a href="#prequest" data-toggle="tab">Questionnaire</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
 
-                                                <div class="" role="tabpanel" data-example-id="togglable-tabs">
-                                                    <div class="x_content">
-
-                                                        <div class="col-xs-3">
-                                                            <!-- required for floating -->
-                                                            <!-- Nav tabs -->
-                                                            <ul class="nav nav-tabs tabs-left">
-                                                                <li class="active"><a href="#preEMME" data-toggle="tab">EMME</a>
-                                                                </li>
-                                                                <li><a href="#preEVIP" data-toggle="tab">EVIP</a>
-                                                                </li>
-                                                                <li><a href="#preDRA" data-toggle="tab">DRA</a>
-                                                                </li>
-                                                                <li><a href="#predeno" data-toggle="tab">Denomination</a>
-                                                                </li>
-                                                                <li><a href="#predesi" data-toggle="tab">Designation</a>
-                                                                </li>
-                                                                <li><a href="#preBELO" data-toggle="tab">BELO</a>
-                                                                </li>
-                                                                <li><a href="#prequest" data-toggle="tab">Questionnaire</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-
-                                                        <div class="col-xs-9">
-                                                            <!-- Tab panes -->
-                                                            <div class="tab-content">
-                                                                <div class="tab-pane active" id="preEMME">
-                                                                    <p class="lead">Récupération du fichier EMME</p>
-                                                                    <form action="function/sendFile.php?u=<?=  $prenom. '-'.$nom?>&id=<?=$id?>" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div>
-
-                                                                    </form>
-                                                                </div>
-                                                                <div class="tab-pane" id="preEVIP">
-                                                                    <p class="lead">Score EVIP</p>
-                                                                    <form action="function/sendData.php?t='EVIP'&p=0" method="post">
-                                                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                                                                            <input type="text" class="form-control" id="evip_score" name="evip_score" placeholder="Score">
-                                                                            <span class="fa fa-circle-o-notch form-control-feedback right" aria-hidden="true"></span>
+                                                            <div class="col-xs-9">
+                                                                <!-- Tab panes -->
+                                                                <div class="tab-content">
+                                                                    <div class="tab-pane active" id="preEMME">
+                                                                        <p class="lead">Récupération du fichier EMME</p>
+                                                                        <small><?= $testData->emme_pre ?? 'Aucun fichier en base'?></small>
+                                                                        <input type="file" name="emme_pre" id="emme_pre">
+                                                                    </div>
+                                                                    <div class="tab-pane" id="predeno">
+                                                                        <p class="lead">Récupération du fichier</p>
+                                                                        <small><?= $testData->emme_pre ?? 'Aucun fichier en base'?></small>
+                                                                        <input type="file" name="predenoFile" id="predenoFile">
+                                                                    </div>
+                                                                    <div class="tab-pane" id="predesi">
+                                                                        <p class="lead">Récupération du fichier </p>
+                                                                        <input type="file" name="predesiFile" id="predesiFile">
+                                                                    </div>
+                                                                    <div class="tab-pane" id="preEVIP">
+                                                                        <p class="lead">Score EVIP</p>
+                                                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                                                                                <input type="text" class="form-control" id="evip_pre_temps" name="evip_pre_temps" placeholder="Score">
+                                                                                <span class="fa fa-circle-o-notch form-control-feedback right" aria-hidden="true"></span>
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="tab-pane" id="preDRA">
+                                                                        <p class="lead">Score DRA</p>
+                                                                        <div class="form-group">
+                                                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre d'erreurs </label>
+                                                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                                                <input type="text" class="form-control"  placeholder="Saisir le nb d'erreurs">
+                                                                            </div>
                                                                         </div>
-                                                                        <button type="submit" class="btn btn-success">Envoyer</button>
-                                                                    </form>
+                                                                        <div class="form-group">
+                                                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Temps (/s) </label>
+                                                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                                                <input type="number" class="form-control" placeholder="Temps en secondes">
+                                                                            </div>
+                                                                        </div>
 
-                                                                </div>
-                                                                <div class="tab-pane" id="preDRA">
-                                                                    <p class="lead">Score DRA</p>
-                                                                    <div class="form-group">
-                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre d'erreurs </label>
-                                                                        <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                            <input type="text" class="form-control"  placeholder="Saisir le nb d'erreurs">
+                                                                    </div>
+                                                                    <div class="tab-pane" id="preBELO">
+                                                                        <p class="lead">Score Belo</p>
+                                                                        <div class="form-group">
+                                                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Resultat </label>
+                                                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                                                <input type="number" class="form-control" placeholder="Saisir le résultat">
+                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="form-group">
-                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Temps (/s) </label>
-                                                                        <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                            <input type="number" class="form-control" placeholder="Temps en secondes">
-                                                                        </div>
+                                                                    <div class="tab-pane" id="prequest">
+                                                                        <p class="lead">Récupération du questionnaire</p>
+
+                                                                        <input type="file" name="preRequestFile" id="preRequestFile">
+
                                                                     </div>
-
-                                                                </div>
-                                                                <div class="tab-pane" id="predeno">
-                                                                    <p class="lead">Récupération du fichier</p>
-
-                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
-
-                                                                </div>
-                                                                <div class="tab-pane" id="predesi">
-                                                                    <p class="lead">Récupération du fichier </p>
-
-                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
-
-                                                                </div>
-                                                                <div class="tab-pane" id="preBELO">
-                                                                    <p class="lead">Score Belo</p>
-                                                                    <div class="form-group">
-                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Resultat </label>
-                                                                        <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                            <input type="number" class="form-control" placeholder="Saisir le résultat">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="tab-pane" id="prequest">
-                                                                    <p class="lead">Récupération du questionnaire</p>
-
-                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
-
                                                                 </div>
                                                             </div>
+                                                            <div class="clearfix"></div>
                                                         </div>
-
-                                                        <div class="clearfix"></div>
-
                                                     </div>
-                                                </div>
 
                                             </div>
                                         </div>
                                     </div>
                                     <div class="panel">
                                         <a class="panel-heading collapsed" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <h4 class="panel-title">Entrainement</h4>
+                                            <h4 class="panel-title">Résultats des entrainement</h4>
                                         </a>
                                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
                                             <div class="panel-body">
@@ -232,7 +225,6 @@ $niveau = $data->niveau;
                                             <div class="panel-body">
                                                 <div class="" role="tabpanel" data-example-id="togglable-tabs">
                                                     <div class="x_content">
-
                                                         <div class="col-xs-3">
                                                             <!-- required for floating -->
                                                             <!-- Nav tabs -->
@@ -260,20 +252,18 @@ $niveau = $data->niveau;
                                                                 <div class="tab-pane active" id="postEMME">
                                                                     <p class="lead">Récupération du fichier EMME</p>
 
-                                                                    <form action="uploadEmme.php" class="dropzone dz-clickable">
                                                                         <div class="dz-default dz-message">
-                                                                            <span>Glissez vos résultats ici ou cliquez pour les envoyer</span>
+                                                                            <input type="file" name="posteEMMEFile" id="posteEMMEFile">
                                                                         </div>
-                                                                    </form>
+
                                                                 </div>
                                                                 <div class="tab-pane" id="postEVIP">
                                                                     <p class="lead">Score EVIP</p>
-                                                                    <form action="">
                                                                         <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                                                                             <input type="text" class="form-control" id="inputSuccess3" placeholder="Score">
                                                                             <span class="fa fa-circle-o-notch form-control-feedback right" aria-hidden="true"></span>
                                                                         </div>
-                                                                    </form>
+
                                                                 </div>
                                                                 <div class="tab-pane" id="postDRA">
                                                                     <p class="lead">Score DRA</p>
@@ -294,14 +284,12 @@ $niveau = $data->niveau;
                                                                 <div class="tab-pane" id="postdeno">
                                                                     <p class="lead">Récupération du fichier</p>
 
-                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
-
+                                                                    <input type="file" name="postdenoFile" id="postdenoFile">
                                                                 </div>
                                                                 <div class="tab-pane" id="postdesi">
                                                                     <p class="lead">Récupération du fichier </p>
 
-                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
-
+                                                                    <input type="file" name="postdesiFile" id="postdesiFile">
                                                                 </div>
                                                                 <div class="tab-pane" id="postBELO">
                                                                     <p class="lead">Score BELO</p>
@@ -315,8 +303,7 @@ $niveau = $data->niveau;
                                                                 <div class="tab-pane" id="postquest">
                                                                     <p class="lead">Récupération du questionnaire</p>
 
-                                                                    <form action="form_upload.html" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Glissez vos résultats ici ou cliquez pour les envoyer</span></div></form>
-
+                                                                    <input type="file" name="postquestFile" id="postquestFile">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -326,15 +313,15 @@ $niveau = $data->niveau;
                                                     </div>
                                                 </div>
                                                 </div>
+
                                         </div>
                                     </div>
                                 </div>
                                 <!-- end of accordion -->
-
-
                             </div>
 
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -342,6 +329,57 @@ $niveau = $data->niveau;
     </div>
 </div>
 <!-- /page content -->
+<script>
+    (function(){
+
+        function showBtnUpdate(){
+            document.getElementsByClassName('warn')[0].removeAttribute("disabled");
+        }
+        console.log( document.getElementsByClassName('formTest')[0]);
+        document.getElementsByClassName('formTest')[0].addEventListener("change", function () {
+            console.log('Donnée mise à jour');
+            showBtnUpdate();
+        });
+        document.getElementsByClassName('formTest')[0].addEventListener("submit", function (e) {
+            e.preventDefault();
+            var target = document.getElementsByClassName('formTest')[0];
+            var form_data = new FormData();
+            for(var i = 0; i < target.length; i++){
+                console.log(target[i]);
+                var id = target[i].id;
+                var file_data;
+                if (target[i].type == 'file'){
+                    file_data = target[i].files[0];   // Getting the properties of file from file field
+                }
+                else{
+                    file_data = target[i].value;  // Getting the properties of file from file field
+                }
+                form_data.append(id, file_data);
+            }
+            form_data.append('id', document.getElementById('usrId').textContent);
+            form_data.append('identifiantusr', <?= $_SESSION['identifiant']?>);
+            $.ajax({
+                url: "./function/sendData.php",
+                dataType: 'script',
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,                         // Setting the data attribute of ajax with file_data
+                type: 'post',
+                complete: function(data) {
+                    if(data.status !== 200){
+                        console.log('Erreur: ' + data.statusText);
+                    }
+                    else{
+                        console.log(data);
+                    }
+                }
+            });
+
+
+        }, false);
+    })();
+</script>
 <script src="../vendors/fastclick/lib/fastclick.js"></script>
 <!-- NProgress -->
 <script src="../vendors/nprogress/nprogress.js"></script>

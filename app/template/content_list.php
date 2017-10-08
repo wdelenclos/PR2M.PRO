@@ -11,10 +11,9 @@ error_reporting(E_ALL & ~E_NOTICE);
 
 require ('config.php');
 require ('connect.php');
-
-
-
 ?>
+
+
 <!-- page content -->
 <div class="right_col" role="main">
     <!-- top tiles -->
