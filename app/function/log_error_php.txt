@@ -48,3 +48,61 @@ Stack trace:
 #0 /Applications/MAMP/htdocs/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
 #1 {main}
   thrown in /Applications/MAMP/htdocs/PR2M.PRO/app/function.php on line 147
+[22-Sep-2017 23:04:58 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231
+[22-Sep-2017 23:10:10 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231
+[22-Sep-2017 23:26:06 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231
+[22-Sep-2017 23:53:21 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231
+[23-Sep-2017 00:01:43 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231
+[23-Sep-2017 00:03:48 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231
+[23-Sep-2017 12:10:41 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:231
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/logger.php(15): searchPraticien(NULL)
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 231
+[23-Sep-2017 12:21:52 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:15) in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 31
+[23-Sep-2017 13:10:36 Europe/Paris] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 355
+[23-Sep-2017 13:10:36 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:355) in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 358
+[23-Sep-2017 14:54:11 Europe/Paris] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 39
+[08-Oct-2017 20:58:04 Europe/Paris] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function updateTestData(), 0 passed in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 162 and exactly 3 expected in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php:126
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php(162): updateTestData()
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 126
+[08-Oct-2017 20:59:00 Europe/Paris] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function updateTestData(), 0 passed in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 162 and exactly 3 expected in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php:126
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php(162): updateTestData()
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 126
+[08-Oct-2017 21:00:17 Europe/Paris] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function updateTestData(), 0 passed in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 162 and exactly 3 expected in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php:126
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php(162): updateTestData()
+#1 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 126
+[08-Oct-2017 21:01:31 Europe/Paris] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 154
+[08-Oct-2017 21:01:31 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php:15) in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 155
+[08-Oct-2017 21:06:35 Europe/Paris] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 154
+[08-Oct-2017 21:32:52 Europe/Paris] PHP Recoverable fatal error:  Object of class PDOStatement could not be converted to string in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 151

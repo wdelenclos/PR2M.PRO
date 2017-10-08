@@ -5,7 +5,7 @@
         <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="?p=dashboard" class="site_title"><span>PR2M</span></a>
+                    <a href="?p=dashboard&identifiant=<?= $_SESSION['identifiant']?>" class="site_title"><span>PR2M</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -26,42 +26,56 @@
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                     <div class="menu_section">
                         <ul class="nav side-menu">
+                            <li><a href="?p=dashboard&identifiant=<?= $_SESSION['identifiant']?>"><i class="fa fa-tachometer"></i> Tableau de bord </a></li>
+                             <li><a><i class="fa fa-compass"></i> Premiers pas <span class="fa fa-chevron-down"></span></a>
+                                <ul class="nav child_menu">
+                                    <li><a href="?p=guide&identifiant=<?= $_SESSION['identifiant']?>">Guide d'utilisation</a></li>
+                                    <li><a href="?p=shared1&identifiant=<?= $_SESSION['identifiant']?>">Justification théorique</a></li>
+                                    <li><a href="?p=shared2&identifiant=<?= $_SESSION['identifiant']?>">Question Clinique</a></li>
+                                    <li><a href="?p=shared3&identifiant=<?= $_SESSION['identifiant']?>">Objectifs</a></li>
+                                </ul>
+                            </li>
                             <li><a><i class="fa fa-users"></i> Patients <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="?p=dashboard&identifiant=<?= $_SESSION['identifiant']?>">Tableau de bord</a></li>
                                     <li><a href="?p=liste&identifiant=<?= $_SESSION['identifiant']?>">Liste des patients</a></li>
                                     <li><a href="?p=nouveau&identifiant=<?= $_SESSION['identifiant']?>">Nouveau patient</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-check"></i> Tests <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="?p=tests&identifiant=<?= $_SESSION['identifiant']?>">Consignes</a></li>
+                                    <li><a href="?p=ordrer&identifiant=<?= $_SESSION['identifiant']?>">Ordre de passation</a></li>
+                                    <li><a href="?p=tests&identifiant=<?= $_SESSION['identifiant']?>">Matériel</a></li>
                                 </ul>
                             </li>
-                            <li><a><i class="fa fa-bar-chart-o"></i> Synthèses <span class="fa fa-chevron-down"></span></a>
+                            <li><a><i class="fa fa-rotate-left"></i> Entrainements <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-
-                                    <li><a href="">A venir </a> </li>
+                                    <li><a href="?p=training&identifiant=<?= $_SESSION['identifiant']?>">Nouvel entrainement</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                     <div class="menu_section">
                         <ul class="nav side-menu">
-                            <li><a><i class="fa fa-database"></i> Données partagées<span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="e_commerce.html">Api</a></li>
-                                    <li><a href="projects.html">Liste des patients</a></li>
-                                    <li><a href="project_detail.html">Statistiques</a></li>
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-user-md"></i>Participants<span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="#level1_1">Liste des chercheurs</a></li>
-                                    </li>
-                                </ul>
-                            </li>
+	                        <?php if(in_array($_SESSION['identifiant'], ADMINMAIL)){?>
+                                <li><a><i class="fa fa-user-md"></i>Praticiens<span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="?p=listeP&identifiant=<?= $_SESSION['identifiant']?>">Liste des praticiens</a></li>
+                                        </li>
+                                        <li><a href="?p=nouveauP&identifiant=<?= $_SESSION['identifiant']?>">Ajouter un praticiens</a></li>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-database"></i> Données récoltées<span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="">GoogleSheet</a></li>
+                                        <li><a href="">API</a></li>
+                                    </ul>
+                                </li>
+
+	                        <?php } ?>
+
                         </ul>
+
                     </div>
 
                 </div>
@@ -92,16 +106,16 @@
                     }</script>
                 <!-- /menu footer buttons -->
                 <div class="sidebar-footer hidden-small">
-                    <a data-toggle="tooltip" data-placement="top" title="Settings">
-                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    <a data-toggle="tooltip" data-placement="top" title="Auteurs">
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                     </a>
-                    <a onclick="requestFullScreen();" data-toggle="tooltip" data-placement="top" title="FullScreen">
+                    <a onclick="requestFullScreen();" data-toggle="tooltip" data-placement="top" title="Plein écran">
                         <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
                     </a>
-                    <a data-toggle="tooltip" data-placement="top" title="Lock">
+                    <a data-toggle="tooltip" data-placement="top" title="Verrouiller">
                         <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
                     </a>
-                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="?p=logout">
+                    <a data-toggle="tooltip" data-placement="top" title="Déconnecter" href="?p=logout">
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                     </a>
                 </div>
@@ -120,7 +134,9 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="images/user.png" alt=""><?= $_SESSION['prenom'].' '. $_SESSION['nom']?>
+                                <img src="images/user.png" alt=""><?= $_SESSION['prenom'].' '. $_SESSION['nom']?> <?php if(in_array($_SESSION['identifiant'], ADMINMAIL)){?>
+                                    <span> (Administrateur)</span>
+	                            <?php } ?>
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">

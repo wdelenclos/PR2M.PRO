@@ -11,16 +11,22 @@ ini_set('error_log', dirname(__file__) . '/log_error_php.txt');
 // Afficher les erreurs et les avertissements
 error_reporting(E_ALL & ~E_NOTICE);
 
+require_once 'config.php';
 require_once 'function.php';
 include_once 'connect.php';
 include_once 'function/notifs.php';
 
-if(!isset($_GET['p'])){
-    $_GET['p'] = '';
+if(isset($_COOKIE['userID'])){
+	$_GET['identifiant'] = $_COOKIE['userID'];
+	$_GET['p'] = 'dashboard';
+// Verification d'une connexion active
+}
+
+if(!isset($_GET['p']) || !isset($_GET['identifiant']) || $_GET['identifiant'] == ''){
+	$_GET['p'] = '';
 }
 
 $route = $_GET['p'];
-
 $routeInfo = routage();
 $label =  $routeInfo[0];
 $title =  $routeInfo[1];

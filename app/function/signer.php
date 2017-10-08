@@ -12,8 +12,6 @@ require ('../connect.php');
 require ('../function.php');
 
 if (isset($_POST['sign_Email'])) {
-
     addPraticien($bdd);
-
 }
 
