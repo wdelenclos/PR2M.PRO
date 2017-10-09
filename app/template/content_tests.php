@@ -136,6 +136,7 @@
                                             <small>Leloup, Chevallier et Gorsse, 2016&nbsp;</small>
                                             <hr>
                                             <a class="btn btn-primary" href="data/tests_uploads/lexical/Protocole_dénomination_LexicalAccess.pdf" download="Protocole_dénomination_LexicalAccess.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole dénomination </a>
+                                            <a href="?p=lexical&identifiant=<?= $_SESSION['identifiant']?>" class="btn btn-success" ><i class="fa fa-play"></i> Débuter un test lexical access</a>
                                             <hr>
                                             <h5><strong><span style="text-decoration: underline;">T&acirc;che&nbsp;:</span>&nbsp;</strong></h5>
                                             <p>D&eacute;nommer le plus rapidement possible des images pr&eacute;sent&eacute;es sur ordinateur</p>
@@ -213,7 +214,7 @@
                                             <p class="lead">Test de Vitesse de Traitement Non Verbal (VTNV)&nbsp;</p>
                                             <small>Nothelier et Delenclos, 2017&nbsp;</small>
                                             <hr>
-                                            <a class="btn btn-primary" href="data/tests_uploads/vtnv/Test_VTNV.zip" download="Test_VTNV.zip" target="_blank"><i class="fa fa-download"></i> Test VTNV</a>
+                                            <a href="?p=vtnv&identifiant=<?= $_SESSION['identifiant']?>" class="btn btn-success" ><i class="fa fa-play"></i> Débuter le test VTNV</a>
                                             <hr>
                                             <p>Le fichier se t&eacute;l&eacute;charge automatiquement. Il vous suffira ensuite d&rsquo;ouvrir le dossier zip et d&rsquo;en extraire tous les fichiers. Vous acc&eacute;derez au test en s&eacute;lectionnant le fichier &laquo;&nbsp;test&nbsp;&raquo; (type Chrome HTML Document, ic&ocirc;ne Google).</p>
                                             <p>&nbsp;</p>

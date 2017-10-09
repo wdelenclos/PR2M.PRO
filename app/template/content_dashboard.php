@@ -64,7 +64,7 @@
         <div class="col-md-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>En cours</h2>
+                    <h2>En attente</h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>
@@ -73,11 +73,10 @@
                 </div>
                 <div class="x_content">
                     <div class="row">
-
                         <a href="?p=nouveau&identifiant=<?=$_SESSION['identifiant']?>"> <button type="submit" class="btn btn-success"><i class="fa fa-plus"></i> Nouveau patient</button>
-                            <a href="?p=testSession&identifiant=<?=$_SESSION['identifiant']?>"> <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Passer les test</button>
+                            <a href="?p=tests&identifiant=<?=$_SESSION['identifiant']?>"> <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Passer les test</button>
                                 <a href="?p=training&identifiant=<?=$_SESSION['identifiant']?>"> <button type="submit" class="btn btn-success"><i class="fa fa-rotate-right"></i> Entrainement</button>
-                                    <a href="?p=results&identifiant=<?=$_SESSION['identifiant']?>"> <button type="submit" class="btn btn-primary"><i class="fa fa-database"></i> Acceder à l'export des données</button>
+                                    <a href="?p=export&identifiant=<?=$_SESSION['identifiant']?>"> <button type="submit" class="btn btn-primary"><i class="fa fa-database"></i> Acceder à l'export des données</button>
                     </div>
                     <hr>
                     <p>Voici la liste de vos patients</p>

@@ -45,7 +45,10 @@ function routage(){ // Moteur de rooting
             $label ="content_profile";
             $title = "Profil du praticien";
             break;
-
+	    case "export":
+		    $label ="content_export";
+		    $title = "Visualisation des exports";
+		    break;
         case "nouveau":
             $label ="content_new";
             $title = "Nouveau patient";
@@ -69,6 +72,14 @@ function routage(){ // Moteur de rooting
 		    $label ="content_listP";
 		    $title = "Liste des praticiens";
 		    break;
+	    case "lexical":
+		    $label ="content_lexical";
+		    $title = "Test LexicalAccess";
+		    break;
+	    case "vtnv":
+		    $label ="content_vtnv";
+		    $title = "Test VTNV";
+		    break;
 	    case "shared1":
 		    $label ="content_shared1";
 		    $title = "Justification théorique";
@@ -77,31 +88,30 @@ function routage(){ // Moteur de rooting
 		    $label ="content_guide";
 		    $title = "Guide d'utilisation";
 		    break;
+	    case "training":
+		    $label ="content_training";
+		    $title = "Entrainement";
+		    break;
 	    case "shared2":
 		    $label ="content_shared2";
 		    $title = "Question Clinique";
 		    break;
-
 	    case "shared3":
 		    $label ="content_shared3";
 		    $title = "Objectifs";
 		    break;
-
         case "tests":
             $label ="content_tests";
             $title = "Consignes";
             break;
-
         case "logout":
             $label ="logout";
             $title = "Déconnecté";
             break;
-
         case "introuvable":
             $label ="403";
             $title = "Identifiant introuvable";
             break;
-
         default:
             $label ="404";
             $title = "Erreur 404";
@@ -124,7 +134,7 @@ function root($label, $title){
         header('Location: index.php?p=login&logout=true' );
     }
 
-    if($label == "content_dashboard" || $label == "content_shared1"  || $label == "content_guide"|| $label == "content_shared2" || $label == "content_shared3" || $label == "content_profile"  || $label == "content_new" || $label == "content_newP" || $label == "content_list" || $label == "content_listP" || $label == "content_details"|| $label == "content_tests" ){
+    if($label == "content_dashboard" || $label == "content_shared1" || $label == "content_export" || $label == "content_training" || $label == "content_lexical" || $label == "content_vtnv" || $label == "content_guide" || $label == "content_shared2" || $label == "content_shared3" || $label == "content_profile"  || $label == "content_new" || $label == "content_newP" || $label == "content_list" || $label == "content_listP" || $label == "content_details"|| $label == "content_tests" ){
         include_once 'template/head.php';
         include_once 'template/nav.php';
     }
@@ -487,27 +497,26 @@ function listWaitingPatient($bdd)
         while ($row = $stmt->fetchObject()) {
 
             // Tesst du nombre de tests effectués
-            $done = 0;
-            if($row->emme_pre !== null ){
-                $done++;
-            }
-            if($row->dra_pre_tmps !== null ){
-                $done++;
-            }
-            if($row->dra_pre_precision !== null ){
-                $done++;
-            }
-            if($row->evip_pre_base !== null ){
-                $done++;
-            }
-            if($row->evip_pre_plafond !== null ){
-                $done++;
-            }
-            if($row->evip_pre_temps !== null  ){
-                $done++;
-            }
-
-            if ($done !== 6){
+	        $done = 0;
+	        if($row->test_t0_emme !== null ){
+		        $done++;
+	        }
+	        if($row->test_t0_evip  !== null ){
+		        $done++;
+	        }
+	        if($row->test_t0_dra  !== null ){
+		        $done++;
+	        }
+	        if($row->test_t0_la_denomination  !== null ){
+		        $done++;
+	        }
+	        if($row->test_vtnv !== null ){
+		        $done++;
+	        }
+	        if($row->test_t0_la_designation  !== null  ){
+		        $done++;
+	        }
+            if ($done == 0){
                 $advencement = $done * 16.7;
 
                 switch ($done){

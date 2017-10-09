@@ -20,3 +20,15 @@ Stack trace:
 #2 {main}
   thrown in /var/www/html/Projet.PR2M/app/template/content_dashboard.php on line 167
 [08-Oct-2017 22:00:52 Europe/Paris] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /Users/wdelenclos/Projets/PR2M.PRO/app/template/content_details.php on line 90
+[09-Oct-2017 13:58:54 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/template/content_vtnv.php:45
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function.php(138): include()
+#1 /Users/wdelenclos/Projets/PR2M.PRO/app/index.php(33): root('content_vtnv', 'Test VTNV')
+#2 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/template/content_vtnv.php on line 45
+[09-Oct-2017 14:13:23 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/wdelenclos/Projets/PR2M.PRO/app/template/content_lexical.php:45
+Stack trace:
+#0 /Users/wdelenclos/Projets/PR2M.PRO/app/function.php(138): include()
+#1 /Users/wdelenclos/Projets/PR2M.PRO/app/index.php(33): root('content_lexical', 'Test LexicalAcc...')
+#2 {main}
+  thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/template/content_lexical.php on line 45

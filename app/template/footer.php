@@ -1,13 +1,14 @@
 <!-- footer content -->
 <footer>
     <div class="pull-right">
-        PR2M - Développé par <a href="https://wdelenclos.fr">Wladimir Delenclos</a> | V2.0.1
-    </div>
+        PR2M - Développé par <a href="https://wdelenclos.fr">Wladimir Delenclos</a> | <a href="https://github.com/wdelenclos/PR2M.PRO/releases"> <span class="version"></span>
+        </a>    </div>
     <div class="clearfix"></div>
 </footer>
 <!-- /footer content -->
 </div>
 </div>
+
 <!-- jQuery -->
 <script src="../vendors/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
@@ -104,6 +105,18 @@
         return i;
     }
     startTime();
+</script>
+<script>
+    var request = $.ajax({
+        url: "https://api.github.com/repos/wdelenclos/PR2M.PRO/releases/latest",
+        method: "GET",
+        dataType: "html"
+    });
+    request.done(function(msg){
+        console.log(JSON.parse(msg).tag_name);
+        document.getElementsByClassName('version')[0].innerText = JSON.parse(msg).tag_name;
+    });
+
 </script>
 </body>
 </html>

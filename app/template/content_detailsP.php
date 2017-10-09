@@ -10,14 +10,11 @@ error_reporting(E_ALL & ~E_NOTICE);
 
 require ('config.php');
 require ('connect.php');
-$data = searchOnePatient($bdd);
+$data = searchPraticien($bdd);
 $id = $data->id;
 $nom = $data->nom;
 $prenom = $data->prenom;
-$lateralite = $data->lateralite;
-$date = $data->date_naissance;
-$niveau = $data->niveau;
-$testData = getTestData($data->id, $bdd);
+$identifiant = $data->identifiant;
 ?>
 <!-- NProgress -->
 <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
@@ -29,7 +26,7 @@ $testData = getTestData($data->id, $bdd);
     <div class="">
         <div class="page-title">
             <div class="title_left">
-                <h3>Détails du patient</h3>
+                <h3>Détails du praticien</h3>
             </div>
 
             <div class="title_right">
