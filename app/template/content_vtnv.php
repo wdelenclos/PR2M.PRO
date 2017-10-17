@@ -22,7 +22,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel">
                             <div class="x_title">
-                                <h2><i class="fa fa-bars"></i> Débuter un test de vitesse traitement non verbal</h2>
+                                <h2><i class="fa fa-bars"></i><span class="titlevtnv"> Débuter un test de vitesse traitement non verbal</span></h2>
                                 <ul class="nav navbar-right panel_toolbox">
                                     <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                     </li>
@@ -31,12 +31,12 @@
                             </div>
                             <div class="x_content">
                                 <div class="row">
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 result">
                                         <br>
                                         <p>Vous allez débuter une session de test VTNV:</p>
                                         <br>
                                     <label for="">Selectionnez un patient:</label>
-                                    <select name="" class="form-control">
+                                    <select id="test_PatientName" name="" class="form-control">
                                         <option disabled>Selectionner un patient</option>
                                         <?php
                                         $sql = 'SELECT *
@@ -54,28 +54,28 @@
                                     </select>
                                     <br>
                                         <label for="">Période:</label>
-                                        <select name="" class="form-control">
+                                        <select name="" id ="testtype" class="form-control">
                                             <option value="pre">Pre-entraiement</option>
                                             <option value="post">Post-entraiement</option>
                                         </select>
                                         <br>
                                         <br>
                                         <label for="">Nombre de répétitions:</label>
-                                        <input class="form-control" placeholder="Nombre de répétition " type="number">
+                                        <input class="form-control" placeholder="Nombre de répétition "  value='20' id ="nbrepetition" type="number">
                                         <br>
                                         <label for="">Intervalle minimum (en ms):</label>
-                                        <input class="form-control" placeholder="Nombre de répétition " type="number">
+                                        <input class="form-control" placeholder="Nombre de répétition " value="2200" id="intervalMin" type="number">
                                         <br>
                                         <label for="">Intervalle max (en ms):</label>
-                                        <input class="form-control" placeholder="Nombre de répétition " type="number">
+                                        <input class="form-control" placeholder="Nombre de répétition " value="3600" id="intervalMax" type="number">
                                         <br>
-                                        <label for="">Image:</label>
-                                        <select name="" class="form-control">
+                                        <label for="imageTest">Image:</label>
+                                        <select name="imageTest" id="imageTest" class="form-control">
                                             <option value="pre">Forme</option>
                                             <option value="post">Non-sémantisable</option>
                                         </select>
                                         <br>
-                                    <button type="submit" class="btn btn-success"><i class="fa fa-play"></i> Commencer le test</button>
+                                    <button type="submit"  id="test_starter" class="btn btn-success"><i class="fa fa-play"></i> Commencer le test</button>
                                     </div>
                                 </div>
                             </div>
@@ -87,6 +87,13 @@
                 </div>
 
             </div>
+
+        <div class="test" style="display:none; position: fixed;top: 0;z-index: 333;width: 100%;height: 100vh;background-color: #ffffff; text-align: center">
+            <h1 id="vtnvTitle" style="margin-top: 350px"></h1>
+            <img id="ImageTestIMG" src="" style=" margin: 35vh auto;width: 250px;height: 250px;text-align: center;" alt="Chargement du test ...">
+        </div>
             <div class="clearfix"></div>
         </div>
         <!-- /page content -->
+
+

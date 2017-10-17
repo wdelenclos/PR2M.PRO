@@ -90,7 +90,7 @@ $testData = getTestData($data->id, $bdd);
                             <p>Date des données actuelles: <br/><? echo date('d/m/Y  H:i:s', $testData->lastupdate); ?></p>
                             <br />
                             <div >
-                                <input type="submit" class="btn btn-success warn" disabled value="Aucune modifications"></input>
+                                <input type="submit" class="btn btn-success warn" id="upd" disabled value="Aucune modifications"></input>
                                 <br/>
                             </div>
 
@@ -118,13 +118,13 @@ $testData = getTestData($data->id, $bdd);
                                                                 <ul class="nav nav-tabs tabs-left">
                                                                     <li class="active"><a href="#preEMME" data-toggle="tab">EMME</a>
                                                                     </li>
-                                                                    <li><a href="#preEVIP" data-toggle="tab">EVIP</a>
+                                                                    <li><a href="#preEDA" data-toggle="tab">EDA</a>
+                                                                    </li>
+                                                                    <li><a href="#preLA" data-toggle="tab">Lexical Access</a>
                                                                     </li>
                                                                     <li><a href="#preDRA" data-toggle="tab">DRA</a>
                                                                     </li>
                                                                     <li><a href="#preVTNV" data-toggle="tab">VTNV</a>
-                                                                    </li>
-                                                                    <li><a href="#prequest" data-toggle="tab">Questionnaire</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -134,47 +134,57 @@ $testData = getTestData($data->id, $bdd);
                                                                 <div class="tab-content">
                                                                     <div class="tab-pane active" id="preEMME">
                                                                         <p class="lead">Epreuve EMME</p>
-                                                                        <p class="">Fichier dénomination:</p>
-                                                                        <small><?= $testData->emme_pre ?? 'Aucun fichier en base'?></small>
-                                                                        <input type="file" name="emme_pre" id="emme_pre">
-                                                                        <br>
-                                                                        <p class="">Fichier désignation:</p>
-                                                                        <small><?= $testData->emme_pre ?? 'Aucun fichier en base'?></small>
-                                                                        <input type="file" name="predenoFile" id="predenoFile">
-                                                                        <br>
-                                                                        <p class="">Fiche protocole:</p>
-                                                                        <small><?= $testData->emme_pre ?? 'Aucun fichier en base'?></small>
-                                                                        <input type="file" name="predenoFile" id="predenoFile">
-                                                                    </div>
-                                                                    <div class="tab-pane" id="preEVIP">
-                                                                        <p class="lead">Score EVIP</p>
+                                                                        <div class="form-group">
                                                                             <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                                                                                <input type="number" class="form-control" id="evip_pre_base" name="evip_pre_temps" placeholder="Base" value="<?= $testData->evip_pre_temps ?>">
-                                                                                <span class="fa fa-tachometer form-control-feedback right" aria-hidden="true"></span>
 
+                                                                            <label>Dénomination:</label>
+                                                                                <br>
+                                                                        <small>Selectionnez l'export excel : <?= $testData->pre_deno_excel ?? 'Aucun fichier actuellement'?></small>
+                                                                        <input type="file" name="pre_deno_excel" id="pre_deno_excel">
+                                                                        <small>Fiche de suivi (PDF ou JPG) : <?= $testData->pre_deno_pdf ?? 'Aucune fiche'?></small>
+                                                                        <input type="file" name="pre_deno_pdf" id="pre_deno_pdf">
                                                                             </div>
-                                                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                                                                        <input type="number" class="form-control" id="evip_pre_precision" name="evip_pre_precision" placeholder="Précision /80"  value="<?= $testData->evip_pre_precision ?>">
-                                                                        <span class="fa fa-location-arrow form-control-feedback right" aria-hidden="true"></span>
                                                                         </div>
+                                                                        <br>
+
+                                                                        <div class="form-group">
+                                                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                                                                            <label>Désignation:</label>
+                                                                                <br>
+                                                                        <small>Selectionnez l'export excel : <?= $testData->pre_desi_excel ?? 'Aucun fichier actuellement'?></small>
+                                                                        <input type="file" name="pre_desi_excel" id="pre_desi_excel">
+                                                                        <br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="tab-pane" id="preEDA">
+                                                                        <p class="lead">Epreuve EDA</p>
+                                                                        <div class="form-group">
                                                                         <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                                                                        <input type="number" class="form-control" id="evip_pre_temps" name="evip_pre_base" placeholder="Temps /ms"  value="<?= $testData->evip_pre_base ?>">
-                                                                        <span class="fa fa-circle-o-notch form-control-feedback right" aria-hidden="true"></span>
+                                                                            <label>Dénomination :</label>
+                                                                            <input type="number" class="form-control" id="pre_deno_score" name="pre_deno_score" min ="0" max="60" placeholder="Précision /60" value="<?= $testData->pre_deno_score ?>">
+                                                                            <span class="fa fa-tachometer form-control-feedback right" aria-hidden="true"></span>
+                                                                        </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+
+                                                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                                                                            <label>Désignation :</label>
+                                                                            <input type="number" class="form-control" id="pre_desi_score" name="pre_desi_score"  min ="0" max="34" placeholder="Précision /34"  value="<?= $testData->pre_desi_score ?>">
+                                                                            <span class="fa fa-tachometer form-control-feedback right" aria-hidden="true"></span>
+                                                                        </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="tab-pane" id="preDRA">
-                                                                        <p class="lead">Score DRA</p>
+                                                                        <p class="lead">Epreuve DRA</p>
                                                                         <div class="form-group">
                                                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre d'erreurs</label>
                                                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                                <input type="text" class="form-control" id="dra_pre_precision" placeholder="Saisir le nb d'erreurs" value="<?= $testData->dra_pre_precision ?>">
+                                                                                <input type="number" class="form-control" id="pre_nb_erreur" name="pre_nb_erreur" min="0" placeholder="Saisir le nb d'erreurs" value="<?= $testData->pre_nb_erreur ?>">
                                                                             </div>
-                                                                        </div>
-                                                                        <br>
-                                                                        <div class="form-group">
                                                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Temps (/s) </label>
                                                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                                <input type="number" class="form-control" id="dra_pre_tmps" placeholder="Temps en secondes "value="<?= $testData->dra_pre_tmps ?>">
+                                                                                <input type="number" class="form-control" id="pre_time" name="pre_time" mi="0" placeholder="Temps en secondes "value="<?= $testData->pre_time ?>">
                                                                             </div>
                                                                         </div>
 
@@ -182,15 +192,16 @@ $testData = getTestData($data->id, $bdd);
                                                                     <div class="tab-pane" id="preVTNV">
                                                                         <p class="lead">Vitesse traitement non-verbal</p>
                                                                         <div class="form-group">
-                                                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Resultat </label>
-
+                                                                            <label class="control-label col-md-12 col-sm-12 col-xs-12">Les résultats sont automatiquement enregistrés lors de la passation </label>
+                                                                            <p><?= $testData->pre_json ?></p>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="tab-pane" id="prequest">
-                                                                        <p class="lead">Récupération du questionnaire</p>
-
-                                                                        <input type="file" name="preRequestFile" id="preRequestFile">
-
+                                                                    <div class="tab-pane" id="preLA">
+                                                                        <p class="lead">Lexical access</p>
+                                                                        <div class="form-group">
+                                                                            <label class="control-label col-md-12 col-sm-12 col-xs-12">Les résultats sont automatiquement enregistrés lors de la passation </label>
+                                                                            <p><?= $testData->pre_la ?></p>
+                                                                        </div>
                                                                     </div>
 
                                                                 </div>
@@ -207,19 +218,36 @@ $testData = getTestData($data->id, $bdd);
                                             <h4 class="panel-title">Résultats des entrainement</h4>
                                         </a>
                                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
-                                            <div class="panel-body">
-                                                <p class="lead">Résultats de l'entrainement à la maison:</p>
-                                                <h4>Etat: </h4>
-                                                <span class="label label-success">A jour</span>
-                                                <span class="label label-warning"><1 jour de retard</span>
-                                                <span class="label label-danger">Plusieurs jours de retard</span>
-                                                <div class="x_content">
-                                                    <div id="graph_bar" style="width: 100%; height: 280px; position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="280" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël @@VERSION</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="42.515625" y="213.3026007804375" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.255725780437501">0</tspan></text><path fill="none" stroke="#aaaaaa" d="M55.015625,213.3026007804375H288" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="42.515625" y="166.22695058532813" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.258200585328126">750</tspan></text><path fill="none" stroke="#aaaaaa" d="M55.015625,166.22695058532813H288" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="42.515625" y="119.15130039021875" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.260675390218751">1,500</tspan></text><path fill="none" stroke="#aaaaaa" d="M55.015625,119.15130039021875H288" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="42.515625" y="72.07565019510938" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.263150195109375">2,250</tspan></text><path fill="none" stroke="#aaaaaa" d="M55.015625,72.07565019510938H288" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="42.515625" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.25">3,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M55.015625,25H288" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="276.35078125" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-91.9662,213.7221)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.255725780437501">Other</tspan></text><text x="253.05234375" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-117.498,215.2815)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.255725780437501">iPhone 6S Plus</tspan></text><text x="206.45546875" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-122.6478,186.2621)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.255725780437501">iPhone 6 Plus</tspan></text><text x="159.85859375" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-123.428,154.1777)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.255725780437501">iPhone 5S</tspan></text><text x="113.26171875" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-135.6736,130.1323)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.255725780437501">iPhone 3GS</tspan></text><text x="66.66484375" y="225.8026007804375" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-136.9992,98.4243)"><tspan style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" dy="4.255725780437501">iPhone 4</tspan></text><rect x="57.9279296875" y="189.4509380149154" width="17.473828124999997" height="23.851662765522093" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="81.2263671875" y="172.18986627670864" width="17.473828124999997" height="41.11273450372886" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="104.5248046875" y="196.04152904223074" width="17.473828124999997" height="17.261071738206766" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="127.82324218749999" y="114.69480550508173" width="17.473828124999997" height="98.60779527535577" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="151.1216796875" y="172.18986627670864" width="17.473828124999997" height="41.11273450372886" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="174.4201171875" y="78.10133342008336" width="17.473828124999997" height="135.20126736035414" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="197.7185546875" y="141.49654234949733" width="17.473828124999997" height="71.80605843094017" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="221.0169921875" y="64.4807786302984" width="17.473828124999997" height="148.8218221501391" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="244.3154296875" y="120.97155886442964" width="17.473828124999997" height="92.33104191600786" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="267.61386718750003" y="127.24831222377756" width="17.473828124999997" height="86.05428855665994" rx="0" ry="0" fill="#26b99a" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect></svg><div class="morris-hover morris-default-style" style="left: 199px; top: 111px; display: none;"><div class="morris-hover-row-label">Other</div><div class="morris-hover-point" style="color: #26B99A">
-                                                                Geekbench:
-                                                                1,371
-                                                            </div></div></div>
-                                                </div>
-                                            </div>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Jour</th>
+                                                    <th>Heure de session</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>18 oct</td>
+                                                    <td>17:44:30</td>
+                                                    <td> <span class="badge bg-green">Terminé</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>19 oct</td>
+                                                    <td>17:44:30</td>
+                                                    <td> <span class="badge bg-orange">En attente</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>20 oct</td>
+                                                    <td>17:44:30</td>
+                                                    <td><span class="badge bg-red">Non effectué</span></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                     <div class="panel">
@@ -236,15 +264,13 @@ $testData = getTestData($data->id, $bdd);
                                                             <ul class="nav nav-tabs tabs-left">
                                                                 <li class="active"><a href="#postEMME" data-toggle="tab">EMME</a>
                                                                 </li>
-                                                                <li><a href="#postEVIP" data-toggle="tab">EVIP</a>
+                                                                <li><a href="#postEDA" data-toggle="tab">EDA</a>
+                                                                </li>
+                                                                <li><a href="#postLA" data-toggle="tab">Lexical Access</a>
                                                                 </li>
                                                                 <li><a href="#postDRA" data-toggle="tab">DRA</a>
                                                                 </li>
-                                                                <li><a href="#postdeno" data-toggle="tab">Denomination</a>
-                                                                </li>
-                                                                <li><a href="#postdesi" data-toggle="tab">Designation</a>
-                                                                </li>
-                                                                <li><a href="#postquest" data-toggle="tab">Questionnaire</a>
+                                                                <li><a href="#postVTNV" data-toggle="tab">VTNV</a>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -253,69 +279,82 @@ $testData = getTestData($data->id, $bdd);
                                                             <!-- Tab panes -->
                                                             <div class="tab-content">
                                                                 <div class="tab-pane active" id="postEMME">
-                                                                    <p class="lead">Récupération du fichier EMME</p>
-
-                                                                        <div class="dz-default dz-message">
-                                                                            <input type="file" name="posteEMMEFile" id="posteEMMEFile">
-                                                                        </div>
-
-                                                                </div>
-                                                                <div class="tab-pane" id="postEVIP">
-                                                                    <p class="lead">Score EVIP</p>
+                                                                    <p class="lead">Epreuve EMME</p>
+                                                                    <div class="form-group">
                                                                         <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
-                                                                            <input type="text" class="form-control" id="inputSuccess3" placeholder="Score">
-                                                                            <span class="fa fa-circle-o-notch form-control-feedback right" aria-hidden="true"></span>
-                                                                        </div>
 
+                                                                            <label>Dénomination:</label>
+                                                                            <br>
+                                                                            <small>Selectionnez l'export excel : <?= $testData->post_deno_excel ?? 'Aucun fichier actuellement'?></small>
+                                                                            <input type="file" name="post_deno_excel" id="post_deno_excel">
+                                                                            <small>Fiche de suivi (PDF ou JPG) : <?= $testData->post_deno_pdf ?? 'Aucune fiche'?></small>
+                                                                            <input type="file" name="post_deno_pdf" id="post_deno_pdf">
+                                                                        </div>
+                                                                    </div>
+                                                                    <br>
+
+                                                                    <div class="form-group">
+                                                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                                                                            <label>Désignation:</label>
+                                                                            <br>
+                                                                            <small>Selectionnez l'export excel : <?= $testData->post_desi_excel ?? 'Aucun fichier actuellement'?></small>
+                                                                            <input type="file" name="post_desi_excel" id="post_desi_excel">
+                                                                            <br>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane" id="postEDA">
+                                                                    <p class="lead">Epreuve EDA</p>
+                                                                    <div class="form-group">
+                                                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                                                                            <label>Dénomination :</label>
+                                                                            <input type="number" class="form-control" id="post_deno_score" name="post_deno_score" min ="0" max="60" placeholder="Précision /60" value="<?= $testData->post_deno_score ?>">
+                                                                            <span class="fa fa-tachometer form-control-feedback right" aria-hidden="true"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+
+                                                                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                                                                            <label>Désignation :</label>
+                                                                            <input type="number" class="form-control" id="post_desi_score" name="post_desi_score"  min ="0" max="34" placeholder="Précision /34"  value="<?= $testData->post_desi_score ?>">
+                                                                            <span class="fa fa-tachometer form-control-feedback right" aria-hidden="true"></span>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                                 <div class="tab-pane" id="postDRA">
-                                                                    <p class="lead">Score DRA</p>
+                                                                    <p class="lead">Epreuve DRA</p>
                                                                     <div class="form-group">
-                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre d'erreurs </label>
+                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre d'erreurs</label>
                                                                         <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                            <input type="text" class="form-control"  placeholder="Saisir le nb d'erreurs">
+                                                                            <input type="number" class="form-control" id="post_nb_erreur" name="post_nb_erreur" min="0" placeholder="Saisir le nb d'erreurs" value="<?= $testData->post_nb_erreur ?>">
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="form-group">
                                                                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Temps (/s) </label>
                                                                         <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                            <input type="number" class="form-control" placeholder="Temps en secondes">
+                                                                            <input type="number" class="form-control" id="post_time" name="post_time" mi="0" placeholder="Temps en secondes "value="<?= $testData->post_time ?>">
                                                                         </div>
                                                                     </div>
 
                                                                 </div>
-                                                                <div class="tab-pane" id="postdeno">
-                                                                    <p class="lead">Récupération du fichier</p>
-
-                                                                    <input type="file" name="postdenoFile" id="postdenoFile">
-                                                                </div>
-                                                                <div class="tab-pane" id="postdesi">
-                                                                    <p class="lead">Récupération du fichier </p>
-
-                                                                    <input type="file" name="postdesiFile" id="postdesiFile">
-                                                                </div>
-                                                                <div class="tab-pane" id="postBELO">
-                                                                    <p class="lead">Score BELO</p>
+                                                                <div class="tab-pane" id="postVTNV">
+                                                                    <p class="lead">Vitesse traitement non-verbal</p>
                                                                     <div class="form-group">
-                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Resultat </label>
-                                                                        <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                            <input type="number" class="form-control" placeholder="Saisir le résultat">
-                                                                        </div>
+                                                                        <label class="control-label col-md-12 col-sm-12 col-xs-12">Les résultats sont automatiquement enregistrés lors de la passation </label>
+                                                                        <p><?= $testData->post_json ?></p>
                                                                     </div>
                                                                 </div>
-                                                                <div class="tab-pane" id="postquest">
-                                                                    <p class="lead">Récupération du questionnaire</p>
-
-                                                                    <input type="file" name="postquestFile" id="postquestFile">
+                                                                <div class="tab-pane" id="postLA">
+                                                                    <p class="lead">Lexical access</p>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label col-md-12 col-sm-12 col-xs-12">Les résultats sont automatiquement enregistrés lors de la passation </label>
+                                                                        <p><?= $testData->post_la ?></p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                         <div class="clearfix"></div>
-
                                                     </div>
                                                 </div>
-                                                </div>
+                                            </div>
 
                                         </div>
                                     </div>
@@ -340,26 +379,18 @@ $testData = getTestData($data->id, $bdd);
             document.getElementsByClassName('warn')[0].value = 'Mettre à jour';
         }
         console.log( document.getElementsByClassName('formTest')[0]);
+
         document.getElementsByClassName('formTest')[0].addEventListener("change", function () {
-            console.log('Donnée mise à jour');
+            console.log('Donnée modifiées');
             showBtnUpdate();
         });
+        function showUpdateDone(){
+            document.getElementById('upd').value = 'A jour !';
+        }
         document.getElementsByClassName('formTest')[0].addEventListener("submit", function (e) {
             e.preventDefault();
             var target = document.getElementsByClassName('formTest')[0];
-            var form_data = new FormData();
-            for(var i = 0; i < target.length; i++){
-                console.log(target[i]);
-                var id = target[i].id;
-                var file_data;
-                if (target[i].type == 'file'){
-                    file_data = target[i].files[0];   // Getting the properties of file from file field
-                }
-                else{
-                    file_data = target[i].value;  // Getting the properties of file from file field
-                }
-                form_data.append(id, file_data);
-            }
+            var form_data = new FormData(target);
             form_data.append('id', document.getElementById('usrId').textContent);
             form_data.append('identifiantusr', <?= $_SESSION['identifiant']?>);
             $.ajax({
@@ -376,6 +407,8 @@ $testData = getTestData($data->id, $bdd);
                     }
                     else{
                         console.log(data);
+                        showUpdateDone();
+
                     }
                 }
             });

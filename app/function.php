@@ -368,6 +368,24 @@ function addPatient($bdd)
 		$stmt->execute();
 		$row = $stmt->fetchObject();
 		$id = $row->id;
+
+		$patientID = $row->id;
+
+
+		try {
+			$sql = "INSERT INTO `tests` ( `patient`, `praticien`, `lastupdate`)
+VALUES( :patient, :praticien, :lastupdate )";
+
+			$stmt = $bdd->prepare($sql);
+			$stmt->bindValue(':patient',$patientID);
+			$stmt->bindValue(':praticien',$_POST['identifiant']);
+			$stmt->bindValue(':lastupdate', time());
+			$stmt->execute();
+		}
+		catch( PDOException $Exception ) {
+			var_dump($Exception->getMessage());
+		}
+
 		header('Location: ../index.php?n=201&p=details&identifiant='.$_POST['identifiant'].'&id='.$id );
 	}
 	catch( PDOException $Exception ) {

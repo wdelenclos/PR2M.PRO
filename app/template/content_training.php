@@ -31,12 +31,12 @@
                             </div>
                             <div class="x_content">
                                 <div class="row">
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 result">
                                         <br>
                                         <p>Vous allez débuter une session d'entrainement Lexical Access:</p>
                                         <br>
                                     <label for="">Selectionnez un patient:</label>
-                                    <select name="" class="form-control">
+                                    <select id="test_PatientName" name="" class="form-control">
                                         <option disabled>Selectionner un patient</option>
                                         <?php
                                         $sql = 'SELECT *
@@ -52,8 +52,9 @@
                                         }
                                         ?>
                                     </select>
+                                        <input type="hidden" value="eval" id ="testtype">
                                     <br>
-                                    <button type="submit" class="btn btn-success"><i class="fa fa-play"></i> Débuter l'entrainement</button>
+                                    <button type="submit" id="test_starter" class="btn btn-success"><i class="fa fa-play"></i> Débuter l'entrainement</button>
                                     </div>
                                 </div>
                             </div>
@@ -66,5 +67,10 @@
 
             </div>
             <div class="clearfix"></div>
+        <div class="test" style="display:none; position: fixed;top: 0;z-index: 333;width: 100%;height: 100vh;background-color: #ffffff; text-align: center">
+            <h1 id="vtnvTitle" style="margin-top: 350px"></h1>
+            <img id="ImageTestIMG" src="" style=" margin: 35vh auto;width: 250px;height: 250px;text-align: center;" alt="Chargement du test ...">
+        </div>
+        <div class="clearfix"></div>
         </div>
         <!-- /page content -->
