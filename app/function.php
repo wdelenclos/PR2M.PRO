@@ -346,9 +346,7 @@ function addPatient($bdd) {
 
 	try {
 		$sql  = "INSERT INTO `patients` (`nom`, `prenom`, `date_naissance`, `lateralite`, `niveau`, `commentaire`,  `praticien`) VALUES (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire,  :identifiant)";
-
 		$stmt = $bdd->prepare($sql);
-
 		$stmt->bindValue( ':nom', $_POST['nom'] );
 		$stmt->bindValue( ':prenom', $_POST['prenom'] );
 		$stmt->bindValue( ':date_naissance', $_POST['date'] );
@@ -359,11 +357,6 @@ function addPatient($bdd) {
 		$stmt->execute();
 
 
-	} catch ( PDOException $Exception ) {
-		var_dump( $Exception->getMessage() );
-		die();
-	};
-	try{
 		$sqli  = 'SELECT * FROM `patients` WHERE nom = :nom AND prenom = :prenom';
 		$stmt = $bdd->prepare( $sqli );
 		$stmt->bindValue( ':nom', $_POST['nom'] );
@@ -371,18 +364,14 @@ function addPatient($bdd) {
 		$stmt->execute();
 		$row = $stmt->fetchObject();
 		$id  = $row->id;
-	}
-	catch( PDOException $Exception ){
-		var_dump( $Exception->getMessage() );
-		die();
-	}
-	try {
+
 		$sqlo = "INSERT INTO `tests` ( `patient`, `praticien`, `lastupdate`) VALUES( :patient, :praticien, :lastupdate )";
 		$stmt = $bdd->prepare( $sqlo );
 		$stmt->bindValue( ':patient', $id );
 		$stmt->bindValue( ':praticien', $_POST['identifiant'] );
-		$stmt->bindValue( ':lastupdate', null );
+		$stmt->bindValue( ':lastupdate', time() );
 		$stmt->execute();
+
 	} catch ( PDOException $Exception ) {
 		var_dump( $Exception->getMessage() );
 		die();
