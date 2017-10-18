@@ -375,8 +375,8 @@ function addPatient($bdd) {
 	} catch ( PDOException $e ) {
 		$e->getMessage() ;
 	};
-	echo $e;
-	//header( 'Location: ../index.php?n=201&p=details&identifiant=' . $_POST['identifiant'] . '&id=' . $id );
+	echo $e->getMessage() ;;
+	header( 'Location: ../index.php?n=201&p=details&identifiant=' . $_POST['identifiant'] . '&id=' . $id );
 }
 function updatePatient($bdd)
 {
