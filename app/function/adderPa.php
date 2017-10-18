@@ -11,7 +11,7 @@ require ('../config.php');
 require ('../connect.php');
 require ('../function.php');
 
-if (isset($_GET['identifiant'])) {
+if (isset($_POST['identifiant'])) {
     addPatient($bdd);
 }
 
