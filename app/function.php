@@ -358,21 +358,25 @@ function addPatient($bdd) {
 		$stmt->bindValue( ':commentaire', $_POST['commentaire'] );
 		$stmt->bindValue( ':identifiant', $_POST['identifiant'] );
 		$stmt->execute();
-		$sql  = 'SELECT id
-        FROM `patients`
-        WHERE nom = :nom AND prenom = :prenom';
+
+
+	} catch ( PDOException $Exception ) {
+		var_dump( $Exception->getMessage() );
+		die();
+	};
+	try{
+		$sql  = 'SELECT `id` FROM `patients` WHERE nom = :nom AND prenom = :prenom';
 		$stmt = $bdd->prepare( $sql );
 		$stmt->bindValue( ':nom', $_POST['nom'] );
 		$stmt->bindValue( ':prenom', $_POST['prenom'] );
 		$stmt->execute();
 		$row = $stmt->fetchObject();
 		$id  = $row->id;
-
-	} catch ( PDOException $Exception ) {
+	}
+	catch( PDOException $Exception ){
 		var_dump( $Exception->getMessage() );
 		die();
-	};
-
+	}
 	try {
 		$sql = "INSERT INTO `tests` ( `patient`, `praticien`, `lastupdate`) VALUES( :patient, :praticien, :lastupdate )";
 
