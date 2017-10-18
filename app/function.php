@@ -384,7 +384,7 @@ function addPatient($bdd) {
 	} catch ( PDOException $Exception ) {
 		var_dump( $Exception->getMessage() );
 		die();
-	}
+	} 
 
 	header( 'Location: ../index.php?n=201&p=details&identifiant=' . $_POST['identifiant'] . '&id=' . $id );
 }
