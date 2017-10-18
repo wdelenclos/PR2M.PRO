@@ -372,12 +372,11 @@ function addPatient($bdd) {
 		$stmt->bindValue( ':lastupdate', time() );
 		$stmt->execute();
 
-	} catch ( PDOException $Exception ) {
-		var_dump( $Exception->getMessage() );
-		die();
+	} catch ( PDOException $e ) {
+		$e->getMessage() ;
 	};
-
-	header( 'Location: ../index.php?n=201&p=details&identifiant=' . $_POST['identifiant'] . '&id=' . $id );
+	echo $e;
+	//header( 'Location: ../index.php?n=201&p=details&identifiant=' . $_POST['identifiant'] . '&id=' . $id );
 }
 function updatePatient($bdd)
 {
