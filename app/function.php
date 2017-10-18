@@ -373,7 +373,7 @@ VALUES
 		$stmt = $bdd->prepare( $sqlo );
 		$stmt->bindValue( ':patient', $id );
 		$stmt->bindValue( ':praticien', $_POST['identifiant'] );
-		$stmt->bindValue( ':lastupdate', getTimestamp());
+		$stmt->bindValue( ':lastupdate', time());
 		$stmt->execute();
 
 	} catch ( PDOException $e ) {
