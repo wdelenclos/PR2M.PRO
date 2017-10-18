@@ -345,13 +345,10 @@ function searchOnePatient($bdd)
 function addPatient($bdd) {
 
 	try {
-		$sql  = "INSERT INTO `patients` (`nom`, `prenom`, `date_naissance`, `lateralite`, `niveau`, `commentaire`,  `praticien`)
-            VALUES
-            (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire,  :identifiant)
-            ";
-		var_dump($_POST);
-		die();
-		$stmt = $bdd->prepare( $sql );
+		$sql  = "INSERT INTO `patients` (`nom`, `prenom`, `date_naissance`, `lateralite`, `niveau`, `commentaire`,  `praticien`) VALUES (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire,  :identifiant)";
+
+		$stmt = $bdd->prepare($sql);
+
 		$stmt->bindValue( ':nom', $_POST['nom'] );
 		$stmt->bindValue( ':prenom', $_POST['prenom'] );
 		$stmt->bindValue( ':date_naissance', $_POST['date'] );
@@ -359,6 +356,8 @@ function addPatient($bdd) {
 		$stmt->bindValue( ':lateralite', $_POST['lateralite'] );
 		$stmt->bindValue( ':commentaire', $_POST['commentaire'] );
 		$stmt->bindValue( ':identifiant', $_POST['identifiant'] );
+		var_dump( $stmt );
+		die();
 		$stmt->execute();
 
 
