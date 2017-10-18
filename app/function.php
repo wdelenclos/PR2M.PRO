@@ -378,11 +378,10 @@ function addPatient($bdd) {
 	}
 	try {
 		$sqlo = "INSERT INTO `tests` ( `patient`, `praticien`, `lastupdate`) VALUES( :patient, :praticien, :lastupdate )";
-
 		$stmt = $bdd->prepare( $sqlo );
 		$stmt->bindValue( ':patient', $id );
 		$stmt->bindValue( ':praticien', $_POST['identifiant'] );
-		$stmt->bindValue( ':lastupdate', time() );
+		$stmt->bindValue( ':lastupdate', null );
 		$stmt->execute();
 	} catch ( PDOException $Exception ) {
 		var_dump( $Exception->getMessage() );
