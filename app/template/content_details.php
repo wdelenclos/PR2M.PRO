@@ -87,7 +87,7 @@ $testData = getTestData($data->id, $bdd);
 -->
                             <hr>
 
-                            <p>Date des données actuelles: <br/><? echo date('d/m/Y  H:i:s', $testData->lastupdate); ?></p>
+                            <p>Date des données actuelles: <br/><?php echo date('d/m/Y H:i:s', $testData->lastupdate); ?></p>
                             <br />
                             <div >
                                 <input type="submit" class="btn btn-success warn" id="upd" disabled value="Aucune modifications"></input>

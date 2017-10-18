@@ -84,7 +84,7 @@ $identifiant = $data->identifiant;
 -->
                             <hr>
 
-                            <p>Date des données actuelles: <br/><?php echo $testData->lastupdate ?></p>
+                            <p>Date des données actuelles: <br/><?php echo $testData->lastupdate; ?></p>
                             <br />
                             <div >
                                 <input type="submit" class="btn btn-success warn" disabled value="Aucune modifications"></input>
