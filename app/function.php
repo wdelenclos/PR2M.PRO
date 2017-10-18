@@ -356,8 +356,6 @@ function addPatient($bdd) {
 		$stmt->bindValue( ':lateralite', $_POST['lateralite'] );
 		$stmt->bindValue( ':commentaire', $_POST['commentaire'] );
 		$stmt->bindValue( ':identifiant', $_POST['identifiant'] );
-		var_dump( $stmt );
-		die();
 		$stmt->execute();
 
 
@@ -366,7 +364,7 @@ function addPatient($bdd) {
 		die();
 	};
 	try{
-		$sql  = 'SELECT `id` FROM `patients` WHERE nom = :nom AND prenom = :prenom';
+		$sql  = 'SELECT * FROM `patients` WHERE nom = :nom AND prenom = :prenom';
 		$stmt = $bdd->prepare( $sql );
 		$stmt->bindValue( ':nom', $_POST['nom'] );
 		$stmt->bindValue( ':prenom', $_POST['prenom'] );
