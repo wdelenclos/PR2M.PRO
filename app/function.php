@@ -345,11 +345,8 @@ function searchOnePatient($bdd)
 function addPatient($bdd) {
 
 	try {
-		$sql  = "INSERT INTO `patients` (`nom`, `prenom`, `date_naissance`, `lateralite`, `niveau`, `commentaire`,  `praticien`)
-            VALUES
-            (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire,  :identifiant)
-            ";
-		$stmt = $bdd->prepare( $sql );
+		$sql  = "INSERT INTO `patients` (`nom`, `prenom`, `date_naissance`, `lateralite`, `niveau`, `commentaire`,  `praticien`) VALUES (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire,  :identifiant)";
+		$stmt = $bdd->prepare($sql);
 		$stmt->bindValue( ':nom', $_POST['nom'] );
 		$stmt->bindValue( ':prenom', $_POST['prenom'] );
 		$stmt->bindValue( ':date_naissance', $_POST['date'] );
@@ -358,34 +355,26 @@ function addPatient($bdd) {
 		$stmt->bindValue( ':commentaire', $_POST['commentaire'] );
 		$stmt->bindValue( ':identifiant', $_POST['identifiant'] );
 		$stmt->execute();
-		$sql  = 'SELECT id
-        FROM `patients`
-        WHERE nom = :nom AND prenom = :prenom';
-		$stmt = $bdd->prepare( $sql );
+
+
+		$sqli  = 'SELECT * FROM `patients` WHERE nom = :nom AND prenom = :prenom';
+		$stmt = $bdd->prepare( $sqli );
 		$stmt->bindValue( ':nom', $_POST['nom'] );
 		$stmt->bindValue( ':prenom', $_POST['prenom'] );
 		$stmt->execute();
 		$row = $stmt->fetchObject();
 		$id  = $row->id;
 
-	} catch ( PDOException $Exception ) {
-		var_dump( $Exception->getMessage() );
-		die();
-	}
-
-	try {
-		$sql = "INSERT INTO `tests` ( `patient`, `praticien`, `lastupdate`) VALUES( :patient, :praticien, :lastupdate )";
-
-		$stmt = $bdd->prepare( $sql );
+		$sqlo = "INSERT INTO `tests` ( `patient`, `praticien`, `lastupdate`) VALUES( :patient, :praticien, :lastupdate )";
+		$stmt = $bdd->prepare( $sqlo );
 		$stmt->bindValue( ':patient', $id );
 		$stmt->bindValue( ':praticien', $_POST['identifiant'] );
 		$stmt->bindValue( ':lastupdate', time() );
 		$stmt->execute();
-	} catch ( PDOException $Exception ) {
-		var_dump( $Exception->getMessage() );
-		die();
-	}
 
+	} catch ( PDOException $e ) {
+		$e->getMessage() ;
+	};
 	header( 'Location: ../index.php?n=201&p=details&identifiant=' . $_POST['identifiant'] . '&id=' . $id );
 }
 function updatePatient($bdd)
