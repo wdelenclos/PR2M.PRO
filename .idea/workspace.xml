@@ -4,7 +4,6 @@
     <list default="true" id="0d52a375-221f-4c5d-a8dd-2c5323163499" name="Default" comment="Add form btn">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/function.php" afterPath="$PROJECT_DIR$/app/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/function/log_error_php.txt" afterPath="$PROJECT_DIR$/app/function/log_error_php.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,50 +48,60 @@
       <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="377" column="43" lean-forward="false" selection-start-line="377" selection-start-column="43" selection-end-line="377" selection-end-column="43" />
+            <state relative-caret-position="-148">
+              <caret line="373" column="6" lean-forward="false" selection-start-line="373" selection-start-column="6" selection-end-line="373" selection-end-column="6" />
               <folding>
                 <element signature="n#routage#0;n#!!top" expanded="false" />
                 <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
                 <element signature="n#listAllPraticiens#0;n#!!top" expanded="false" />
                 <element signature="n#removePraticien#0;n#!!top" expanded="false" />
                 <element signature="n#searchOnePatient#0;n#!!top" expanded="false" />
-                <marker date="1508285468000" expanded="true" signature="6398:6584" ph="INSERT INTO `praticien`... " />
-                <marker date="1508285468000" expanded="true" signature="7513:7630" ph="SELECT id,id... praticien" />
-                <marker date="1508285468000" expanded="true" signature="8104:8137" ph="SELECT * FRO... praticien" />
-                <marker date="1508285468000" expanded="true" signature="8301:9576" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="8396:8681" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="8718:8920" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="8934:9015" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="9083:9542" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="9749:9796" ph="DELETE FROM " />
-                <marker date="1508285468000" expanded="true" signature="10252:10307" ph="SELECT * FRO... patients" />
-                <marker date="1508285468000" expanded="true" signature="10547:10773" ph="INSERT INTO `patients`... " />
-                <marker date="1508285468000" expanded="true" signature="11220:11299" ph="SELECT id FR... patients" />
-                <marker date="1508285468000" expanded="true" signature="11513:11616" ph="INSERT INTO `tests`... " />
-                <marker date="1508285468000" expanded="true" signature="12117:12235" ph="INSERT INTO `user`... " />
-                <marker date="1508285468000" expanded="true" signature="12590:12661" ph="SELECT * FRO... patients" />
-                <marker date="1508285468000" expanded="true" signature="14211:16057" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="14306:14549" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="14586:14835" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="14897:15274" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="14968:15157" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="15311:15437" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="15474:16023" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="16267:16335" ph="SELECT * FRO... patients" />
-                <marker date="1508285468000" expanded="true" signature="16267:16359" ph="SELECT * FRO... patients" />
-                <marker date="1508285468000" expanded="true" signature="16267:16368" ph="SELECT * FRO... test" />
-                <marker date="1508285468000" expanded="true" signature="18000:19856" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="18103:18362" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="18403:18668" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="18734:19131" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="18809:19006" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="19172:19310" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="19351:19818" ph="..." />
-                <marker date="1508285468000" expanded="true" signature="20082:20153" ph="SELECT * FRO... patients" />
-                <marker date="1508285468000" expanded="true" signature="21681:21718" ph="DELETE FROM " />
-                <marker date="1508285468000" expanded="true" signature="22157:22214" ph="SELECT * FRO... test" />
+                <marker date="1508286344000" expanded="true" signature="6398:6584" ph="INSERT INTO `praticien`... " />
+                <marker date="1508286344000" expanded="true" signature="7513:7630" ph="SELECT id,id... praticien" />
+                <marker date="1508286344000" expanded="true" signature="8104:8137" ph="SELECT * FRO... praticien" />
+                <marker date="1508286344000" expanded="true" signature="8301:9576" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="8396:8681" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="8718:8920" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="8934:9015" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="9083:9542" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="9749:9796" ph="DELETE FROM " />
+                <marker date="1508286344000" expanded="true" signature="10252:10307" ph="SELECT * FRO... patients" />
+                <marker date="1508286344000" expanded="true" signature="10548:10774" ph="INSERT INTO `patients`... " />
+                <marker date="1508286344000" expanded="true" signature="11238:11317" ph="SELECT id FR... patients" />
+                <marker date="1508286344000" expanded="true" signature="11630:11733" ph="INSERT INTO `tests`... " />
+                <marker date="1508286344000" expanded="true" signature="12173:12291" ph="INSERT INTO `user`... " />
+                <marker date="1508286344000" expanded="true" signature="12646:12717" ph="SELECT * FRO... patients" />
+                <marker date="1508286344000" expanded="true" signature="14267:16113" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="14362:14605" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="14642:14891" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="14953:15330" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="15024:15213" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="15367:15493" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="15530:16079" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="16323:16391" ph="SELECT * FRO... patients" />
+                <marker date="1508286344000" expanded="true" signature="16323:16415" ph="SELECT * FRO... patients" />
+                <marker date="1508286344000" expanded="true" signature="16323:16424" ph="SELECT * FRO... test" />
+                <marker date="1508286344000" expanded="true" signature="18056:19912" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="18159:18418" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="18459:18724" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="18790:19187" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="18865:19062" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="19228:19366" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="19407:19874" ph="..." />
+                <marker date="1508286344000" expanded="true" signature="20138:20209" ph="SELECT * FRO... patients" />
+                <marker date="1508286344000" expanded="true" signature="21737:21774" ph="DELETE FROM " />
+                <marker date="1508286344000" expanded="true" signature="22213:22270" ph="SELECT * FRO... test" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -194,16 +203,6 @@
                 <element signature="e#5632#14493#0#PHP" expanded="false" />
                 <element signature="e#14504#23698#0#PHP" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendors/vtnv/template.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -676,7 +675,7 @@
       <workItem from="1507915511306" duration="571000" />
       <workItem from="1507989928540" duration="3764000" />
       <workItem from="1508083081679" duration="9968000" />
-      <workItem from="1508260693885" duration="16229000" />
+      <workItem from="1508260693885" duration="16830000" />
     </task>
     <task id="LOCAL-00008" summary="Add form btn">
       <created>1505673696477</created>
@@ -1025,7 +1024,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125634000" />
+    <option name="totallyTimeSpent" value="126235000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1041,7 +1040,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23194444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23194444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1190,13 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1485,51 +1477,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="377" column="43" lean-forward="false" selection-start-line="377" selection-start-column="43" selection-end-line="377" selection-end-column="43" />
+        <state relative-caret-position="-148">
+          <caret line="373" column="6" lean-forward="false" selection-start-line="373" selection-start-column="6" selection-end-line="373" selection-end-column="6" />
           <folding>
             <element signature="n#routage#0;n#!!top" expanded="false" />
             <element signature="n#searchPraticien#0;n#!!top" expanded="false" />
             <element signature="n#listAllPraticiens#0;n#!!top" expanded="false" />
             <element signature="n#removePraticien#0;n#!!top" expanded="false" />
             <element signature="n#searchOnePatient#0;n#!!top" expanded="false" />
-            <marker date="1508285468000" expanded="true" signature="6398:6584" ph="INSERT INTO `praticien`... " />
-            <marker date="1508285468000" expanded="true" signature="7513:7630" ph="SELECT id,id... praticien" />
-            <marker date="1508285468000" expanded="true" signature="8104:8137" ph="SELECT * FRO... praticien" />
-            <marker date="1508285468000" expanded="true" signature="8301:9576" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="8396:8681" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="8718:8920" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="8934:9015" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="9083:9542" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="9749:9796" ph="DELETE FROM " />
-            <marker date="1508285468000" expanded="true" signature="10252:10307" ph="SELECT * FRO... patients" />
-            <marker date="1508285468000" expanded="true" signature="10547:10773" ph="INSERT INTO `patients`... " />
-            <marker date="1508285468000" expanded="true" signature="11220:11299" ph="SELECT id FR... patients" />
-            <marker date="1508285468000" expanded="true" signature="11513:11616" ph="INSERT INTO `tests`... " />
-            <marker date="1508285468000" expanded="true" signature="12117:12235" ph="INSERT INTO `user`... " />
-            <marker date="1508285468000" expanded="true" signature="12590:12661" ph="SELECT * FRO... patients" />
-            <marker date="1508285468000" expanded="true" signature="14211:16057" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="14306:14549" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="14586:14835" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="14897:15274" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="14968:15157" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="15311:15437" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="15474:16023" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="16267:16335" ph="SELECT * FRO... patients" />
-            <marker date="1508285468000" expanded="true" signature="16267:16359" ph="SELECT * FRO... patients" />
-            <marker date="1508285468000" expanded="true" signature="16267:16368" ph="SELECT * FRO... test" />
-            <marker date="1508285468000" expanded="true" signature="18000:19856" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="18103:18362" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="18403:18668" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="18734:19131" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="18809:19006" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="19172:19310" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="19351:19818" ph="..." />
-            <marker date="1508285468000" expanded="true" signature="20082:20153" ph="SELECT * FRO... patients" />
-            <marker date="1508285468000" expanded="true" signature="21681:21718" ph="DELETE FROM " />
-            <marker date="1508285468000" expanded="true" signature="22157:22214" ph="SELECT * FRO... test" />
+            <marker date="1508286344000" expanded="true" signature="6398:6584" ph="INSERT INTO `praticien`... " />
+            <marker date="1508286344000" expanded="true" signature="7513:7630" ph="SELECT id,id... praticien" />
+            <marker date="1508286344000" expanded="true" signature="8104:8137" ph="SELECT * FRO... praticien" />
+            <marker date="1508286344000" expanded="true" signature="8301:9576" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="8396:8681" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="8718:8920" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="8934:9015" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="9083:9542" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="9749:9796" ph="DELETE FROM " />
+            <marker date="1508286344000" expanded="true" signature="10252:10307" ph="SELECT * FRO... patients" />
+            <marker date="1508286344000" expanded="true" signature="10548:10774" ph="INSERT INTO `patients`... " />
+            <marker date="1508286344000" expanded="true" signature="11238:11317" ph="SELECT id FR... patients" />
+            <marker date="1508286344000" expanded="true" signature="11630:11733" ph="INSERT INTO `tests`... " />
+            <marker date="1508286344000" expanded="true" signature="12173:12291" ph="INSERT INTO `user`... " />
+            <marker date="1508286344000" expanded="true" signature="12646:12717" ph="SELECT * FRO... patients" />
+            <marker date="1508286344000" expanded="true" signature="14267:16113" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="14362:14605" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="14642:14891" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="14953:15330" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="15024:15213" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="15367:15493" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="15530:16079" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="16323:16391" ph="SELECT * FRO... patients" />
+            <marker date="1508286344000" expanded="true" signature="16323:16415" ph="SELECT * FRO... patients" />
+            <marker date="1508286344000" expanded="true" signature="16323:16424" ph="SELECT * FRO... test" />
+            <marker date="1508286344000" expanded="true" signature="18056:19912" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="18159:18418" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="18459:18724" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="18790:19187" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="18865:19062" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="19228:19366" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="19407:19874" ph="..." />
+            <marker date="1508286344000" expanded="true" signature="20138:20209" ph="SELECT * FRO... patients" />
+            <marker date="1508286344000" expanded="true" signature="21737:21774" ph="DELETE FROM " />
+            <marker date="1508286344000" expanded="true" signature="22213:22270" ph="SELECT * FRO... test" />
           </folding>
         </state>
       </provider>
