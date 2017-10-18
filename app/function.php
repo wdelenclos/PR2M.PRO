@@ -369,15 +369,13 @@ function addPatient($bdd)
 		$row = $stmt->fetchObject();
 		$id = $row->id;
 
-		$patientID = $row->id;
-
 
 		try {
 			$sql = "INSERT INTO `tests` ( `patient`, `praticien`, `lastupdate`)
 VALUES( :patient, :praticien, :lastupdate )";
 
 			$stmt = $bdd->prepare($sql);
-			$stmt->bindValue(':patient',$patientID);
+			$stmt->bindValue(':patient',$id);
 			$stmt->bindValue(':praticien',$_POST['identifiant']);
 			$stmt->bindValue(':lastupdate', time());
 			$stmt->execute();
