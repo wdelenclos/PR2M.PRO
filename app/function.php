@@ -349,6 +349,8 @@ function addPatient($bdd) {
             VALUES
             (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire,  :identifiant)
             ";
+		var_dump($_POST);
+		die();
 		$stmt = $bdd->prepare( $sql );
 		$stmt->bindValue( ':nom', $_POST['nom'] );
 		$stmt->bindValue( ':prenom', $_POST['prenom'] );
@@ -371,8 +373,6 @@ function addPatient($bdd) {
 		$stmt->bindValue( ':prenom', $_POST['prenom'] );
 		$stmt->execute();
 		$row = $stmt->fetchObject();
-		var_dump($row->id);
-		die();
 		$id  = $row->id;
 	}
 	catch( PDOException $Exception ){
