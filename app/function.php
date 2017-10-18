@@ -345,13 +345,16 @@ function searchOnePatient($bdd)
 function addPatient($bdd) {
 
 	try {
-		$sql  = "INSERT INTO `patients` (`nom`, `prenom`, `date_naissance`, `lateralite`, `niveau`, `commentaire`,  `praticien`) VALUES (:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire,  :identifiant)";
+		$sql  = "INSERT INTO `patients` 
+(`nom`, `prenom`, `date_naissance`, `lateralite`, `niveau`, `commentaire`,  `praticien`) 
+VALUES 
+(:nom, :prenom, :date_naissance, :lateralite, :niveau, :commentaire,  :identifiant)";
 		$stmt = $bdd->prepare($sql);
 		$stmt->bindValue( ':nom', $_POST['nom'] );
 		$stmt->bindValue( ':prenom', $_POST['prenom'] );
 		$stmt->bindValue( ':date_naissance', $_POST['date'] );
-		$stmt->bindValue( ':niveau', $_POST['level'] );
 		$stmt->bindValue( ':lateralite', $_POST['lateralite'] );
+		$stmt->bindValue( ':niveau', $_POST['level'] );
 		$stmt->bindValue( ':commentaire', $_POST['commentaire'] );
 		$stmt->bindValue( ':identifiant', $_POST['identifiant'] );
 		$stmt->execute();
@@ -365,17 +368,18 @@ function addPatient($bdd) {
 		$row = $stmt->fetchObject();
 		$id  = $row->id;
 
+
 		$sqlo = "INSERT INTO `tests` ( `patient`, `praticien`, `lastupdate`) VALUES( :patient, :praticien, :lastupdate )";
 		$stmt = $bdd->prepare( $sqlo );
 		$stmt->bindValue( ':patient', $id );
 		$stmt->bindValue( ':praticien', $_POST['identifiant'] );
-		$stmt->bindValue( ':lastupdate', time() );
+		$stmt->bindValue( ':lastupdate', getTimestamp());
 		$stmt->execute();
 
 	} catch ( PDOException $e ) {
 		$e->getMessage() ;
 	};
-	header( 'Location: ../index.php?n=201&p=details&identifiant=' . $_POST['identifiant'] . '&id=' . $id );
+	header( 'Location: ../index.php?n=201&p=details&identifiant='.$_POST['identifiant'] .'&id=' . $id );
 }
 function updatePatient($bdd)
 {
