@@ -370,6 +370,8 @@ function addPatient($bdd) {
 		$stmt->bindValue( ':prenom', $_POST['prenom'] );
 		$stmt->execute();
 		$row = $stmt->fetchObject();
+		var_dump( $row );
+		die();
 		$id  = $row->id;
 	}
 	catch( PDOException $Exception ){
