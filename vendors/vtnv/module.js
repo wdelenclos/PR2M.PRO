@@ -20,3 +20,7 @@
         $('#vtnvTitle').hide();
         $('#ImageTestIMG').toggle();
     }
+
+    function toggleNewImage(){
+        $('#ImageTestIMG').toggle();
+    }

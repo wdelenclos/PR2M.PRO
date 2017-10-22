@@ -52,7 +52,7 @@
                                         }
                                         ?>
                                     </select>
-                                        <input type="hidden" value="eval" id ="testtype">
+                                        <input type="hidden" value="train" id ="testtype">
                                     <br>
                                     <button type="submit" id="test_starter" class="btn btn-success"><i class="fa fa-play"></i> Débuter l'entrainement</button>
                                     </div>
