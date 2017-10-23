@@ -228,8 +228,6 @@
                     } else if (document.documentElement.webkitRequestFullScreen) {
                         document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
                     }
-                    $('body').css( "overflow", 'hidden');
-                    
                 } else {
                     if (document.cancelFullScreen) {
                         document.cancelFullScreen();
@@ -238,7 +236,7 @@
                     } else if (document.webkitCancelFullScreen) {
                         document.webkitCancelFullScreen();
                     }
-                    $('body').css( "overflow", 'inherit');
+                    
                 }
                 
             }
@@ -250,7 +248,7 @@
             function doTest(data) {
                 beTime = window.performance.now();
                 $(window).keypress(function (e) {
-                    if (e.which == 13) {
+                    if (e.which == 32) {
                         if (i == data.NbRepetitions){
                             endTest(data);
                         }
