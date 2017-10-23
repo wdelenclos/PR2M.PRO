@@ -443,7 +443,7 @@
                                             <hr>
                                             <h5><strong><u>T&acirc;che&nbsp;:</u></strong></h5>
 
-                                            <p>L&rsquo;enfant doit appuyer sur la barre d&rsquo;espacement d&egrave;s qu&rsquo;il voit appara&icirc;tre une image au centre de l&rsquo;&eacute;cran</p>
+                                            <p>L&rsquo;enfant doit appuyer sur la <b>touche entrer </b>d&egrave;s qu&rsquo;il voit appara&icirc;tre une image au centre de l&rsquo;&eacute;cran</p>
 
                                             <p><em>L&rsquo;objectif de ce test est de calculer le temps de r&eacute;action non verbal de l&rsquo;enfant dans deux modalit&eacute;s&nbsp;: 1) avec une forme, 2) avec un symbole non s&eacute;mantisable</em></p>
 
