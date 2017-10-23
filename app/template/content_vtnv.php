@@ -64,10 +64,10 @@
                                         <input class="form-control" placeholder="Nombre de répétition "  value='20' id ="nbrepetition" type="number">
                                         <br>
                                         <label for="">Intervalle minimum (en ms):</label>
-                                        <input class="form-control" placeholder="Nombre de répétition " value="2200" id="intervalMin" type="number">
+                                        <input class="form-control" placeholder="Nombre de répétition " value="1500" id="intervalMin" type="number">
                                         <br>
                                         <label for="">Intervalle max (en ms):</label>
-                                        <input class="form-control" placeholder="Nombre de répétition " value="3600" id="intervalMax" type="number">
+                                        <input class="form-control" placeholder="Nombre de répétition " value="6000" id="intervalMax" type="number">
                                         <br>
                                         <label for="imageTest">Image:</label>
                                         <select name="imageTest" id="imageTest" class="form-control">

@@ -228,6 +228,8 @@
                     } else if (document.documentElement.webkitRequestFullScreen) {
                         document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
                     }
+                    $('body').css( "overflow", 'hidden');
+                    
                 } else {
                     if (document.cancelFullScreen) {
                         document.cancelFullScreen();
@@ -236,16 +238,19 @@
                     } else if (document.webkitCancelFullScreen) {
                         document.webkitCancelFullScreen();
                     }
+                    $('body').css( "overflow", 'inherit');
                 }
+                
             }
             toggleFullScreen();
+           
             setTimeout(firstToggleImage, 5000); // Attente de 5s ?
 
 
             function doTest(data) {
                 beTime = window.performance.now();
                 $(window).keypress(function (e) {
-                    if (e.which == 32) {
+                    if (e.which == 13) {
                         if (i == data.NbRepetitions){
                             endTest(data);
                         }
@@ -338,11 +343,11 @@
 
         // initialisation
         toggleImage();
-        $("#parameters").submit(function(e){
+        $('#parameters').submit(function(e){
             e.preventDefault();
         });
 
-        document.getElementById("test_starter").addEventListener("click", getParameters);
+        document.getElementById('test_starter').addEventListener('click', getParameters);
     </script>
 <?php }
 ?>
@@ -374,7 +379,7 @@
              console.log(results);
              var stringify = JSON.stringify(results);
              $.ajax({
-                 url: "./function/sendDataLexical.php",
+                 url: './function/sendDataLexical.php',
                  data: {la: stringify},
                  type: 'post',
                  complete: function(data) {
@@ -384,68 +389,102 @@
                      else{
                          console.log(data);
                          showUpdateDone();
-                         window.location.href = "/app/index.php?p=details&identifiant="+document.querySelector('.profile_info span:first-child').innerHTML+"&id="+results.PatientID;
+                         window.location.href = '/app/index.php?p=details&identifiant='+document.querySelector('.profile_info span:first-child').innerHTML+'&id='+results.PatientID;
                      }
                  }
              });
              resped = true;
          }
          function  toggleLexicalImage(){
-        $('#ImageTestIMG').toggle();
+            $('#ImageTestIMG').toggle();
         }
-
          function  startLexicalTest(){
              $('.test').show();
              $('#vtnvTitle').html(template.debut);
-             toggleFullScreen();
              var typeofTest = $('#testtype').val();
+             toggleFullScreen();
+                var dataimg = null;
+                 // Recuperation des 60 images 
+                 $.ajax({
+                 url: './function/getLexicalImg.php',
+                 type: 'post',
+                 complete: function(data) {
+                     if(data.status !== 200){
+                         console.log('Erreur: ' + data.statusText);
+                     }
+                     else{
+                         var array = data.responseText;
+                         var imgBank = JSON.parse(array);
+                         dataimg = imgBank.splice(2, 58);
+                         
+                         return dataimg;
+                    }
+                 }
+                });
              setTimeout(  function doLexicalTest(){
-                 var imgbank =[];
-                 $('#vtnvTitle').hide();
-                 var test = typeofTest;
+                              
+                                         
+                $('#vtnvTitle').hide()
                  var data = {
-                     testType: test,
+                     testType: typeofTest,
                      patientID: $('#test_PatientName').val(),
                      testResults: [],
                      NbAnticipations : 0
-                 };
+                };
+                
+                function getRandomList(){
+                    var ids = [];
+                    var a;
+                    
+                    for( var i = 0; i < 30; i++){
+                        a = false;
+                        while( a == false ){
+                            
+                            let imgId = Math.floor(Math.random() * 59);
+                            
+                            if (ids.indexOf(imgId) !== -1) {
+                                 a = false;
+                            }
+                            else{
+                                ids.push(imgId);
+                                a = true;
+                            }
+                        }   
+                    }
+                    console.log(ids);
+                }
 
-                 if(test == "train"){
-                     imgbank =[0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9,
-                         10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,18 ,19,
-                         20 ,21 ,22 ,23 ,24 ,25 ,26 ,27 ,28 ,29];
+                 function rdmAndToggleImage(){
+                    function randimgSrc(){
+                        var imgId = Math.floor(Math.random() * dataimg.length);
+                        console.log(dataimg[imgId]);
+                        var src = '/app/data/tests_uploads/lexical/img/'+dataimg[imgId];
+                        dataimg.splice(dataimg[imgId], 1);
+                        return src;
+                    }  
+                    $('#ImageTestIMG').attr('src', randimgSrc());
+                    toggleLexicalImage();
                  }
-                 else {
-                     imgbank =[0 ,1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9,
-                         10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,18 ,19,
-                         20 ,21 ,22 ,23 ,24 ,25 ,26 ,27 ,28 ,29,
-                         30 ,31 ,32 ,33 ,34 ,35 ,36 ,37 ,38 ,39,
-                         40 ,41 ,42 ,43 ,44 ,45 ,46 ,47 ,48 ,49,
-                         50 ,51 ,52 ,53 ,54 ,55 ,56 ,57 ,58 ,59];
-                 }
-
-                 if(test== "train"){
-                     console.log('Mode Entrainement !');
-                     setTimeout(function(){
-
-                         beTime = window.performance.now();
+                var loopTest = setInterval(function() {
+                    rdmAndToggleImage();
+                    beTime = window.performance.now();
+                    var properID = CheckReload();
+                    if (properID > 0) {
+                        clearInterval(refreshId);
+                    }
+                }, 2000);
+                    setInterval(function(){ 
+                     beTime = window.performance.now();
                          $(window).keypress(function (e) {
-                             console.log(e);
                              if (e.keyCode == 37 || e.keyCode == 38) {
-                                 if (i == imgbank.length){
+                                 if (i == dataimg.length){
                                      endLexicalTest(data);
                                  }
                                  else{
-                                     if($('#ImageTestIMG').is(":visible")){
+                                     if($('#ImageTestIMG').is(':visible')){
                                          i ++;
                                          var newTime = window.performance.now();
-                                         function randimg(){
-                                             array.splice(imgbank, imgId);
-                                             var imgId = Math.floor(Math.random() * imgbank.length);
-                                             console.log(imgId);
-                                             var src = '/app/data/test_uploads/lexical/img/'+imgId+'.jpg';
-
-                                         }
+                                        
                                          response = newTime - beTime;
                                          if (e.keyCode == 37){
                                              isitOk = false;
@@ -459,11 +498,9 @@
                                          else{
                                              response = response - 5000;
                                          }
-                                         randimg();
-                                         $("#ImageTestIMG").attr('src', src);
-                                         toggleLexicalImage();
+                                         changeAndToggleImage();
                                          data.testResults.push({id: imgId, resp: isitOk, tmps: response, img: id});
-                                         setTimeout(toggleImage, 2000);
+                                         toggleLexicalImage();
                                          beTime = window.performance.now();
 
                                      }
@@ -475,65 +512,9 @@
                                  }
                              }
                          });
-
-                     }, 2000);
-                 }
-                else{
-                     while(resped = false){
-                         beTime = window.performance.now();
-                         $(window).keypress(function (e) {
-                             if (e.keyCode == 37 || e.keyCode == 38) {
-                                 if (i == imgbank.length){
-                                     endLexicalTest(data);
-                                 }
-                                 else{
-                                     if($('#ImageTestIMG').is(":visible")){
-                                         i ++;
-                                         var newTime = window.performance.now();
-                                         function randimg(){
-                                             array.splice(imgbank, imgId);
-                                             var imgId = Math.floor(Math.random() * imgbank.length);
-                                             console.log(imgId);
-                                             //var src = '/app/images/la/'+imgId+'.jpg';
-                                             var src = '/app/images/user.png';
-                                         }
-                                         response = newTime - beTime;
-                                         if (e.keyCode == 37){
-                                             isitOk = false;
-                                         }
-                                         else{
-                                             isitOk = true;
-                                         }
-                                         if( i !== 1 ){
-                                             response = response - rand;
-                                         }
-                                         else{
-                                             response = response - 5000;
-                                         }
-                                         randimg();
-                                         $("#ImageTestIMG").attr('src', src);
-                                         toggleLexicalImage();
-                                         data.testResults.push({id: imgId, resp: isitOk, tmps: response, img: id});
-                                         setTimeout(function () {
-                                             
-                                         }, 2000);
-                                         toggleImage();
-                                         beTime = window.performance.now();
-
-                                     }
-                                     else{
-                                         console.log('---> Anticipation');
-                                         data.NbAnticipations +=1;
-
-                                     }
-                                 }
-                             }
-                         });
-
-                     }
-                 }
-
-
+                 
+                 }, 2000);
+                        
              }, 5000);
          }
          $('#test_starter').on('click', startLexicalTest);
