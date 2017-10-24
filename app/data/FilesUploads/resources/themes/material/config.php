@@ -41,7 +41,7 @@
 // - brown
 // - grey (not recommended)
 // - blue-grey
-$color = 'cyan';
+$color = 'teal';
 
 // Get a light or dark theme.
 // true means a light theme, false means a dark theme.
