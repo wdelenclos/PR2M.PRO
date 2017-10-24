@@ -12,13 +12,14 @@ require ('../connect.php');
 require ('../function.php');
 
 $data = json_decode($_POST["la"]);
-function updateVTNVData($data, $bdd)
+$testType = json_decode($_POST["type"]);
+function updateVTNVData($data,$testype,  $bdd)
 {
 	$patientID = (int)$data->PatientID;
 	$testype = $data->Type;
 	$dataparse = json_encode($data);
 	echo($patientID);
-	if($testype == 'pre'){
+	if($testype == 'eval'){
 		try {
 			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`pre_la` = :pre_json WHERE `tests`.`patient` =".$patientID;
 			$stmt = $bdd->prepare($sql);
@@ -30,9 +31,9 @@ function updateVTNVData($data, $bdd)
 			var_dump($Exception->getMessage());
 		}
 	}
-	else if ($testype == 'post'){
+	else if ($testype == 'train'){
 		try {
-			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`post_la` = :pre_json WHERE `tests`.`patient` =".$patientID;
+			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`train_json` = :pre_json WHERE `tests`.`patient` =".$patientID;
 			$stmt = $bdd->prepare($sql);
 			$stmt->bindValue(':pre_json', $dataparse);
 			$stmt->execute();
@@ -55,4 +56,4 @@ function updateVTNVData($data, $bdd)
 		}
 	}
 }
-updateVTNVData($data, $bdd);
+updateVTNVData($data,$testType, $bdd);

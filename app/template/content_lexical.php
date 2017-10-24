@@ -53,8 +53,9 @@
                                         ?>
                                     </select>
                                     <br>
+                                        <input type="hidden" id="testtype" value="eval"></input>
                                         <label for="">Période:</label>
-                                        <select id="testtype" name="" class="form-control">
+                                        <select id="testmoment" name="" class="form-control">
                                             <option value="pre">Pre-entraiement</option>
                                             <option value="post">Post-entraiement</option>
                                         </select>
@@ -73,7 +74,7 @@
 
             </div>
             <div class="test" style="display:none; position: fixed;top: 0;z-index: 333;width: 100%;height: 100vh;background-color: #ffffff; text-align: center">
-                <h1 id="vtnvTitle" style="margin-top: 350px"></h1>
+                <h1 id="vtnvTitle" style="margin-top: 350px"><p> <button>Cliquez-ici pour commencer</button>    </p></h1>
                 <img id="ImageTestIMG" src="" style="display: none;margin: 35vh auto;width: 250px;height: 250px;text-align: center;" alt="Chargement du test ...">
             </div>
             <div class="clearfix"></div>

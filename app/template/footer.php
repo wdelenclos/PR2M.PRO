@@ -171,8 +171,20 @@
                     }
                     else{
                         console.log(data);
-                        showUpdateDone();
-                        window.location.href = "/app/index.php?p=details&identifiant="+document.querySelector('.profile_info span:first-child').innerHTML+"&id="+results.PatientID;
+                        
+
+                        function getQueryVariable(variable) {
+                        var query = window.location.search.substring(1);
+                        var vars = query.split("&");
+                        for (var i=0;i<vars.length;i++) {
+                            var pair = vars[i].split("=");
+                            if (pair[0] == variable) {
+                            return pair[1];
+                            }
+                        } 
+                        alert('Query Variable ' + variable + ' not found');
+                        }
+                        window.location.href = "/app/index.php?p=details&identifiant="+getQueryVariable('identifiant')+"&id="+document.querySelector('.profile_info span:first-child').innerHTML+"&id="+data.PatientID;
                     }
                 }
             });
@@ -353,7 +365,35 @@
 <?php
  if($_GET['p']== 'training' || $_GET['p']== 'lexical'){ ?>
      <script>
-         function  toggleFullScreen() {
+function endLexical(){
+             var stringify = JSON.stringify(data);
+             function getQueryVariable(variable) {
+                        var query = window.location.search.substring(1);
+                        var vars = query.split("&");
+                        for (var i=0;i<vars.length;i++) {
+                            var pair = vars[i].split("=");
+                            if (pair[0] == variable) {
+                            return pair[1];
+                            }
+                        } 
+                        alert('Query Variable ' + variable + ' not found');
+                        }
+             $.ajax({
+                 url: './function/sendDataLexical.php',
+                 data: {la: stringify, type: stringify.testType},
+                 type: 'post',
+                 complete: function(data) {
+                     if(data.status !== 200){
+                         console.log('Erreur: ' + data.statusText);
+                     }
+                     else{
+                         console.log(data);
+                         window.location.href = "/app/index.php?p=details&identifiant="+getQueryVariable('identifiant')+"&id="+document.querySelector('.profile_info span:first-child').innerHTML+"&id="+data.PatientID;
+                    }
+                 }
+             });
+}
+function  toggleFullScreen() {
              if ((document.fullScreenElement && document.fullScreenElement !== null) ||
                  (!document.mozFullScreen && !document.webkitIsFullScreen)) {
                  if (document.documentElement.requestFullScreen) {
@@ -372,152 +412,119 @@
                      document.webkitCancelFullScreen();
                  }
              }
-         }
-         function  endLexicalTest(){
-             console.log(results);
-             var stringify = JSON.stringify(results);
-             $.ajax({
-                 url: './function/sendDataLexical.php',
-                 data: {la: stringify},
-                 type: 'post',
-                 complete: function(data) {
-                     if(data.status !== 200){
-                         console.log('Erreur: ' + data.statusText);
-                     }
-                     else{
-                         console.log(data);
-                         showUpdateDone();
-                         window.location.href = '/app/index.php?p=details&identifiant='+document.querySelector('.profile_info span:first-child').innerHTML+'&id='+results.PatientID;
-                     }
-                 }
-             });
-             resped = true;
-         }
-         function  toggleLexicalImage(){
-            $('#ImageTestIMG').toggle();
-        }
-         function  startLexicalTest(){
-             $('.test').show();
-             $('#vtnvTitle').html(template.debut);
-             var typeofTest = $('#testtype').val();
-             toggleFullScreen();
-                var dataimg = null;
-                 // Recuperation des 60 images 
-                 $.ajax({
-                 url: './function/getLexicalImg.php',
-                 type: 'post',
-                 complete: function(data) {
-                     if(data.status !== 200){
-                         console.log('Erreur: ' + data.statusText);
-                     }
-                     else{
-                         var array = data.responseText;
-                         var imgBank = JSON.parse(array);
-                         dataimg = imgBank.splice(2, 58);
-                         
-                         return dataimg;
-                    }
-                 }
-                });
-             setTimeout(  function doLexicalTest(){
-                              
-                                         
-                $('#vtnvTitle').hide()
-                 var data = {
-                     testType: typeofTest,
-                     patientID: $('#test_PatientName').val(),
-                     testResults: [],
-                     NbAnticipations : 0
-                };
-                
-                function getRandomList(){
-                    var ids = [];
-                    var a;
-                    
-                    for( var i = 0; i < 30; i++){
-                        a = false;
-                        while( a == false ){
-                            
-                            let imgId = Math.floor(Math.random() * 59);
-                            
-                            if (ids.indexOf(imgId) !== -1) {
-                                 a = false;
+}
+function doLexical(type){
+    function randimgSrc(){
+        let imgBank =  document.getElementsByClassName('test')[0].getAttribute("data-images");  
+        array = imgBank.split(",");
+        console.log('Nouveau tableau : ')
+        console.log(array);
+        var imgId = Math.floor(Math.random() * array.length) 
+        var src = imgBankurl+array[imgId];
+        let imgIdTest = array.indexOf(array[imgId]);
+        console.log('Image affichée et supprimée : ' +imgIdTest);
+        array.splice(imgIdTest, 1);
+        document.getElementsByClassName('test')[0].setAttribute("data-images", array); 
+        return src;     
+    }  
+    
+        var a = 0;
+        function loopEval(){
+            if (a < testTypeRep){
+            var attr = randimgSrc();
+            $('#ImageTestIMG').attr('src', attr);
+            setTimeout(function() {
+                $('#ImageTestIMG').toggle();
+            }, 100);
+            beTime = window.performance.now();
+            $(window).keypress(function (e) {
+                if (e.keyCode == 37 || e.keyCode == 39) {
+                        if($('#ImageTestIMG').is(":visible")){
+                            a ++;
+                            var newTime = window.performance.now();
+                            response = newTime - beTime;
+                            response = response - 100;
+                            var resp;
+                            if(e.keyCode == 37){
+                                 resp = true
                             }
                             else{
-                                ids.push(imgId);
-                                a = true;
+                                resp = false
                             }
-                        }   
-                    }
-                    console.log(ids);
+                            let imgname =  document.getElementById('ImageTestIMG').src;
+                            imgname = imgname.split("/").pop();
+                            console.log({id: a, resp: resp, tmps: response, img: imgname});
+                            data.results.push( {id: a, resp: resp, tmps: response, img: imgname})
+                            $('#ImageTestIMG').toggle();
+                            setTimeout(function() {
+                                loopEval();
+                            }, 1500);
+                        } 
                 }
+            });
+           
+            } 
+            else{
+                endLexical();
+            }
+           
+            
+        }
+        loopEval();
+        
+    
+}
+function startLexical(){
+    $('.test').show();
+    toggleFullScreen();
+    $('#vtnvTitle').html(template.debut);
+    var typeofTest = $('#testtype').val();
+    $.ajax({
+            url: './function/getLexicalImg.php',
+            type: 'post',
+            data: { type: $('#testtype').val()} ,
+            complete: function(data) {
+                if(data.status !== 200){
+                    console.log('Erreur: ' + data.statusText);
+                }
+                else{
+                    var imgBank = JSON.parse(data.responseText);
+                    imgBank.splice(0, 2); 
+                    console.log(imgBank);
+                    document.getElementsByClassName('test')[0].setAttribute("data-images", imgBank); 
+                     
+                }
+            }
+        });
+    setTimeout(function() {
+        $('#vtnvTitle').hide()
+        doLexical(typeofTest);
+    }, 3500);
+  
+}
+var testTypeRep;
+var imgBankurl;
+if(($('#testtype').val())== 'eval'){
+    testTypeRep = 60
+    imgBankurl = '/app/data/tests_uploads/lexical/img/eval/'
+}
+else{
+    testTypeRep = 30
+    imgBankurl = '/app/data/tests_uploads/lexical/img/train/'
+}
+var data = {
+        testType: $('#testtype').val(),
+        patientID: $('#test_PatientName').val(),
+        results: [],
+        NbRepetitions: testTypeRep
+};
+$('#test_starter').on('click', startLexical);
 
-                 function rdmAndToggleImage(){
-                    function randimgSrc(){
-                        var imgId = Math.floor(Math.random() * dataimg.length);
-                        console.log(dataimg[imgId]);
-                        var src = '/app/data/tests_uploads/lexical/img/'+dataimg[imgId];
-                        dataimg.splice(dataimg[imgId], 1);
-                        return src;
-                    }  
-                    $('#ImageTestIMG').attr('src', randimgSrc());
-                    toggleLexicalImage();
-                 }
-                var loopTest = setInterval(function() {
-                    rdmAndToggleImage();
-                    beTime = window.performance.now();
-                    var properID = CheckReload();
-                    if (properID > 0) {
-                        clearInterval(refreshId);
-                    }
-                }, 2000);
-                    setInterval(function(){ 
-                     beTime = window.performance.now();
-                         $(window).keypress(function (e) {
-                             if (e.keyCode == 37 || e.keyCode == 38) {
-                                 if (i == dataimg.length){
-                                     endLexicalTest(data);
-                                 }
-                                 else{
-                                     if($('#ImageTestIMG').is(':visible')){
-                                         i ++;
-                                         var newTime = window.performance.now();
-                                        
-                                         response = newTime - beTime;
-                                         if (e.keyCode == 37){
-                                             isitOk = false;
-                                         }
-                                         else{
-                                             isitOk = true;
-                                         }
-                                         if( i !== 1 ){
-                                             response = response - rand;
-                                         }
-                                         else{
-                                             response = response - 5000;
-                                         }
-                                         changeAndToggleImage();
-                                         data.testResults.push({id: imgId, resp: isitOk, tmps: response, img: id});
-                                         toggleLexicalImage();
-                                         beTime = window.performance.now();
-
-                                     }
-                                     else{
-                                         console.log('---> Anticipation');
-                                         data.NbAnticipations +=1;
-
-                                     }
-                                 }
-                             }
-                         });
-                 
-                 }, 2000);
-                        
-             }, 5000);
-         }
-         $('#test_starter').on('click', startLexicalTest);
-     </script>
+</script>
 <?php }
 ?>
 </body>
 </html>
+
+
+

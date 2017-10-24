@@ -1,6 +1,6 @@
 <?php
 
-$dir = "../data/tests_uploads/lexical/img";
+    $dir = "../data/tests_uploads/lexical/img/".$_POST['type'];
 
 // Sort in ascending order - this is default
 $a = scandir($dir);
