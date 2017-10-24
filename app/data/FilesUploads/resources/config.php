@@ -3,11 +3,11 @@
 return array(
 
     // Basic settings
-    'home_label'                => 'Home',
+    'home_label'                => 'Serveur PR2M',
     'hide_dot_files'            => true,
     'list_folders_first'        => true,
     'list_sort_order'           => 'natcasesort',
-    'theme_name'                => 'bootstrap',
+    'theme_name'                => 'material',
     'date_format'               => 'Y-m-d H:i:s', // See: http://php.net/manual/en/function.date.php
 
     // Hidden files
