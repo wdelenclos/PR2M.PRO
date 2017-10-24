@@ -12,48 +12,63 @@ require ('../connect.php');
 require ('../function.php');
 
 $data = json_decode($_POST["la"]);
-$testType = json_decode($_POST["type"]);
-function updateVTNVData($data,$testype,  $bdd)
+
+function updateVTNVData($data,$bdd)
 {
-	$patientID = (int)$data->PatientID;
-	$testype = $data->Type;
+	$patientID = (int)$data->patientID;
+	$testype = $data->testType;
+	$testMoment = $data->testMoment;
 	$dataparse = json_encode($data);
-	echo($patientID);
 	if($testype == 'eval'){
-		try {
-			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`pre_la` = :pre_json WHERE `tests`.`patient` =".$patientID;
-			$stmt = $bdd->prepare($sql);
-			$stmt->bindValue(':pre_json', $dataparse);
-			$stmt->execute();
-			echo('Send pre');
+		if($testMoment == "pre"){
+			try {
+				$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`pre_la` = :pre_la WHERE `tests`.`patient` =".$patientID;
+				$stmt = $bdd->prepare($sql);
+				$stmt->bindValue(':pre_la', $dataparse);
+				$stmt->execute();
+				echo('Execute pre_la');
+			}
+			catch( PDOException $Exception ) {
+				var_dump($Exception->getMessage());
+			}
 		}
-		catch( PDOException $Exception ) {
-			var_dump($Exception->getMessage());
+		if($testMoment == "post"){
+			try {
+				$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`post_la` = :post_la WHERE `tests`.`patient` =".$patientID;
+				$stmt = $bdd->prepare($sql);
+				$stmt->bindValue(':post_la', $dataparse);
+				$stmt->execute();
+				echo('Execute pre_la');
+			}
+			catch( PDOException $Exception ) {
+				var_dump($Exception->getMessage());
+			}
 		}
+		
 	}
 	else if ($testype == 'train'){
-		try {
-			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`train_json` = :pre_json WHERE `tests`.`patient` =".$patientID;
-			$stmt = $bdd->prepare($sql);
-			$stmt->bindValue(':pre_json', $dataparse);
-			$stmt->execute();
-			echo('Send pre');
+		$sqla ="SELECT `train_json` FROM `tests` WHERE `tests`.`patient` =".$patientID;
+		$stmt = $bdd->prepare($sqla);
+		$stmt->execute();
+		$row = $stmt->fetchObject();
+		if($row == null || $row == ''){
+			$row = [];
 		}
-		catch( PDOException $Exception ) {
-			var_dump($Exception->getMessage());
+		else{
+			$row = json_decode($row);
 		}
-	}
-	else{
+		array_push($row, array('date' => date('d/m'), 'data' => $dataparse));
+		$rowa = json_encode($row);
 		try {
-			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`train_json` = :pre_json WHERE `tests`.`patient` =".$patientID;
-			$stmt = $bdd->prepare($sql);
-			$stmt->bindValue(':pre_json', $dataparse);
-			$stmt->execute();
-			echo('Send pre');
+			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().", `train_json` = :train_json WHERE `tests`.`patient` = ".$patientID;
+			$stmtb = $bdd->prepare($sql);
+			$stmtb->bindValue(':train_json', $rowa);
+			var_dump($stmtb);
+			$stmtb->execute();
 		}
 		catch( PDOException $Exception ) {
 			var_dump($Exception->getMessage());
 		}
 	}
 }
-updateVTNVData($data,$testType, $bdd);
+updateVTNVData($data, $bdd);

@@ -32,3 +32,5 @@ Stack trace:
 #1 /Users/wdelenclos/Projets/PR2M.PRO/app/index.php(33): root('content_lexical', 'Test LexicalAcc...')
 #2 {main}
   thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/template/content_lexical.php on line 45
+[24-Oct-2017 23:12:14 Europe/Paris] PHP Warning:  PDO::setAttribute() expects exactly 2 parameters, 3 given in /Users/wdelenclos/Projets/PR2M.PRO/app/connect.php on line 6
+[24-Oct-2017 23:12:14 Europe/Paris] PHP Warning:  PDO::setAttribute() expects exactly 2 parameters, 3 given in /Users/wdelenclos/Projets/PR2M.PRO/app/connect.php on line 6

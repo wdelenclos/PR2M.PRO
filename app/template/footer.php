@@ -365,6 +365,7 @@
 <?php
  if($_GET['p']== 'training' || $_GET['p']== 'lexical'){ ?>
 <script>
+
     function endLexical(){
              var stringify = JSON.stringify(data);
              function getQueryVariable(variable) {
@@ -380,15 +381,15 @@
                         }
              $.ajax({
                  url: './function/sendDataLexical.php',
-                 data: {la: stringify, type: stringify.testType},
+                 data: {la: stringify},
                  type: 'post',
-                 complete: function(data) {
-                     if(data.status !== 200){
-                         console.log('Erreur: ' + data.statusText);
+                 complete: function(r) {
+                     if(r.status !== 200){
+                         console.log('Erreur: ' + r.statusText);
                      }
                      else{
-                         console.log(data);
-                         window.location.href = "/app/index.php?p=details&identifiant="+getQueryVariable('identifiant')+"&id="+document.querySelector('.profile_info span:first-child').innerHTML+"&id="+data.PatientID;
+                         console.log(r);
+                        // window.location.href = "/app/index.php?p=details&identifiant="+getQueryVariable('identifiant')+"&id="+data.patientID;
                     }
                  }
              });
@@ -429,41 +430,49 @@ function doLexical(type){
     }  
     
         var a = 0;
+        var timeOut;
         function loopEval(){
+            clearTimeout(timeOut);
             if (a < testTypeRep){
-            var attr = randimgSrc();
-            $('#ImageTestIMG').attr('src', attr);
-            setTimeout(function() {
-                $('#ImageTestIMG').toggle();
-            }, 100);
-            beTime = window.performance.now();
-            $(window).keypress(function (e) {
-                if (e.keyCode == 37 || e.keyCode == 39) {
-                        if($('#ImageTestIMG').is(":visible")){
-                            a ++;
-                            var newTime = window.performance.now();
-                            response = newTime - beTime;
-                            response = response - 100;
-                            var resp;
-                            if(e.keyCode == 37){
-                                 resp = true
-                            }
-                            else{
-                                resp = false
-                            }
-                            let imgname =  document.getElementById('ImageTestIMG').src;
-                            imgname = imgname.split("/").pop();
-                            console.log({id: a, resp: resp, tmps: response, img: imgname});
-                            data.results.push( {id: a, resp: resp, tmps: response, img: imgname})
-                            $('#ImageTestIMG').toggle();
-                            setTimeout(function() {
-                                loopEval();
-                            }, 1500);
-                        } 
-                }
-            });
-           
-            } 
+                var attr = randimgSrc();
+                $('#ImageTestIMG').attr('src', attr);
+                setTimeout(function() {
+                    $('#ImageTestIMG').toggle();
+                }, 100);
+                beTime = window.performance.now();
+                $(window).keypress(function (e) {
+                    if (e.keyCode == 37 || e.keyCode == 39) {
+
+                            if($('#ImageTestIMG').is(":visible")){
+                                a ++;
+                                var newTime = window.performance.now();
+                                response = newTime - beTime;
+                                response = response;
+                                var resp;
+                                if(e.keyCode == 37){
+                                    resp = true
+                                }
+                                else{
+                                    resp = false
+                                }
+                                let imgname =  document.getElementById('ImageTestIMG').src;
+                                imgname = imgname.split("/").pop();
+                                console.log({id: a, resp: resp, tmps: response, img: imgname});
+                                data.results.push( {id: a, resp: resp, tmps: response, img: imgname})
+                                $('#ImageTestIMG').toggle();
+                                setTimeout(function() {
+                                    loopEval();
+                                }, 1500);
+                            } 
+                    }
+                    
+                });
+                if(($('#testtype').val())== 'train'){
+                    timeOut = setTimeout(function() {
+                        $(window).trigger({type: 'keypress', which: 39, keyCode: 39});
+                     }, 2100);
+                } 
+            }
             else{
                 endLexical();
             }
@@ -474,7 +483,7 @@ function doLexical(type){
         
     
 }
-function startLexical(){
+function startLexical(){    
     $('.test').show();
     toggleFullScreen();
     $('#vtnvTitle').html(template.debut);
@@ -514,9 +523,10 @@ else{
 }
 var data = {
         testType: $('#testtype').val(),
+        testMoment: $('#testmoment').val(),
         patientID: $('#test_PatientName').val(),
+        NbRepetitions: testTypeRep,
         results: [],
-        NbRepetitions: testTypeRep
 };
 $('#test_starter').on('click', startLexical);
 
