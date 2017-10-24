@@ -57,7 +57,10 @@ function routage(){ // Moteur de rooting
 		    $label ="content_newP";
 		    $title = "Nouveau praticien";
 		    break;
-
+        case "files":
+            $label ="content_files";
+            $title = "Fichiers importés";
+            break;
         case "details":
             $label ="content_details";
             $title = "Details du patient";
@@ -136,7 +139,7 @@ function root($label, $title){
         header('Location: index.php?p=login&logout=true' );
     }
 
-    if($label == "content_dashboard" || $label == "content_shared1" || $label == "content_order" || $label == "content_export" || $label == "content_training" || $label == "content_lexical" || $label == "content_vtnv" || $label == "content_guide" || $label == "content_shared2" || $label == "content_shared3" || $label == "content_profile"  || $label == "content_new" || $label == "content_newP" || $label == "content_list" || $label == "content_listP" || $label == "content_details"|| $label == "content_tests" ){
+    if($label == "content_dashboard" || $label == "content_shared1" || $label == "content_files" || $label == "content_order" || $label == "content_export" || $label == "content_training" || $label == "content_lexical" || $label == "content_vtnv" || $label == "content_guide" || $label == "content_shared2" || $label == "content_shared3" || $label == "content_profile"  || $label == "content_new" || $label == "content_newP" || $label == "content_list" || $label == "content_listP" || $label == "content_details"|| $label == "content_tests" ){
         include_once 'template/head.php';
         include_once 'template/nav.php';
     }

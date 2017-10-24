@@ -68,7 +68,7 @@
                                 <li><a><i class="fa fa-database"></i> Données récoltées<span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="?p=export&identifiant=<?=$_SESSION['identifiant']?>">Tableau GoogleSheet</a></li>
-                                        <li><a href="">Fichiers importés (EMME)</a></li>
+                                        <li><a href="?p=files&identifiant=<?=$_SESSION['identifiant']?>">Fichiers importés (EMME)</a></li>
                                     </ul>
                                 </li>
 
