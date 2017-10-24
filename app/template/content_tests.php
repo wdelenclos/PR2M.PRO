@@ -39,12 +39,11 @@
                                         </li>
                                         <li><a href="#eda" data-toggle="tab">EDA</a>
                                         </li>
-                                        <li><a href="#lexical" data-toggle="tab">Lexical Access</a>
-                                        </li>
                                         <li><a href="#dra" data-toggle="tab">DRA</a>
                                         </li>
                                         <li><a href="#vtnv" data-toggle="tab">VTNV</a>
                                         </li>
+                                        <li><a href="#lexical" data-toggle="tab">Lexical Access</a></li>
                                     </ul>
                                 </div>
 

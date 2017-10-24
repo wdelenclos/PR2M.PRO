@@ -43,7 +43,7 @@
                             </li>
                             <li><a><i class="fa fa-check"></i> Tests <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="?p=ordrer&identifiant=<?= $_SESSION['identifiant']?>">Ordre de passation</a></li>
+                                    <li><a href="?p=order&identifiant=<?= $_SESSION['identifiant']?>">Ordre de passation</a></li>
                                     <li><a href="?p=tests&identifiant=<?= $_SESSION['identifiant']?>">Matériel</a></li>
                                 </ul>
                             </li>

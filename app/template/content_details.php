@@ -86,9 +86,18 @@ $testData = getTestData($data->id, $bdd);
                             <br />
 -->
                             <hr>
-
-                            <p>Date des données actuelles: <br/><?php echo date('d/m/Y H:i:s', $testData->lastupdate); ?></p>
-                            <br />
+                            <?php
+                            if($testData->lastupdate !== null){?>
+                                <p>Date des données actuelles: <br/><?php echo date('d/m/Y H:i:s', $testData->lastupdate); ?></p>
+                             <?php    
+                            }
+                            else{ ?>
+                                 <p>Date des données actuelles: <br/>Aucune données</p>
+                           
+                            <?php 
+                            }
+                            ?>
+                           <br />
                             <div >
                                 <input type="submit" class="btn btn-success warn" id="upd" disabled value="Aucune modifications"></input>
                                 <br/>
@@ -120,11 +129,11 @@ $testData = getTestData($data->id, $bdd);
                                                                     </li>
                                                                     <li><a href="#preEDA" data-toggle="tab">EDA</a>
                                                                     </li>
-                                                                    <li><a href="#preLA" data-toggle="tab">Lexical Access</a>
-                                                                    </li>
                                                                     <li><a href="#preDRA" data-toggle="tab">DRA</a>
                                                                     </li>
                                                                     <li><a href="#preVTNV" data-toggle="tab">VTNV</a>
+                                                                    </li>
+                                                                    <li><a href="#preLA" data-toggle="tab">Lexical Access</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -266,11 +275,11 @@ $testData = getTestData($data->id, $bdd);
                                                                 </li>
                                                                 <li><a href="#postEDA" data-toggle="tab">EDA</a>
                                                                 </li>
-                                                                <li><a href="#postLA" data-toggle="tab">Lexical Access</a>
-                                                                </li>
                                                                 <li><a href="#postDRA" data-toggle="tab">DRA</a>
                                                                 </li>
                                                                 <li><a href="#postVTNV" data-toggle="tab">VTNV</a>
+                                                                </li>
+                                                                <li><a href="#postLA" data-toggle="tab">Lexical Access</a>
                                                                 </li>
                                                             </ul>
                                                         </div>

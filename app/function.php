@@ -53,7 +53,6 @@ function routage(){ // Moteur de rooting
             $label ="content_new";
             $title = "Nouveau patient";
             break;
-
 	    case "nouveauP":
 		    $label ="content_newP";
 		    $title = "Nouveau praticien";
@@ -63,7 +62,6 @@ function routage(){ // Moteur de rooting
             $label ="content_details";
             $title = "Details du patient";
             break;
-
         case "liste":
             $label ="content_list";
             $title = "Liste des patients";
@@ -95,6 +93,10 @@ function routage(){ // Moteur de rooting
 	    case "shared2":
 		    $label ="content_shared2";
 		    $title = "Question Clinique";
+            break;
+        case "order":
+		    $label ="content_order";
+		    $title = "Ordre de passation";
 		    break;
 	    case "shared3":
 		    $label ="content_shared3";
@@ -134,7 +136,7 @@ function root($label, $title){
         header('Location: index.php?p=login&logout=true' );
     }
 
-    if($label == "content_dashboard" || $label == "content_shared1" || $label == "content_export" || $label == "content_training" || $label == "content_lexical" || $label == "content_vtnv" || $label == "content_guide" || $label == "content_shared2" || $label == "content_shared3" || $label == "content_profile"  || $label == "content_new" || $label == "content_newP" || $label == "content_list" || $label == "content_listP" || $label == "content_details"|| $label == "content_tests" ){
+    if($label == "content_dashboard" || $label == "content_shared1" || $label == "content_order" || $label == "content_export" || $label == "content_training" || $label == "content_lexical" || $label == "content_vtnv" || $label == "content_guide" || $label == "content_shared2" || $label == "content_shared3" || $label == "content_profile"  || $label == "content_new" || $label == "content_newP" || $label == "content_list" || $label == "content_listP" || $label == "content_details"|| $label == "content_tests" ){
         include_once 'template/head.php';
         include_once 'template/nav.php';
     }
