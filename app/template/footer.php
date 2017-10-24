@@ -364,8 +364,8 @@
 
 <?php
  if($_GET['p']== 'training' || $_GET['p']== 'lexical'){ ?>
-     <script>
-function endLexical(){
+<script>
+    function endLexical(){
              var stringify = JSON.stringify(data);
              function getQueryVariable(variable) {
                         var query = window.location.search.substring(1);

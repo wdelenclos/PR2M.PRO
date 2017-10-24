@@ -67,10 +67,10 @@
 
             </div>
             <div class="clearfix"></div>
-        <div class="test" style="display:none; position: fixed;top: 0;z-index: 333;width: 100%;height: 100vh;background-color: #ffffff; text-align: center">
-            <h1 id="vtnvTitle" style="margin-top: 350px"></h1>
-            <img id="ImageTestIMG" src="" style=" margin: 35vh auto;width: 250px;height: 250px;text-align: center;" alt="Chargement du test ...">
-        </div>
+            <div class="test" style="display:none; position: fixed;top: 0;z-index: 333;width: 100%;height: 100vh;background-color: #ffffff; text-align: center">
+                <h1 id="vtnvTitle" style="margin-top: 350px"><p> <button>Cliquez-ici pour commencer</button>    </p></h1>
+                <img id="ImageTestIMG" src="" style="display: none;margin: 35vh auto;width: 250px;height: 250px;text-align: center;" alt="Chargement du test ...">
+            </div>
         <div class="clearfix"></div>
         </div>
         <!-- /page content -->
