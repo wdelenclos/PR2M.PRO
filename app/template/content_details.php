@@ -148,10 +148,10 @@ $testData = getTestData($data->id, $bdd);
 
                                                                             <label>Dénomination:</label>
                                                                                 <br>
-                                                                        <small>Selectionnez l'export excel : <?= $testData->pre_deno_excel ?? 'Aucun fichier actuellement'?></small>
+                                                                        <small>Fichier en base <?= $testData->pre_deno_excel ?? 'Aucun fichier actuellement'?></small>
                                                                         <input type="file" name="pre_deno_excel" id="pre_deno_excel">
-                                                                        <small>Fiche de suivi (PDF ou JPG) : <?= $testData->pre_deno_pdf ?? 'Aucune fiche'?></small>
-                                                                        <input type="file" name="pre_deno_pdf" id="pre_deno_pdf">
+                                                                        <small>Fiche de suivi (JPG uniquement) : <?= $testData->pre_deno_pdf ?? 'Aucune fiche'?></small>
+                                                                        <input type="file"  accept=".jpg" name="pre_deno_pdf" id="pre_deno_pdf">
                                                                             </div>
                                                                         </div>
                                                                         <br>
@@ -160,7 +160,7 @@ $testData = getTestData($data->id, $bdd);
                                                                             <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
                                                                             <label>Désignation:</label>
                                                                                 <br>
-                                                                        <small>Selectionnez l'export excel : <?= $testData->pre_desi_excel ?? 'Aucun fichier actuellement'?></small>
+                                                                        <small>Fichier en base<?= $testData->pre_desi_excel ?? 'Aucun fichier actuellement'?></small>
                                                                         <input type="file" name="pre_desi_excel" id="pre_desi_excel">
                                                                         <br>
                                                                             </div>
@@ -294,10 +294,10 @@ $testData = getTestData($data->id, $bdd);
 
                                                                             <label>Dénomination:</label>
                                                                             <br>
-                                                                            <small>Selectionnez l'export excel : <?= $testData->post_deno_excel ?? 'Aucun fichier actuellement'?></small>
+                                                                            <small>Fichier en base <?= $testData->post_deno_excel ?? 'Aucun fichier actuellement'?></small>
                                                                             <input type="file" name="post_deno_excel" id="post_deno_excel">
-                                                                            <small>Fiche de suivi (PDF ou JPG) : <?= $testData->post_deno_pdf ?? 'Aucune fiche'?></small>
-                                                                            <input type="file" name="post_deno_pdf" id="post_deno_pdf">
+                                                                            <small>Fiche de suivi (JPG uniquement) : <?= $testData->post_deno_pdf ?? 'Aucune fiche'?></small>
+                                                                            <input type="file" accept=".jpg" name="post_deno_pdf" id="post_deno_pdf">
                                                                         </div>
                                                                     </div>
                                                                     <br>
@@ -395,6 +395,7 @@ $testData = getTestData($data->id, $bdd);
         });
         function showUpdateDone(){
             document.getElementById('upd').value = 'A jour !';
+            window.location.href = "/app/index.php?p=details&n=101&identifiant="+ <?= $_SESSION['identifiant']?>+"&id="+document.getElementById('usrId').innerHTML;
         }
         document.getElementsByClassName('formTest')[0].addEventListener("submit", function (e) {
             e.preventDefault();

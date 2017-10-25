@@ -33,16 +33,47 @@ function updateTestData($id, $obj, $bdd)
            WHERE `tests`.`patient` =".$patientID;
 
 		$stmt = $bdd->prepare($sql);
-		$stmt->bindValue(':pre_deno_excel','/pre/'.$patientID.'_deno_results.xls');
-		$stmt->bindValue(':pre_deno_pdf','/pre/'.$patientID.'_deno_fiche.jpg');
-		$stmt->bindValue(':pre_desi_excel','/pre/'.$patientID.'_desi_results.xls');
+		if($_FILES['pre_deno_excel']["size"] !== 0 ){
+			$stmt->bindValue(':pre_deno_excel','/pre/'.$patientID.'_deno_results.xls');
+		}
+		else{
+			$stmt->bindValue(':pre_deno_excel','');
+		}
+		if($_FILES['pre_desi_excel']["size"] !== 0 ){
+			$stmt->bindValue(':pre_desi_excel','/pre/'.$patientID.'_desi_results.xls');
+		}
+		else{
+			$stmt->bindValue(':pre_desi_excel','');
+		}
+		if($_FILES['pre_deno_pdf']["size"] !== 0 ){
+			$stmt->bindValue(':pre_deno_pdf','/pre/'.$patientID.'_deno_fiche.jpg');
+		}
+		else{
+			$stmt->bindValue(':pre_deno_pdf','');
+		}
 		$stmt->bindValue(':pre_deno_score',$obj['pre_deno_score']);
 		$stmt->bindValue(':pre_desi_score',$obj['pre_desi_score']);
 		$stmt->bindValue(':pre_nb_erreur',$obj['pre_nb_erreur']);
 		$stmt->bindValue(':pre_time',$obj['pre_time']);
-		$stmt->bindValue(':post_deno_excel','/post/'.$patientID.'_deno_results.xls');
-		$stmt->bindValue(':post_deno_pdf','/post/'.$patientID.'_deno_fiche.jpg');
-		$stmt->bindValue(':post_desi_excel','/post/'.$patientID.'_desi_results.xls');
+		if($_FILES['post_deno_excel']["size"] !== 0 ){
+			$stmt->bindValue(':post_deno_excel','/post/'.$patientID.'_deno_results.xls');
+		}
+		else{
+			$stmt->bindValue(':post_deno_excel','');
+		}
+		echo($_FILES['post_deno_pdf']["size"].' \n'. gettype($_FILES['post_deno_pdf']["size"]).'\n' );
+		if($_FILES['post_deno_pdf']["size"] !== 0){
+			$stmt->bindValue(':post_deno_pdf','/post/'.$patientID.'_deno_fiche.jpg');
+		}
+		else{
+			$stmt->bindValue(':post_deno_pdf','');
+		}
+		if($_FILES['post_desi_excel']["size"] !== 0 ){
+			$stmt->bindValue(':post_desi_excel','/post/'.$patientID.'_desi_results.xls');
+		}
+		else{
+			$stmt->bindValue(':post_desi_excel','');
+		}
 		$stmt->bindValue(':post_deno_score',$obj['post_deno_score']);
 		$stmt->bindValue(':post_desi_score',$obj['post_desi_score']);
 		$stmt->bindValue(':post_nb_erreur',$obj['post_nb_erreur']);

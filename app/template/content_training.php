@@ -47,7 +47,7 @@
                                         $stmt->execute();
                                         while ($row = $stmt->fetchObject()) {
                                             ?>
-                                            <option value="<?= $row->id ?>"><?= $row->nom ?> <?= $row->prenom ?> | ID: <?= $row->id ?></option>
+                                            <option value="<?= $row->patient ?>"><?= $row->nom ?> <?= $row->prenom ?> | ID: <?= $row->patient ?></option>
                                             <?php
                                         }
                                         ?>

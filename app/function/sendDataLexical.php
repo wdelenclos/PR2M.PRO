@@ -47,8 +47,8 @@ function updateVTNVData($data,$bdd)
 		
 	}
 	else if ($testype == 'train'){
-		$sqla ="SELECT `train_json` FROM `tests` WHERE `tests`.`patient` =".$patientID;
-		$stmt = $bdd->prepare($sqla);
+		$sql ="SELECT `train_json` FROM `tests` WHERE `tests`.`patient` =".$patientID;
+		$stmt = $bdd->prepare($sql);
 		$stmt->execute();
 		$row = $stmt->fetchObject();
 		if($row == null || $row == ''){
@@ -60,8 +60,8 @@ function updateVTNVData($data,$bdd)
 		array_push($row, array('date' => date('d/m'), 'data' => $dataparse));
 		$rowa = json_encode($row);
 		try {
-			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().", `train_json` = :train_json WHERE `tests`.`patient` = ".$patientID;
-			$stmtb = $bdd->prepare($sql);
+			$sqlb = "UPDATE `tests` SET  `lastupdate` = ".time().", `train_json` = :train_json WHERE `tests`.`patient` = ".$patientID;
+			$stmtb = $bdd->prepare($sqlb);
 			$stmtb->bindValue(':train_json', $rowa);
 			var_dump($stmtb);
 			$stmtb->execute();

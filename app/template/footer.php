@@ -184,7 +184,7 @@
                         } 
                         alert('Query Variable ' + variable + ' not found');
                         }
-                        window.location.href = "/app/index.php?p=details&identifiant="+getQueryVariable('identifiant')+"&id="+document.querySelector('.profile_info span:first-child').innerHTML+"&id="+data.PatientID;
+                        window.location.href = "/app/index.php?p=details&identifiant="+getQueryVariable('identifiant')+"&id="+data.PatientID;
                     }
                 }
             });
@@ -388,8 +388,8 @@
                          console.log('Erreur: ' + r.statusText);
                      }
                      else{
-                         
-                         window.location.href = "/app/index.php?p=details&n=101&identifiant="+getQueryVariable('identifiant')+"&id="+data.patientID;
+                         console.log(r)
+                        // window.location.href = "/app/index.php?p=details&n=101&identifiant="+getQueryVariable('identifiant')+"&id="+data.patientID;
                     }
                  }
              });
