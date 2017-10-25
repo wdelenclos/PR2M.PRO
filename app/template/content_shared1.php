@@ -130,42 +130,42 @@
                                         </div>
                                         <div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="profile-tab">
                                         <h4>Tests</h4>
-<p>Cette section vous permet d'acc&eacute;der &agrave; l'ensemble du mat&eacute;riel n&eacute;cessaire au protocole.&nbsp;</p>
-<p><span style="color: #ff0000;">Insertion image "tests"</span></p>
-<p>Dans chaque onglet vous trouverez&nbsp;:</p>
-<ul>
-<li><strong>Le test</strong>:
-<ul>
-<li>Soit &agrave; t&eacute;l&eacute;charger, comme l&rsquo;EMME</li>
-<li>Soit &agrave; imprimer, comme la DRA</li>
-<li>Soit accessible directement sur la plateforme, comme l&rsquo;EDA, Lexical Access ou la VTNV</li>
-</ul>
-</li>
-</ul>
-<p>&nbsp;</p>
-<ul>
-<li><strong>Le protocole de passation</strong>:
-<ul>
-<li>Pour l&rsquo;EMME, l&rsquo;EDA, la DRA et Lexical Access</li>
-<li>A imprimer</li>
-</ul>
-</li>
-</ul>
-<p>&nbsp;</p>
-<ul>
-<li><strong>Les consignes&nbsp;</strong><em>&agrave; lire attentivement avant de d&eacute;buter les tests (il est d&rsquo;ailleurs vivement conseill&eacute; de s&rsquo;entra&icirc;ner &agrave; leur manipulation). </em></li>
-</ul>
-<p>&nbsp;</p>
-<p>L&rsquo;onglet &laquo;&nbsp;Ordre de passation&nbsp;&raquo; est un rappel que vous retrouvez dans le Guide d&rsquo;utilisation du protocole, chapitre &laquo;&nbsp;protocole exp&eacute;rimental&nbsp;&raquo;.</p>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="tab_content7" aria-labelledby="profile-tab">
-                                        <h4>Entra&icirc;nements&nbsp;</h4>
-<p>Cette section vous permet d'effectuer l'entra&icirc;nement avec l'enfant lors de sa s&eacute;ance si vous le souhaitez.&nbsp;</p>
-<p><span style="color: #ff0000;">Insertion image "entra&icirc;nements"</span></p>
-<p>Attention toutefois &agrave; bien lui rappeler qu&rsquo;il ne devra pas le refaire chez lui, car l&rsquo;exercice est &agrave; faire <strong>une seule fois par jour. </strong>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;<span style="color: #ff0000;">Insertion image "logo_information"</span></p>
-<p>Cet entra&icirc;nement est destin&eacute; au <strong>Groupe 1 </strong>(entra&icirc;nement &agrave; la vitesse d&rsquo;acc&egrave;s lexicale). Les sujets appartenant au groupe 2 (entra&icirc;nement &agrave; la reproduction de s&eacute;quences) n&rsquo;auront pas la possibilit&eacute; de faire l&rsquo;entra&icirc;nement lors de leur s&eacute;ance.</p>
+                                        <p>Cette section vous permet d'acc&eacute;der &agrave; l'ensemble du mat&eacute;riel n&eacute;cessaire au protocole.&nbsp;</p>
+                                        <p><span style="color: #ff0000;">Insertion image "tests"</span></p>
+                                        <p>Dans chaque onglet vous trouverez&nbsp;:</p>
+                                        <ul>
+                                        <li><strong>Le test</strong>:
+                                        <ul>
+                                        <li>Soit &agrave; t&eacute;l&eacute;charger, comme l&rsquo;EMME</li>
+                                        <li>Soit &agrave; imprimer, comme la DRA</li>
+                                        <li>Soit accessible directement sur la plateforme, comme l&rsquo;EDA, Lexical Access ou la VTNV</li>
+                                        </ul>
+                                        </li>
+                                        </ul>
+                                        <p>&nbsp;</p>
+                                        <ul>
+                                        <li><strong>Le protocole de passation</strong>:
+                                        <ul>
+                                        <li>Pour l&rsquo;EMME, l&rsquo;EDA, la DRA et Lexical Access</li>
+                                        <li>A imprimer</li>
+                                        </ul>
+                                        </li>
+                                        </ul>
+                                        <p>&nbsp;</p>
+                                        <ul>
+                                        <li><strong>Les consignes&nbsp;</strong><em>&agrave; lire attentivement avant de d&eacute;buter les tests (il est d&rsquo;ailleurs vivement conseill&eacute; de s&rsquo;entra&icirc;ner &agrave; leur manipulation). </em></li>
+                                        </ul>
+                                        <p>&nbsp;</p>
+                                        <p>L&rsquo;onglet &laquo;&nbsp;Ordre de passation&nbsp;&raquo; est un rappel que vous retrouvez dans le Guide d&rsquo;utilisation du protocole, chapitre &laquo;&nbsp;protocole exp&eacute;rimental&nbsp;&raquo;.</p>
+                                                                                </div>
+                                                                                <div role="tabpanel" class="tab-pane fade" id="tab_content7" aria-labelledby="profile-tab">
+                                                                                <h4>Entra&icirc;nements&nbsp;</h4>
+                                        <p>Cette section vous permet d'effectuer l'entra&icirc;nement avec l'enfant lors de sa s&eacute;ance si vous le souhaitez.&nbsp;</p>
+                                        <p><span style="color: #ff0000;">Insertion image "entra&icirc;nements"</span></p>
+                                        <p>Attention toutefois &agrave; bien lui rappeler qu&rsquo;il ne devra pas le refaire chez lui, car l&rsquo;exercice est &agrave; faire <strong>une seule fois par jour. </strong>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;<span style="color: #ff0000;">Insertion image "logo_information"</span></p>
+                                        <p>Cet entra&icirc;nement est destin&eacute; au <strong>Groupe 1 </strong>(entra&icirc;nement &agrave; la vitesse d&rsquo;acc&egrave;s lexicale). Les sujets appartenant au groupe 2 (entra&icirc;nement &agrave; la reproduction de s&eacute;quences) n&rsquo;auront pas la possibilit&eacute; de faire l&rsquo;entra&icirc;nement lors de leur s&eacute;ance.</p>
                                         </div>
                                       </div>
                                     </div>
