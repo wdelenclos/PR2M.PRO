@@ -27,12 +27,11 @@
                     <div class="menu_section">
                         <ul class="nav side-menu">
                             <li><a href="?p=dashboard&identifiant=<?= $_SESSION['identifiant']?>"><i class="fa fa-tachometer"></i> Tableau de bord </a></li>
-                             <li><a><i class="fa fa-compass"></i> Premiers pas <span class="fa fa-chevron-down"></span></a>
+                             <li><a><i class="fa fa-compass"></i> Guide d'utilisation <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="?p=guide&identifiant=<?= $_SESSION['identifiant']?>">Guide d'utilisation</a></li>
-                                    <li><a href="?p=shared1&identifiant=<?= $_SESSION['identifiant']?>">Justification théorique</a></li>
-                                    <li><a href="?p=shared2&identifiant=<?= $_SESSION['identifiant']?>">Question Clinique</a></li>
-                                    <li><a href="?p=shared3&identifiant=<?= $_SESSION['identifiant']?>">Objectifs</a></li>
+                                    <li><a href="?p=shared1&identifiant=<?= $_SESSION['identifiant']?>">La plateforme</a></li>
+                                    <li><a href="?p=shared2&identifiant=<?= $_SESSION['identifiant']?>">Le protocole</a></li>
+                                    <li><a href="?p=shared3&identifiant=<?= $_SESSION['identifiant']?>">A propos</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-users"></i> Patients <span class="fa fa-chevron-down"></span></a>
