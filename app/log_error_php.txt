@@ -34,3 +34,4 @@ Stack trace:
   thrown in /Users/wdelenclos/Projets/PR2M.PRO/app/template/content_lexical.php on line 45
 [24-Oct-2017 23:12:14 Europe/Paris] PHP Warning:  PDO::setAttribute() expects exactly 2 parameters, 3 given in /Users/wdelenclos/Projets/PR2M.PRO/app/connect.php on line 6
 [24-Oct-2017 23:12:14 Europe/Paris] PHP Warning:  PDO::setAttribute() expects exactly 2 parameters, 3 given in /Users/wdelenclos/Projets/PR2M.PRO/app/connect.php on line 6
+[29-Oct-2017 21:56:42 Europe/Paris] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH), expecting end of file in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 569

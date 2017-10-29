@@ -509,27 +509,8 @@ function listWaitingPatient($bdd)
         while ($row = $stmt->fetchObject()) {
 
             // Tesst du nombre de tests effectués
-	        $done = 0;
-	        if($row->test_t0_emme !== null ){
-		        $done++;
-	        }
-	        if($row->test_t0_evip  !== null ){
-		        $done++;
-	        }
-	        if($row->test_t0_dra  !== null ){
-		        $done++;
-	        }
-	        if($row->test_t0_la_denomination  !== null ){
-		        $done++;
-	        }
-	        if($row->test_vtnv !== null ){
-		        $done++;
-	        }
-	        if($row->test_t0_la_designation  !== null  ){
-		        $done++;
-	        }
-            if ($done == 0){
-                $advencement = $done * 16.7;
+	        $done = 0   ;
+	       
 
                 switch ($done){
                     case 0:
@@ -548,7 +529,6 @@ function listWaitingPatient($bdd)
 
                 echo('
                         
-                    
                      <tr>
                                     <td>' . $row->id . '</td>
                                     <td>
@@ -580,11 +560,7 @@ function listWaitingPatient($bdd)
                     
                     ');
             }
-
-
-        };
-        $stmt = null;
-
+            
 
     } catch (PDOException $e) {
 

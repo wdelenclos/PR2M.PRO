@@ -70,7 +70,7 @@
                                                                                 </div>
                                                                                 <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
                                                                                 <h2><strong>Interface du projet</strong></h2>
-                                        <p><span style="color: #ff0000;"><strong>Insertion image "interface_1"&nbsp;</strong></span></p>
+                                        <img src="/app/images/interface_1.jpg" style="width: 70%; margin: 0 auto"alt="">
                                         <p>&nbsp;</p>
                                         <p>Ici vous pouvez&nbsp;:</p>
                                         <ul>
@@ -79,10 +79,8 @@
                                         <li>Vous inscrire</li>
                                         </ul>
                                         <p>&nbsp;</p>
-                                        <p><span style="color: #ff0000;">Insertion image "interface_2"</span></p>
-                                        <p>&nbsp;</p>
-                                        <p><span style="color: #ff0000;">Insertion image "logo_information"</span></p>
-                                        <p>Lors de votre inscription, un num&eacute;ro d&rsquo;identification sera g&eacute;n&eacute;r&eacute; et envoy&eacute; sur votre bo&icirc;te mail (de cette fa&ccedil;on vous pourrez toujours le retrouver). Cet identifiant est unique pour chaque inscrit. Les donn&eacute;es enregistr&eacute;es sur la plateforme ne seront visibles que par vous et les auteurs du projet.</p>
+                                        <img src="/app/images/interface_2.jpg" style="width: 70%; margin: 0 auto"alt=""> <p>&nbsp;</p>
+                                        <img src="/app/images/Logo_information.png" style="width: 25px; margin: 0 auto"alt=""><p>Lors de votre inscription, un num&eacute;ro d&rsquo;identification sera g&eacute;n&eacute;r&eacute; et envoy&eacute; sur votre bo&icirc;te mail (de cette fa&ccedil;on vous pourrez toujours le retrouver). Cet identifiant est unique pour chaque inscrit. Les donn&eacute;es enregistr&eacute;es sur la plateforme ne seront visibles que par vous et les auteurs du projet.</p>
                                         </div>
                                         <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
                                         <h4><strong>Tableau de bord</strong></h4>
@@ -95,34 +93,33 @@
                                         <p>&nbsp;</p>
                                         <p>Des raccourcis sont &eacute;galement disponibles pour faciliter votre organisation.</p>
                                         <p>&nbsp;</p>
-                                        <p><span style="color: #ff0000;">Insertion image "tableau_bord"</span></p>
+                                        <img src="/app/images/Tableau_bord.jpg" style="width: 70%; margin: 0 auto"alt="">
                                         </div>
                                         <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
                                         <h4><strong>Patients</strong></h4>
                                         <p>Cette entr&eacute;e vous permet d&rsquo;acc&eacute;der &agrave; deux types de fonctionnalit&eacute;s:</p>
                                         <p style="padding-left: 30px;">1) Ajouter un patient</p>
-                                        <p style="padding-left: 30px;"><span style="color: #ff0000;">Insertion image "patients_1"</span></p>
+                                        <img src="/app/images/Patient_1.jpg" style="width: 70%; margin: 0 auto"alt="">
                                         <p style="padding-left: 30px;">&nbsp;</p>
                                         <p style="padding-left: 30px;"><span style="color: #000000;">2) Acc&eacute;der &agrave; la liste des patients&nbsp;</span></p>
-                                        <p style="padding-left: 30px;"><span style="color: #ff0000;">Insertion image "patients_2"</span></p>
+                                        <img src="/app/images/Patient_2.jpg" style="width: 70%; margin: 0 auto"alt="">
                                         </div>
                                         <div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="profile-tab">
                                         <h4><strong>Fiche d&eacute;taill&eacute;e du patient</strong></h4>
                                         <p>Ce dossier est accessible &agrave; partir de la liste des patients&nbsp;:</p>
-                                        <p><span style="color: #ff0000;">Insertion image "fiche_d&eacute;taill&eacute;e_patients_1"</span></p>
-                                        <h1 style="text-align: center;"><span style="color: #000000;">&darr;</span></h1>
-                                        <p><span style="color: #ff0000;">Insertion image "fiche_d&eacute;taill&eacute;e_patients_2"</span></p>
+                                        <img src="/app/images/Fiche_detail_patients_1.jpg" style="width: 70%; margin: 0 auto"alt="">
+                                         <h1 style="text-align: center;"><span style="color: #000000;">&darr;</span></h1>
+                                         <img src="/app/images/Fiche_detail_patients_2.jpg" style="width: 70%; margin: 0 auto"alt="">
                                         <p>&nbsp;</p>
                                         <p><strong>&nbsp;</strong></p>
                                         <p style="text-align: center;"><strong>Onglets &laquo;&nbsp;R&eacute;sultats pr&eacute;-test&nbsp;&raquo; et &laquo;&nbsp;R&eacute;sultats post-test&nbsp;&raquo;</strong></p>
-                                        <p style="text-align: center;"><span style="color: #ff0000;">Insertion image "suite_fiche_d&eacute;taill&eacute;e_patients_1"</span></p>
+                                        <img src="/app/images/Suite_fiche_detail_patients_1.jpg" style="width: 70%; margin: 0 auto"alt="">
                                         <p style="text-align: left;">&nbsp;</p>
-                                        <p style="text-align: left;"><span style="color: #ff0000;">Insertion image "logo_information"&nbsp;</span></p>
-                                        <p style="text-align: left;"><span style="color: #000000;">Pour ajouter les feuilles de passation, il vous faudra les <strong>prendre en photo </strong>(smartphone, GSM) ou les <strong>scanner</strong>. Le format doit absolument &ecirc;tre en JPEG (format automatique des smartphones / GSM).</span></p>
+                                        <img src="/app/images/Logo_information.png" style="width: 25px; margin: 0 auto"alt=""> <p style="text-align: left;"><span style="color: #000000;">Pour ajouter les feuilles de passation, il vous faudra les <strong>prendre en photo </strong>(smartphone, GSM) ou les <strong>scanner</strong>. Le format doit absolument &ecirc;tre en JPEG (format automatique des smartphones / GSM).</span></p>
                                         <p style="text-align: left;">&nbsp;</p>
                                         <p><strong>&nbsp;</strong></p>
                                         <p style="text-align: center;"><strong>Onglet &laquo;&nbsp;R&eacute;sultats des entra&icirc;nements&nbsp;&raquo;</strong></p>
-                                        <p style="text-align: center;"><span style="color: #ff0000;">Insertion image "suite_fiche_d&eacute;taill&eacute;e_patients_2"</span></p>
+                                        <img src="/app/images/Suite_fiche_detail_patients_2.jpg" style="width: 70%; margin: 0 auto"alt="">
                                         <p style="text-align: center;">&nbsp;</p>
                                         <p>Cette fonctionnalit&eacute; vous permet de suivre, au jour le jour, l&rsquo;&eacute;tat d&rsquo;avancement des entra&icirc;nements &agrave; domicile.</p>
                                         <p>&nbsp;</p>
@@ -131,7 +128,7 @@
                                         <div role="tabpanel" class="tab-pane fade" id="tab_content6" aria-labelledby="profile-tab">
                                         <h4>Tests</h4>
                                         <p>Cette section vous permet d'acc&eacute;der &agrave; l'ensemble du mat&eacute;riel n&eacute;cessaire au protocole.&nbsp;</p>
-                                        <p><span style="color: #ff0000;">Insertion image "tests"</span></p>
+                                        <img src="/app/images/tests.jpg" style="width: 70%; margin: 0 auto"alt="">
                                         <p>Dans chaque onglet vous trouverez&nbsp;:</p>
                                         <ul>
                                         <li><strong>Le test</strong>:
@@ -161,10 +158,9 @@
                                                                                 <div role="tabpanel" class="tab-pane fade" id="tab_content7" aria-labelledby="profile-tab">
                                                                                 <h4>Entra&icirc;nements&nbsp;</h4>
                                         <p>Cette section vous permet d'effectuer l'entra&icirc;nement avec l'enfant lors de sa s&eacute;ance si vous le souhaitez.&nbsp;</p>
-                                        <p><span style="color: #ff0000;">Insertion image "entra&icirc;nements"</span></p>
-                                        <p>Attention toutefois &agrave; bien lui rappeler qu&rsquo;il ne devra pas le refaire chez lui, car l&rsquo;exercice est &agrave; faire <strong>une seule fois par jour. </strong>&nbsp;</p>
+                                        <img src="/app/images/Entrainement.jpg" style="width: 70%; margin: 0 auto"alt=""><p>Attention toutefois &agrave; bien lui rappeler qu&rsquo;il ne devra pas le refaire chez lui, car l&rsquo;exercice est &agrave; faire <strong>une seule fois par jour. </strong>&nbsp;</p>
                                         <p>&nbsp;</p>
-                                        <p>&nbsp;<span style="color: #ff0000;">Insertion image "logo_information"</span></p>
+                                        <img src="/app/images/Logo_information.png" style="width: 25px; margin: 0 auto"alt="">
                                         <p>Cet entra&icirc;nement est destin&eacute; au <strong>Groupe 1 </strong>(entra&icirc;nement &agrave; la vitesse d&rsquo;acc&egrave;s lexicale). Les sujets appartenant au groupe 2 (entra&icirc;nement &agrave; la reproduction de s&eacute;quences) n&rsquo;auront pas la possibilit&eacute; de faire l&rsquo;entra&icirc;nement lors de leur s&eacute;ance.</p>
                                         </div>
                                       </div>

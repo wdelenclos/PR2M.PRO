@@ -45,7 +45,7 @@
                         <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
                             <h4><strong><u>Protocole exp&eacute;rimental&nbsp;: </u></strong></h4>
                             <p>Le protocole se d&eacute;roule sur 5 semaines d&rsquo;entra&icirc;nement quotidien &agrave; domicile, et sur 3 s&eacute;ances d&rsquo;&eacute;valuation.</p>
-                            <p style="text-align: center;"><span style="color: #ff0000;">Insertion image "Design_xp_fl&egrave;ches"</span></p>
+                            <img src="/app/images/design_xp_fleches.jpg" style="width: 70%; margin: 0 auto"alt="">
                             <p style="text-align: center;">&nbsp;</p>
                             <h2><strong><u>Evaluations pr&eacute; et post-test&nbsp;:</u></strong></h2>
                             <p>Les &eacute;valuations en pr&eacute;-test (T0) et post-test (T1) sont effectu&eacute;es gr&acirc;ce &agrave; un ensemble de tests qu&rsquo;il nous a sembl&eacute; pertinent d&rsquo;int&eacute;grer.</p>
@@ -229,7 +229,7 @@
                             </tbody>
                             </table>
                             <p>&nbsp;</p>
-                            <p><span style="color: #ff0000;">Insertion logo "information" (image logo_information)</span></p>
+                            <img src="/app/images/Logo_information.png" style="width: 25px; margin: 0 auto"alt="">
                             <p>La passation des tests d&eacute;passant les 30 minutes imparties pour une s&eacute;ance, vous pouvez&nbsp;:</p>
                             <ul>
                             <li>Programmer une s&eacute;ance de bilan plus longue</li>
@@ -325,7 +325,8 @@
                             <p>&nbsp;</p>
                             <h5><strong><u>Entra&icirc;nements&nbsp;:</u></strong></h5>
                             <p>Deux types d&rsquo;entra&icirc;nement sont propos&eacute;s aux participants, qui sont divis&eacute;s en deux groupes. La r&eacute;partition entre les groupes est al&eacute;atoire, et chaque enfant se voit proposer un seul type d&rsquo;entra&icirc;nement.</p>
-                            <p><span style="color: #ff0000;">Insertion image "sch&eacute;ma_distribution_groupes_xp"</span></p>
+                            <img src="/app/images/Schema_ distribution_groupes_xp.jpg" style="width: 70%; margin: 0 auto"alt="">
+                            
                             <h3><strong>1. Entra&icirc;nement &agrave; la vitesse d&rsquo;acc&egrave;s lexicale (Groupe 1) </strong></h3>
                             <p>Le principe de cet entra&icirc;nement repose sur la d&eacute;nomination r&eacute;p&eacute;t&eacute;e d&rsquo;images, avec une contrainte temporelle.</p>
                             <p>En tout, 30 images seront d&eacute;nomm&eacute;es quotidiennement par l&rsquo;enfant au cours des 5 semaines. Les images, non prototypiques, sont s&eacute;lectionn&eacute;es &agrave; partir du corpus de 60 images &eacute;valu&eacute;es lors du bilan pr&eacute;-test. Elles constituent notre ligne de base.</p>
@@ -339,7 +340,8 @@
                             <p>Cet entra&icirc;nement, qui ne pr&eacute;sente aucun lien avec la vitesse de traitement et l&rsquo;acc&egrave;s lexical, nous permet de d&eacute;montrer la sp&eacute;cificit&eacute; de notre protocole de rem&eacute;diation (i.e. l&rsquo;entra&icirc;nement &agrave; la d&eacute;nomination chronom&eacute;tr&eacute;e).</p>
                             <p>Cet entra&icirc;nement est effectu&eacute; en ligne via Google Drive, et sera g&eacute;r&eacute; <strong>par les auteurs du projet </strong>pour des raisons pratiques.</p>
                             <p>&nbsp;</p>
-                            <p>&nbsp;<span style="color: #ff0000;"><em>Insertion image "logo_information"</em></span></p>
+                            <img src="/app/images/Logo_information.png" style="width: 25px; margin: 0 auto"alt="">
+                            
                             <p>Il est attendu que les entra&icirc;nements soient effectu&eacute;s quotidiennement <strong>&agrave; domicile</strong>. Toutefois la possibilit&eacute; vous est offerte de faire l&rsquo;entra&icirc;nement avec l&rsquo;enfant lors de sa s&eacute;ance <strong>s&rsquo;il fait partie du Groupe 1</strong> (l&rsquo;autre entra&icirc;nement &eacute;tant g&eacute;r&eacute; par les &eacute;tudiantes).</p>
                             <p><em>Dans ce cas, n&rsquo;oubliez pas de lui rappeler qu&rsquo;il ne doit pas refaire l&rsquo;entra&icirc;nement chez lui avant celui du lendemain&nbsp;! Il est obligatoire de ne faire <strong>qu&rsquo;un seul entra&icirc;nement par jour</strong>. </em></p>
                             <p>&nbsp;</p>
@@ -490,7 +492,7 @@
                             </tbody>
                             </table>
                             <p>&nbsp;</p>
-                            <p><span style="color: #ff0000;">Insertion image "logo_information"</span></p>
+                            <img src="/app/images/Logo_information.png" style="width: 25px; margin: 0 auto"alt="">
                             <p>L&rsquo;ordre de passation des &eacute;preuves reste identique.</p>
                             <p>&nbsp;</p>
                             <h2><strong><u>S&eacute;lection des patients </u></strong></h2>
@@ -514,7 +516,7 @@
                             <li>Non observance de l'entra&icirc;nement&nbsp;</li>
                             </ul>
                             <p>&nbsp;</p>
-                            <p><span style="color: #ff0000;">Insertion image "logo_information"</span></p>
+                            <img src="/app/images/Logo_information.png" style="width: 25px; margin: 0 auto"alt="">
                             <p>Une <strong>autorisation parentale</strong> ainsi que des <strong>notes d&rsquo;intention</strong> (pour l&rsquo;adulte et pour l&rsquo;enfant) doivent &ecirc;tre sign&eacute;es avant le d&eacute;but du protocole afin de confirmer la participation de l&rsquo;enfant et l&rsquo;investissement des parents dans la conduite des entra&icirc;nements quotidiens.</p>
                             
                         </div>
@@ -539,7 +541,7 @@
                             <h5><strong><u>Tests informatis&eacute;s</u></strong></h5>
                             <p>Vous &ecirc;tes invit&eacute;s &agrave; installer sur votre ordinateur le logiciel <strong>EMME</strong>. Le reste du mat&eacute;riel est enti&egrave;rement accessible en ligne sur la plateforme.</p>
                             <p>&nbsp;</p>
-                            <p><span style="color: #ff0000;"><strong>Insertion image "logo_attention"</strong></span></p>
+                            <img src="/app/images/Logo_attention.png" style="width: 25px; margin: 0 auto"alt="">
                             <p>L&rsquo; <strong>EMME </strong>&nbsp;n&rsquo;est <strong>PAS </strong>adapt&eacute; pour les ordinateurs MAC. Il sera n&eacute;cessaire, pour cette &eacute;preuve seulement, d&rsquo;avoir un ordinateur PC.</p>
                             <p>&nbsp;</p>
                             <h2><strong><u>Plateforme en ligne</u></strong></h2>
