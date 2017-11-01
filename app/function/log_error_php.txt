@@ -186,3 +186,5 @@ Stack trace:
 [25-Oct-2017 12:03:56 Europe/Paris] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendData.php on line 63
 [01-Nov-2017 18:17:21 Europe/Paris] PHP Warning:  json_decode() expects parameter 1 to be string, object given in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendDataLexical.php on line 58
 [01-Nov-2017 18:17:21 Europe/Paris] PHP Warning:  array_push() expects parameter 1 to be array, null given in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendDataLexical.php on line 60
+[01-Nov-2017 18:20:55 Europe/Paris] PHP Warning:  json_decode() expects parameter 1 to be string, object given in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendDataLexical.php on line 58
+[01-Nov-2017 18:20:55 Europe/Paris] PHP Warning:  array_push() expects parameter 1 to be array, null given in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendDataLexical.php on line 60
