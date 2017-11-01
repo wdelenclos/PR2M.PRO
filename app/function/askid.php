@@ -12,6 +12,5 @@ $msg = wordwrap($msg,70);
 
 // send email
 mail("equipe.pr2m@gmail.com","Demande de compte",$msg);
-
 echo('Merci, nous vous recontacterons sous peu ! Demande : '.$msg )
 ?> 

@@ -24,7 +24,7 @@
 								<a href="#" class="icon fa-angle-down">Accéder au projet</a>
 								<ul>
 									<li><a href="/app">Espace Praticien</a></li>
-									<li><a href="generic.html">Espace Famille</a></li>
+									<li><a href="/famille?p=train">Espace Famille</a></li>
 									<li>
 										<a href="#">Informations</a>
 										<ul>
@@ -44,7 +44,7 @@
 					<h2>PR2M</h2>
 					<p>Protocole de Rem&eacute;diation du Manque du Mot</p>
 					<ul class="actions">
-						<li><a href="#" class="button special">Espace Famille</a></li>
+						<li><a href="/famille?p=train" class="button special">Espace Famille</a></li>
 						<li><a href="/app" class="button">Espace Praticien</a></li>
 					</ul>
 				</section>
@@ -115,27 +115,12 @@
 				<section id="cta">
 
 					<h2>Participer à l'étude</h2>
-					<p>Rejoignez l'étude en demandant un accès via ce formulaire ou bien contactez-nous à equipe-pr2m@gmail.com</p>
-
-					<form>
-						<div class="row uniform 50%">
-							<div class="6u 12u(mobilep)">
-								<input type="text" name="nom" id="nom" placeholder="Nom" />
-							</div>
-							<div class="6u 12u(mobilep)">
-								<input type="text" name="prenom" id="prenom" placeholder="Prénom" />
-							</div>
-							<div class="8u 12u(mobilep)">
-								<input type="email" name="email" id="email" placeholder="Votre Email" />
-							</div>
-							<div class="4u 12u(mobilep)">
-								<input type="submit" value="Sign Up" class="fit" />
-							</div>
-						</div>
-					</form>
-
+					<p>Rejoignez l'étude en demandant un accès ou bien contactez-nous à equipe-pr2m@gmail.com</p>
+					<a href="/app/#signup" class="button" >Demander un accès</a>
+					<p></p>
+					
+						
 				</section>
-
 			<!-- Footer -->
 				<footer id="footer">
 

@@ -47,7 +47,7 @@
                                         $stmt->execute();
                                         while ($row = $stmt->fetchObject()) {
                                             ?>
-                                            <option value="<?= $row->patient ?>"><?= $row->nom ?> <?= $row->prenom ?> | ID: <?= $row->patient ?></option>
+                                            <option value="<?= $row->id ?>"><?= $row->nom ?> <?= $row->prenom ?> | ID: <?= $row->id ?></option>
                                             <?php
                                         }
                                         ?>
@@ -55,7 +55,7 @@
                                         <input type="hidden" value="train" id ="testtype">
                                     <br>
                                     <button type="submit" id="test_starter" class="btn btn-success"><i class="fa fa-play"></i> Débuter l'entrainement</button>
-                                    </div>
+                                     
                                 </div>
                             </div>
                         </div>

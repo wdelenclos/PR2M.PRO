@@ -533,6 +533,177 @@ $('#test_starter').on('click', startLexical);
 </script>
 <?php }
 ?>
+<?php
+ if($_GET['p']== 'train'){ ?>
+<script>
+
+    function endLexical(){
+             var stringify = JSON.stringify(data);
+             function getQueryVariable(variable) {
+                        var query = window.location.search.substring(1);
+                        var vars = query.split("&");
+                        for (var i=0;i<vars.length;i++) {
+                            var pair = vars[i].split("=");
+                            if (pair[0] == variable) {
+                            return pair[1];
+                            }
+                        } 
+                        alert('Query Variable ' + variable + ' not found');
+                        }
+             $.ajax({
+                 url: '../app/function/sendDataLexical.php',
+                 data: {la: stringify},
+                 type: 'post',
+                 complete: function(r) {
+                     if(r.status !== 200){
+                         console.log('Erreur: ' + r.statusText);
+                     }
+                     else{
+                         console.log(r)
+                        // window.location.href = "/app/index.php?p=details&n=101&identifiant="+getQueryVariable('identifiant')+"&id="+data.patientID;
+                    }
+                 }
+             });
+}
+function  toggleFullScreen() {
+             if ((document.fullScreenElement && document.fullScreenElement !== null) ||
+                 (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+                 if (document.documentElement.requestFullScreen) {
+                     document.documentElement.requestFullScreen();
+                 } else if (document.documentElement.mozRequestFullScreen) {
+                     document.documentElement.mozRequestFullScreen();
+                 } else if (document.documentElement.webkitRequestFullScreen) {
+                     document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+                 }
+             } else {
+                 if (document.cancelFullScreen) {
+                     document.cancelFullScreen();
+                 } else if (document.mozCancelFullScreen) {
+                     document.mozCancelFullScreen();
+                 } else if (document.webkitCancelFullScreen) {
+                     document.webkitCancelFullScreen();
+                 }
+             }
+}
+function doLexical(type){
+    function randimgSrc(){
+        let imgBank =  document.getElementsByClassName('test')[0].getAttribute("data-images");  
+        array = imgBank.split(",");
+        console.log('Nouveau tableau : ')
+        console.log(array);
+        var imgId = Math.floor(Math.random() * array.length) 
+        var src = imgBankurl+array[imgId];
+        let imgIdTest = array.indexOf(array[imgId]);
+        console.log('Image affichée et supprimée : ' +imgIdTest);
+        array.splice(imgIdTest, 1);
+        document.getElementsByClassName('test')[0].setAttribute("data-images", array); 
+        return src;     
+    }  
+    
+        var a = 0;
+        var timeOut;
+        function loopEval(){
+            clearTimeout(timeOut);
+            if (a < testTypeRep){
+                var attr = randimgSrc();
+                $('#ImageTestIMG').attr('src', attr);
+                setTimeout(function() {
+                    $('#ImageTestIMG').toggle();
+                }, 100);
+                beTime = window.performance.now();
+                $(window).keypress(function (e) {
+                    if (e.keyCode == 37 || e.keyCode == 39) {
+
+                            if($('#ImageTestIMG').is(":visible")){
+                                a ++;
+                                var newTime = window.performance.now();
+                                response = newTime - beTime;
+                                response = response;
+                                var resp;
+                                if(e.keyCode == 37){
+                                    resp = true
+                                }
+                                else{
+                                    resp = false
+                                }
+                                let imgname =  document.getElementById('ImageTestIMG').src;
+                                imgname = imgname.split("/").pop();
+                                console.log({id: a, resp: resp, tmps: response, img: imgname});
+                                data.results.push( {id: a, resp: resp, tmps: response, img: imgname})
+                                $('#ImageTestIMG').toggle();
+                                setTimeout(function() {
+                                    loopEval();
+                                }, 1500);
+                            } 
+                    }
+                    
+                });
+                if(($('#testtype').val())== 'train'){
+                    timeOut = setTimeout(function() {
+                        $(window).trigger({type: 'keypress', which: 39, keyCode: 39});
+                     }, 2100);
+                } 
+            }
+            else{
+                endLexical();
+            }
+           
+            
+        }
+        loopEval();
+        
+    
+}
+function startLexical(){    
+    $('.test').show();
+    toggleFullScreen();
+    $('#vtnvTitle').html(template.debut);
+    var typeofTest = $('#testtype').val();
+    $.ajax({
+            url: '../app/function/getLexicalImg.php',
+            type: 'post',
+            data: { type: $('#testtype').val()} ,
+            complete: function(data) {
+                if(data.status !== 200){
+                    console.log('Erreur: ' + data.statusText);
+                }
+                else{
+                    var imgBank = JSON.parse(data.responseText);
+                    imgBank.splice(0, 2); 
+                    console.log(imgBank);
+                    document.getElementsByClassName('test')[0].setAttribute("data-images", imgBank); 
+                     
+                }
+            }
+        });
+    setTimeout(function() {
+        $('#vtnvTitle').hide()
+        doLexical(typeofTest);
+    }, 3500);
+  
+}
+var testTypeRep;
+var imgBankurl;
+if(($('#testtype').val())== 'eval'){
+    testTypeRep = 60
+    imgBankurl = '../app/data/tests_uploads/lexical/img/eval/'
+}
+else{
+    testTypeRep = 30
+    imgBankurl = '../app/data/tests_uploads/lexical/img/train/'
+}
+var data = {
+        testType: $('#testtype').val(),
+        testMoment: $('#testmoment').val(),
+        patientID: $('#test_PatientName').val(),
+        NbRepetitions: testTypeRep,
+        results: [],
+};
+$('#test_starter').on('click', startLexical);
+
+</script>
+<?php }
+?>
 </body>
 </html>
 
