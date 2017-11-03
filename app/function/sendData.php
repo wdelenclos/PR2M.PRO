@@ -63,9 +63,15 @@ function updateTestData($id, $obj, $bdd)
 		else{
 			$predesi = intval($obj['pre_desi_score']);
 		}
+		if (!is_int($obj['pre_nb_erreur'])){
+			$nberr = 0;
+		}
+		else{
+			$nberr = intval($obj['pre_nb_erreur']);
+		}
 		$stmt->bindValue(':pre_deno_score',$predeno);
 		$stmt->bindValue(':pre_desi_score',$predesi);
-		$stmt->bindValue(':pre_nb_erreur',$obj['pre_nb_erreur']);
+		$stmt->bindValue(':pre_nb_erreur',$nberr);
 		$stmt->bindValue(':pre_time',$obj['pre_time']);
 		if($_FILES['post_deno_excel']["size"] !== 0 ){
 			$stmt->bindValue(':post_deno_excel','/post/'.$patientID.'_deno_results.xls');
