@@ -33,19 +33,19 @@ function updateTestData($id, $obj, $bdd)
            WHERE `tests`.`patient` =".$patientID;
 
 		$stmt = $bdd->prepare($sql);
-		if($_FILES['pre_deno_excel']["size"] !== 0 ){
+		if($_FILES['pre_deno_excel']["size"] !== null ){
 			$stmt->bindValue(':pre_deno_excel','/pre/'.$patientID.'_deno_results.xls');
 		}
 		else{
 			$stmt->bindValue(':pre_deno_excel','');
 		}
-		if($_FILES['pre_desi_excel']["size"] !== 0 ){
+		if($_FILES['pre_desi_excel']["size"] !== null ){
 			$stmt->bindValue(':pre_desi_excel','/pre/'.$patientID.'_desi_results.xls');
 		}
 		else{
 			$stmt->bindValue(':pre_desi_excel','');
 		}
-		if($_FILES['pre_deno_pdf']["size"] !== 0 ){
+		if($_FILES['pre_deno_pdf']["size"] !== null ){
 			$stmt->bindValue(':pre_deno_pdf','/pre/'.$patientID.'_deno_fiche.jpg');
 		}
 		else{
@@ -55,20 +55,20 @@ function updateTestData($id, $obj, $bdd)
 		$stmt->bindValue(':pre_desi_score',$obj['pre_desi_score']);
 		$stmt->bindValue(':pre_nb_erreur',$obj['pre_nb_erreur']);
 		$stmt->bindValue(':pre_time',$obj['pre_time']);
-		if($_FILES['post_deno_excel']["size"] !== 0 ){
+		if($_FILES['post_deno_excel']["size"] !== null ){
 			$stmt->bindValue(':post_deno_excel','/post/'.$patientID.'_deno_results.xls');
 		}
 		else{
 			$stmt->bindValue(':post_deno_excel','');
 		}
 		echo($_FILES['post_deno_pdf']["size"].' \n'. gettype($_FILES['post_deno_pdf']["size"]).'\n' );
-		if($_FILES['post_deno_pdf']["size"] !== 0){
+		if($_FILES['post_deno_pdf']["size"] !== null){
 			$stmt->bindValue(':post_deno_pdf','/post/'.$patientID.'_deno_fiche.jpg');
 		}
 		else{
 			$stmt->bindValue(':post_deno_pdf','');
 		}
-		if($_FILES['post_desi_excel']["size"] !== 0 ){
+		if($_FILES['post_desi_excel']["size"] !== null ){
 			$stmt->bindValue(':post_desi_excel','/post/'.$patientID.'_desi_results.xls');
 		}
 		else{
