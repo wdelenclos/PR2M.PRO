@@ -115,7 +115,7 @@
 				<section id="cta">
 
 					<h2>Participer à l'étude</h2>
-					<p>Rejoignez l'étude en demandant un accès ou bien contactez-nous à equipe-pr2m@gmail.com</p>
+					<p>Rejoignez l'étude en demandant un accès ou bien contactez-nous à equipe.pr2m@gmail.com</p>
 					<a href="/app/#signup" class="button" >Demander un accès</a>
 					<p></p>
 					

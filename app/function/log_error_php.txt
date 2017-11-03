@@ -190,3 +190,5 @@ Stack trace:
 [01-Nov-2017 18:20:55 Europe/Paris] PHP Warning:  array_push() expects parameter 1 to be array, null given in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendDataLexical.php on line 60
 [03-Nov-2017 18:59:22 Europe/Paris] PHP Warning:  json_decode() expects parameter 1 to be string, object given in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendDataLexical.php on line 58
 [03-Nov-2017 18:59:22 Europe/Paris] PHP Warning:  array_push() expects parameter 1 to be array, null given in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendDataLexical.php on line 60
+[03-Nov-2017 19:21:10 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:15) in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 208
+[03-Nov-2017 19:21:10 Europe/Paris] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/wdelenclos/Projets/PR2M.PRO/app/function.php:15) in /Users/wdelenclos/Projets/PR2M.PRO/app/function.php on line 234
