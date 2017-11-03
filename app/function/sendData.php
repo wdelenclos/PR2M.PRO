@@ -55,13 +55,13 @@ function updateTestData($id, $obj, $bdd)
 			$predeno = null;
 		}
 		else{
-			$predeno = $obj['pre_deno_score'];
+			$predeno = intval($obj['pre_deno_score']);
 		}
 		if (!is_int($obj['pre_desi_score'])){
 			$predesi = null;
 		}
 		else{
-			$predesi = $obj['pre_desi_score'];
+			$predesi = intval($obj['pre_desi_score']);
 		}
 		$stmt->bindValue(':pre_deno_score',$predeno);
 		$stmt->bindValue(':pre_desi_score',predesi);
