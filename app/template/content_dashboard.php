@@ -76,7 +76,9 @@
                         <a href="?p=nouveau&identifiant=<?=$_SESSION['identifiant']?>"> <button type="submit" class="btn btn-success"><i class="fa fa-plus"></i> Nouveau patient</button>
                             <a href="?p=tests&identifiant=<?=$_SESSION['identifiant']?>"> <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Passer les test</button>
                                 <a href="?p=training&identifiant=<?=$_SESSION['identifiant']?>"> <button type="submit" class="btn btn-success"><i class="fa fa-rotate-right"></i> Entrainement</button>
+                                <?php if(in_array($_SESSION['identifiant'], ADMINMAIL)){?>
                                     <a href="?p=export&identifiant=<?=$_SESSION['identifiant']?>"> <button type="submit" class="btn btn-primary"><i class="fa fa-database"></i> Acceder à l'export des données</button>
+                                <?php } ?>
                     </div>
                     <hr>
                     <p>Voici la liste de vos patients</p>

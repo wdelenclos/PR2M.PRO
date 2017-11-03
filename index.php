@@ -25,13 +25,7 @@
 								<ul>
 									<li><a href="/app">Espace Praticien</a></li>
 									<li><a href="/famille?p=train">Espace Famille</a></li>
-									<li>
-										<a href="#">Informations</a>
-										<ul>
-											<li><a href="#">Publications</a></li>
-											<li><a href="#">Crédits</a></li>
-										</ul>
-									</li>
+									
 								</ul>
 							</li>
 							<li><a href="#cta" class="button">Participer</a></li>
@@ -115,7 +109,7 @@
 				<section id="cta">
 
 					<h2>Participer à l'étude</h2>
-					<p>Rejoignez l'étude en demandant un accès ou bien contactez-nous à equipe.pr2m@gmail.com</p>
+					<p>Rejoignez l'étude en demandant un accès ou bien contactez-nous à equipe.	pr2m@gmail.com</p>
 					<a href="/app/#signup" class="button" >Demander un accès</a>
 					<p></p>
 					

@@ -29,22 +29,22 @@
 <tbody>
 <tr>
 <td>1</td>
-<td style="text-align: left;"><strong>EMME:</strong> d&eacute;signation</td>
-<td style="text-align: center;">10/15 min</td>
+<td style="text-align: left;"><strong>EMME:</strong> dénomination</td>
+<td style="text-align: center;">6/8 min</td>
 </tr>
 <tr>
 <td>2</td>
-<td style="text-align: left;"><strong>EDA:</strong> d&eacute;signation</td>
+<td style="text-align: left;"><strong>EDA:</strong> dénomination</td>
 <td style="text-align: center;">4 min</td>
 </tr>
 <tr>
 <td>3</td>
-<td style="text-align: left;"><strong>EMME:</strong> d&eacute;nomination</td>
-<td style="text-align: center;">6/8 min</td>
+<td style="text-align: left;"><strong>EMME:</strong> désignation</td>
+<td style="text-align: center;">10/15 min</td>
 </tr>
 <tr>
 <td>4</td>
-<td style="text-align: left;"><strong>EDA :</strong>d&eacute;nomination</td>
+<td style="text-align: left;"><strong>EDA :</strong>désignation</td>
 <td style="text-align: center;">4 min</td>
 </tr>
 <tr>

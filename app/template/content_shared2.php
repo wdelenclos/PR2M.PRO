@@ -250,15 +250,15 @@
                             </tr>
                             <tr>
                             <td>
-                            <p>1.&nbsp;<strong>EMME:</strong> d&eacute;signation&nbsp;</p>
+                            <p>1.&nbsp;<strong>EMME:</strong> dénomination</p>
                             </td>
                             <td>
-                            <p>&nbsp;10/15 min&nbsp;</p>
+                            <p>&nbsp;6/8 min&nbsp;</p>
                             </td>
                             </tr>
                             <tr>
                             <td>
-                            <p>2.&nbsp;<strong>EDA:</strong> d&eacute;signation&nbsp;</p>
+                            <p>2.&nbsp;<strong>EDA:</strong> dénomination</p>
                             </td>
                             <td>
                             <p>4 min&nbsp;</p>
@@ -266,15 +266,15 @@
                             </tr>
                             <tr>
                             <td>
-                            <p>3.&nbsp;<strong>EMME:&nbsp;</strong>d&eacute;nomination</p>
+                            <p>3.&nbsp;<strong>EMME:&nbsp;</strong>désignation</p>
                             </td>
                             <td>
-                            <p>6/8 min&nbsp;</p>
+                            <p>10/15 min&nbsp;</p>
                             </td>
                             </tr>
                             <tr>
                             <td>
-                            <p>4.&nbsp;<strong>EDA:</strong>&nbsp;d&eacute;nomination</p>
+                            <p>4.&nbsp;<strong>EDA:</strong>désignation</p>
                             </td>
                             <td>
                             <p>4 min&nbsp;</p>
