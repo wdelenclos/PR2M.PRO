@@ -389,7 +389,7 @@
                      }
                      else{
                          console.log(r)
-                        // window.location.href = "/app/index.php?p=details&n=101&identifiant="+getQueryVariable('identifiant')+"&id="+data.patientID;
+                         window.location.href = "/app/index.php?p=details&n=101&identifiant="+getQueryVariable('identifiant')+"&id="+data.patientID;
                     }
                  }
              });

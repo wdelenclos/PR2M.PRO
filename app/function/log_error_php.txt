@@ -188,3 +188,5 @@ Stack trace:
 [01-Nov-2017 18:17:21 Europe/Paris] PHP Warning:  array_push() expects parameter 1 to be array, null given in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendDataLexical.php on line 60
 [01-Nov-2017 18:20:55 Europe/Paris] PHP Warning:  json_decode() expects parameter 1 to be string, object given in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendDataLexical.php on line 58
 [01-Nov-2017 18:20:55 Europe/Paris] PHP Warning:  array_push() expects parameter 1 to be array, null given in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendDataLexical.php on line 60
+[03-Nov-2017 18:59:22 Europe/Paris] PHP Warning:  json_decode() expects parameter 1 to be string, object given in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendDataLexical.php on line 58
+[03-Nov-2017 18:59:22 Europe/Paris] PHP Warning:  array_push() expects parameter 1 to be array, null given in /Users/wdelenclos/Projets/PR2M.PRO/app/function/sendDataLexical.php on line 60

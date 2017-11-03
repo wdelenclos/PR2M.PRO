@@ -115,7 +115,7 @@ try {
                                                             $array = [];
                                                             while ($row = $stmt->fetchObject()) {?>
                                                     
-                                                                <option value=" <?= $row->id ?> "> <?= $row->nom.' '.str_split($row->prenom, 1)[0].'.';?></option>
+                                                                <option value=" <?= $row->id ?> "> <?= str_split($row->nom, 1)[0].str_split($row->prenom, 1)[0].$row->id ?></option>
                                                     
                                                           <?php
                                                             };
