@@ -51,50 +51,50 @@ function updateTestData($id, $obj, $bdd)
 		else{
 			$stmt->bindValue(':pre_deno_pdf','');
 		}
-		if (!is_int($obj['pre_deno_score'])){
+		if ($obj['pre_deno_score']== ''){
 			$predeno = 0;
 		}
 		else{
 			$predeno = intval($obj['pre_deno_score']);
 		}
-		if (!is_int($obj['pre_desi_score'])){
+		if ($obj['pre_desi_score']== ''){
 			$predesi = 0;
 		}
 		else{
 			$predesi = intval($obj['pre_desi_score']);
 		}
-		if (!is_int($obj['pre_nb_erreur'])){
+		if ($obj['pre_nb_erreur']== ''){
 			$nberr = 0;
 		}
 		else{
 			$nberr = intval($obj['pre_nb_erreur']);
 		}
-		if (!is_int($obj['pre_time'])){
+		if ($obj['pre_time']== ''){
 			$timee = 0;
 		}
 		else{
 			$timee = intval($obj['pre_time']);
 		}
 
-		if (!is_int($obj['post_deno_score'])){
+		if ($obj['post_deno_score']== ''){
 			$postdeno = 0;
 		}
 		else{
 			$postdeno = intval($obj['post_deno_score']);
 		}
-		if (!is_int($obj['post_desi_score'])){
+		if ($obj['post_desi_score']== ''){
 			$postdesi = 0;
 		}
 		else{
 			$postdesi = intval($obj['post_desi_score']);
 		}
-		if (!is_int($obj['post_nb_erreur'])){
+		if ($obj['post_nb_erreur']== ''){
 			$postnb = 0;
 		}
 		else{
 			$postnb = intval($obj['post_nb_erreur']);
 		}
-		if (!is_int($obj['post_time'])){
+		if ($obj['post_time'] == ''){
 			$post_time = 0;
 		}
 		else{
