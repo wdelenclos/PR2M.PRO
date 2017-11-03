@@ -69,10 +69,41 @@ function updateTestData($id, $obj, $bdd)
 		else{
 			$nberr = intval($obj['pre_nb_erreur']);
 		}
+		if (!is_int($obj['pre_time'])){
+			$timee = 0;
+		}
+		else{
+			$timee = intval($obj['pre_time']);
+		}
+
+		if (!is_int($obj['post_deno_score'])){
+			$postdeno = 0;
+		}
+		else{
+			$postdeno = intval($obj['post_deno_score']);
+		}
+		if (!is_int($obj['post_desi_score'])){
+			$postdesi = 0;
+		}
+		else{
+			$postdesi = intval($obj['post_desi_score']);
+		}
+		if (!is_int($obj['post_nb_erreur'])){
+			$postnb = 0;
+		}
+		else{
+			$postnb = intval($obj['post_nb_erreur']);
+		}
+		if (!is_int($obj['post_time'])){
+			$post_time = 0;
+		}
+		else{
+			$post_time = intval($obj['post_time']);
+		}
 		$stmt->bindValue(':pre_deno_score',$predeno);
 		$stmt->bindValue(':pre_desi_score',$predesi);
 		$stmt->bindValue(':pre_nb_erreur',$nberr);
-		$stmt->bindValue(':pre_time',$obj['pre_time']);
+		$stmt->bindValue(':pre_time',$timee);
 		if($_FILES['post_deno_excel']["size"] !== 0 ){
 			$stmt->bindValue(':post_deno_excel','/post/'.$patientID.'_deno_results.xls');
 		}
@@ -92,10 +123,10 @@ function updateTestData($id, $obj, $bdd)
 		else{
 			$stmt->bindValue(':post_desi_excel','');
 		}
-		$stmt->bindValue(':post_deno_score',$obj['post_deno_score']);
-		$stmt->bindValue(':post_desi_score',$obj['post_desi_score']);
-		$stmt->bindValue(':post_nb_erreur',$obj['post_nb_erreur']);
-		$stmt->bindValue(':post_time',$obj['post_time']);
+		$stmt->bindValue(':post_deno_score',$postdeno);
+		$stmt->bindValue(':post_desi_score',$postdesi);
+		$stmt->bindValue(':post_nb_erreur',$postnb);
+		$stmt->bindValue(':post_time',$post_time);
 		$stmt->execute();
 		echo('Send !');
 	}
