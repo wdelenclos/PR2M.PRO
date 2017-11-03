@@ -52,13 +52,13 @@ function updateTestData($id, $obj, $bdd)
 			$stmt->bindValue(':pre_deno_pdf','');
 		}
 		if (!is_int($obj['pre_deno_score'])){
-			$predeno = null;
+			$predeno = 0;
 		}
 		else{
 			$predeno = intval($obj['pre_deno_score']);
 		}
 		if (!is_int($obj['pre_desi_score'])){
-			$predesi = null;
+			$predesi = 0;
 		}
 		else{
 			$predesi = intval($obj['pre_desi_score']);
