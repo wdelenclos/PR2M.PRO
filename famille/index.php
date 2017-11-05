@@ -96,15 +96,19 @@ try {
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
-
-
+                                <?php if($_GET['p']=='train'){ ?>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 result">
+                                        <br>
+                                        <p>Vous allez débuter une session d'entrainement pour la journée du <?php echo date('d M Y');?>:</p>
+                                        <br>
+                                
                                     <!-- Smart Wizard -->
-                                    <p>Vous allez démarrer une session d'entrainement</p>
                                     <div class="form-group">
-                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nom du patient <span class="required">*</span>
-                                                    </label>    
-                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                     
+                                                    <div class="col-md-12 col-sm-12 col-xs-12">
                                                     <div class="row">
+                                                    <label  for="name">Selectionnez votre identifiant patient: <span class="required"></span>
+                                                    </label>   
                                                     <select class="form-control" name="test_PatientName" id="test_PatientName">
                                                      <?php
                                                           try {
@@ -132,7 +136,16 @@ try {
                                                         </div>
                                                     </div>
                                                 </div>
+                                        </div>
                                 </div>
+                                <?php } else { ?>
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="row">
+                                                    <label  for="name">Vos résultats sont enregistrés! <br> A demain !</span>
+                                                    </label>   
+                                                    </div>
+                                                    </div>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>

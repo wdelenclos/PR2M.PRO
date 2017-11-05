@@ -365,35 +365,42 @@
 <?php
  if($_GET['p']== 'training' || $_GET['p']== 'lexical'){ ?>
 <script>
+    var stringify ='';
 
-    function endLexical(){
-             var stringify = JSON.stringify(data);
-             function getQueryVariable(variable) {
-                        var query = window.location.search.substring(1);
-                        var vars = query.split("&");
-                        for (var i=0;i<vars.length;i++) {
-                            var pair = vars[i].split("=");
-                            if (pair[0] == variable) {
-                            return pair[1];
+function lexi_sendData(){
+            function getQueryVariable(variable) {
+                            var query = window.location.search.substring(1);
+                            var vars = query.split("&");
+                            for (var i=0;i<vars.length;i++) {
+                                var pair = vars[i].split("=");
+                                if (pair[0] == variable) {
+                                return pair[1];
+                                }
                             }
-                        } 
-                        alert('Query Variable ' + variable + ' not found');
+                } 
+            $.ajax({
+            
+                    url: './function/sendDataLexical.php',
+                    data: {la: stringify},
+                    type: 'post',
+                    complete: function(r) {
+                        if(r.status !== 200){
+                            console.log('Erreur: ' + r.statusText);
                         }
-             $.ajax({
-                 url: './function/sendDataLexical.php',
-                 data: {la: stringify},
-                 type: 'post',
-                 complete: function(r) {
-                     if(r.status !== 200){
-                         console.log('Erreur: ' + r.statusText);
-                     }
-                     else{
-                         console.log(r)
-                         window.location.href = "/app/index.php?p=details&n=101&identifiant="+getQueryVariable('identifiant')+"&id="+data.patientID;
+                        else{
+                            console.log(r)
+                            window.location.href = "/app/index.php?p=details&n=101&identifiant="+getQueryVariable('identifiant')+"&id="+data.patientID;
+                        }
                     }
-                 }
-             });
+                });
+                  
 }
+function endLexical(){
+                        stringify = JSON.stringify(data);
+                        $('.test').hide();
+                        $('.result').html('<p><span>Resultat: </span>'+ stringify +' </p><br>  <button class="btn btn-warning" onclick="window.location.reload()">Annuler</button> <button class="btn btn-success" id="" onclick="lexi_sendData();">Enregistrer</button>');
+                        $('.result').show();
+                    }
 function  toggleFullScreen() {
              if ((document.fullScreenElement && document.fullScreenElement !== null) ||
                  (!document.mozFullScreen && !document.webkitIsFullScreen)) {
@@ -536,9 +543,25 @@ $('#test_starter').on('click', startLexical);
 <?php
  if($_GET['p']== 'train'){ ?>
 <script>
-
+ var stringify ='';
+    function lexical_sendData(){
+        $.ajax({
+                 url: '../app/function/sendDataLexical.php',
+                 data: {la: stringify},
+                 type: 'post',
+                 complete: function(r) {
+                     if(r.status !== 200){
+                         console.log('Erreur: ' + r.statusText);
+                     }
+                     else{
+                         console.log(r)
+                         window.location.href = "/famille/?p=send";
+                    }
+                 }
+             });
+    }
     function endLexical(){
-             var stringify = JSON.stringify(data);
+            stringify = JSON.stringify(data);
              function getQueryVariable(variable) {
                         var query = window.location.search.substring(1);
                         var vars = query.split("&");
@@ -550,20 +573,10 @@ $('#test_starter').on('click', startLexical);
                         } 
                         alert('Query Variable ' + variable + ' not found');
                         }
-             $.ajax({
-                 url: '../app/function/sendDataLexical.php',
-                 data: {la: stringify},
-                 type: 'post',
-                 complete: function(r) {
-                     if(r.status !== 200){
-                         console.log('Erreur: ' + r.statusText);
-                     }
-                     else{
-                         console.log(r)
-                        // window.location.href = "/app/index.php?p=details&n=101&identifiant="+getQueryVariable('identifiant')+"&id="+data.patientID;
-                    }
-                 }
-             });
+                        $('.test').hide();
+                        $('.result').html('<p><span>Patient ID: </span>'+ data.PatientID + ' </p><p><span>Resultat: </span>'+ stringify +' </p><br>  <button class="btn btn-warning" onclick="window.location.reload()">Annuler</button> <button class="btn btn-success" id="upd" onclick="lexical_sendData();">Enregistrer</button>');
+                        $('.result').show();
+                        
 }
 function  toggleFullScreen() {
              if ((document.fullScreenElement && document.fullScreenElement !== null) ||

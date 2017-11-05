@@ -51,7 +51,9 @@ function updateVTNVData($data,$bdd)
 		$stmt = $bdd->prepare($sql);
 		$stmt->execute();
 		$row = $stmt->fetchObject();
-		if($row == null || $row == ''){
+		$row = $row->train_json;
+		var_dump($row->train_json);
+		if($row == null || $row == ''|| $row == '{}'|| $row == 'null'){
 			$row = [];
 		}
 		else{

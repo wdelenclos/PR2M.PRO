@@ -458,10 +458,10 @@ function listAllPatient($bdd)
                                 <td>
                                     <a>' . $row->nom . ' ' . $row->prenom . '</a>
                                     <br />
-                                    <small>' . $row->date_naissance . '</small>
+                                    <small>' . str_split($row->nom, 1)[0].str_split($row->prenom, 1)[0].$row->id . '</small>
                                 </td>
                                 <td>
-                                    <a>' . $row->niveau . ' - ' . $row->lateralite . '</a>
+                                    <a>' . $row->niveau . ' - ' . $row->lateralite .' - ' . $row->date_naissance .'</a>
                                     <br />
                                     <small>' . $row->commentaire . '</small>
                                 </td>
