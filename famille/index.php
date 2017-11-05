@@ -5,7 +5,7 @@
 define("DNS", 'mysql:host=localhost;');
 define("DBNAME",'dbname=pr2m'  );
 define('USERNAME','root');
-define('PASSWD', 'root');
+define('PASSWD', '125-ayN-92');
 
 
 try {
