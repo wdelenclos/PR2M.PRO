@@ -490,7 +490,8 @@ function doLexical(type){
         
     
 }
-function startLexical(){    
+function startLexical(){
+    data.patientID = parseInt(('#test_PatientName').val());    
     $('.test').show();
     toggleFullScreen();
     $('#vtnvTitle').html(template.debut);
@@ -531,7 +532,7 @@ else{
 var data = {
         testType: $('#testtype').val(),
         testMoment: $('#testmoment').val(),
-        patientID: $('#test_PatientName').val(),
+        patientID: 0,
         NbRepetitions: testTypeRep,
         results: [],
 };
@@ -667,7 +668,8 @@ function doLexical(type){
         
     
 }
-function startLexical(){    
+function startLexical(){  
+    data.patientID = parseInt(('#test_PatientName').val());
     $('.test').show();
     toggleFullScreen();
     $('#vtnvTitle').html(template.debut);
@@ -708,7 +710,7 @@ else{
 var data = {
         testType: $('#testtype').val(),
         testMoment: $('#testmoment').val(),
-        patientID: $('#test_PatientName').val(),
+        patientID: 0,
         NbRepetitions: testTypeRep,
         results: [],
 };
