@@ -491,7 +491,7 @@ function doLexical(type){
     
 }
 function startLexical(){
-    data.patientID = parseInt(('#test_PatientName').val());    
+    data.patientID = parseInt($('#test_PatientName').val());    
     $('.test').show();
     toggleFullScreen();
     $('#vtnvTitle').html(template.debut);
@@ -669,7 +669,7 @@ function doLexical(type){
     
 }
 function startLexical(){  
-    data.patientID = parseInt(('#test_PatientName').val());
+    data.patientID = parseInt($('#test_PatientName').val());
     $('.test').show();
     toggleFullScreen();
     $('#vtnvTitle').html(template.debut);
