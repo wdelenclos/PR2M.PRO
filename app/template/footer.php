@@ -447,7 +447,7 @@ function doLexical(type){
                     $('#ImageTestIMG').toggle();
                 }, 100);
                 beTime = window.performance.now();
-                $(windows).keypress(function (e) {
+                window.keypress(function (e) {
                     console.log('Press: '+e.keyCode);
                     if (e.keyCode == 37 || e.keyCode == 39) {
 
@@ -477,7 +477,7 @@ function doLexical(type){
                 });
                 if(($('#testtype').val())== 'train'){
                     timeOut = setTimeout(function() {
-                        $(windows).trigger({type: 'keypress', which: 37, keyCode: 37});
+                        window.trigger({type: 'keypress', which: 37, keyCode: 37});
                      }, 2100);
                 } 
             }
@@ -626,7 +626,7 @@ function doLexical(type){
                     $('#ImageTestIMG').toggle();
                 }, 100);
                 beTime = window.performance.now();
-                $(window).keypress(function (e) {
+                window.keypress(function (e) {
                     console.log('Press: '+ e.keyCode);
                     if (e.keyCode == 37 || e.keyCode == 39) {
 
@@ -656,7 +656,7 @@ function doLexical(type){
                 });
                 if(($('#testtype').val())== 'train'){
                     timeOut = setTimeout(function() {
-                        $(window).trigger({type: 'keypress', which: 37, keyCode: 37});
+                        window.trigger({type: 'keypress', which: 37, keyCode: 37});
                      }, 2100);
                 } 
             }
