@@ -447,7 +447,7 @@ function doLexical(type){
                     $('#ImageTestIMG').toggle();
                 }, 100);
                 beTime = window.performance.now();
-                $(window).on('keypress',function (e) {
+                $(window).on('keypress', windows, function (e) {
                     console.log('Press: '+e.keyCode);
                     if (e.keyCode == 37 || e.keyCode == 39) {
 
@@ -628,7 +628,7 @@ function doLexical(type){
                     $('#ImageTestIMG').toggle();
                 }, 100);
                 beTime = window.performance.now();
-                $(window).on('keypress',function (e) {
+                $(window).on('keypress', windows, function (e) {
                     console.log('Press: '+ e.keyCode);
                     if (e.keyCode == 37 || e.keyCode == 39) {
 
