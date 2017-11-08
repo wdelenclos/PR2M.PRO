@@ -447,8 +447,7 @@ function doLexical(type){
                     $('#ImageTestIMG').toggle();
                 }, 100);
                 beTime = window.performance.now();
-                $(window).on('keypress', windows, function (e) {
-                    console.log('Press: '+e.keyCode);
+                $(window).keypress(function (e) {
                     if (e.keyCode == 37 || e.keyCode == 39) {
 
                             if($('#ImageTestIMG').is(":visible")){
@@ -482,13 +481,11 @@ function doLexical(type){
                 } 
             }
             else{
-                
                 endLexical();
             }
            
             
         }
-       
         loopEval();
         
     
@@ -628,8 +625,7 @@ function doLexical(type){
                     $('#ImageTestIMG').toggle();
                 }, 100);
                 beTime = window.performance.now();
-                $(window).on('keypress', windows, function (e) {
-                    console.log('Press: '+ e.keyCode);
+                $(window).keypress(function (e) {
                     if (e.keyCode == 37 || e.keyCode == 39) {
 
                             if($('#ImageTestIMG').is(":visible")){
