@@ -456,7 +456,7 @@ function doLexical(type){
                                 response = newTime - beTime;
                                 response = response;
                                 var resp;
-                                if(e.keyCode == 37){
+                                if(e.keyCode == 39){
                                     resp = true
                                 }
                                 else{
@@ -634,7 +634,7 @@ function doLexical(type){
                                 response = newTime - beTime;
                                 response = response;
                                 var resp;
-                                if(e.keyCode == 37){
+                                if(e.keyCode == 39){
                                     resp = true
                                 }
                                 else{
