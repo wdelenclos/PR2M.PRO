@@ -448,7 +448,7 @@ function doLexical(type){
                 }, 100);
                 beTime = window.performance.now();
                 $(windows).keypress(function (e) {
-                    console.log('Press: '.e.keyCode);
+                    console.log('Press: '+e.keyCode);
                     if (e.keyCode == 37 || e.keyCode == 39) {
 
                             if($('#ImageTestIMG').is(":visible")){
@@ -627,7 +627,7 @@ function doLexical(type){
                 }, 100);
                 beTime = window.performance.now();
                 $(window).keypress(function (e) {
-                    console.log('Press: '.e.keyCode);
+                    console.log('Press: '+ e.keyCode);
                     if (e.keyCode == 37 || e.keyCode == 39) {
 
                             if($('#ImageTestIMG').is(":visible")){
