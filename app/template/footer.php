@@ -476,7 +476,7 @@ function doLexical(type){
                 });
                 if(($('#testtype').val())== 'train'){
                     timeOut = setTimeout(function() {
-                        $(window).trigger({type: 'keypress', which: 39, keyCode: 39});
+                        $(window).trigger({type: 'keypress', which: 37, keyCode: 37});
                      }, 2100);
                 } 
             }
@@ -654,7 +654,7 @@ function doLexical(type){
                 });
                 if(($('#testtype').val())== 'train'){
                     timeOut = setTimeout(function() {
-                        $(window).trigger({type: 'keypress', which: 39, keyCode: 39});
+                        $(window).trigger({type: 'keypress', which: 37, keyCode: 37});
                      }, 2100);
                 } 
             }
