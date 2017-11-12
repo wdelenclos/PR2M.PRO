@@ -55,7 +55,7 @@
                                             <small>Bragar et Schelstraete, 2009</small>
                                             <hr>
                                             <a class="btn btn-primary" href="http://www.ipsp.ucl.ac.be/recherche/projets/Epreuves/InstallationEpreuves.exe" target="_blank"><i class="fa fa-download"></i> Télécharger le logiciel</a>
-                                            <a class="btn btn-primary" href="data/tests_uploads/emme/Protocole_dénomination_EMME.pdf" download="Protocole_dénomination_EMME.pdf" target="_blank"> <i class="fa fa-paperclip"></i> Protocole dénomination</a>
+                                            <a class="btn btn-primary" href="data/tests_uploads/emme/Protocole_denomination_EMME.pdf" download="Protocole_denomination_EMME.pdf" target="_blank"> <i class="fa fa-paperclip"></i> Protocole dénomination</a>
                                             <hr>
                                             <h5><strong>1)&nbsp;&nbsp; T&acirc;che de d&eacute;nomination</strong></h5>
                                             <p><span style="text-decoration: underline;"><strong>T&acirc;che&nbsp;:&nbsp;</strong></span></p>
@@ -239,7 +239,7 @@
                                             <p class="lead">Evaluation Des fonctions cognitives et Apprentissage</p>
                                             <small>Billard et Touzin, 2012</small>
                                             <hr>
-                                            <a class="btn btn-primary" href="data/tests_uploads/eda/Protocole_EDA_Compréhension_Lexicale.pdf" download="Protocole_EDA_Compréhension_Lexicale.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole Compréhension Lexicale</a>
+                                            <a class="btn btn-primary" href="data/tests_uploads/eda/Protocole_EDA_Comprehension_Lexicale.pdf" download="Protocole_EDA_Comprehension_Lexicale.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole Compréhension Lexicale</a>
                                             <a class="btn btn-primary" href="data/tests_uploads/eda/Protocole_EDA_Evocation_Lexicale.pdf" download="Protocole_EDA_Evocation_Lexicale.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole Evocation Lexicale </a>
                                             <hr>
                                             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQcTqchEwE6h_53oP6Kg_9vME5sVcY9X3wmS4r3efkmd7Hf34KqxjwVvrNh5lRMRQB8U1oVt3ixmc1r/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="600px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -347,7 +347,9 @@
                                             <p class="lead">Lexical Access&nbsp;</p>
                                             <small>Leloup, Chevaillier et Gorsse, 2016 - Nothelier, Giavelly et Delenclos, 2017</small>
                                             <hr>
-                                            <a class="btn btn-primary" href="data/tests_uploads/lexical/Protocole_dénomination_LexicalAccess.pdf" download="Protocole_dénomination_LexicalAccess.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole dénomination </a>
+                                            <a class="btn btn-primary" href="data/tests_uploads/lexical/Protocole_denomination_LexicalAccess.pdf" download="Protocole_denomination_LexicalAccess.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole dénomination </a>
+                                            <a class="btn btn-primary" href="data/tests_uploads/lexical/Protocole_designation_LexicalAccess.pdf" download="Protocole_designation_LexicalAccess.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole désignation </a>
+            
                                             <a href="?p=lexical&identifiant=<?= $_SESSION['identifiant']?>" class="btn btn-success" ><i class="fa fa-play"></i> Débuter un test lexical access</a>
                                             <hr>
                                             <h5 ><strong><span style="text-decoration: underline;">T&acirc;che&nbsp;:</span> </strong></h5>
