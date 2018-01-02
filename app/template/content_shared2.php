@@ -501,7 +501,7 @@
                             <li>Enfants &acirc;g&eacute;s de 7&nbsp;ans 0 &agrave; 9&nbsp;ans 11</li>
                             <li>TSL</li>
                             <li>suivis en r&eacute;&eacute;ducation orthophonique depuis au moins 6 mois</li>
-                            <li>avec MM diagnostiqu&eacute; par un &eacute;cart de 1,65 ET entre la d&eacute;nomination et la d&eacute;signation &agrave; l&rsquo;EMME&nbsp;</li>
+                            <li>avec MM diagnostiqu&eacute; par un &eacute;cart de 1,5 ET entre la d&eacute;nomination et la d&eacute;signation &agrave; l&rsquo;EMME&nbsp;</li>
                             </ul>
                             <p>&nbsp;</p>
                             <p>Les <strong>crit&egrave;res de non-inclusion</strong> dans le protocole sont&nbsp;:</p>

@@ -52,7 +52,7 @@
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="emme">
                                             <p class="lead">Evaluation du manque du mot chez l'enfant</p>
-                                            <small>Bragar et Schelstraete, 2009</small>
+                                            <small>Bragard et Schelstraete, 2009</small>
                                             <hr>
                                             <a class="btn btn-primary" href="http://www.ipsp.ucl.ac.be/recherche/projets/Epreuves/InstallationEpreuves.exe" target="_blank"><i class="fa fa-download"></i> Télécharger le logiciel</a>
                                             <a class="btn btn-primary" href="data/tests_uploads/emme/Protocole_denomination_EMME.pdf" download="Protocole_denomination_EMME.pdf" target="_blank"> <i class="fa fa-paperclip"></i> Protocole dénomination</a>
@@ -81,11 +81,7 @@
                                                     <li><strong>1</strong>&nbsp;point si l&rsquo;item est bien d&eacute;nomm&eacute; du 1<sup>er</sup>&nbsp;coup</li>
                                                     <li><strong>0</strong>&nbsp;si erreur ou non r&eacute;ponse ou besoin d&rsquo;indi&ccedil;age</li>
                                                 </ul>
-                                                <li>Cette cotation doit se faire &agrave; la main suite &agrave; la prise de note ou en s&rsquo;aidant de l&rsquo;enregistrement sonore</li>
-                                                <li>Les erreurs sont class&eacute;es en diff&eacute;rentes cat&eacute;gories (voir tableau I)</li>
-                                                <li>Le temps moyen de r&eacute;ponse est calcul&eacute; pour les items bien d&eacute;nomm&eacute;s uniquement&nbsp;! L&rsquo;ordinateur enregistre les temps de r&eacute;ponse pour chaque idem dans un tableau xls. A vous de calculer le temps moyen de d&eacute;nomination pour les items correctement d&eacute;nomm&eacute;s UNIQUEMENT.</li>
-                                                <li>Pour cela, il vous est conseill&eacute; de remplacer, dans le tableau xls, les temps de d&eacute;nomination des items mal d&eacute;nomm&eacute;s par un point afin que ces temps ne soient pas pris en compte lors du calcul de la moyenne. Un exemple de fichier avec les r&eacute;sultats vous est pr&eacute;sent&eacute; sur le site.</li>
-                                            </ul>
+                                                </ul>
                                             <p>&nbsp;</p>
                                             <p>Tableau I : exemples de la classification des erreurs dans la t&acirc;che de d&eacute;nomination</p>
                                             <table width="596">
@@ -184,8 +180,7 @@
                                             <p><span style="text-decoration: underline;"><strong>Cotation&nbsp;:</strong></span></p>
                                             <ul>
                                                 <li><strong>0 ou 1&nbsp;</strong>: l&rsquo;ordinateur d&eacute;termine directement dans le fichier des r&eacute;sultats si l&rsquo;enfant a r&eacute;ussi ou &eacute;chou&eacute; chaque item. Il encode &eacute;galement la r&eacute;ponse choisie par l&rsquo;enfant dans la colonne</li>
-                                                <li>Il faut cependant ensuite classer ses erreurs selon le lien avec la cible&nbsp;; l&rsquo;erreur &eacute;tant d&eacute;termin&eacute;e par le distracteur choisi par l&rsquo;enfant en cas d&rsquo;&eacute;chec (voir tableau II). Par exemple, une erreur s&eacute;mantique est attribu&eacute;e si l&rsquo;enfant choisit le distracteur s&eacute;mantique.</li>
-                                            </ul>
+                                               </ul>
                                             <p>&nbsp;</p>
                                             <p>Tableau II&nbsp;: exemples de la classification des erreurs dans la t&acirc;che de d&eacute;signation</p>
                                             <table width="592" class="table-bordered">
@@ -348,8 +343,7 @@
                                             <small>Leloup, Chevaillier et Gorsse, 2016 - Nothelier, Giavelly et Delenclos, 2017</small>
                                             <hr>
                                             <a class="btn btn-primary" href="data/tests_uploads/lexical/Protocole_denomination_LexicalAccess.pdf" download="Protocole_denomination_LexicalAccess.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole dénomination </a>
-                                            <a class="btn btn-primary" href="data/tests_uploads/lexical/Protocole_designation_LexicalAccess.pdf" download="Protocole_designation_LexicalAccess.pdf" target="_blank"><i class="fa fa-paperclip"></i> Protocole désignation </a>
-            
+                                           
                                             <a href="?p=lexical&identifiant=<?= $_SESSION['identifiant']?>" class="btn btn-success" ><i class="fa fa-play"></i> Débuter un test lexical access</a>
                                             <hr>
                                             <h5 ><strong><span style="text-decoration: underline;">T&acirc;che&nbsp;:</span> </strong></h5>

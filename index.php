@@ -51,7 +51,7 @@
 							<h2>Comprendre le projet :
 							<br />
 							PR2M c'est quoi ?</h2>
-							<p>PR2M, c&rsquo;est avant tout un travail de m&eacute;moire cherchant &agrave; valider un Protocole de Rem&eacute;diation du Manque du Mot. Soutenue par Gilles Leloup (Dr. en Sciences du langage, orthophoniste) et Anne Bragard (Dr. en Sciences psychologiques et de l&rsquo;&eacute;ducation, logop&egrave;de) cette &eacute;tude a pour objectif de valider scientifiquement un protocole facilement op&eacute;rationnel en clinique.</p>
+							<p>PR2M, c&rsquo;est avant tout un projet de mémoire de fin d’études en orthophonie cherchant &agrave; valider un Protocole de Rem&eacute;diation du Manque du Mot. Soutenu par Gilles Leloup (orthophoniste, UPMC) et Anne Bragard (logopède, UCL). Cette &eacute;tude a pour objectif de valider scientifiquement un protocole facilement op&eacute;rationnel en clinique.</p>
 							<p>Partenaire officiel: </p>
 							<img src="images/orthomalin.gif" width="100px" alt="" />
 						</header>
