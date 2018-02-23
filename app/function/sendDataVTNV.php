@@ -20,7 +20,7 @@ function updateVTNVData($data, $bdd)
 	echo($patientID);
 	if($testype == 'pre'){
 		try {
-			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`pre_json` = :pre_json WHERE `tests`.`patient` =".$patientID;
+			$sql = "INSERT `tests` SET  `lastupdate` = ".time().",`pre_json` = :pre_json WHERE `tests`.`patient` =".$patientID;
 			$stmt = $bdd->prepare($sql);
 			$stmt->bindValue(':pre_json', $dataparse);
 			$stmt->execute();
@@ -32,11 +32,11 @@ function updateVTNVData($data, $bdd)
 	}
 	else{
 		try {
-			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`post_json` = :pre_json WHERE `tests`.`patient` =".$patientID;
+			$sql = "INSERT `tests` SET  `lastupdate` = ".time().",`post_json` = :post_json WHERE `tests`.`patient` =".$patientID;
 			$stmt = $bdd->prepare($sql);
-			$stmt->bindValue(':pre_json', $dataparse);
+			$stmt->bindValue(':post_json', $dataparse);
 			$stmt->execute();
-			echo('Send pre');
+			echo('Send post');
 		}
 		catch( PDOException $Exception ) {
 			var_dump($Exception->getMessage());
