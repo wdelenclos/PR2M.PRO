@@ -20,9 +20,10 @@ function updateVTNVData($data, $bdd)
 	echo($patientID);
 	if($testype == 'pre'){
 		try {
-			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`pre_json` = :pre_json WHERE `tests`.`patient` =".$patientID;
+			$sql = "INSERT INTO `tests` (`lastupdate`,`pre_json`) VALUES  (`:time`, `:pre_json`) WHERE `tests`.`patient` =".$patientID;
 			$stmt = $bdd->prepare($sql);
 			$stmt->bindValue(':pre_json', $dataparse);
+			$stmt->bindValue(':time', time());
 			$stmt->execute();
 			echo('Send pre');
 		}
@@ -32,9 +33,10 @@ function updateVTNVData($data, $bdd)
 	}
 	else{
 		try {
-			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`post_json` = :post_json WHERE `tests`.`patient` =".$patientID;
+			$sql = "INSERT INTO `tests` (`lastupdate`,`post_json`) VALUES  (`:time`, `:post_json`) WHERE `tests`.`patient` =".$patientID;
 			$stmt = $bdd->prepare($sql);
 			$stmt->bindValue(':post_json', $dataparse);
+			$stmt->bindValue(':time', time());
 			$stmt->execute();
 			echo('Send post');
 		}
