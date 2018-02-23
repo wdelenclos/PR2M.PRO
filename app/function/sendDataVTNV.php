@@ -32,7 +32,7 @@ function updateVTNVData($data, $bdd)
 		else{
 			$row = json_decode($row);
 		}
-		array_push($row, array('date' => date('d/m'), 'data' => $dataparse));
+		array_push($row, $dataparse);
 		$rowa = json_encode($row);
 			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`pre_json` = :pre_json WHERE `tests`.`patient` =".$patientID;
 			$stmt = $bdd->prepare($sql);
@@ -58,7 +58,7 @@ function updateVTNVData($data, $bdd)
 		else{
 			$row = json_decode($row);
 		}
-		array_push($row, array('date' => date('d/m'), 'data' => $dataparse));
+		array_push($row, $dataparse);
 		$rowa = json_encode($row);
 			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`post_json` = :post_json WHERE `tests`.`patient` =".$patientID;
 			$stmt = $bdd->prepare($sql);
