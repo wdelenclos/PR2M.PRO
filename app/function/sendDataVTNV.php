@@ -25,10 +25,18 @@ function updateVTNVData($data, $bdd)
 		$stmt->execute();
 		$row = $stmt->fetchObject();
 		$row = $row->train_json;
-		
+		var_dump($row->train_json);
+		if($row == null || $row == ''|| $row == '{}'|| $row == 'null'){
+			$row = [];
+		}
+		else{
+			$row = json_decode($row);
+		}
+		array_push($row, array('date' => date('d/m'), 'data' => $dataparse));
+		$rowa = json_encode($row);
 			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`pre_json` = :pre_json WHERE `tests`.`patient` =".$patientID;
 			$stmt = $bdd->prepare($sql);
-			$stmt->bindValue(':pre_json', $row.$dataparse);
+			$stmt->bindValue(':pre_json', $rowa);
 			$stmt->execute();
 			echo('Send pre');
 		}
@@ -43,10 +51,18 @@ function updateVTNVData($data, $bdd)
 			$stmt->execute();
 			$row = $stmt->fetchObject();
 			$row = $row->train_json;
-			
+			var_dump($row->train_json);
+		if($row == null || $row == ''|| $row == '{}'|| $row == 'null'){
+			$row = [];
+		}
+		else{
+			$row = json_decode($row);
+		}
+		array_push($row, array('date' => date('d/m'), 'data' => $dataparse));
+		$rowa = json_encode($row);
 			$sql = "UPDATE `tests` SET  `lastupdate` = ".time().",`post_json` = :post_json WHERE `tests`.`patient` =".$patientID;
 			$stmt = $bdd->prepare($sql);
-			$stmt->bindValue(':post_json', $row.$dataparse);
+			$stmt->bindValue(':post_json', $rowa);
 			$stmt->execute();
 			echo('Send post');
 		}
